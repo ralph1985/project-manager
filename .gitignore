@@ -1,0 +1,4 @@
+# Root workspace ignores
+node_modules
+projects/
+.DS_Store

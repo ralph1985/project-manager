@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/lerna/lerna/main/packages/lerna/schemas/lerna-schema.json",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "npmClient": "npm",
+  "command": {
+    "run": {
+      "stream": true
+    }
+  }
+}
