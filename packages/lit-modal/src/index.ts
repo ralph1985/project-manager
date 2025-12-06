@@ -1,1 +1,1 @@
-export * from './pm-modal';
+export * from './pm-modal.js';

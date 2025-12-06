@@ -18,7 +18,7 @@ npm install ../packages/lit-modal
 2) Importa el componente una vez (por ejemplo en tu entrypoint o página):
 
 ```ts
-import '@project-manager/lit-modal/dist/index.js';
+import '@project-manager/lit-modal';
 ```
 
 3) Pinta el elemento en tu HTML:
