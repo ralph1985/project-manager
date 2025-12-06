@@ -2,3 +2,5 @@
 node_modules
 projects/
 .DS_Store
+.npm-cache
+packages/*/dist
