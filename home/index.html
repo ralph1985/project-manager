@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Manager · Ayuntamiento de Belmontejo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Panel de proyectos municipales</h1>
+      <p>Seguimiento de tareas y horas en todos los proyectos</p>
+    </div>
+    <div class="pill">Project Manager · Home</div>
+  </header>
+
+  <main class="layout">
+    <section class="grid" id="stats"></section>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Fases y horas por proyecto</h2>
+        <div id="project-phases" class="project-phases"></div>
+      </div>
+    </div>
+
+    <div class="card table-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+        <h2 style="margin:0;">Tareas</h2>
+      </div>
+      <div class="filters">
+        <input type="search" id="search" placeholder="Buscar título o notas">
+        <select id="statusFilter" multiple size="4" aria-label="Filtrar por estado"></select>
+        <select id="ownerFilter" multiple size="4" aria-label="Filtrar por responsable"></select>
+        <select id="phaseFilter" multiple size="4" aria-label="Filtrar por fase"></select>
+        <select id="projectFilter" multiple size="4" aria-label="Filtrar por proyecto"></select>
+      </div>
+      <div class="table-container">
+        <table class="table" id="tasksTable">
+          <thead>
+            <tr>
+              <th>#</th><th>Tarea</th><th>Proyecto</th><th>Fase</th><th>Responsable</th><th>Estado</th><th>Inicio</th><th>Fin</th><th>Notas</th><th class="num">Horas</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const fmt = (n) => Number.isFinite(n) ? n.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 1 }) : '—';
+    const statusClass = (status) => {
+      if (!status) return 'status-No';
+      if (status.startsWith('Comp')) return 'status-Completa';
+      if (status.startsWith('En')) return 'status-En';
+      if (status.startsWith('B')) return 'status-Bloqueada';
+      if (status.startsWith('No')) return 'status-No';
+      if (status.startsWith('Canc')) return 'status-Cancelada';
+      return 'status-No';
+    };
+
+    async function loadTasks() {
+      const res = await fetch('../data/projects-tasks.json');
+      const tasks = await res.json();
+      return tasks.map(t => ({
+        ...t,
+        project: t.project || (['Fase 1', 'Mantenimiento', 'Errores'].includes(t.phase) ? 'Ayuntamiento de Belmontejo' : t.project || null),
+      }));
+    }
+
+    function aggregate(tasks, key) {
+      return tasks.reduce((acc, t) => {
+        const k = t[key] || '—';
+        const current = acc[k] || { hours: 0, count: 0 };
+        acc[k] = { hours: current.hours + (t.hours || 0), count: current.count + 1 };
+        return acc;
+      }, {});
+    }
+
+    function renderStats(tasks) {
+      const statsEl = document.getElementById('stats');
+      const totalHours = tasks.reduce((sum, t) => sum + (t.hours || 0), 0);
+      const statusCounts = tasks.reduce((acc, t) => {
+        acc[t.status] = (acc[t.status] || 0) + 1;
+        return acc;
+      }, {});
+      const cards = [
+        { label: 'Tareas totales', value: tasks.length },
+        { label: 'Tareas completadas', value: statusCounts['Completada'] || 0 },
+        { label: 'Tareas en curso', value: statusCounts['En curso'] || 0 },
+        { label: 'Tareas Bloqueadas', value: statusCounts['Bloqueada'] || 0 },
+        { label: 'Horas registradas', value: fmt(totalHours) },
+      ];
+      statsEl.innerHTML = cards.map(card => `
+        <div class="card">
+          <div class="stat-label">${card.label}</div>
+          <div class="stat-value">${card.value}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderBars(targetId, dataMap) {
+      const container = document.getElementById(targetId);
+      const entries = Object.entries(dataMap).sort((a, b) => b[1].hours - a[1].hours);
+      const max = entries[0]?.[1].hours || 1;
+      container.innerHTML = entries.map(([label, v]) => `
+        <div class="bar-row">
+          <div style="width:110px;color:var(--muted);font-size:13px;">${label}</div>
+          <div class="bar"><span style="width:${(v.hours / max) * 100}%"></span></div>
+          <div style="width:64px;text-align:right;font-weight:600">${fmt(v.hours)}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderProjectPhases(tasks) {
+      const container = document.getElementById('project-phases');
+      const totals = tasks.reduce((acc, t) => {
+        const project = t.project || 'Sin proyecto';
+        const phase = t.phase || '—';
+        const phaseKey = `${project}::${phase}`;
+        acc.projects[project] = (acc.projects[project] || 0) + (t.hours || 0);
+        acc.phases[phaseKey] = (acc.phases[phaseKey] || 0) + (t.hours || 0);
+        return acc;
+      }, { projects: {}, phases: {} });
+
+      const projects = Object.entries(totals.projects).sort((a, b) => b[1] - a[1]);
+      const maxProjectHours = projects[0]?.[1] || 1;
+
+      container.innerHTML = projects.map(([project, hours]) => {
+        const phases = Object.entries(totals.phases)
+          .filter(([k]) => k.startsWith(`${project}::`))
+          .map(([k, h]) => ({ phase: k.split('::')[1], hours: h }))
+          .sort((a, b) => b.hours - a.hours);
+        const maxPhase = phases[0]?.hours || 1;
+        return `
+          <div class="project-phase-item">
+            <div class="project-phase-header">
+              <span class="project-name">${project}</span>
+              <span class="project-hours">${fmt(hours)} h</span>
+            </div>
+            <div class="bar-row overall">
+              <div class="phase-label">Total</div>
+              <div class="bar"><span style="width:${(hours / maxProjectHours) * 100}%"></span></div>
+              <div class="phase-hours">${fmt(hours)} h</div>
+            </div>
+            ${phases.map(p => `
+              <div class="bar-row">
+                <div class="phase-label">${p.phase}</div>
+                <div class="bar"><span style="width:${(p.hours / maxPhase) * 100}%"></span></div>
+                <div class="phase-hours">${fmt(p.hours)} h</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderFilters(tasks) {
+      const statuses = Array.from(new Set(tasks.map(t => t.status))).sort();
+      const owners = Array.from(new Set(tasks.map(t => t.owner))).sort();
+      const phases = Array.from(new Set(tasks.map(t => t.phase))).sort();
+      const projects = Array.from(new Set(tasks.map(t => t.project))).sort();
+      const setOptions = (el, values) => {
+        el.innerHTML = [`<option value="">Todos</option>`, ...values.map(v => `<option value="${v}">${v}</option>`)].join('');
+      };
+      setOptions(document.getElementById('statusFilter'), statuses);
+      setOptions(document.getElementById('ownerFilter'), owners);
+      setOptions(document.getElementById('phaseFilter'), phases);
+      setOptions(document.getElementById('projectFilter'), projects);
+    }
+
+    function renderTable(tasks) {
+      const tbody = document.querySelector('#tasksTable tbody');
+      tbody.innerHTML = tasks.map(t => `
+        <tr>
+          <td>${t.id}</td>
+          <td>${t.title}</td>
+          <td>${t.project || '—'}</td>
+          <td>${t.phase || '—'}</td>
+          <td>${t.owner || '—'}</td>
+          <td><span class="badge ${statusClass(t.status)} pill-status">${t.status}</span></td>
+          <td>${t.startDate || '—'}</td>
+          <td>${t.endDate || '—'}</td>
+          <td>${t.notes || '—'}</td>
+          <td class="num">${fmt(t.hours)}</td>
+        </tr>
+      `).join('');
+    }
+
+    function setupFilters(allTasks) {
+      const search = document.getElementById('search');
+      const statusSel = document.getElementById('statusFilter');
+      const ownerSel = document.getElementById('ownerFilter');
+      const phaseSel = document.getElementById('phaseFilter');
+      const projectSel = document.getElementById('projectFilter');
+
+      const selectedValues = (select) =>
+        Array.from(select.selectedOptions).map(o => o.value);
+      const normalizeSelected = (values) =>
+        values.includes('') ? [] : values.filter(Boolean);
+
+      function apply() {
+        const term = search.value.toLowerCase().trim();
+        const statusValues = normalizeSelected(selectedValues(statusSel));
+        const ownerValues = normalizeSelected(selectedValues(ownerSel));
+        const phaseValues = normalizeSelected(selectedValues(phaseSel));
+        const projectValues = normalizeSelected(selectedValues(projectSel));
+        const filtered = allTasks.filter(t => {
+          const matchesTerm = !term || `${t.title} ${t.notes || ''}`.toLowerCase().includes(term);
+          const matchesStatus = statusValues.length === 0 || statusValues.includes(t.status);
+          const matchesOwner = ownerValues.length === 0 || ownerValues.includes(t.owner);
+          const matchesPhase = phaseValues.length === 0 || phaseValues.includes(t.phase);
+          const matchesProject = projectValues.length === 0 || projectValues.includes(t.project);
+          return matchesTerm && matchesStatus && matchesOwner && matchesPhase && matchesProject;
+        });
+        renderTable(filtered);
+      }
+
+      [search, statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('input', apply));
+      [statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('change', apply));
+      apply();
+    }
+
+    (async function init() {
+      const tasks = await loadTasks();
+      renderStats(tasks);
+      renderProjectPhases(tasks);
+      renderFilters(tasks);
+      renderTable(tasks);
+      setupFilters(tasks);
+    })();
+  </script>
+</body>
+</html>

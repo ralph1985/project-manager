@@ -15,3 +15,4 @@ Monorepo gestionado con Lerna y npm workspaces para empaquetar componentes (LitE
 
 ## Notas
 - `projects/` está git-ignorado en este repo para no versionar proyectos con repos propios; cada proyecto allí mantiene su propio `.git` y lockfile.
+- Hay un dashboard estático en `home/` que lee `data/projects-tasks.json`; ejecútalo con `npm run home` para ver el seguimiento de tareas/horas. Los filtros admiten selección múltiple.
