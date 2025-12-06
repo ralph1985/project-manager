@@ -50,6 +50,7 @@
   </main>
 
   <script>
+    const FILTER_KEY = 'pm-filters';
     const fmt = (n) => Number.isFinite(n) ? n.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 1 }) : '—';
     const statusClass = (status) => {
       if (!status) return 'status-No';
@@ -171,6 +172,40 @@
       setOptions(document.getElementById('projectFilter'), projects);
     }
 
+    function loadFilterState() {
+      try {
+        return JSON.parse(localStorage.getItem(FILTER_KEY)) || {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function saveFilterState(state) {
+      try {
+        localStorage.setItem(FILTER_KEY, JSON.stringify(state));
+      } catch (_) {
+        // ignore storage errors (private mode, quota, etc.)
+      }
+    }
+
+    function applySavedFilters(saved) {
+      const search = document.getElementById('search');
+      const statusSel = document.getElementById('statusFilter');
+      const ownerSel = document.getElementById('ownerFilter');
+      const phaseSel = document.getElementById('phaseFilter');
+      const projectSel = document.getElementById('projectFilter');
+      const setSelected = (select, values = []) => {
+        Array.from(select.options).forEach(opt => {
+          opt.selected = values.includes(opt.value);
+        });
+      };
+      search.value = saved.search || '';
+      setSelected(statusSel, saved.status);
+      setSelected(ownerSel, saved.owner);
+      setSelected(phaseSel, saved.phase);
+      setSelected(projectSel, saved.project);
+    }
+
     function renderTable(tasks) {
       const tbody = document.querySelector('#tasksTable tbody');
       tbody.innerHTML = tasks.map(t => `
@@ -216,6 +251,13 @@
           return matchesTerm && matchesStatus && matchesOwner && matchesPhase && matchesProject;
         });
         renderTable(filtered);
+        saveFilterState({
+          search: term,
+          status: statusValues,
+          owner: ownerValues,
+          phase: phaseValues,
+          project: projectValues,
+        });
       }
 
       [search, statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('input', apply));
@@ -228,6 +270,7 @@
       renderStats(tasks);
       renderProjectPhases(tasks);
       renderFilters(tasks);
+      applySavedFilters(loadFilterState());
       renderTable(tasks);
       setupFilters(tasks);
     })();

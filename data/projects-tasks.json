@@ -646,5 +646,17 @@
     "hours": 1.0,
     "notes": "Repositorio inicial y layout principal para arrancar la web",
     "project": "Ayuntamiento de Palomares del Campo"
+  },
+  {
+    "id": 61,
+    "title": "Creación del primer componente LitElement: modal",
+    "phase": "Fase 1",
+    "owner": "Rafael García",
+    "status": "En curso",
+    "startDate": "07/12/2025",
+    "endDate": null,
+    "hours": 1.0,
+    "notes": "Modal inicial en el gestor de proyectos; desarrollo en curso",
+    "project": "Gestor de proyectos"
   }
 ]
