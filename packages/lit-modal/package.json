@@ -1,6 +1,6 @@
 {
   "name": "@project-manager/lit-modal",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Componente modal reutilizable construido con LitElement",
   "type": "module",
   "main": "dist/index.js",
@@ -33,5 +33,8 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "sideEffects": false
+  "sideEffects": [
+    "./dist/index.js",
+    "./dist/pm-modal.js"
+  ]
 }
