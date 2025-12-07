@@ -1,4 +1,4 @@
-# @project-manager/lit-modal
+# @project-manager/pm-modal
 
 Primer componente compartido basado en LitElement. Define el elemento `<pm-modal>` para mostrar un diálogo simple con estilos suaves y eventos `pm-open`/`pm-close`.
 
@@ -12,13 +12,13 @@ Primer componente compartido basado en LitElement. Define el elemento `<pm-modal
 1) Instala la dependencia dentro de tu proyecto (ejemplo usando ruta local):
 
 ```bash
-npm install ../packages/lit-modal
+npm install ../packages/pm-modal
 ```
 
 2) Importa el componente una vez (por ejemplo en tu entrypoint o página):
 
 ```ts
-import '@project-manager/lit-modal';
+import '@project-manager/pm-modal';
 ```
 
 3) Pinta el elemento en tu HTML:

@@ -1,4 +1,4 @@
-// Release helper for @project-manager/lit-modal.
+// Release helper for @project-manager/pm-modal.
 // - Runs lerna version (conventional commits) on the modal package.
 // - Builds the package.
 // - Packs it into ./artifacts and updates Palomares dependency URL.
@@ -8,7 +8,7 @@ const { mkdirSync, readFileSync, writeFileSync } = require('node:fs');
 const { resolve } = require('node:path');
 
 const root = resolve(__dirname, '..');
-const modalPkgPath = resolve(root, 'packages/lit-modal/package.json');
+const modalPkgPath = resolve(root, 'packages/pm-modal/package.json');
 const palomaresPkgPath = resolve(
   root,
   'projects/ayuntamiento-de-palomares-del-campo/package.json'
@@ -27,28 +27,30 @@ function lernaVersion() {
     [
       'npx lerna version',
       '--conventional-commits',
+      '--changelog-preset',
+      'conventionalcommits',
       '--yes',
       '--no-push',
       '--force-publish',
-      '@project-manager/lit-modal'
+      '@project-manager/pm-modal'
     ].join(' ')
   );
 }
 
 function buildModal() {
-  run('npm run build --workspace @project-manager/lit-modal');
+  run('npm run build --workspace @project-manager/pm-modal');
 }
 
 function packModal() {
   mkdirSync(artifactsDir, { recursive: true });
   const result = spawnSync(
-    'npm',
-    [
-      'pack',
-      './packages/lit-modal',
-      '--pack-destination',
-      './artifacts'
-    ],
+      'npm',
+      [
+        'pack',
+        './packages/pm-modal',
+        '--pack-destination',
+        './artifacts'
+      ],
     {
       cwd: root,
       env: { ...process.env, npm_config_cache: './.npm-cache' }
@@ -69,7 +71,7 @@ function packModal() {
 function updatePalomaresDependency(tarballName) {
   const palomaresPkg = JSON.parse(readFileSync(palomaresPkgPath, 'utf8'));
   palomaresPkg.dependencies = palomaresPkg.dependencies || {};
-  palomaresPkg.dependencies['@project-manager/lit-modal'] = `${artifactBase}/${tarballName}`;
+  palomaresPkg.dependencies['@project-manager/pm-modal'] = `${artifactBase}/${tarballName}`;
   writeFileSync(
     palomaresPkgPath,
     `${JSON.stringify(palomaresPkg, null, 2)}\n`,
@@ -91,7 +93,7 @@ function main() {
     `- dependency updated to: ${artifactBase}/${tarball} in projects/ayuntamiento-de-palomares-del-campo/package.json`
   );
   console.log(
-    '\nNext steps: git add package-lock.json packages/lit-modal/package.json artifacts projects/ayuntamiento-de-palomares-del-campo/package.json && git commit'
+    '\nNext steps: git add package-lock.json packages/pm-modal/package.json artifacts projects/ayuntamiento-de-palomares-del-campo/package.json && git commit'
   );
 }
 

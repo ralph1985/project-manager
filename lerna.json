@@ -8,6 +8,10 @@
   "command": {
     "run": {
       "stream": true
+    },
+    "version": {
+      "conventionalCommits": true,
+      "changelogPreset": "conventionalcommits"
     }
   }
 }

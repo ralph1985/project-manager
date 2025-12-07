@@ -8,4 +8,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add @project-manager/lit-modal component with release scripts and documentation ([b6f3f26](https://github.com/ralph1985/project-manager/commit/b6f3f26f70bac7e5cb0708f41a273980a8fbe601))
+* add @project-manager/pm-modal component with release scripts and documentation ([b6f3f26](https://github.com/ralph1985/project-manager/commit/b6f3f26f70bac7e5cb0708f41a273980a8fbe601))
