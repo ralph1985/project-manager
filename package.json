@@ -19,6 +19,7 @@
     "release:modal": "node scripts/release-modal.js"
   },
   "devDependencies": {
-    "lerna": "8.1.2"
+    "lerna": "8.1.2",
+    "conventional-changelog-conventionalcommits": "7.0.2"
   }
 }
