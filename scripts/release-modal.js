@@ -30,11 +30,21 @@ function lernaVersion() {
       '--changelog-preset',
       'conventionalcommits',
       '--yes',
+      '--no-git-tag-version',
       '--no-push',
       '--force-publish',
       '@project-manager/pm-modal'
     ].join(' ')
   );
+}
+
+function undoLernaCommit() {
+  try {
+    // Leave the version/changelog changes staged to include the tarball in one commit.
+    execSync('git reset --soft HEAD~1', { stdio: 'inherit', cwd: root });
+  } catch (err) {
+    console.warn('Warn: git reset --soft HEAD~1 failed, please check the repo state manually.');
+  }
 }
 
 function buildModal() {
@@ -81,6 +91,7 @@ function updatePalomaresDependency(tarballName) {
 
 function main() {
   lernaVersion();
+  undoLernaCommit();
   buildModal();
   const tarball = packModal();
   const modalPkg = JSON.parse(readFileSync(modalPkgPath, 'utf8'));
@@ -93,7 +104,7 @@ function main() {
     `- dependency updated to: ${artifactBase}/${tarball} in projects/ayuntamiento-de-palomares-del-campo/package.json`
   );
   console.log(
-    '\nNext steps: git add package-lock.json packages/pm-modal/package.json artifacts projects/ayuntamiento-de-palomares-del-campo/package.json && git commit'
+    '\nNext steps: git add package-lock.json packages/pm-modal/package.json packages/pm-modal/CHANGELOG.md artifacts projects/ayuntamiento-de-palomares-del-campo/package.json && git commit'
   );
 }
 
