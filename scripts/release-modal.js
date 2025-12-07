@@ -9,10 +9,6 @@ const { resolve } = require('node:path');
 
 const root = resolve(__dirname, '..');
 const modalPkgPath = resolve(root, 'packages/pm-modal/package.json');
-const palomaresPkgPath = resolve(
-  root,
-  'projects/ayuntamiento-de-palomares-del-campo/package.json'
-);
 const artifactsDir = resolve(root, 'artifacts');
 const artifactBase =
   process.env.LIT_MODAL_ARTIFACT_BASE ||
@@ -78,34 +74,33 @@ function packModal() {
   return output.trim();
 }
 
-function updatePalomaresDependency(tarballName) {
-  const palomaresPkg = JSON.parse(readFileSync(palomaresPkgPath, 'utf8'));
-  palomaresPkg.dependencies = palomaresPkg.dependencies || {};
-  palomaresPkg.dependencies['@project-manager/pm-modal'] = `${artifactBase}/${tarballName}`;
-  writeFileSync(
-    palomaresPkgPath,
-    `${JSON.stringify(palomaresPkg, null, 2)}\n`,
-    'utf8'
-  );
+function stageAndCommit(tarballName, version) {
+  const files = [
+    'package-lock.json',
+    'packages/pm-modal/package.json',
+    'packages/pm-modal/CHANGELOG.md',
+    `artifacts/${tarballName}`
+  ];
+  run(`git add ${files.join(' ')}`);
+  run(`git commit -m "chore(release): pm-modal v${version}"`);
+  try {
+    run(`git tag pm-modal-v${version}`);
+  } catch (err) {
+    console.warn('Warn: could not create tag, please create it manually if needed.');
+  }
 }
-
 function main() {
   lernaVersion();
   undoLernaCommit();
   buildModal();
   const tarball = packModal();
   const modalPkg = JSON.parse(readFileSync(modalPkgPath, 'utf8'));
-  updatePalomaresDependency(tarball);
+  stageAndCommit(tarball, modalPkg.version);
 
   console.log('\nRelease generated:');
   console.log(`- version: ${modalPkg.version}`);
   console.log(`- tarball: artifacts/${tarball}`);
-  console.log(
-    `- dependency updated to: ${artifactBase}/${tarball} in projects/ayuntamiento-de-palomares-del-campo/package.json`
-  );
-  console.log(
-    '\nNext steps: git add package-lock.json packages/pm-modal/package.json packages/pm-modal/CHANGELOG.md artifacts projects/ayuntamiento-de-palomares-del-campo/package.json && git commit'
-  );
+  console.log('- commit and tag created automatically');
 }
 
 main();
