@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.3.0 (2025-12-07)
+
+
+### Features
+
+* **pm-modal:** add initial implementation of pm-modal component with documentation and tests ([702de02](https://github.com/ralph1985/project-manager/commit/702de02af7d14bec3eb082f647804bbb1118cdc8))
+
+
+
 # 0.2.0 (2025-12-06)
 
 
