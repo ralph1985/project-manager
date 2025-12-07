@@ -49,10 +49,11 @@ async function main() {
     }
   })();
 
-  const phaseDefault =
-    phasesList.includes('Fase 1') || phasesList.length === 0
+  const phaseDefault = phasesList.includes('Pre-release')
+    ? 'Pre-release'
+    : phasesList.includes('Fase 1')
       ? 'Fase 1'
-      : phasesList[0];
+      : phasesList[0] || 'Pre-release';
   const phase = await prompt(
     `Fase (opciones: ${phasesList.join(', ') || 'libre'})`,
     rl,

@@ -2,19 +2,19 @@
   {
     "id": 7,
     "title": "Organización del CSS que venía en el proyecto demo y estaba hecho un cristo..., y la IA lo estaba liando aún más",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Cancelada",
     "startDate": "25/10/2025",
     "endDate": null,
     "hours": 16,
-    "notes": "(25 de octubre de 2025)Hay que hacerlo con cabeza... Claude estaba iterando en modo creativo y la estaba liando parda.(31 de octubre de 2025)Estoy iterando con ayuda de ChatGPT y Claude y... no sé yo si lo voy a conseguir migrar, se monta unos cirios gordos(2 de noviembre de 2025)Definitivamente es un cristo la migración y habría que empezar de cero la maquetación... se queda como está",
+    "notes": "(25 de octubre de 2025) Hay que hacerlo con cabeza... Claude estaba iterando en modo creativo y la estaba liando parda.\n(31 de octubre de 2025) Estoy iterando con ayuda de ChatGPT y Claude y... no sé yo si lo voy a conseguir migrar, se monta unos cirios gordos.\n(2 de noviembre de 2025) Definitivamente es un cristo la migración y habría que empezar de cero la maquetación... se queda como está.",
     "project": "Ayuntamiento de Belmontejo"
   },
   {
     "id": 8,
     "title": "Búsqueda de proyecto CMS con administración sencilla (Decap)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "19/10/2025",
@@ -26,7 +26,7 @@
   {
     "id": 9,
     "title": "Configuración y despliegue en Vercel",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "21/10/2025",
@@ -50,7 +50,7 @@
   {
     "id": 11,
     "title": "Repaso y optimización general de la web, la IA se pone en modo \"creativo\" y va un poco desordenada",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": null,
@@ -62,7 +62,7 @@
   {
     "id": 12,
     "title": "Añadir Bandos del pueblo",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "23/10/2025",
@@ -74,7 +74,7 @@
   {
     "id": 13,
     "title": "Añadir un buscador",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": null,
@@ -86,7 +86,7 @@
   {
     "id": 14,
     "title": "Añadir Google Analytics para conocer el número de visitas",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "25/10/2025",
@@ -98,7 +98,7 @@
   {
     "id": 15,
     "title": "Añadir gestión y aprobación de cookies (importante si tenemos Google Analytics)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "25/10/2025",
@@ -110,7 +110,7 @@
   {
     "id": 16,
     "title": "Configuración de los favicons",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "26/10/2025",
@@ -122,7 +122,7 @@
   {
     "id": 17,
     "title": "Añadir sección de redes sociales (Instagram y Facebook)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "26/10/2025",
@@ -134,7 +134,7 @@
   {
     "id": 18,
     "title": "Administración desde Decap de los links de Servicios del Footer",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "26/10/2025",
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "title": "Sección de testimonios",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "23/10/2025",
@@ -158,7 +158,7 @@
   {
     "id": 20,
     "title": "Añadir mapa Google Maps",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "25/10/2025",
@@ -170,7 +170,7 @@
   {
     "id": 21,
     "title": "Configurar páginas de error 404",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "26/10/2025",
@@ -182,7 +182,7 @@
   {
     "id": 22,
     "title": "Automatización de obtención de Bandos del pueblo",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Bloqueada",
     "startDate": null,
@@ -194,7 +194,7 @@
   {
     "id": 23,
     "title": "Que los \"testimonios\" salgan de las reseñas de Google Maps",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Bloqueada",
     "startDate": null,
@@ -206,7 +206,7 @@
   {
     "id": 24,
     "title": "Añadir feed de instagram (no será automático)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Bloqueada",
     "startDate": null,
@@ -278,7 +278,7 @@
   {
     "id": 30,
     "title": "Revisión de los modos claro y oscuro, ambos tienen problemas",
-    "phase": "Errores",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": null,
@@ -290,19 +290,19 @@
   {
     "id": 31,
     "title": "¿Alguna plataforma de comentarios? (Disqus)",
-    "phase": "Fase 2",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "No iniciada",
     "startDate": null,
     "endDate": null,
     "hours": null,
     "notes": "",
-    "project": null
+    "project": "Ayuntamiento de Belmontejo"
   },
   {
     "id": 32,
     "title": "Añadiendo análisis de código con Sonar",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "5/11/2025",
@@ -314,7 +314,7 @@
   {
     "id": 33,
     "title": "Mapa de gestión municipal como el de la Almarchahttps://iotax.es/?token=JlWpKKSIXSOFBa7NiCoV3WbcY0arW4",
-    "phase": "Fase 2",
+    "phase": "Pre-release",
     "owner": "Dani",
     "status": "No iniciada",
     "startDate": null,
@@ -326,7 +326,7 @@
   {
     "id": 34,
     "title": "Inserción vídeo del drone",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "3/11/2025",
@@ -338,7 +338,7 @@
   {
     "id": 35,
     "title": "Configuración de tests e2e visuales de regresión (por si rompo algo sin querer)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "4/11/2025",
@@ -350,7 +350,7 @@
   {
     "id": 36,
     "title": "Componetización de los botones para unificación",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "5/11/2025",
@@ -362,7 +362,7 @@
   {
     "id": 37,
     "title": "Creación de tests e2e de navegación para comprobar que no se rompe ningún link interno con cambios que se vayan haciendo",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "5/11/2025",
@@ -374,7 +374,7 @@
   {
     "id": 38,
     "title": "Mejora de tests e2e visuales para incluir la vista de móvil",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "5/11/2025",
@@ -386,7 +386,7 @@
   {
     "id": 39,
     "title": "Proporcionar fotos del pueblo",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Dani",
     "status": "No iniciada",
     "startDate": null,
@@ -398,7 +398,7 @@
   {
     "id": 40,
     "title": "Analizar el estado de la web y ver qué fotos y textos quieren cambiar",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Dani",
     "status": "No iniciada",
     "startDate": null,
@@ -410,7 +410,7 @@
   {
     "id": 41,
     "title": "Cambiar el correo electrónico que está puesto actualmente (belmontejo@dipucuenca.es)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Dani",
     "status": "No iniciada",
     "startDate": null,
@@ -422,7 +422,7 @@
   {
     "id": 42,
     "title": "Cambiar el teléfono que está puesto actualmente (969296279)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Dani",
     "status": "No iniciada",
     "startDate": null,
@@ -434,7 +434,7 @@
   {
     "id": 43,
     "title": "Incluir detalles en el aviso legal (está en una rama a parte)",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Dani",
     "status": "Bloqueada",
     "startDate": null,
@@ -446,7 +446,7 @@
   {
     "id": 44,
     "title": "Arreglando vulnerabilidades NPM",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "5/11/2025",
@@ -470,7 +470,7 @@
   {
     "id": 46,
     "title": "Abrir en una modal las imágenes de Proyectos",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "9/11/2025",
@@ -494,7 +494,7 @@
   {
     "id": 48,
     "title": "Implementación de las View Transitions",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Cancelada",
     "startDate": "16/11/2025",
@@ -506,7 +506,7 @@
   {
     "id": 49,
     "title": "Configuración de los datos de contacto y redes sociales desde Decap",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "15/11/2025",
@@ -530,7 +530,7 @@
   {
     "id": 51,
     "title": "Configuración de la página de contacto para enviar emails con Resend",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "16/11/2025",
@@ -542,7 +542,7 @@
   {
     "id": 52,
     "title": "Mejora de los tests e2e visuales con \"fixtures\" para los bandos y las noticias",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "19/11/2025",
@@ -554,7 +554,7 @@
   {
     "id": 53,
     "title": "Automatización de un workflow en Github para que se pueda abrir una PR automáticamente, sólo pulsando un botón, con los nuevos bandos que se hayan hecho",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "21/11/2025",
@@ -578,7 +578,7 @@
   {
     "id": 55,
     "title": "Mejora en el buscador para mover la lógica de búsqueda del servidor (Vercel) al cliente (navegador) y así no usar la CPU del servidor que sólo tenemos 4 horas al mes",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "22/11/2025",
@@ -614,7 +614,7 @@
   {
     "id": 58,
     "title": "Creación del repositorio monorepo gestor de proyectos",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "En curso",
     "startDate": "6/12/2025",
@@ -626,7 +626,7 @@
   {
     "id": 59,
     "title": "Panel de gestión de horas",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "En curso",
     "startDate": "06/12/2025",
@@ -638,7 +638,7 @@
   {
     "id": 60,
     "title": "Crear repositorio base y layout principal",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "Completada",
     "startDate": "07/12/2025",
@@ -650,7 +650,7 @@
   {
     "id": 61,
     "title": "Creación del primer componente LitElement: modal",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "En curso",
     "startDate": "07/12/2025",
@@ -662,7 +662,7 @@
   {
     "id": 62,
     "title": "Automatización de publicación de versiones",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
     "status": "En curso",
     "startDate": "07/12/2025",
@@ -674,9 +674,9 @@
   {
     "id": 63,
     "title": "Gestión de tareas del proyecto vía CLI",
-    "phase": "Fase 1",
+    "phase": "Pre-release",
     "owner": "Rafael García",
-    "status": "en curso",
+    "status": "En curso",
     "startDate": "07/12/2025",
     "endDate": null,
     "hours": 1,

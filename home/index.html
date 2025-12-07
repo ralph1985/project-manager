@@ -30,28 +30,79 @@
         <h2 style="margin:0;">Tareas</h2>
       </div>
       <div class="filters">
-        <input type="search" id="search" placeholder="Buscar título o notas">
-        <select id="statusFilter" multiple size="4" aria-label="Filtrar por estado"></select>
-        <select id="ownerFilter" multiple size="4" aria-label="Filtrar por responsable"></select>
-        <select id="phaseFilter" multiple size="4" aria-label="Filtrar por fase"></select>
-        <select id="projectFilter" multiple size="4" aria-label="Filtrar por proyecto"></select>
+        <div class="filter-group">
+          <label for="search">Buscar</label>
+          <input type="search" id="search" placeholder="Buscar título o notas">
+        </div>
+        <div class="filter-group">
+          <label for="statusFilter">Estado</label>
+          <select id="statusFilter" multiple size="4" aria-label="Filtrar por estado"></select>
+        </div>
+        <div class="filter-group">
+          <label for="ownerFilter">Responsable</label>
+          <select id="ownerFilter" multiple size="4" aria-label="Filtrar por responsable"></select>
+        </div>
+        <div class="filter-group">
+          <label for="phaseFilter">Fase</label>
+          <select id="phaseFilter" multiple size="4" aria-label="Filtrar por fase"></select>
+        </div>
+        <div class="filter-group">
+          <label for="projectFilter">Proyecto</label>
+          <select id="projectFilter" multiple size="4" aria-label="Filtrar por proyecto"></select>
+        </div>
       </div>
       <div class="table-container">
         <table class="table" id="tasksTable">
+          <colgroup>
+            <col style="width:3%">
+            <col style="width:26%">
+            <col style="width:12%">
+            <col style="width:9%">
+            <col style="width:10%">
+            <col style="width:10%">
+            <col style="width:7%">
+            <col style="width:7%">
+            <col style="width:10%">
+            <col style="width:6%">
+          </colgroup>
           <thead>
             <tr>
-              <th>#</th><th>Tarea</th><th>Proyecto</th><th>Fase</th><th>Responsable</th><th>Estado</th><th>Inicio</th><th>Fin</th><th>Notas</th><th class="num">Horas</th>
+              <th class="sortable" data-sort="id"><span>#</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="title"><span>Tarea</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="project"><span>Proyecto</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="phase"><span>Fase</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="owner"><span>Responsable</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="status"><span>Estado</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="startDate"><span>Inicio</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="endDate"><span>Fin</span><span class="sort-indicator"></span></th>
+              <th><span>Notas</span></th>
+              <th class="num sortable" data-sort="hours"><span>Horas</span><span class="sort-indicator"></span></th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
       </div>
     </div>
+
+    <div id="noteModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="noteModalTitle">Nota</h3>
+          <button id="noteClose" class="close-btn" aria-label="Cerrar">×</button>
+        </div>
+        <div id="noteBody" class="modal-body"></div>
+      </div>
+    </div>
   </main>
 
   <script>
     const FILTER_KEY = 'pm-filters';
+    const HOURLY_RATE = 50; // €/hora bruta
+    let currentSort = { key: 'id', dir: 'desc' };
     const fmt = (n) => Number.isFinite(n) ? n.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 1 }) : '—';
+    const fmtCurrency = (n) => Number.isFinite(n) ? n.toLocaleString('es-ES', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 0 }) : '—';
+    const escAttr = (str = '') => str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
     const statusClass = (status) => {
       if (!status) return 'status-No';
       if (status.startsWith('Comp')) return 'status-Completa';
@@ -60,6 +111,52 @@
       if (status.startsWith('No')) return 'status-No';
       if (status.startsWith('Canc')) return 'status-Cancelada';
       return 'status-No';
+    };
+    const phaseClass = (phase) => {
+      if (!phase) return 'phase-Default';
+      if (phase.startsWith('Pre')) return 'phase-Pre';
+      if (phase.startsWith('Mant')) return 'phase-Mant';
+      return 'phase-Default';
+    };
+    const projectClass = (project) => {
+      if (!project) return 'project-Default';
+      if (project.includes('Belmontejo')) return 'project-Belmontejo';
+      if (project.includes('Palomares')) return 'project-Palomares';
+      if (project.includes('Gestor')) return 'project-Gestor';
+      return 'project-Default';
+    };
+    const parseDate = (str) => {
+      if (!str) return 0;
+      const parts = str.split('/').map(Number);
+      if (parts.length !== 3 || Number.isNaN(parts[2])) return 0;
+      return new Date(parts[2], parts[1] - 1, parts[0]).getTime();
+    };
+    const sorters = {
+      id: (t) => t.id,
+      title: (t) => (t.title || '').toLowerCase(),
+      project: (t) => (t.project || '').toLowerCase(),
+      phase: (t) => (t.phase || '').toLowerCase(),
+      owner: (t) => (t.owner || '').toLowerCase(),
+      status: (t) => (t.status || '').toLowerCase(),
+      startDate: (t) => parseDate(t.startDate),
+      endDate: (t) => parseDate(t.endDate),
+      hours: (t) => t.hours || 0
+    };
+    function sortTasks(tasks) {
+      const fn = sorters[currentSort.key] || sorters.id;
+      const dir = currentSort.dir === 'asc' ? 1 : -1;
+      return [...tasks].sort((a, b) => {
+        const va = fn(a);
+        const vb = fn(b);
+        if (va === vb) return 0;
+        return va > vb ? dir : -dir;
+      });
+    }
+
+    const renderNoteCell = (note) => {
+      if (!note) return '—';
+      const shortText = note.length > 40 ? `${note.slice(0, 40)}…` : note;
+      return `<button class="note-link" data-note="${escAttr(note)}" title="Ver nota completa">${shortText}</button>`;
     };
 
     async function loadTasks() {
@@ -83,6 +180,7 @@
     function renderStats(tasks) {
       const statsEl = document.getElementById('stats');
       const totalHours = tasks.reduce((sum, t) => sum + (t.hours || 0), 0);
+      const totalCost = totalHours * HOURLY_RATE;
       const statusCounts = tasks.reduce((acc, t) => {
         acc[t.status] = (acc[t.status] || 0) + 1;
         return acc;
@@ -93,6 +191,7 @@
         { label: 'Tareas en curso', value: statusCounts['En curso'] || 0 },
         { label: 'Tareas Bloqueadas', value: statusCounts['Bloqueada'] || 0 },
         { label: 'Horas registradas', value: fmt(totalHours) },
+        { label: 'Coste bruto (50€/h)', value: fmtCurrency(totalCost) },
       ];
       statsEl.innerHTML = cards.map(card => `
         <div class="card">
@@ -139,12 +238,12 @@
           <div class="project-phase-item">
             <div class="project-phase-header">
               <span class="project-name">${project}</span>
-              <span class="project-hours">${fmt(hours)} h</span>
+              <span class="project-hours">${fmt(hours)} h <small style="color:var(--muted);font-weight:500;">· ${fmtCurrency(hours * HOURLY_RATE)}</small></span>
             </div>
             <div class="bar-row overall">
               <div class="phase-label">Total</div>
               <div class="bar"><span style="width:${(hours / maxProjectHours) * 100}%"></span></div>
-              <div class="phase-hours">${fmt(hours)} h</div>
+              <div class="phase-hours">${fmt(hours)} h <small style="color:var(--muted);font-weight:500;">· ${fmtCurrency(hours * HOURLY_RATE)}</small></div>
             </div>
             ${phases.map(p => `
               <div class="bar-row">
@@ -210,18 +309,31 @@
       const tbody = document.querySelector('#tasksTable tbody');
       tbody.innerHTML = tasks.map(t => `
         <tr>
-          <td>${t.id}</td>
-          <td>${t.title}</td>
-          <td>${t.project || '—'}</td>
-          <td>${t.phase || '—'}</td>
-          <td>${t.owner || '—'}</td>
-          <td><span class="badge ${statusClass(t.status)} pill-status">${t.status}</span></td>
-          <td>${t.startDate || '—'}</td>
-          <td>${t.endDate || '—'}</td>
-          <td>${t.notes || '—'}</td>
+              <td>${t.id}</td>
+              <td>${t.title}</td>
+              <td><span class="badge ${projectClass(t.project)} pill-status">${t.project || '—'}</span></td>
+              <td><span class="badge ${phaseClass(t.phase)} pill-status">${t.phase || '—'}</span></td>
+              <td>${t.owner || '—'}</td>
+              <td><span class="badge ${statusClass(t.status)} pill-status">${t.status}</span></td>
+              <td>${t.startDate || '—'}</td>
+              <td>${t.endDate || '—'}</td>
+              <td>${renderNoteCell(t.notes)}</td>
           <td class="num">${fmt(t.hours)}</td>
         </tr>
       `).join('');
+    }
+
+    function updateSortIndicators() {
+      const headers = document.querySelectorAll('#tasksTable thead th.sortable');
+      headers.forEach((th) => {
+        const key = th.dataset.sort;
+        const indicator = th.querySelector('.sort-indicator');
+        th.classList.toggle('active', currentSort.key === key);
+        if (indicator) {
+          indicator.textContent =
+            currentSort.key === key ? (currentSort.dir === 'asc' ? '▲' : '▼') : '';
+        }
+      });
     }
 
     function setupFilters(allTasks) {
@@ -250,7 +362,7 @@
           const matchesProject = projectValues.length === 0 || projectValues.includes(t.project);
           return matchesTerm && matchesStatus && matchesOwner && matchesPhase && matchesProject;
         });
-        renderTable(filtered);
+        renderTable(sortTasks(filtered));
         saveFilterState({
           search: term,
           status: statusValues,
@@ -263,16 +375,58 @@
       [search, statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('input', apply));
       [statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('change', apply));
       apply();
+      return apply;
+    }
+
+    function setupSorting(applyFilters) {
+      const headers = document.querySelectorAll('#tasksTable thead th.sortable');
+      headers.forEach((th) => {
+        th.addEventListener('click', () => {
+          const key = th.dataset.sort;
+          if (currentSort.key === key) {
+            currentSort = { key, dir: currentSort.dir === 'asc' ? 'desc' : 'asc' };
+          } else {
+            currentSort = { key, dir: 'asc' };
+          }
+          updateSortIndicators();
+          applyFilters();
+        });
+      });
+      updateSortIndicators();
     }
 
     (async function init() {
       const tasks = await loadTasks();
+      const noteModal = document.getElementById('noteModal');
+      const noteBody = document.getElementById('noteBody');
+      const noteClose = document.getElementById('noteClose');
+      const hideNote = () => noteModal.classList.add('hidden');
+      const showNote = (text) => {
+        noteBody.textContent = text;
+        noteModal.classList.remove('hidden');
+      };
+
       renderStats(tasks);
       renderProjectPhases(tasks);
       renderFilters(tasks);
       applySavedFilters(loadFilterState());
-      renderTable(tasks);
-      setupFilters(tasks);
+      const applyFilters = setupFilters(tasks);
+      setupSorting(applyFilters);
+
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.note-link');
+        if (btn) {
+          e.preventDefault();
+          showNote(btn.dataset.note || '');
+        }
+        if (e.target.classList.contains('modal-backdrop')) {
+          hideNote();
+        }
+      });
+      noteClose.addEventListener('click', hideNote);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') hideNote();
+      });
     })();
   </script>
 </body>
