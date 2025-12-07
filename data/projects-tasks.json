@@ -7,7 +7,7 @@
     "status": "Cancelada",
     "startDate": "25/10/2025",
     "endDate": null,
-    "hours": 16.0,
+    "hours": 16,
     "notes": "(25 de octubre de 2025)Hay que hacerlo con cabeza... Claude estaba iterando en modo creativo y la estaba liando parda.(31 de octubre de 2025)Estoy iterando con ayuda de ChatGPT y Claude y... no sé yo si lo voy a conseguir migrar, se monta unos cirios gordos(2 de noviembre de 2025)Definitivamente es un cristo la migración y habría que empezar de cero la maquetación... se queda como está",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -19,7 +19,7 @@
     "status": "Completada",
     "startDate": "19/10/2025",
     "endDate": "21/10/2025",
-    "hours": 4.0,
+    "hours": 4,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -31,7 +31,7 @@
     "status": "Completada",
     "startDate": "21/10/2025",
     "endDate": "22/10/2025",
-    "hours": 3.0,
+    "hours": 3,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -43,7 +43,7 @@
     "status": "Completada",
     "startDate": "26/10/2025",
     "endDate": "26/10/2025",
-    "hours": 3.0,
+    "hours": 3,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -55,7 +55,7 @@
     "status": "Completada",
     "startDate": null,
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -67,7 +67,7 @@
     "status": "Completada",
     "startDate": "23/10/2025",
     "endDate": "23/10/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -79,7 +79,7 @@
     "status": "Completada",
     "startDate": null,
     "endDate": null,
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -91,7 +91,7 @@
     "status": "Completada",
     "startDate": "25/10/2025",
     "endDate": "25/10/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -103,7 +103,7 @@
     "status": "Completada",
     "startDate": "25/10/2025",
     "endDate": "25/10/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -115,7 +115,7 @@
     "status": "Completada",
     "startDate": "26/10/2025",
     "endDate": "26/10/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -127,7 +127,7 @@
     "status": "Completada",
     "startDate": "26/10/2025",
     "endDate": "26/10/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -139,7 +139,7 @@
     "status": "Completada",
     "startDate": "26/10/2025",
     "endDate": "26/10/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -199,7 +199,7 @@
     "status": "Bloqueada",
     "startDate": null,
     "endDate": null,
-    "hours": 1.0,
+    "hours": 1,
     "notes": "No hay reseñas en Google Maps, habrá que buscar otra cosa o eliminar la sección",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -223,7 +223,7 @@
     "status": "En curso",
     "startDate": null,
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -235,7 +235,7 @@
     "status": "En curso",
     "startDate": null,
     "endDate": null,
-    "hours": 8.0,
+    "hours": 8,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -259,7 +259,7 @@
     "status": "Completada",
     "startDate": null,
     "endDate": null,
-    "hours": 4.0,
+    "hours": 4,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -271,7 +271,7 @@
     "status": "Completada",
     "startDate": "6/11/2025",
     "endDate": "6/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -283,7 +283,7 @@
     "status": "Completada",
     "startDate": null,
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -307,7 +307,7 @@
     "status": "Completada",
     "startDate": "5/11/2025",
     "endDate": null,
-    "hours": 4.0,
+    "hours": 4,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -331,7 +331,7 @@
     "status": "Completada",
     "startDate": "3/11/2025",
     "endDate": "3/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "Después de investigar y ver varias alternativas, me quedo con Vimeo y una cuenta del Ayuntamiento de Belmontejo (con mi GMail)",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -343,7 +343,7 @@
     "status": "Completada",
     "startDate": "4/11/2025",
     "endDate": "4/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -367,7 +367,7 @@
     "status": "Completada",
     "startDate": "5/11/2025",
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -379,7 +379,7 @@
     "status": "Completada",
     "startDate": "5/11/2025",
     "endDate": "5/11/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -451,7 +451,7 @@
     "status": "Completada",
     "startDate": "5/11/2025",
     "endDate": "5/11/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -463,7 +463,7 @@
     "status": "En curso",
     "startDate": "6/11/2025",
     "endDate": null,
-    "hours": 4.0,
+    "hours": 4,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -475,7 +475,7 @@
     "status": "Completada",
     "startDate": "9/11/2025",
     "endDate": "9/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -487,7 +487,7 @@
     "status": "Completada",
     "startDate": "9/11/2025",
     "endDate": null,
-    "hours": 4.0,
+    "hours": 4,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -499,7 +499,7 @@
     "status": "Cancelada",
     "startDate": "16/11/2025",
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "No se terminan de ver bien",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -511,7 +511,7 @@
     "status": "Completada",
     "startDate": "15/11/2025",
     "endDate": "16/11/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -523,7 +523,7 @@
     "status": "Completada",
     "startDate": "15/11/2025",
     "endDate": "16/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -535,7 +535,7 @@
     "status": "Completada",
     "startDate": "16/11/2025",
     "endDate": "16/11/2025",
-    "hours": 6.0,
+    "hours": 6,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -547,7 +547,7 @@
     "status": "Completada",
     "startDate": "19/11/2025",
     "endDate": "19/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -559,7 +559,7 @@
     "status": "Completada",
     "startDate": "21/11/2025",
     "endDate": "21/11/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -571,7 +571,7 @@
     "status": "Completada",
     "startDate": "22/11/2025",
     "endDate": "22/11/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -583,7 +583,7 @@
     "status": "Completada",
     "startDate": "22/11/2025",
     "endDate": "22/11/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -595,7 +595,7 @@
     "status": "Completada",
     "startDate": "22/11/2025",
     "endDate": "22/11/2025",
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -607,7 +607,7 @@
     "status": "Completada",
     "startDate": "22/11/2025",
     "endDate": "23/11/2025",
-    "hours": 3.0,
+    "hours": 3,
     "notes": "",
     "project": "Ayuntamiento de Belmontejo"
   },
@@ -619,7 +619,7 @@
     "status": "En curso",
     "startDate": "6/12/2025",
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Gestor de proyectos"
   },
@@ -631,7 +631,7 @@
     "status": "En curso",
     "startDate": "06/12/2025",
     "endDate": null,
-    "hours": 2.0,
+    "hours": 2,
     "notes": "",
     "project": "Gestor de proyectos"
   },
@@ -643,7 +643,7 @@
     "status": "Completada",
     "startDate": "07/12/2025",
     "endDate": "07/12/2025",
-    "hours": 1.0,
+    "hours": 1,
     "notes": "Repositorio inicial y layout principal para arrancar la web",
     "project": "Ayuntamiento de Palomares del Campo"
   },
@@ -655,8 +655,32 @@
     "status": "En curso",
     "startDate": "07/12/2025",
     "endDate": null,
-    "hours": 1.0,
+    "hours": 1,
     "notes": "Modal inicial en el gestor de proyectos; desarrollo en curso",
+    "project": "Gestor de proyectos"
+  },
+  {
+    "id": 62,
+    "title": "Automatización de publicación de versiones",
+    "phase": "Fase 1",
+    "owner": "Rafael García",
+    "status": "En curso",
+    "startDate": "07/12/2025",
+    "endDate": null,
+    "hours": 2,
+    "notes": "Sesión de 2 horas trabajando en la automatización de publicación de versiones del gestor de proyectos",
+    "project": "Gestor de proyectos"
+  },
+  {
+    "id": 63,
+    "title": "Gestión de tareas del proyecto vía CLI",
+    "phase": "Fase 1",
+    "owner": "Rafael García",
+    "status": "en curso",
+    "startDate": "07/12/2025",
+    "endDate": null,
+    "hours": 1,
+    "notes": "",
     "project": "Gestor de proyectos"
   }
 ]

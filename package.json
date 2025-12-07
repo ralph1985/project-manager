@@ -16,7 +16,8 @@
     "test:e2e": "lerna run test:e2e --stream",
     "prepare": "lerna run prepare --stream",
     "home": "node scripts/serve-home.js",
-    "release:pm-modal": "node scripts/release-modal.js"
+    "release:pm-modal": "node scripts/release-modal.js",
+    "task:add": "node scripts/add-task.js"
   },
   "devDependencies": {
     "lerna": "8.1.2",
