@@ -216,6 +216,26 @@ h2 {
   max-height: 140px;
   overflow-y: auto;
 }
+.date-range {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.date-range input {
+  min-height: 44px;
+  max-height: none;
+}
+.btn-clear-date {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-clear-date:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 .project-phases {
   display: flex;
   gap: 12px;

@@ -718,5 +718,17 @@
     "hours": 0.1,
     "notes": "Eliminado npm run bootstrap (Lerna 8 lo elimina) y actualizado README/AGENTS con la nota y scripts vigentes",
     "project": "Gestor de proyectos"
+  },
+  {
+    "id": 67,
+    "title": "Filtro de fechas en dashboard (rango, limpiar y UX)",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "08/12/2025",
+    "endDate": "08/12/2025",
+    "hours": 0.1,
+    "notes": "Selector de fecha inicial, rango desde/hasta con filtros por intersección, inputs apilados, fechas opcionales y botón para limpiar el rango.",
+    "project": "Gestor de proyectos"
   }
 ]

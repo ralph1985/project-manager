@@ -35,6 +35,14 @@
           <input type="search" id="search" placeholder="Buscar título o notas">
         </div>
         <div class="filter-group">
+          <label for="dateStartFilter">Fecha</label>
+          <div class="date-range">
+            <input type="date" id="dateStartFilter" aria-label="Filtrar desde fecha">
+            <input type="date" id="dateEndFilter" aria-label="Filtrar hasta fecha">
+            <button type="button" id="dateClearBtn" class="btn-clear-date">Limpiar fecha</button>
+          </div>
+        </div>
+        <div class="filter-group">
           <label for="projectFilter">Proyecto</label>
           <select id="projectFilter" multiple size="4" aria-label="Filtrar por proyecto"></select>
         </div>
@@ -130,6 +138,16 @@
       const parts = str.split('/').map(Number);
       if (parts.length !== 3 || Number.isNaN(parts[2])) return 0;
       return new Date(parts[2], parts[1] - 1, parts[0]).getTime();
+    };
+    const toDisplayDate = (inputValue) => {
+      if (!inputValue) return '';
+      const [yyyy, mm, dd] = inputValue.split('-');
+      if (!yyyy || !mm || !dd) return '';
+      return `${dd}/${mm}/${yyyy}`;
+    };
+    const parseInputDate = (inputValue, fallback) => {
+      if (!inputValue) return fallback;
+      return parseDate(toDisplayDate(inputValue));
     };
     const sorters = {
       id: (t) => t.id,
@@ -293,12 +311,17 @@
       const ownerSel = document.getElementById('ownerFilter');
       const phaseSel = document.getElementById('phaseFilter');
       const projectSel = document.getElementById('projectFilter');
+      const dateStartInput = document.getElementById('dateStartFilter');
+      const dateEndInput = document.getElementById('dateEndFilter');
       const setSelected = (select, values = []) => {
         Array.from(select.options).forEach(opt => {
           opt.selected = values.includes(opt.value);
         });
       };
       search.value = saved.search || '';
+      const legacySingleDate = saved.date || '';
+      dateStartInput.value = saved.dateStart ?? legacySingleDate ?? '';
+      dateEndInput.value = saved.dateEnd ?? legacySingleDate ?? '';
       setSelected(statusSel, saved.status);
       setSelected(ownerSel, saved.owner);
       setSelected(phaseSel, saved.phase);
@@ -342,6 +365,9 @@
       const ownerSel = document.getElementById('ownerFilter');
       const phaseSel = document.getElementById('phaseFilter');
       const projectSel = document.getElementById('projectFilter');
+      const dateStartInput = document.getElementById('dateStartFilter');
+      const dateEndInput = document.getElementById('dateEndFilter');
+      const dateClearBtn = document.getElementById('dateClearBtn');
 
       const selectedValues = (select) =>
         Array.from(select.selectedOptions).map(o => o.value);
@@ -354,13 +380,22 @@
         const ownerValues = normalizeSelected(selectedValues(ownerSel));
         const phaseValues = normalizeSelected(selectedValues(phaseSel));
         const projectValues = normalizeSelected(selectedValues(projectSel));
+        const dateStartValue = dateStartInput.value;
+        const dateEndValue = dateEndInput.value;
+        const hasDateRange = Boolean(dateStartValue || dateEndValue);
+        const rangeStart = parseInputDate(dateStartValue, -Infinity);
+        const rangeEnd = parseInputDate(dateEndValue, Infinity);
         const filtered = allTasks.filter(t => {
           const matchesTerm = !term || `${t.title} ${t.notes || ''}`.toLowerCase().includes(term);
           const matchesStatus = statusValues.length === 0 || statusValues.includes(t.status);
           const matchesOwner = ownerValues.length === 0 || ownerValues.includes(t.owner);
           const matchesPhase = phaseValues.length === 0 || phaseValues.includes(t.phase);
           const matchesProject = projectValues.length === 0 || projectValues.includes(t.project);
-          return matchesTerm && matchesStatus && matchesOwner && matchesPhase && matchesProject;
+          const taskStart = parseDate(t.startDate);
+          const taskEnd = parseDate(t.endDate) || taskStart;
+          const hasTaskDate = Boolean(taskStart || taskEnd);
+          const matchesDate = !hasDateRange || (hasTaskDate && taskEnd >= rangeStart && taskStart <= rangeEnd);
+          return matchesTerm && matchesStatus && matchesOwner && matchesPhase && matchesProject && matchesDate;
         });
         renderTable(sortTasks(filtered));
         saveFilterState({
@@ -369,11 +404,18 @@
           owner: ownerValues,
           phase: phaseValues,
           project: projectValues,
+          dateStart: dateStartValue || '',
+          dateEnd: dateEndValue || '',
         });
       }
 
-      [search, statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('input', apply));
-      [statusSel, ownerSel, phaseSel, projectSel].forEach(el => el.addEventListener('change', apply));
+      [search, statusSel, ownerSel, phaseSel, projectSel, dateStartInput, dateEndInput].forEach(el => el.addEventListener('input', apply));
+      [statusSel, ownerSel, phaseSel, projectSel, dateStartInput, dateEndInput].forEach(el => el.addEventListener('change', apply));
+      dateClearBtn.addEventListener('click', () => {
+        dateStartInput.value = '';
+        dateEndInput.value = '';
+        apply();
+      });
       apply();
       return apply;
     }
