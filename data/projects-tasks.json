@@ -682,5 +682,17 @@
     "hours": 1,
     "notes": "",
     "project": "Gestor de proyectos"
+  },
+  {
+    "id": 64,
+    "title": "Estructura inicial de Astro con rutas e idiomas básicos",
+    "phase": "Pre-release",
+    "owner": "Rafael García",
+    "status": "En curso",
+    "startDate": "07/12/2025",
+    "endDate": null,
+    "hours": 3,
+    "notes": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librería i18n propia",
+    "project": "Ayuntamiento de Palomares del Campo"
   }
 ]
