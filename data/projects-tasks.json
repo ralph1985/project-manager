@@ -691,7 +691,7 @@
     "status": "En curso",
     "startDate": "07/12/2025",
     "endDate": null,
-    "hours": 3,
+    "hours": 4,
     "notes": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librería i18n propia",
     "project": "Ayuntamiento de Palomares del Campo"
   },
