@@ -694,5 +694,29 @@
     "hours": 3,
     "notes": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librería i18n propia",
     "project": "Ayuntamiento de Palomares del Campo"
+  },
+  {
+    "id": 65,
+    "title": "Revisión de AGENTS y actualización de directrices del repositorio",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "07/12/2025",
+    "endDate": "07/12/2025",
+    "hours": 0.1,
+    "notes": "Lectura completa de instrucciones y ajuste de AGENTS para reflejar scripts, dashboard y política de registro de tareas",
+    "project": "Gestor de proyectos"
+  },
+  {
+    "id": 66,
+    "title": "Retirada de script bootstrap y actualización de guías",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "07/12/2025",
+    "endDate": "07/12/2025",
+    "hours": 0.1,
+    "notes": "Eliminado npm run bootstrap (Lerna 8 lo elimina) y actualizado README/AGENTS con la nota y scripts vigentes",
+    "project": "Gestor de proyectos"
   }
 ]
