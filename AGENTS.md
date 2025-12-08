@@ -29,3 +29,6 @@
 ## Security & Configuration Tips
 - No subas `.env` ni credenciales; usa `.env.example` como referencia cuando aplique.
 - Revisa compatibilidad de Node (ver `.nvmrc` si existe en los paquetes) antes de publicar nuevas versiones.
+
+## Gestión de tareas y horas
+- Ante cualquier petición (sea la que sea), registra la actividad en `data/projects-tasks.json`, usándolo como fuente de verdad. Ajusta ahí las entradas (estado, fechas, horas, notas, proyecto) para llevar el control de lo que hacemos.
