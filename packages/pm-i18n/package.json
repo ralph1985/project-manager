@@ -1,0 +1,24 @@
+{
+  "name": "@project-manager/pm-i18n",
+  "version": "0.2.0",
+  "description": "Utilidades ligeras de i18n y rutas SEO-friendly para proyectos Astro",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test:unit": "vitest run",
+    "test": "npm run test:unit"
+  },
+  "keywords": [
+    "astro",
+    "i18n",
+    "routing",
+    "seo"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^4.0.0"
+  }
+}
