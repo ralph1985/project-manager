@@ -739,7 +739,7 @@
     "status": "En curso",
     "startDate": "16/12/2025",
     "endDate": null,
-    "hours": 6,
+    "hours": 8,
     "notes": "Next.js App Router con Tailwind, React Day Picker y drivers KV/Mock para votar días de eventos. Vistas separadas para votar, resultados y preferencias; identificador de cliente para voto único reemplazable. Ventanas de voto por evento con almacenamiento y validación dinámica.",
     "project": "kamikazes-events"
   }
