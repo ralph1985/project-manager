@@ -44,3 +44,4 @@
 
 - Ante cualquier petición (sea la que sea), registra la actividad en `data/projects-tasks.json`, usándolo como fuente de verdad. Ajusta ahí las entradas (estado, fechas, horas, notas, proyecto) para llevar el control de lo que hacemos.
 - Prefiere el comando `npm run task:add` para altas; si editas a mano, mantén el formato de fecha `dd/mm/aaaa`, incrementa el `id` y completa al menos `status`, `startDate`, `hours` y `project`.
+- Revisa regularmente los TODO/FIXME en el código (búsqueda de patrones `TODO`/`FIXME`) y recuerda planificar su resolución en próximas tareas.
