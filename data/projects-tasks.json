@@ -742,5 +742,17 @@
     "hours": 14,
     "notes": "Next.js App Router con Tailwind, React Day Picker y drivers KV/Mock para votar días de eventos. Vistas separadas para votar, resultados y preferencias; identificador de cliente para voto único reemplazable. Ventanas de voto por evento con almacenamiento y validación dinámica.",
     "project": "kamikazes-events"
+  },
+  {
+    "id": 69,
+    "title": "Proyecto de gestión del hogar",
+    "phase": "Pre-release",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "21/12/2025",
+    "endDate": null,
+    "hours": 5,
+    "notes": "",
+    "project": "home-manager"
   }
 ]
