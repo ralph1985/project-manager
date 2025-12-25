@@ -42,6 +42,8 @@
 
 ## Gestión de tareas y horas
 
-- Ante cualquier petición (sea la que sea), registra la actividad en `data/projects-tasks.json`, usándolo como fuente de verdad. Ajusta ahí las entradas (estado, fechas, horas, notas, proyecto) para llevar el control de lo que hacemos.
-- Prefiere el comando `npm run task:add` para altas; si editas a mano, mantén el formato de fecha `dd/mm/aaaa`, incrementa el `id` y completa al menos `status`, `startDate`, `hours` y `project`.
+- Al empezar, identifica el proyecto y usa ese nombre en `project`.
+- Busca si ya existe una tarea "En curso" para ese trabajo; si existe, registra horas y notas ahí.
+- Si no existe, crea una nueva con `npm run task:add` (o edita a mano manteniendo `dd/mm/aaaa`, id incremental y mínimos: `status`, `startDate`, `hours`, `project`).
+- Registra siempre la actividad en `data/projects-tasks.json` (estado, fechas, horas, notas, proyecto).
 - Revisa regularmente los TODO/FIXME en el código (búsqueda de patrones `TODO`/`FIXME`) y recuerda planificar su resolución en próximas tareas.
