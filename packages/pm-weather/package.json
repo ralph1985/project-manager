@@ -1,6 +1,6 @@
 {
   "name": "@project-manager/pm-weather",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Componente de tiempo reutilizable construido con LitElement",
   "type": "module",
   "main": "dist/index.js",

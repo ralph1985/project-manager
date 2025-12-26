@@ -1,6 +1,11 @@
-# Changelog
+# Change Log
 
-All notable changes to this package will be documented in this file.
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## 0.2.0 (2025-12-26)
+
+
+### Features
+
+* **pm-weather:** add reusable weather component with localization and caching ([e9ef4c4](https://github.com/ralph1985/project-manager/commit/e9ef4c4019df2738a9f4628be172d24811a8d3ba))
