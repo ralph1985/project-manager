@@ -18,6 +18,10 @@
 - `npm run task:add`: asistente CLI interactivo para dar de alta tareas en `data/projects-tasks.json`.
 - `npm run release:pm-modal`: script de publicación del paquete `pm-modal`.
 
+## Dependency Management
+
+- Al instalar dependencias, usa versiones fijas sin el prefijo `^` en `package.json`.
+
 ## Coding Style & Naming Conventions
 
 - Formato: Prettier y ESLint se ejecutan vía `npm run format` y `npm run lint` (reglas definidas por cada paquete; preferir 2 espacios, comillas simples en JS/TS).
