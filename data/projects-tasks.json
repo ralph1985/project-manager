@@ -754,5 +754,29 @@
     "hours": 24,
     "notes": "",
     "project": "home-manager"
+  },
+  {
+    "id": 70,
+    "title": "Añadir sección del tiempo",
+    "phase": "Pre-release",
+    "owner": "Rafael García",
+    "status": "En curso",
+    "startDate": "25/12/2025",
+    "endDate": "26/12/2025",
+    "hours": 8,
+    "notes": "(26/12/2025) Ajuste del registro del componente pm-weather para que se bundlee en producción (Vercel).",
+    "project": "Ayuntamiento de Belmontejo"
+  },
+  {
+    "id": 71,
+    "title": "Auditoría y actualización de dependencias npm",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "26/12/2025",
+    "endDate": "26/12/2025",
+    "hours": 1,
+    "notes": "Actualización de commitizen/sonarqube-scanner y overrides para node-forge, inquirer y tmp tras npm audit.",
+    "project": "Ayuntamiento de Belmontejo"
   }
 ]
