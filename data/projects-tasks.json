@@ -814,5 +814,29 @@
     "hours": 1,
     "notes": "(28/12/2025) Resumen de compra en ficha de vehículo y nueva ruta con detalle completo y opciones.",
     "project": "home-manager"
+  },
+  {
+    "id": 75,
+    "title": "Auditoría del CSS global y tokens",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "28/12/2025",
+    "endDate": "28/12/2025",
+    "hours": 1,
+    "notes": "(28/12/2025) Revisión de estilos globales, tokens, y uso de clases hm- en la app.\n(28/12/2025) Consolidacion de estilos de pildoras con componentes y guia de estilos con plan de tokens.",
+    "project": "home-manager"
+  },
+  {
+    "id": 76,
+    "title": "Modo oscuro MVP con toggle y tokens",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "28/12/2025",
+    "endDate": "28/12/2025",
+    "hours": 3,
+    "notes": "(28/12/2025) Toggle de tema con localStorage y preferencia del sistema, tokens dark y overrides minimos.\n(28/12/2025) Ajuste del ThemeToggle para evitar hydration mismatch (tema inicial en effect).\n(28/12/2025) Script inline en layout para aplicar tema antes de pintar y evitar flash.\n(28/12/2025) suppressHydrationWarning y data-theme por defecto para evitar warning en html.\n(28/12/2025) Migracion de fondos/bordes principales a tokens de superficie.\n(28/12/2025) Migracion de colores de texto a tokens semanticos.\n(28/12/2025) Añadidos tokens semanticos extra para textos de acento y estado.\n(28/12/2025) Aplicados tokens de estado en deltas, recordatorios y badges de factura.\n(28/12/2025) Ajuste del ThemeToggle para cumplir lint sin setState en effect.",
+    "project": "home-manager"
   }
 ]
