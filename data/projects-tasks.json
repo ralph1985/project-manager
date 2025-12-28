@@ -790,5 +790,29 @@
     "hours": 3,
     "notes": "Definición del alcance, lectura de documentación y estructura base (dominio, casos de uso, infraestructura, UI).\n(27/12/2025) P\u00e1gina interna para listar proyectos TickTick y enlazar desde panel de recordatorios.\n(27/12/2025) A\u00f1adido ticktickProjectId en Vehicle con migraci\u00f3n y snapshots antes/despu\u00e9s.\n(27/12/2025) Asociados IDs de proyectos TickTick a veh\u00edculos en la DB.\n(27/12/2025) Movidos los recordatorios TickTick al detalle de vehiculo y eliminado panel en Home.\n(27/12/2025) Regenerado Prisma Client para incluir ticktickProjectId en Vehicle.\n(27/12/2025) Eliminada la via de recordatorios Inbox y limpiado repositorio TickTick.\n(27/12/2025) A\u00f1adidas pesta\u00f1as para filtrar recordatorios por antig\u00fcedad en veh\u00edculos.\n(27/12/2025) Cacheado fetch TickTick con revalidate=900s.",
     "project": "home-manager"
+  },
+  {
+    "id": 73,
+    "title": "Registro de compra de vehículo (Rifter)",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "28/12/2025",
+    "endDate": "28/12/2025",
+    "hours": 0.25,
+    "notes": "(28/12/2025) Añadida tabla de compra de vehículo y registrada la compra final de la Rifter con opciones y totales.",
+    "project": "home-manager"
+  },
+  {
+    "id": 74,
+    "title": "Mostrar compra de vehículo en ficha y detalle",
+    "phase": "Mantenimiento",
+    "owner": "Rafael García",
+    "status": "Completada",
+    "startDate": "28/12/2025",
+    "endDate": "28/12/2025",
+    "hours": 1,
+    "notes": "(28/12/2025) Resumen de compra en ficha de vehículo y nueva ruta con detalle completo y opciones.",
+    "project": "home-manager"
   }
 ]
