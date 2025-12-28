@@ -838,5 +838,17 @@
     "hours": 3,
     "notes": "(28/12/2025) Toggle de tema con localStorage y preferencia del sistema, tokens dark y overrides minimos.\n(28/12/2025) Ajuste del ThemeToggle para evitar hydration mismatch (tema inicial en effect).\n(28/12/2025) Script inline en layout para aplicar tema antes de pintar y evitar flash.\n(28/12/2025) suppressHydrationWarning y data-theme por defecto para evitar warning en html.\n(28/12/2025) Migracion de fondos/bordes principales a tokens de superficie.\n(28/12/2025) Migracion de colores de texto a tokens semanticos.\n(28/12/2025) Añadidos tokens semanticos extra para textos de acento y estado.\n(28/12/2025) Aplicados tokens de estado en deltas, recordatorios y badges de factura.\n(28/12/2025) Ajuste del ThemeToggle para cumplir lint sin setState en effect.",
     "project": "home-manager"
+  },
+  {
+    "id": 77,
+    "title": "Integración de precios de gasolineras",
+    "phase": "Pre-release",
+    "owner": "Rafael García",
+    "status": "En curso",
+    "startDate": "28/12/2025",
+    "endDate": null,
+    "hours": 5,
+    "notes": "(28/12/2025) Caso de uso y API para consultar precios de gasolineras desde geoportalgasolineras.\n(28/12/2025) Añadidas cabeceras Accept/Origin/Referer para forzar respuesta JSON.\n(28/12/2025) Sección en vehículos con selector de código postal y caché de 1 día.\n(28/12/2025) Ajustes de hidratación: theme toggle sincroniza en effect y precios con formato determinista.\n(28/12/2025) Selector de combustible con ids de producto configurables.\n(28/12/2025) Cache con bucket diario reiniciado a las 08:00.\n(28/12/2025) Selector multi-combustible con checkboxes y listado agregado por precio.\n(28/12/2025) Clave única por estación+combustible para evitar duplicados en React.\n(28/12/2025) Normalización de código postal para aceptar sólo dígitos.\n(28/12/2025) Etiquetas por combustible con color convencional.\n(28/12/2025) Persistencia de selección de combustibles en localStorage.\n(28/12/2025) Corrección de bucle en useEffect por dependencias inestables.\n(28/12/2025) Auto-búsqueda tras refresco usando estado de hidratación.\n(28/12/2025) Evitada la carga inicial en SSR para usar sólo selección del cliente.\n(28/12/2025) Selección inicial sin combustibles por defecto.\n(28/12/2025) Búsqueda automática al marcar/desmarcar combustibles.\n(28/12/2025) Favoritos de códigos postales con nombre en modal y localStorage.\n(28/12/2025) Enlace de dirección a Google Maps en nueva pestaña.\n(28/12/2025) No buscar hasta tener 5 dígitos en el código postal.\n(28/12/2025) Catálogo de combustibles movido a infraestructura (API externa).\n(28/12/2025) Eliminación de favoritos desde la lista.",
+    "project": "home-manager"
   }
 ]
