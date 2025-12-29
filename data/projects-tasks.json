@@ -850,5 +850,17 @@
     "hours": 5,
     "notes": "(28/12/2025) Caso de uso y API para consultar precios de gasolineras desde geoportalgasolineras.\n(28/12/2025) Añadidas cabeceras Accept/Origin/Referer para forzar respuesta JSON.\n(28/12/2025) Sección en vehículos con selector de código postal y caché de 1 día.\n(28/12/2025) Ajustes de hidratación: theme toggle sincroniza en effect y precios con formato determinista.\n(28/12/2025) Selector de combustible con ids de producto configurables.\n(28/12/2025) Cache con bucket diario reiniciado a las 08:00.\n(28/12/2025) Selector multi-combustible con checkboxes y listado agregado por precio.\n(28/12/2025) Clave única por estación+combustible para evitar duplicados en React.\n(28/12/2025) Normalización de código postal para aceptar sólo dígitos.\n(28/12/2025) Etiquetas por combustible con color convencional.\n(28/12/2025) Persistencia de selección de combustibles en localStorage.\n(28/12/2025) Corrección de bucle en useEffect por dependencias inestables.\n(28/12/2025) Auto-búsqueda tras refresco usando estado de hidratación.\n(28/12/2025) Evitada la carga inicial en SSR para usar sólo selección del cliente.\n(28/12/2025) Selección inicial sin combustibles por defecto.\n(28/12/2025) Búsqueda automática al marcar/desmarcar combustibles.\n(28/12/2025) Favoritos de códigos postales con nombre en modal y localStorage.\n(28/12/2025) Enlace de dirección a Google Maps en nueva pestaña.\n(28/12/2025) No buscar hasta tener 5 dígitos en el código postal.\n(28/12/2025) Catálogo de combustibles movido a infraestructura (API externa).\n(28/12/2025) Eliminación de favoritos desde la lista.",
     "project": "home-manager"
+  },
+  {
+    "id": 78,
+    "title": "Inicializacion del proyecto gas-price-finder",
+    "phase": "Pre-release",
+    "owner": "Rafael García",
+    "status": "En curso",
+    "startDate": "28/12/2025",
+    "endDate": null,
+    "hours": 4,
+    "notes": "Creacion de la carpeta en projects y estructura inicial (README, package.json, gitignore y src).\n(28/12/2025) Scaffold Svelte + Vite en SPA en projects/gas-price-finder.\n(28/12/2025) AGENTS.md con guias de estructura, comandos y registro de tareas.\n(28/12/2025) AGENTS.md actualizado con Arquitectura Limpia (capas y dependencias).\n(28/12/2025) Carpetas base de Arquitectura Limpia creadas en src/.\n(28/12/2025) Tailwind CSS + DaisyUI configurados (configs y estilos base).\n(28/12/2025) Layout mobile-first inicial en App.svelte con DaisyUI.\n(28/12/2025) Ajuste de tema y contrastes de texto.\n(28/12/2025) Logica real de precios con Arquitectura Limpia y UI conectada.\n(28/12/2025) Proxy backend en Vercel con cache y cliente apuntando a /api.\n(28/12/2025) Cache ajustada para reinicio diario a las 08:00 en cliente y servidor.\n(28/12/2025) API refactor con capas de Arquitectura Limpia y repositorio servidor.\n(28/12/2025) Dev server local para /api y proxy en Vite para evitar 404.\n(28/12/2025) Persistencia del ultimo codigo postal en localStorage.\n(28/12/2025) Auto-busqueda al refrescar si hay codigo guardado.\n(28/12/2025) Skeletons de carga para resultados.\n(28/12/2025) Persistencia de seleccion de combustibles corregida.\n(28/12/2025) Favoritos de codigo postal con guardado, listado y eliminacion.\n(28/12/2025) Boton guardar movido y favoritos guardan codigo + combustibles.\n(28/12/2025) Persistencia de favoritos corregida al refrescar.\n(28/12/2025) Selector de combustible cambiado a radio (una opcion).",
+    "project": "gas-price-finder"
   }
 ]
