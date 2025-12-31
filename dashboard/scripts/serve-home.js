@@ -60,6 +60,18 @@ function setCached(key, value) {
   tickTickCache.set(key, { value, expiresAt: Date.now() + tickTickCacheTtlMs });
 }
 
+function normalizeAccessToken(value) {
+  if (!value) return '';
+  let token = value.trim();
+  if (
+    (token.startsWith('"') && token.endsWith('"')) ||
+    (token.startsWith("'") && token.endsWith("'"))
+  ) {
+    token = token.slice(1, -1).trim();
+  }
+  return token;
+}
+
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, {
     'Content-Type': 'application/json; charset=utf-8',
@@ -104,7 +116,7 @@ function fetchTickTickJson(pathname, accessToken) {
 }
 
 async function handleTickTickApi(req, res, url) {
-  const accessToken = process.env.TICKTICK_ACCESS_TOKEN;
+  const accessToken = normalizeAccessToken(process.env.TICKTICK_ACCESS_TOKEN);
   const parts = url.pathname.split('/').filter(Boolean);
   const refresh = url.searchParams.get('refresh') === '1';
 
@@ -176,6 +188,7 @@ async function handleTickTickApi(req, res, url) {
           id: task.id,
           title: task.title,
           dueDate: task.dueDate || null,
+          columnId: task.columnId || null,
           projectId: task.projectId || projectId,
           projectName: projectData.project?.name || null,
         }));
