@@ -3,36 +3,42 @@
     "id": "ayuntamiento-de-belmontejo",
     "name": "Ayuntamiento de Belmontejo",
     "status": "active",
-    "ticktickProjectId": null
+    "ticktickProjectId": "68f4a63ddfc6de000000024d",
+    "ticktickColumnId": "6954f948340c918464353018"
   },
   {
     "id": "ayuntamiento-de-palomares-del-campo",
     "name": "Ayuntamiento de Palomares del Campo",
     "status": "active",
-    "ticktickProjectId": null
+    "ticktickProjectId": "68f4a63ddfc6de000000024d",
+    "ticktickColumnId": "6954fa124cf6118464353098"
   },
   {
     "id": "gas-price-finder",
     "name": "gas-price-finder",
     "status": "active",
-    "ticktickProjectId": null
+    "ticktickProjectId": "68f4a63ddfc6de000000024d",
+    "ticktickColumnId": "6954fa243ef791846435309a"
   },
   {
     "id": "gestor-de-proyectos",
     "name": "Gestor de proyectos",
     "status": "active",
-    "ticktickProjectId": null
+    "ticktickProjectId": "68f4a63ddfc6de000000024d",
+    "ticktickColumnId": "68f4a64edfc6de0000000261"
   },
   {
     "id": "home-manager",
     "name": "home-manager",
     "status": "active",
-    "ticktickProjectId": null
+    "ticktickProjectId": "68f4a63ddfc6de000000024d",
+    "ticktickColumnId": "6954fbf098491184643581c7"
   },
   {
     "id": "kamikazes-events",
     "name": "kamikazes-events",
     "status": "active",
-    "ticktickProjectId": null
+    "ticktickProjectId": "68f4a63ddfc6de000000024d",
+    "ticktickColumnId": "6941caf76dc751643c5c4d38"
   }
 ]

@@ -150,6 +150,7 @@ async function init() {
   await initTickTick(elements, {
     storageKey: ticktickStorageKey,
     preferredProjectId: project?.ticktickProjectId || null,
+    columnId: project?.ticktickColumnId || null,
   });
 
   const todos = await loadProjectTodos(currentProjectId);

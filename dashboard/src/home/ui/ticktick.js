@@ -7,8 +7,12 @@ import { loadTickTickTasks } from '../usecases/loadTicktickTasks.js';
 export async function initTickTick(elements, options = {}) {
   const storageKey = options.storageKey || TICKTICK_KEY;
   const preferredProjectId = options.preferredProjectId || null;
+  const columnId = options.columnId || null;
   renderTickTickStatus(elements, 'Cargando', 'status-Info');
   renderTickTickMessage(elements, '');
+  if (elements.ticktickColumnId) {
+    elements.ticktickColumnId.textContent = columnId || '-';
+  }
   if (elements.ticktickProjectSelect) {
     elements.ticktickProjectSelect.innerHTML = '';
     elements.ticktickProjectSelect.disabled = true;
@@ -47,11 +51,11 @@ export async function initTickTick(elements, options = {}) {
       DEFAULT_TICKTICK_PROJECT_ID ||
       projects[0].id;
 
-    await handleTickTickSelection(elements, defaultProjectId);
+    await handleTickTickSelection(elements, defaultProjectId, { columnId });
 
     if (elements.ticktickRefresh) {
       elements.ticktickRefresh.addEventListener('click', () => {
-        handleTickTickSelection(elements, defaultProjectId, { refresh: true });
+        handleTickTickSelection(elements, defaultProjectId, { refresh: true, columnId });
       });
     }
   } catch {
@@ -87,7 +91,7 @@ async function handleTickTickSelection(elements, projectId, options = {}) {
       renderTickTickTasks(elements, []);
       return;
     }
-    const tasks = normalizeTickTickTasks(data.tasks || []);
+    const tasks = normalizeTickTickTasks(data.tasks || [], options.columnId);
     renderTickTickStatus(elements, 'Activo', 'status-En');
     renderTickTickTasks(elements, tasks);
   } catch {
@@ -96,17 +100,22 @@ async function handleTickTickSelection(elements, projectId, options = {}) {
   }
 }
 
-function normalizeTickTickTasks(tasks) {
+function normalizeTickTickTasks(tasks, columnId) {
   const now = new Date();
   const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const endOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
 
   const overdue = [];
   const today = [];
+  const noDate = [];
 
   tasks.forEach((task) => {
+    if (columnId && task.columnId !== columnId) return;
     const due = task.dueDate ? new Date(task.dueDate) : null;
-    if (!due || Number.isNaN(due.valueOf())) return;
+    if (!due || Number.isNaN(due.valueOf())) {
+      noDate.push({ ...task, ticktickStatus: 'nodate' });
+      return;
+    }
     if (due < startOfToday) {
       overdue.push({ ...task, ticktickStatus: 'overdue' });
       return;
@@ -118,5 +127,5 @@ function normalizeTickTickTasks(tasks) {
 
   overdue.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
   today.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
-  return [...overdue, ...today];
+  return [...overdue, ...today, ...noDate];
 }
