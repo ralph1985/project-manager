@@ -6,6 +6,7 @@ import { loadTickTickTasks } from '../usecases/loadTicktickTasks.js';
 
 export async function initTickTick(elements, options = {}) {
   const storageKey = options.storageKey || TICKTICK_KEY;
+  const preferredProjectId = options.preferredProjectId || null;
   renderTickTickStatus(elements, 'Cargando', 'status-Info');
   renderTickTickMessage(elements, '');
   elements.ticktickProjectSelect.innerHTML = '';
@@ -40,7 +41,9 @@ export async function initTickTick(elements, options = {}) {
     renderTickTickProjects(elements, projects);
     const savedProjectId = loadValue(storageKey);
     const defaultProjectId =
-      projects.find((project) => project.id === savedProjectId)?.id || projects[0].id;
+      projects.find((project) => project.id === savedProjectId)?.id ||
+      projects.find((project) => project.id === preferredProjectId)?.id ||
+      projects[0].id;
 
     elements.ticktickProjectSelect.value = defaultProjectId;
     elements.ticktickProjectSelect.disabled = false;

@@ -20,4 +20,11 @@ Monorepo gestionado con Lerna y npm workspaces para empaquetar componentes (LitE
 - Hay un dashboard estático en `home/` que lee `data/projects-tasks.json`; ejecútalo con `npm run home` para ver el seguimiento de tareas/horas. Los filtros admiten selección múltiple.
 - El panel `TickTick` del dashboard usa `TICKTICK_ACCESS_TOKEN` (scope `tasks:read`) y carga datos en tiempo real desde la API.
 - El resumen vive en `home/index.html` y el detalle por proyecto en `home/project.html`.
-- Los to-dos por proyecto se leen desde `data/project-todos.json` (array con `project`, `title`, `dueDate` opcional).
+- Los to-dos por proyecto se leen desde `data/project-todos.json` (array con `projectId`, `title`, `dueDate` opcional).
+- Datos normalizados:
+  - `data/projects.json` (proyectos)
+  - `data/people.json` (responsables)
+  - `data/projects-tasks.json` (tareas con `projectId`/`ownerId`)
+  - `data/task-entries.json` (horas por tarea)
+  - `data/task-notes.json` (notas por tarea)
+- Migración: `node scripts/migrate-tasks.js` genera los nuevos JSONs y deja backup en `data/projects-tasks.legacy.json`.

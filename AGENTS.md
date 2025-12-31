@@ -48,6 +48,7 @@
 
 - Al empezar, identifica el proyecto y usa ese nombre en `project`.
 - Busca si ya existe una tarea "En curso" para ese trabajo; si existe, registra horas y notas ahí.
-- Si no existe, crea una nueva con `npm run task:add` (o edita a mano manteniendo `dd/mm/aaaa`, id incremental y mínimos: `status`, `startDate`, `hours`, `project`).
-- Registra siempre la actividad en `data/projects-tasks.json` (estado, fechas, horas, notas, proyecto).
+- Si no existe, crea una nueva con `npm run task:add` (o edita a mano manteniendo `dd/mm/aaaa` y ids incrementales).
+- Las tareas viven en `data/projects-tasks.json` (campos clave: `projectId`, `ownerId`, `status`, `startDate`).
+- Las horas se registran en `data/task-entries.json` y las notas en `data/task-notes.json`.
 - Revisa regularmente los TODO/FIXME en el código (búsqueda de patrones `TODO`/`FIXME`) y recuerda planificar su resolución en próximas tareas.

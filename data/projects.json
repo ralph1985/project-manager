@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ayuntamiento-de-belmontejo",
+    "name": "Ayuntamiento de Belmontejo",
+    "status": "active",
+    "ticktickProjectId": null
+  },
+  {
+    "id": "ayuntamiento-de-palomares-del-campo",
+    "name": "Ayuntamiento de Palomares del Campo",
+    "status": "active",
+    "ticktickProjectId": null
+  },
+  {
+    "id": "gas-price-finder",
+    "name": "gas-price-finder",
+    "status": "active",
+    "ticktickProjectId": null
+  },
+  {
+    "id": "gestor-de-proyectos",
+    "name": "Gestor de proyectos",
+    "status": "active",
+    "ticktickProjectId": null
+  },
+  {
+    "id": "home-manager",
+    "name": "home-manager",
+    "status": "active",
+    "ticktickProjectId": null
+  },
+  {
+    "id": "kamikazes-events",
+    "name": "kamikazes-events",
+    "status": "active",
+    "ticktickProjectId": null
+  }
+]

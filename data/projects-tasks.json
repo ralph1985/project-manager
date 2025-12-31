@@ -2,865 +2,751 @@
   {
     "id": 7,
     "title": "Organización del CSS que venía en el proyecto demo y estaba hecho un cristo..., y la IA lo estaba liando aún más",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Cancelada",
+    "ownerId": "rafael-garcia",
     "startDate": "25/10/2025",
-    "endDate": null,
-    "hours": 16,
-    "notes": "(25 de octubre de 2025) Hay que hacerlo con cabeza... Claude estaba iterando en modo creativo y la estaba liando parda.\n(31 de octubre de 2025) Estoy iterando con ayuda de ChatGPT y Claude y... no sé yo si lo voy a conseguir migrar, se monta unos cirios gordos.\n(2 de noviembre de 2025) Definitivamente es un cristo la migración y habría que empezar de cero la maquetación... se queda como está.",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 8,
     "title": "Búsqueda de proyecto CMS con administración sencilla (Decap)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "19/10/2025",
-    "endDate": "21/10/2025",
-    "hours": 4,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "21/10/2025"
   },
   {
     "id": 9,
     "title": "Configuración y despliegue en Vercel",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "21/10/2025",
-    "endDate": "22/10/2025",
-    "hours": 3,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "22/10/2025"
   },
   {
     "id": 10,
     "title": "Herramientas de análisis estátido de código (ESLint y Prettier)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "26/10/2025",
-    "endDate": "26/10/2025",
-    "hours": 3,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/10/2025"
   },
   {
     "id": 11,
     "title": "Repaso y optimización general de la web, la IA se pone en modo \"creativo\" y va un poco desordenada",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 12,
     "title": "Añadir Bandos del pueblo",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "23/10/2025",
-    "endDate": "23/10/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "23/10/2025"
   },
   {
     "id": 13,
     "title": "Añadir un buscador",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 14,
     "title": "Añadir Google Analytics para conocer el número de visitas",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "25/10/2025",
-    "endDate": "25/10/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "25/10/2025"
   },
   {
     "id": 15,
     "title": "Añadir gestión y aprobación de cookies (importante si tenemos Google Analytics)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "25/10/2025",
-    "endDate": "25/10/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "25/10/2025"
   },
   {
     "id": 16,
     "title": "Configuración de los favicons",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "26/10/2025",
-    "endDate": "26/10/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/10/2025"
   },
   {
     "id": 17,
     "title": "Añadir sección de redes sociales (Instagram y Facebook)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "26/10/2025",
-    "endDate": "26/10/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/10/2025"
   },
   {
     "id": 18,
     "title": "Administración desde Decap de los links de Servicios del Footer",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "26/10/2025",
-    "endDate": "26/10/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/10/2025"
   },
   {
     "id": 19,
     "title": "Sección de testimonios",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "23/10/2025",
-    "endDate": "23/10/2025",
-    "hours": 0.5,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "23/10/2025"
   },
   {
     "id": 20,
     "title": "Añadir mapa Google Maps",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "25/10/2025",
-    "endDate": "25/10/2025",
-    "hours": 0.5,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "25/10/2025"
   },
   {
     "id": 21,
     "title": "Configurar páginas de error 404",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "26/10/2025",
-    "endDate": "26/10/2025",
-    "hours": 0.5,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/10/2025"
   },
   {
     "id": 22,
     "title": "Automatización de obtención de Bandos del pueblo",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Bloqueada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "De momento lo vamos a dejar manual, como yo (Rafa) estoy suscrito al bando de Belmontejo, cuando pongan uno nuevo lanzo el script y subo el cambio.",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 23,
     "title": "Que los \"testimonios\" salgan de las reseñas de Google Maps",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Bloqueada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 1,
-    "notes": "No hay reseñas en Google Maps, habrá que buscar otra cosa o eliminar la sección",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 24,
     "title": "Añadir feed de instagram (no será automático)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Bloqueada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "Es de pago y todavía no sé si Dani lo quiere",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 25,
     "title": "Tests unitarios/integración",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 26,
     "title": "Tests aceptación",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 8,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 27,
     "title": "Tests accesibilidad",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "No iniciada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 28,
     "title": "Tests de regresión visual",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 4,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 29,
     "title": "Monitorización de errores JavaScript con Bugsnag/Sentry",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "6/11/2025",
-    "endDate": "6/11/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "6/11/2025"
   },
   {
     "id": 30,
     "title": "Revisión de los modos claro y oscuro, ambos tienen problemas",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 31,
     "title": "¿Alguna plataforma de comentarios? (Disqus)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "No iniciada",
+    "ownerId": "rafael-garcia",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 32,
     "title": "Añadiendo análisis de código con Sonar",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "5/11/2025",
-    "endDate": null,
-    "hours": 4,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 33,
     "title": "Mapa de gestión municipal como el de la Almarchahttps://iotax.es/?token=JlWpKKSIXSOFBa7NiCoV3WbcY0arW4",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Dani",
     "status": "No iniciada",
+    "ownerId": "dani",
     "startDate": null,
-    "endDate": null,
-    "hours": 0.5,
-    "notes": "Hay que solicitar una \"demo\" y desconozco si tiene coste crearlo.",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 34,
     "title": "Inserción vídeo del drone",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "3/11/2025",
-    "endDate": "3/11/2025",
-    "hours": 2,
-    "notes": "Después de investigar y ver varias alternativas, me quedo con Vimeo y una cuenta del Ayuntamiento de Belmontejo (con mi GMail)",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "3/11/2025"
   },
   {
     "id": 35,
     "title": "Configuración de tests e2e visuales de regresión (por si rompo algo sin querer)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "4/11/2025",
-    "endDate": "4/11/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "4/11/2025"
   },
   {
     "id": 36,
     "title": "Componetización de los botones para unificación",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "5/11/2025",
-    "endDate": "5/11/2025",
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "5/11/2025"
   },
   {
     "id": 37,
     "title": "Creación de tests e2e de navegación para comprobar que no se rompe ningún link interno con cambios que se vayan haciendo",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "5/11/2025",
-    "endDate": null,
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 38,
     "title": "Mejora de tests e2e visuales para incluir la vista de móvil",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "5/11/2025",
-    "endDate": "5/11/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "5/11/2025"
   },
   {
     "id": 39,
     "title": "Proporcionar fotos del pueblo",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Dani",
     "status": "No iniciada",
+    "ownerId": "dani",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 40,
     "title": "Analizar el estado de la web y ver qué fotos y textos quieren cambiar",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Dani",
     "status": "No iniciada",
+    "ownerId": "dani",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 41,
     "title": "Cambiar el correo electrónico que está puesto actualmente (belmontejo@dipucuenca.es)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Dani",
     "status": "No iniciada",
+    "ownerId": "dani",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 42,
     "title": "Cambiar el teléfono que está puesto actualmente (969296279)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Dani",
     "status": "No iniciada",
+    "ownerId": "dani",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 43,
     "title": "Incluir detalles en el aviso legal (está en una rama a parte)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Dani",
     "status": "Bloqueada",
+    "ownerId": "dani",
     "startDate": null,
-    "endDate": null,
-    "hours": null,
-    "notes": "Bloqueado a la espera que Dani mueva ficha",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 44,
     "title": "Arreglando vulnerabilidades NPM",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "5/11/2025",
-    "endDate": "5/11/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "5/11/2025"
   },
   {
     "id": 45,
     "title": "Componetización de más elementos que se pueden aislar",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "6/11/2025",
-    "endDate": null,
-    "hours": 4,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 46,
     "title": "Abrir en una modal las imágenes de Proyectos",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "9/11/2025",
-    "endDate": "9/11/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "9/11/2025"
   },
   {
     "id": 47,
     "title": "Migración a Git LFS las imágenes de los tests visuales para aligerar el tamaño del repositorio que estaba creciendo mucho (luego valoraremos usar Percy)",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "9/11/2025",
-    "endDate": null,
-    "hours": 4,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 48,
     "title": "Implementación de las View Transitions",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Cancelada",
+    "ownerId": "rafael-garcia",
     "startDate": "16/11/2025",
-    "endDate": null,
-    "hours": 2,
-    "notes": "No se terminan de ver bien",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": null
   },
   {
     "id": 49,
     "title": "Configuración de los datos de contacto y redes sociales desde Decap",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "15/11/2025",
-    "endDate": "16/11/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "16/11/2025"
   },
   {
     "id": 50,
     "title": "Unificación de ventanas modales en un único componente",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "15/11/2025",
-    "endDate": "16/11/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "16/11/2025"
   },
   {
     "id": 51,
     "title": "Configuración de la página de contacto para enviar emails con Resend",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "16/11/2025",
-    "endDate": "16/11/2025",
-    "hours": 6,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "16/11/2025"
   },
   {
     "id": 52,
     "title": "Mejora de los tests e2e visuales con \"fixtures\" para los bandos y las noticias",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "19/11/2025",
-    "endDate": "19/11/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "19/11/2025"
   },
   {
     "id": 53,
     "title": "Automatización de un workflow en Github para que se pueda abrir una PR automáticamente, sólo pulsando un botón, con los nuevos bandos que se hayan hecho",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "21/11/2025",
-    "endDate": "21/11/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "21/11/2025"
   },
   {
     "id": 54,
     "title": "Revisión y actualización de paquetes sugeridos por Dependabot",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "22/11/2025",
-    "endDate": "22/11/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "22/11/2025"
   },
   {
     "id": 55,
     "title": "Mejora en el buscador para mover la lógica de búsqueda del servidor (Vercel) al cliente (navegador) y así no usar la CPU del servidor que sólo tenemos 4 horas al mes",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "22/11/2025",
-    "endDate": "22/11/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "22/11/2025"
   },
   {
     "id": 56,
     "title": "Arreglo de algunas incidencias de Sonar",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "22/11/2025",
-    "endDate": "22/11/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "22/11/2025"
   },
   {
     "id": 57,
     "title": "Añadido Github Workflow para pasar los tests e2e \"críticos\" (de flujo) cada vez que se haga push en main",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "22/11/2025",
-    "endDate": "23/11/2025",
-    "hours": 3,
-    "notes": "",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "23/11/2025"
   },
   {
     "id": 58,
     "title": "Creación del repositorio monorepo gestor de proyectos",
+    "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "6/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 59,
     "title": "Panel de gestión de horas",
+    "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "06/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 2,
-    "notes": "",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 60,
     "title": "Crear repositorio base y layout principal",
+    "projectId": "ayuntamiento-de-palomares-del-campo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 1,
-    "notes": "Repositorio inicial y layout principal para arrancar la web",
-    "project": "Ayuntamiento de Palomares del Campo"
+    "endDate": "07/12/2025"
   },
   {
     "id": 61,
     "title": "Creación del primer componente LitElement: modal",
+    "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 1,
-    "notes": "Modal inicial en el gestor de proyectos; desarrollo en curso",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 62,
     "title": "Automatización de publicación de versiones",
+    "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 2,
-    "notes": "Sesión de 2 horas trabajando en la automatización de publicación de versiones del gestor de proyectos",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 63,
     "title": "Gestión de tareas del proyecto vía CLI",
+    "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 1,
-    "notes": "",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 64,
     "title": "Estructura inicial de Astro con rutas e idiomas básicos",
+    "projectId": "ayuntamiento-de-palomares-del-campo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": null,
-    "hours": 4,
-    "notes": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librería i18n propia",
-    "project": "Ayuntamiento de Palomares del Campo"
+    "endDate": null
   },
   {
     "id": 65,
     "title": "Revisión de AGENTS y actualización de directrices del repositorio",
+    "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 0.1,
-    "notes": "Lectura completa de instrucciones y ajuste de AGENTS para reflejar scripts, dashboard y política de registro de tareas",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 66,
     "title": "Retirada de script bootstrap y actualización de guías",
+    "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "07/12/2025",
-    "endDate": "07/12/2025",
-    "hours": 0.1,
-    "notes": "Eliminado npm run bootstrap (Lerna 8 lo elimina) y actualizado README/AGENTS con la nota y scripts vigentes",
-    "project": "Gestor de proyectos"
+    "endDate": "07/12/2025"
   },
   {
     "id": 67,
     "title": "Filtro de fechas en dashboard (rango, limpiar y UX)",
+    "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "08/12/2025",
-    "endDate": "08/12/2025",
-    "hours": 0.1,
-    "notes": "Selector de fecha inicial, rango desde/hasta con filtros por intersección, inputs apilados, fechas opcionales y botón para limpiar el rango.",
-    "project": "Gestor de proyectos"
+    "endDate": "08/12/2025"
   },
   {
     "id": 68,
     "title": "Mini webapp de votación kamikazes-events",
+    "projectId": "kamikazes-events",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "16/12/2025",
-    "endDate": null,
-    "hours": 14,
-    "notes": "Next.js App Router con Tailwind, React Day Picker y drivers KV/Mock para votar días de eventos. Vistas separadas para votar, resultados y preferencias; identificador de cliente para voto único reemplazable. Ventanas de voto por evento con almacenamiento y validación dinámica.",
-    "project": "kamikazes-events"
+    "endDate": null
   },
   {
     "id": 69,
     "title": "Proyecto de gestión del hogar",
+    "projectId": "home-manager",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "21/12/2025",
-    "endDate": null,
-    "hours": 24,
-    "notes": "",
-    "project": "home-manager"
+    "endDate": null
   },
   {
     "id": 70,
     "title": "Añadir sección del tiempo",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "25/12/2025",
-    "endDate": "26/12/2025",
-    "hours": 8,
-    "notes": "(26/12/2025) Ajuste del registro del componente pm-weather para que se bundlee en producción (Vercel).",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/12/2025"
   },
   {
     "id": 71,
     "title": "Auditoría y actualización de dependencias npm",
+    "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "26/12/2025",
-    "endDate": "26/12/2025",
-    "hours": 1,
-    "notes": "Actualización de commitizen/sonarqube-scanner y overrides para node-forge, inquirer y tmp tras npm audit.",
-    "project": "Ayuntamiento de Belmontejo"
+    "endDate": "26/12/2025"
   },
   {
     "id": 72,
     "title": "Integración TickTick",
+    "projectId": "home-manager",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "27/12/2025",
-    "endDate": null,
-    "hours": 3.5,
-    "notes": "Definición del alcance, lectura de documentación y estructura base (dominio, casos de uso, infraestructura, UI).\n(27/12/2025) P\u00e1gina interna para listar proyectos TickTick y enlazar desde panel de recordatorios.\n(27/12/2025) A\u00f1adido ticktickProjectId en Vehicle con migraci\u00f3n y snapshots antes/despu\u00e9s.\n(27/12/2025) Asociados IDs de proyectos TickTick a veh\u00edculos en la DB.\n(27/12/2025) Movidos los recordatorios TickTick al detalle de vehiculo y eliminado panel en Home.\n(27/12/2025) Regenerado Prisma Client para incluir ticktickProjectId en Vehicle.\n(27/12/2025) Eliminada la via de recordatorios Inbox y limpiado repositorio TickTick.\n(27/12/2025) A\u00f1adidas pesta\u00f1as para filtrar recordatorios por antig\u00fcedad en veh\u00edculos.\n(27/12/2025) Cacheado fetch TickTick con revalidate=900s.\n(28/12/2025) Unificadas pesta\u00f1as de recordatorios recientes y hoy en veh\u00edculos, con resaltado de vencidas.\n(28/12/2025) Ajustado el copy para vencidas con etiqueta \"vencida\" en lugar de \"vence\".",
-    "project": "home-manager"
+    "endDate": null
   },
   {
     "id": 73,
     "title": "Registro de compra de vehículo (Rifter)",
+    "projectId": "home-manager",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "28/12/2025",
-    "endDate": "28/12/2025",
-    "hours": 0.25,
-    "notes": "(28/12/2025) Añadida tabla de compra de vehículo y registrada la compra final de la Rifter con opciones y totales.",
-    "project": "home-manager"
+    "endDate": "28/12/2025"
   },
   {
     "id": 74,
     "title": "Mostrar compra de vehículo en ficha y detalle",
+    "projectId": "home-manager",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "28/12/2025",
-    "endDate": "28/12/2025",
-    "hours": 1,
-    "notes": "(28/12/2025) Resumen de compra en ficha de vehículo y nueva ruta con detalle completo y opciones.",
-    "project": "home-manager"
+    "endDate": "28/12/2025"
   },
   {
     "id": 75,
     "title": "Auditoría del CSS global y tokens",
+    "projectId": "home-manager",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "28/12/2025",
-    "endDate": "28/12/2025",
-    "hours": 1,
-    "notes": "(28/12/2025) Revisión de estilos globales, tokens, y uso de clases hm- en la app.\n(28/12/2025) Consolidacion de estilos de pildoras con componentes y guia de estilos con plan de tokens.",
-    "project": "home-manager"
+    "endDate": "28/12/2025"
   },
   {
     "id": 76,
     "title": "Modo oscuro MVP con toggle y tokens",
+    "projectId": "home-manager",
     "phase": "Mantenimiento",
-    "owner": "Rafael García",
     "status": "Completada",
+    "ownerId": "rafael-garcia",
     "startDate": "28/12/2025",
-    "endDate": "28/12/2025",
-    "hours": 3,
-    "notes": "(28/12/2025) Toggle de tema con localStorage y preferencia del sistema, tokens dark y overrides minimos.\n(28/12/2025) Ajuste del ThemeToggle para evitar hydration mismatch (tema inicial en effect).\n(28/12/2025) Script inline en layout para aplicar tema antes de pintar y evitar flash.\n(28/12/2025) suppressHydrationWarning y data-theme por defecto para evitar warning en html.\n(28/12/2025) Migracion de fondos/bordes principales a tokens de superficie.\n(28/12/2025) Migracion de colores de texto a tokens semanticos.\n(28/12/2025) Añadidos tokens semanticos extra para textos de acento y estado.\n(28/12/2025) Aplicados tokens de estado en deltas, recordatorios y badges de factura.\n(28/12/2025) Ajuste del ThemeToggle para cumplir lint sin setState en effect.",
-    "project": "home-manager"
+    "endDate": "28/12/2025"
   },
   {
     "id": 77,
     "title": "Integración de precios de gasolineras",
+    "projectId": "home-manager",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "28/12/2025",
-    "endDate": null,
-    "hours": 5,
-    "notes": "(28/12/2025) Caso de uso y API para consultar precios de gasolineras desde geoportalgasolineras.\n(28/12/2025) Añadidas cabeceras Accept/Origin/Referer para forzar respuesta JSON.\n(28/12/2025) Sección en vehículos con selector de código postal y caché de 1 día.\n(28/12/2025) Ajustes de hidratación: theme toggle sincroniza en effect y precios con formato determinista.\n(28/12/2025) Selector de combustible con ids de producto configurables.\n(28/12/2025) Cache con bucket diario reiniciado a las 08:00.\n(28/12/2025) Selector multi-combustible con checkboxes y listado agregado por precio.\n(28/12/2025) Clave única por estación+combustible para evitar duplicados en React.\n(28/12/2025) Normalización de código postal para aceptar sólo dígitos.\n(28/12/2025) Etiquetas por combustible con color convencional.\n(28/12/2025) Persistencia de selección de combustibles en localStorage.\n(28/12/2025) Corrección de bucle en useEffect por dependencias inestables.\n(28/12/2025) Auto-búsqueda tras refresco usando estado de hidratación.\n(28/12/2025) Evitada la carga inicial en SSR para usar sólo selección del cliente.\n(28/12/2025) Selección inicial sin combustibles por defecto.\n(28/12/2025) Búsqueda automática al marcar/desmarcar combustibles.\n(28/12/2025) Favoritos de códigos postales con nombre en modal y localStorage.\n(28/12/2025) Enlace de dirección a Google Maps en nueva pestaña.\n(28/12/2025) No buscar hasta tener 5 dígitos en el código postal.\n(28/12/2025) Catálogo de combustibles movido a infraestructura (API externa).\n(28/12/2025) Eliminación de favoritos desde la lista.",
-    "project": "home-manager"
+    "endDate": null
   },
   {
     "id": 78,
     "title": "Inicializacion del proyecto gas-price-finder",
+    "projectId": "gas-price-finder",
     "phase": "Pre-release",
-    "owner": "Rafael García",
     "status": "En curso",
+    "ownerId": "rafael-garcia",
     "startDate": "28/12/2025",
-    "endDate": null,
-    "hours": 10.0,
-    "notes": "Creacion de la carpeta en projects y estructura inicial (README, package.json, gitignore y src).\n(28/12/2025) Scaffold Svelte + Vite en SPA en projects/gas-price-finder.\n(28/12/2025) AGENTS.md con guias de estructura, comandos y registro de tareas.\n(28/12/2025) AGENTS.md actualizado con Arquitectura Limpia (capas y dependencias).\n(28/12/2025) Carpetas base de Arquitectura Limpia creadas en src/.\n(28/12/2025) Tailwind CSS + DaisyUI configurados (configs y estilos base).\n(28/12/2025) Layout mobile-first inicial en App.svelte con DaisyUI.\n(28/12/2025) Ajuste de tema y contrastes de texto.\n(28/12/2025) Logica real de precios con Arquitectura Limpia y UI conectada.\n(28/12/2025) Proxy backend en Vercel con cache y cliente apuntando a /api.\n(28/12/2025) Cache ajustada para reinicio diario a las 08:00 en cliente y servidor.\n(28/12/2025) API refactor con capas de Arquitectura Limpia y repositorio servidor.\n(28/12/2025) Dev server local para /api y proxy en Vite para evitar 404.\n(28/12/2025) Persistencia del ultimo codigo postal en localStorage.\n(28/12/2025) Auto-busqueda al refrescar si hay codigo guardado.\n(28/12/2025) Skeletons de carga para resultados.\n(28/12/2025) Persistencia de seleccion de combustibles corregida.\n(28/12/2025) Favoritos de codigo postal con guardado, listado y eliminacion.\n(28/12/2025) Boton guardar movido y favoritos guardan codigo + combustibles.\n(28/12/2025) Persistencia de favoritos corregida al refrescar.\n(28/12/2025) Selector de combustible cambiado a radio (una opcion).\n(28/12/2025) Refactor de AppShell con store y utils para alinear UI con Arquitectura Limpia.\n(28/12/2025) Favicons e iconos Android/iOS generados y enlazados.\n(28/12/2025) Favicon.ico generado y enlazado.\n(28/12/2025) Manifest y service worker para instalacion en Chrome/Safari.\n(28/12/2025) Logo aplicado en el header.\n(28/12/2025) AGENTS.md actualizado para commits por cambios distintos.\n(28/12/2025) Logs de API y upstream para diagnostico en Vercel.\n(28/12/2025) Headers y timeout para upstream + logging de causa.\n(28/12/2025) API migrada a Edge runtime para evitar TLS issues.\n(29/12/2025) CA bundle FNMT para Node y rollback a runtime Node.\n(29/12/2025) CA raiz FNMT añadida al bundle.\n(29/12/2025) Logs reducidos a errores.\n(29/12/2025) README actualizado con documentacion del proyecto.\n(29/12/2025) Google Analytics inicializado en cliente via VITE_GOOGLE_ANALYTICS_ID.\n(29/12/2025) Evento GA de busqueda con prefijo postal y combustible.\n(29/12/2025) Evento GA incluye etiqueta de combustible.\n(29/12/2025) Evento GA de favorito guardado.\n(29/12/2025) Banner de cookies para consentimiento GA.\n(29/12/2025) Politica de cookies publicada.\n(29/12/2025) Ajuste de tamano de .stat-value.\n(29/12/2025) Badges sin salto de linea.\n(29/12/2025) Cuadro de busqueda colapsable en movil.\n(29/12/2025) Mejoras de accesibilidad en buscador y resultados.\n(29/12/2025) Fuente autoalojada para evitar bloqueo de render.\n(29/12/2025) Service worker con cache offline para app shell y API.\n(29/12/2025) Toggle de modo oscuro con persistencia.\n(29/12/2025) Localizador automatico de codigo postal con geolocalizacion.\n(29/12/2025) Politica de cookies en modal.",
-    "project": "gas-price-finder"
+    "endDate": null
+  },
+  {
+    "id": 79,
+    "title": "Visualizacion de TickTick en dashboard home",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": null
+  },
+  {
+    "id": 80,
+    "title": "Refactor dashboard home a Clean Architecture (static)",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": null
+  },
+  {
+    "id": 81,
+    "title": "Resumen home + dashboard por proyecto",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": null
   }
 ]

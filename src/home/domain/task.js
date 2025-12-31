@@ -43,15 +43,17 @@ export function buildFilterOptions(tasks) {
 
 export function filterTasksByProject(tasks, project) {
   if (!project) return tasks;
-  return tasks.filter((task) => task.project === project);
+  return tasks.filter((task) => task.projectId === project);
 }
 
 export function summarizeProjects(tasks) {
   const summaryMap = tasks.reduce((acc, task) => {
-    const project = task.project || 'Sin proyecto';
-    if (!acc[project]) {
-      acc[project] = {
-        project,
+    const projectId = task.projectId || 'sin-proyecto';
+    const projectName = task.project || 'Sin proyecto';
+    if (!acc[projectId]) {
+      acc[projectId] = {
+        projectId,
+        project: projectName,
         hours: 0,
         count: 0,
         inProgress: 0,
@@ -59,11 +61,11 @@ export function summarizeProjects(tasks) {
         blocked: 0,
       };
     }
-    acc[project].hours += task.hours || 0;
-    acc[project].count += 1;
-    if (task.status === 'En curso') acc[project].inProgress += 1;
-    if (task.status === 'Completada') acc[project].completed += 1;
-    if (task.status === 'Bloqueada') acc[project].blocked += 1;
+    acc[projectId].hours += task.hours || 0;
+    acc[projectId].count += 1;
+    if (task.status === 'En curso') acc[projectId].inProgress += 1;
+    if (task.status === 'Completada') acc[projectId].completed += 1;
+    if (task.status === 'Bloqueada') acc[projectId].blocked += 1;
     return acc;
   }, {});
 
@@ -94,7 +96,10 @@ export function applyFilters(tasks, filters) {
     const matchesStatus = statusValues.length === 0 || statusValues.includes(task.status);
     const matchesOwner = ownerValues.length === 0 || ownerValues.includes(task.owner);
     const matchesPhase = phaseValues.length === 0 || phaseValues.includes(task.phase);
-    const matchesProject = projectValues.length === 0 || projectValues.includes(task.project);
+    const matchesProject =
+      projectValues.length === 0 ||
+      projectValues.includes(task.project) ||
+      projectValues.includes(task.projectId);
     const taskStart = parseDate(task.startDate);
     const taskEnd = parseDate(task.endDate) || taskStart;
     const hasTaskDate = Boolean(taskStart || taskEnd);

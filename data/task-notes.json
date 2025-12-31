@@ -1,0 +1,710 @@
+[
+  {
+    "id": 1,
+    "taskId": 7,
+    "date": "25/10/2025",
+    "note": "(25 de octubre de 2025) Hay que hacerlo con cabeza... Claude estaba iterando en modo creativo y la estaba liando parda."
+  },
+  {
+    "id": 2,
+    "taskId": 7,
+    "date": "25/10/2025",
+    "note": "(31 de octubre de 2025) Estoy iterando con ayuda de ChatGPT y Claude y... no s\u00e9 yo si lo voy a conseguir migrar, se monta unos cirios gordos."
+  },
+  {
+    "id": 3,
+    "taskId": 7,
+    "date": "25/10/2025",
+    "note": "(2 de noviembre de 2025) Definitivamente es un cristo la migraci\u00f3n y habr\u00eda que empezar de cero la maquetaci\u00f3n... se queda como est\u00e1."
+  },
+  {
+    "id": 4,
+    "taskId": 22,
+    "date": null,
+    "note": "De momento lo vamos a dejar manual, como yo (Rafa) estoy suscrito al bando de Belmontejo, cuando pongan uno nuevo lanzo el script y subo el cambio."
+  },
+  {
+    "id": 5,
+    "taskId": 23,
+    "date": null,
+    "note": "No hay rese\u00f1as en Google Maps, habr\u00e1 que buscar otra cosa o eliminar la secci\u00f3n"
+  },
+  {
+    "id": 6,
+    "taskId": 24,
+    "date": null,
+    "note": "Es de pago y todav\u00eda no s\u00e9 si Dani lo quiere"
+  },
+  {
+    "id": 7,
+    "taskId": 33,
+    "date": null,
+    "note": "Hay que solicitar una \"demo\" y desconozco si tiene coste crearlo."
+  },
+  {
+    "id": 8,
+    "taskId": 34,
+    "date": "3/11/2025",
+    "note": "Despu\u00e9s de investigar y ver varias alternativas, me quedo con Vimeo y una cuenta del Ayuntamiento de Belmontejo (con mi GMail)"
+  },
+  {
+    "id": 9,
+    "taskId": 43,
+    "date": null,
+    "note": "Bloqueado a la espera que Dani mueva ficha"
+  },
+  {
+    "id": 10,
+    "taskId": 48,
+    "date": "16/11/2025",
+    "note": "No se terminan de ver bien"
+  },
+  {
+    "id": 11,
+    "taskId": 60,
+    "date": "07/12/2025",
+    "note": "Repositorio inicial y layout principal para arrancar la web"
+  },
+  {
+    "id": 12,
+    "taskId": 61,
+    "date": "07/12/2025",
+    "note": "Modal inicial en el gestor de proyectos; desarrollo en curso"
+  },
+  {
+    "id": 13,
+    "taskId": 62,
+    "date": "07/12/2025",
+    "note": "Sesi\u00f3n de 2 horas trabajando en la automatizaci\u00f3n de publicaci\u00f3n de versiones del gestor de proyectos"
+  },
+  {
+    "id": 14,
+    "taskId": 64,
+    "date": "07/12/2025",
+    "note": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librer\u00eda i18n propia"
+  },
+  {
+    "id": 15,
+    "taskId": 65,
+    "date": "07/12/2025",
+    "note": "Lectura completa de instrucciones y ajuste de AGENTS para reflejar scripts, dashboard y pol\u00edtica de registro de tareas"
+  },
+  {
+    "id": 16,
+    "taskId": 66,
+    "date": "07/12/2025",
+    "note": "Eliminado npm run bootstrap (Lerna 8 lo elimina) y actualizado README/AGENTS con la nota y scripts vigentes"
+  },
+  {
+    "id": 17,
+    "taskId": 67,
+    "date": "08/12/2025",
+    "note": "Selector de fecha inicial, rango desde/hasta con filtros por intersecci\u00f3n, inputs apilados, fechas opcionales y bot\u00f3n para limpiar el rango."
+  },
+  {
+    "id": 18,
+    "taskId": 68,
+    "date": "16/12/2025",
+    "note": "Next.js App Router con Tailwind, React Day Picker y drivers KV/Mock para votar d\u00edas de eventos. Vistas separadas para votar, resultados y preferencias; identificador de cliente para voto \u00fanico reemplazable. Ventanas de voto por evento con almacenamiento y validaci\u00f3n din\u00e1mica."
+  },
+  {
+    "id": 19,
+    "taskId": 70,
+    "date": "26/12/2025",
+    "note": "Ajuste del registro del componente pm-weather para que se bundlee en producci\u00f3n (Vercel)."
+  },
+  {
+    "id": 20,
+    "taskId": 71,
+    "date": "26/12/2025",
+    "note": "Actualizaci\u00f3n de commitizen/sonarqube-scanner y overrides para node-forge, inquirer y tmp tras npm audit."
+  },
+  {
+    "id": 21,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "Definici\u00f3n del alcance, lectura de documentaci\u00f3n y estructura base (dominio, casos de uso, infraestructura, UI)."
+  },
+  {
+    "id": 22,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "P\u00e1gina interna para listar proyectos TickTick y enlazar desde panel de recordatorios."
+  },
+  {
+    "id": 23,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "A\u00f1adido ticktickProjectId en Vehicle con migraci\u00f3n y snapshots antes/despu\u00e9s."
+  },
+  {
+    "id": 24,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "Asociados IDs de proyectos TickTick a veh\u00edculos en la DB."
+  },
+  {
+    "id": 25,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "Movidos los recordatorios TickTick al detalle de vehiculo y eliminado panel en Home."
+  },
+  {
+    "id": 26,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "Regenerado Prisma Client para incluir ticktickProjectId en Vehicle."
+  },
+  {
+    "id": 27,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "Eliminada la via de recordatorios Inbox y limpiado repositorio TickTick."
+  },
+  {
+    "id": 28,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "A\u00f1adidas pesta\u00f1as para filtrar recordatorios por antig\u00fcedad en veh\u00edculos."
+  },
+  {
+    "id": 29,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "note": "Cacheado fetch TickTick con revalidate=900s."
+  },
+  {
+    "id": 30,
+    "taskId": 72,
+    "date": "28/12/2025",
+    "note": "Unificadas pesta\u00f1as de recordatorios recientes y hoy en veh\u00edculos, con resaltado de vencidas."
+  },
+  {
+    "id": 31,
+    "taskId": 72,
+    "date": "28/12/2025",
+    "note": "Ajustado el copy para vencidas con etiqueta \"vencida\" en lugar de \"vence\"."
+  },
+  {
+    "id": 32,
+    "taskId": 73,
+    "date": "28/12/2025",
+    "note": "A\u00f1adida tabla de compra de veh\u00edculo y registrada la compra final de la Rifter con opciones y totales."
+  },
+  {
+    "id": 33,
+    "taskId": 74,
+    "date": "28/12/2025",
+    "note": "Resumen de compra en ficha de veh\u00edculo y nueva ruta con detalle completo y opciones."
+  },
+  {
+    "id": 34,
+    "taskId": 75,
+    "date": "28/12/2025",
+    "note": "Revisi\u00f3n de estilos globales, tokens, y uso de clases hm- en la app."
+  },
+  {
+    "id": 35,
+    "taskId": 75,
+    "date": "28/12/2025",
+    "note": "Consolidacion de estilos de pildoras con componentes y guia de estilos con plan de tokens."
+  },
+  {
+    "id": 36,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Toggle de tema con localStorage y preferencia del sistema, tokens dark y overrides minimos."
+  },
+  {
+    "id": 37,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Ajuste del ThemeToggle para evitar hydration mismatch (tema inicial en effect)."
+  },
+  {
+    "id": 38,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Script inline en layout para aplicar tema antes de pintar y evitar flash."
+  },
+  {
+    "id": 39,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "suppressHydrationWarning y data-theme por defecto para evitar warning en html."
+  },
+  {
+    "id": 40,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Migracion de fondos/bordes principales a tokens de superficie."
+  },
+  {
+    "id": 41,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Migracion de colores de texto a tokens semanticos."
+  },
+  {
+    "id": 42,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "A\u00f1adidos tokens semanticos extra para textos de acento y estado."
+  },
+  {
+    "id": 43,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Aplicados tokens de estado en deltas, recordatorios y badges de factura."
+  },
+  {
+    "id": 44,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "note": "Ajuste del ThemeToggle para cumplir lint sin setState en effect."
+  },
+  {
+    "id": 45,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Caso de uso y API para consultar precios de gasolineras desde geoportalgasolineras."
+  },
+  {
+    "id": 46,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "A\u00f1adidas cabeceras Accept/Origin/Referer para forzar respuesta JSON."
+  },
+  {
+    "id": 47,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Secci\u00f3n en veh\u00edculos con selector de c\u00f3digo postal y cach\u00e9 de 1 d\u00eda."
+  },
+  {
+    "id": 48,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Ajustes de hidrataci\u00f3n: theme toggle sincroniza en effect y precios con formato determinista."
+  },
+  {
+    "id": 49,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Selector de combustible con ids de producto configurables."
+  },
+  {
+    "id": 50,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Cache con bucket diario reiniciado a las 08:00."
+  },
+  {
+    "id": 51,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Selector multi-combustible con checkboxes y listado agregado por precio."
+  },
+  {
+    "id": 52,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Clave \u00fanica por estaci\u00f3n+combustible para evitar duplicados en React."
+  },
+  {
+    "id": 53,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Normalizaci\u00f3n de c\u00f3digo postal para aceptar s\u00f3lo d\u00edgitos."
+  },
+  {
+    "id": 54,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Etiquetas por combustible con color convencional."
+  },
+  {
+    "id": 55,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Persistencia de selecci\u00f3n de combustibles en localStorage."
+  },
+  {
+    "id": 56,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Correcci\u00f3n de bucle en useEffect por dependencias inestables."
+  },
+  {
+    "id": 57,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Auto-b\u00fasqueda tras refresco usando estado de hidrataci\u00f3n."
+  },
+  {
+    "id": 58,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Evitada la carga inicial en SSR para usar s\u00f3lo selecci\u00f3n del cliente."
+  },
+  {
+    "id": 59,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Selecci\u00f3n inicial sin combustibles por defecto."
+  },
+  {
+    "id": 60,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "B\u00fasqueda autom\u00e1tica al marcar/desmarcar combustibles."
+  },
+  {
+    "id": 61,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Favoritos de c\u00f3digos postales con nombre en modal y localStorage."
+  },
+  {
+    "id": 62,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Enlace de direcci\u00f3n a Google Maps en nueva pesta\u00f1a."
+  },
+  {
+    "id": 63,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "No buscar hasta tener 5 d\u00edgitos en el c\u00f3digo postal."
+  },
+  {
+    "id": 64,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Cat\u00e1logo de combustibles movido a infraestructura (API externa)."
+  },
+  {
+    "id": 65,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "note": "Eliminaci\u00f3n de favoritos desde la lista."
+  },
+  {
+    "id": 66,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Creacion de la carpeta en projects y estructura inicial (README, package.json, gitignore y src)."
+  },
+  {
+    "id": 67,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Scaffold Svelte + Vite en SPA en projects/gas-price-finder."
+  },
+  {
+    "id": 68,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "AGENTS.md con guias de estructura, comandos y registro de tareas."
+  },
+  {
+    "id": 69,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "AGENTS.md actualizado con Arquitectura Limpia (capas y dependencias)."
+  },
+  {
+    "id": 70,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Carpetas base de Arquitectura Limpia creadas en src/."
+  },
+  {
+    "id": 71,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Tailwind CSS + DaisyUI configurados (configs y estilos base)."
+  },
+  {
+    "id": 72,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Layout mobile-first inicial en App.svelte con DaisyUI."
+  },
+  {
+    "id": 73,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Ajuste de tema y contrastes de texto."
+  },
+  {
+    "id": 74,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Logica real de precios con Arquitectura Limpia y UI conectada."
+  },
+  {
+    "id": 75,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Proxy backend en Vercel con cache y cliente apuntando a /api."
+  },
+  {
+    "id": 76,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Cache ajustada para reinicio diario a las 08:00 en cliente y servidor."
+  },
+  {
+    "id": 77,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "API refactor con capas de Arquitectura Limpia y repositorio servidor."
+  },
+  {
+    "id": 78,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Dev server local para /api y proxy en Vite para evitar 404."
+  },
+  {
+    "id": 79,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Persistencia del ultimo codigo postal en localStorage."
+  },
+  {
+    "id": 80,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Auto-busqueda al refrescar si hay codigo guardado."
+  },
+  {
+    "id": 81,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Skeletons de carga para resultados."
+  },
+  {
+    "id": 82,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Persistencia de seleccion de combustibles corregida."
+  },
+  {
+    "id": 83,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Favoritos de codigo postal con guardado, listado y eliminacion."
+  },
+  {
+    "id": 84,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Boton guardar movido y favoritos guardan codigo + combustibles."
+  },
+  {
+    "id": 85,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Persistencia de favoritos corregida al refrescar."
+  },
+  {
+    "id": 86,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Selector de combustible cambiado a radio (una opcion)."
+  },
+  {
+    "id": 87,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Refactor de AppShell con store y utils para alinear UI con Arquitectura Limpia."
+  },
+  {
+    "id": 88,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Favicons e iconos Android/iOS generados y enlazados."
+  },
+  {
+    "id": 89,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Favicon.ico generado y enlazado."
+  },
+  {
+    "id": 90,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Manifest y service worker para instalacion en Chrome/Safari."
+  },
+  {
+    "id": 91,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Logo aplicado en el header."
+  },
+  {
+    "id": 92,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "AGENTS.md actualizado para commits por cambios distintos."
+  },
+  {
+    "id": 93,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Logs de API y upstream para diagnostico en Vercel."
+  },
+  {
+    "id": 94,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "Headers y timeout para upstream + logging de causa."
+  },
+  {
+    "id": 95,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "note": "API migrada a Edge runtime para evitar TLS issues."
+  },
+  {
+    "id": 96,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "CA bundle FNMT para Node y rollback a runtime Node."
+  },
+  {
+    "id": 97,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "CA raiz FNMT a\u00f1adida al bundle."
+  },
+  {
+    "id": 98,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Logs reducidos a errores."
+  },
+  {
+    "id": 99,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "README actualizado con documentacion del proyecto."
+  },
+  {
+    "id": 100,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Google Analytics inicializado en cliente via VITE_GOOGLE_ANALYTICS_ID."
+  },
+  {
+    "id": 101,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Evento GA de busqueda con prefijo postal y combustible."
+  },
+  {
+    "id": 102,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Evento GA incluye etiqueta de combustible."
+  },
+  {
+    "id": 103,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Evento GA de favorito guardado."
+  },
+  {
+    "id": 104,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Banner de cookies para consentimiento GA."
+  },
+  {
+    "id": 105,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Politica de cookies publicada."
+  },
+  {
+    "id": 106,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Ajuste de tamano de .stat-value."
+  },
+  {
+    "id": 107,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Badges sin salto de linea."
+  },
+  {
+    "id": 108,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Cuadro de busqueda colapsable en movil."
+  },
+  {
+    "id": 109,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Mejoras de accesibilidad en buscador y resultados."
+  },
+  {
+    "id": 110,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Fuente autoalojada para evitar bloqueo de render."
+  },
+  {
+    "id": 111,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Service worker con cache offline para app shell y API."
+  },
+  {
+    "id": 112,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Toggle de modo oscuro con persistencia."
+  },
+  {
+    "id": 113,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Localizador automatico de codigo postal con geolocalizacion."
+  },
+  {
+    "id": 114,
+    "taskId": 78,
+    "date": "29/12/2025",
+    "note": "Politica de cookies en modal."
+  },
+  {
+    "id": 115,
+    "taskId": 79,
+    "date": "31/12/2025",
+    "note": "API TickTick en serve-home.js, panel con selector y lista de tareas, estados de error y estilos dedicados. README actualizado con variable de entorno."
+  },
+  {
+    "id": 116,
+    "taskId": 80,
+    "date": "31/12/2025",
+    "note": "Extraida la logica del dashboard a modulos ES en src/home con capas domain/usecases/infrastructure/ui. Entrada en main.js y home/index.html ajustado a script module."
+  },
+  {
+    "id": 117,
+    "taskId": 81,
+    "date": "31/12/2025",
+    "note": "Home convertido a resumen con cards y accesos por proyecto. Nueva pagina project.html con tareas internas, TickTick por proyecto y seccion de to-dos. Modulos nuevos en src/home y estilos actualizados."
+  },
+  {
+    "id": 118,
+    "taskId": 81,
+    "date": "31/12/2025",
+    "note": "Migracion de datos a proyectos/personas/entries/notes, actualizacion del dashboard y scripts."
+  }
+]

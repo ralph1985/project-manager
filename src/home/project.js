@@ -1,6 +1,7 @@
 import { HOURLY_RATE } from './config.js';
 import { applyFilters, filterTasksByProject, sortTasks } from './domain/task.js';
 import { loadTasks } from './usecases/loadTasks.js';
+import { loadProjects } from './usecases/loadProjects.js';
 import { getDashboardStats } from './usecases/getDashboardStats.js';
 import { getFilterOptions } from './usecases/getFilterOptions.js';
 import { loadJson, saveJson } from './infrastructure/storage.js';
@@ -22,23 +23,24 @@ let currentSort = { key: 'id', dir: 'desc' };
 
 function getProjectFromUrl(projects) {
   const url = new URL(window.location.href);
-  const project = url.searchParams.get('project');
-  if (project && projects.includes(project)) {
-    return project;
+  const projectId = url.searchParams.get('project');
+  if (projectId && projects.some((project) => project.id === projectId)) {
+    return projectId;
   }
-  return projects[0] || '';
+  return projects[0]?.id || '';
 }
 
-function setProjectSelector(projects, currentProject) {
+function setProjectSelector(projects, currentProjectId) {
   elements.projectSelect.innerHTML = '';
   projects.forEach((project) => {
     const option = document.createElement('option');
-    option.value = project;
-    option.textContent = project;
+    option.value = project.id;
+    option.textContent = project.name;
     elements.projectSelect.appendChild(option);
   });
-  elements.projectSelect.value = currentProject;
-  elements.projectTitle.textContent = currentProject || 'Proyecto';
+  elements.projectSelect.value = currentProjectId;
+  const currentProject = projects.find((project) => project.id === currentProjectId);
+  elements.projectTitle.textContent = currentProject?.name || 'Proyecto';
 
   elements.projectSelect.addEventListener('change', () => {
     const selected = elements.projectSelect.value;
@@ -65,13 +67,13 @@ function setupSorting(applyFilterCallback) {
   updateSortIndicators(currentSort);
 }
 
-function setupFilters(projectTasks, projectName) {
-  const storageKey = `pm-project-filters:${encodeURIComponent(projectName)}`;
+function setupFilters(projectTasks, projectId) {
+  const storageKey = `pm-project-filters:${encodeURIComponent(projectId)}`;
   const apply = () => {
     const filters = readProjectFilters(elements);
     const filtered = applyFilters(projectTasks, {
       ...filters,
-      project: [projectName],
+      project: [projectId],
     });
     renderProjectTable(elements, sortTasks(filtered, currentSort));
     saveJson(storageKey, {
@@ -115,14 +117,13 @@ function setupFilters(projectTasks, projectName) {
 }
 
 async function init() {
-  const tasks = await loadTasks();
-  const projects = Array.from(new Set(tasks.map((task) => task.project))).filter(Boolean).sort();
-  const currentProject = getProjectFromUrl(projects);
-  if (!currentProject) return;
+  const [tasks, projects] = await Promise.all([loadTasks(), loadProjects()]);
+  const currentProjectId = getProjectFromUrl(projects);
+  if (!currentProjectId) return;
 
-  setProjectSelector(projects, currentProject);
+  setProjectSelector(projects, currentProjectId);
 
-  const projectTasks = filterTasksByProject(tasks, currentProject);
+  const projectTasks = filterTasksByProject(tasks, currentProjectId);
   const projectStats = getDashboardStats(projectTasks, HOURLY_RATE);
   const filterOptions = getFilterOptions(projectTasks);
 
@@ -139,14 +140,18 @@ async function init() {
   );
   renderProjectFilters(elements, filterOptions);
 
-  const applyFiltersCallback = setupFilters(projectTasks, currentProject);
+  const applyFiltersCallback = setupFilters(projectTasks, currentProjectId);
   setupSorting(applyFiltersCallback);
   setupNotes(elements);
 
-  const ticktickStorageKey = `pm-ticktick-project-${encodeURIComponent(currentProject)}`;
-  await initTickTick(elements, { storageKey: ticktickStorageKey });
+  const project = projects.find((item) => item.id === currentProjectId);
+  const ticktickStorageKey = `pm-ticktick-project-${encodeURIComponent(currentProjectId)}`;
+  await initTickTick(elements, {
+    storageKey: ticktickStorageKey,
+    preferredProjectId: project?.ticktickProjectId || null,
+  });
 
-  const todos = await loadProjectTodos(currentProject);
+  const todos = await loadProjectTodos(currentProjectId);
   renderProjectTodos(elements, todos);
 }
 

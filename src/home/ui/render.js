@@ -191,7 +191,7 @@ export function renderProjectSummaries(elements, summaries) {
   }
   elements.projectSummary.innerHTML = summaries
     .map((summary) => {
-      const href = `/home/project.html?project=${encodeURIComponent(summary.project)}`;
+      const href = `/home/project.html?project=${encodeURIComponent(summary.projectId)}`;
       return `
         <a class="project-summary" href="${href}">
           <div>

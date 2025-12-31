@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "taskId": 7,
+    "date": "25/10/2025",
+    "hours": 16,
+    "note": ""
+  },
+  {
+    "id": 2,
+    "taskId": 8,
+    "date": "21/10/2025",
+    "hours": 4,
+    "note": ""
+  },
+  {
+    "id": 3,
+    "taskId": 9,
+    "date": "22/10/2025",
+    "hours": 3,
+    "note": ""
+  },
+  {
+    "id": 4,
+    "taskId": 10,
+    "date": "26/10/2025",
+    "hours": 3,
+    "note": ""
+  },
+  {
+    "id": 5,
+    "taskId": 11,
+    "date": null,
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 6,
+    "taskId": 12,
+    "date": "23/10/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 7,
+    "taskId": 13,
+    "date": null,
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 8,
+    "taskId": 14,
+    "date": "25/10/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 9,
+    "taskId": 15,
+    "date": "25/10/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 10,
+    "taskId": 16,
+    "date": "26/10/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 11,
+    "taskId": 17,
+    "date": "26/10/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 12,
+    "taskId": 18,
+    "date": "26/10/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 13,
+    "taskId": 19,
+    "date": "23/10/2025",
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 14,
+    "taskId": 20,
+    "date": "25/10/2025",
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 15,
+    "taskId": 21,
+    "date": "26/10/2025",
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 16,
+    "taskId": 23,
+    "date": null,
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 17,
+    "taskId": 25,
+    "date": null,
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 18,
+    "taskId": 26,
+    "date": null,
+    "hours": 8,
+    "note": ""
+  },
+  {
+    "id": 19,
+    "taskId": 28,
+    "date": null,
+    "hours": 4,
+    "note": ""
+  },
+  {
+    "id": 20,
+    "taskId": 29,
+    "date": "6/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 21,
+    "taskId": 30,
+    "date": null,
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 22,
+    "taskId": 32,
+    "date": "5/11/2025",
+    "hours": 4,
+    "note": ""
+  },
+  {
+    "id": 23,
+    "taskId": 33,
+    "date": null,
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 24,
+    "taskId": 34,
+    "date": "3/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 25,
+    "taskId": 35,
+    "date": "4/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 26,
+    "taskId": 37,
+    "date": "5/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 27,
+    "taskId": 38,
+    "date": "5/11/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 28,
+    "taskId": 44,
+    "date": "5/11/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 29,
+    "taskId": 45,
+    "date": "6/11/2025",
+    "hours": 4,
+    "note": ""
+  },
+  {
+    "id": 30,
+    "taskId": 46,
+    "date": "9/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 31,
+    "taskId": 47,
+    "date": "9/11/2025",
+    "hours": 4,
+    "note": ""
+  },
+  {
+    "id": 32,
+    "taskId": 48,
+    "date": "16/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 33,
+    "taskId": 49,
+    "date": "16/11/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 34,
+    "taskId": 50,
+    "date": "16/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 35,
+    "taskId": 51,
+    "date": "16/11/2025",
+    "hours": 6,
+    "note": ""
+  },
+  {
+    "id": 36,
+    "taskId": 52,
+    "date": "19/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 37,
+    "taskId": 53,
+    "date": "21/11/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 38,
+    "taskId": 54,
+    "date": "22/11/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 39,
+    "taskId": 55,
+    "date": "22/11/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 40,
+    "taskId": 56,
+    "date": "22/11/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 41,
+    "taskId": 57,
+    "date": "23/11/2025",
+    "hours": 3,
+    "note": ""
+  },
+  {
+    "id": 42,
+    "taskId": 58,
+    "date": "07/12/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 43,
+    "taskId": 59,
+    "date": "07/12/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 44,
+    "taskId": 60,
+    "date": "07/12/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 45,
+    "taskId": 61,
+    "date": "07/12/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 46,
+    "taskId": 62,
+    "date": "07/12/2025",
+    "hours": 2,
+    "note": ""
+  },
+  {
+    "id": 47,
+    "taskId": 63,
+    "date": "07/12/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 48,
+    "taskId": 64,
+    "date": "07/12/2025",
+    "hours": 4,
+    "note": ""
+  },
+  {
+    "id": 49,
+    "taskId": 65,
+    "date": "07/12/2025",
+    "hours": 0.1,
+    "note": ""
+  },
+  {
+    "id": 50,
+    "taskId": 66,
+    "date": "07/12/2025",
+    "hours": 0.1,
+    "note": ""
+  },
+  {
+    "id": 51,
+    "taskId": 67,
+    "date": "08/12/2025",
+    "hours": 0.1,
+    "note": ""
+  },
+  {
+    "id": 52,
+    "taskId": 68,
+    "date": "16/12/2025",
+    "hours": 14,
+    "note": ""
+  },
+  {
+    "id": 53,
+    "taskId": 69,
+    "date": "21/12/2025",
+    "hours": 24,
+    "note": ""
+  },
+  {
+    "id": 54,
+    "taskId": 70,
+    "date": "26/12/2025",
+    "hours": 8,
+    "note": ""
+  },
+  {
+    "id": 55,
+    "taskId": 71,
+    "date": "26/12/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 56,
+    "taskId": 72,
+    "date": "27/12/2025",
+    "hours": 3.5,
+    "note": ""
+  },
+  {
+    "id": 57,
+    "taskId": 73,
+    "date": "28/12/2025",
+    "hours": 0.25,
+    "note": ""
+  },
+  {
+    "id": 58,
+    "taskId": 74,
+    "date": "28/12/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 59,
+    "taskId": 75,
+    "date": "28/12/2025",
+    "hours": 1,
+    "note": ""
+  },
+  {
+    "id": 60,
+    "taskId": 76,
+    "date": "28/12/2025",
+    "hours": 3,
+    "note": ""
+  },
+  {
+    "id": 61,
+    "taskId": 77,
+    "date": "28/12/2025",
+    "hours": 5,
+    "note": ""
+  },
+  {
+    "id": 62,
+    "taskId": 78,
+    "date": "28/12/2025",
+    "hours": 10,
+    "note": ""
+  },
+  {
+    "id": 63,
+    "taskId": 79,
+    "date": "31/12/2025",
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 64,
+    "taskId": 80,
+    "date": "31/12/2025",
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 65,
+    "taskId": 81,
+    "date": "31/12/2025",
+    "hours": 0.5,
+    "note": ""
+  },
+  {
+    "id": 66,
+    "taskId": 81,
+    "date": "31/12/2025",
+    "hours": 2.5,
+    "note": "Migracion a estructura normalizada y ajustes del dashboard."
+  }
+]

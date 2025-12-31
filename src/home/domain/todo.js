@@ -1,6 +1,6 @@
-export function filterTodosByProject(todos, project) {
-  if (!project) return todos;
-  return todos.filter((todo) => todo.project === project);
+export function filterTodosByProject(todos, projectId) {
+  if (!projectId) return todos;
+  return todos.filter((todo) => todo.projectId === projectId);
 }
 
 export function sortTodos(todos) {
@@ -9,6 +9,13 @@ export function sortTodos(todos) {
 
 function parseDateValue(value) {
   if (!value) return Number.MAX_SAFE_INTEGER;
+  if (value.includes('/')) {
+    const parts = value.split('/').map(Number);
+    if (parts.length === 3 && !Number.isNaN(parts[2])) {
+      const parsed = new Date(parts[2], parts[1] - 1, parts[0]);
+      if (!Number.isNaN(parsed.valueOf())) return parsed.valueOf();
+    }
+  }
   const parsed = new Date(value);
   if (Number.isNaN(parsed.valueOf())) return Number.MAX_SAFE_INTEGER;
   return parsed.valueOf();
