@@ -41,6 +41,41 @@ export function buildFilterOptions(tasks) {
   };
 }
 
+export function filterTasksByProject(tasks, project) {
+  if (!project) return tasks;
+  return tasks.filter((task) => task.project === project);
+}
+
+export function summarizeProjects(tasks) {
+  const summaryMap = tasks.reduce((acc, task) => {
+    const project = task.project || 'Sin proyecto';
+    if (!acc[project]) {
+      acc[project] = {
+        project,
+        hours: 0,
+        count: 0,
+        inProgress: 0,
+        completed: 0,
+        blocked: 0,
+      };
+    }
+    acc[project].hours += task.hours || 0;
+    acc[project].count += 1;
+    if (task.status === 'En curso') acc[project].inProgress += 1;
+    if (task.status === 'Completada') acc[project].completed += 1;
+    if (task.status === 'Bloqueada') acc[project].blocked += 1;
+    return acc;
+  }, {});
+
+  return Object.values(summaryMap).sort((a, b) => b.hours - a.hours);
+}
+
+export function getRecentTasks(tasks, limit) {
+  return [...tasks]
+    .sort((a, b) => getTaskSortDate(b) - getTaskSortDate(a))
+    .slice(0, limit);
+}
+
 export function applyFilters(tasks, filters) {
   const term = (filters.search || '').toLowerCase().trim();
   const statusValues = normalizeSelected(filters.status);
@@ -105,6 +140,12 @@ export function countStatuses(tasks) {
     acc[task.status] = (acc[task.status] || 0) + 1;
     return acc;
   }, {});
+}
+
+function getTaskSortDate(task) {
+  const start = parseDate(task.startDate);
+  const end = parseDate(task.endDate);
+  return Math.max(start, end);
 }
 
 function normalizeSelected(values) {

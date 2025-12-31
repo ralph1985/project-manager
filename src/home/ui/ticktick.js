@@ -4,7 +4,8 @@ import { loadValue, saveValue } from '../infrastructure/storage.js';
 import { loadTickTickProjects } from '../usecases/loadTicktickProjects.js';
 import { loadTickTickTasks } from '../usecases/loadTicktickTasks.js';
 
-export async function initTickTick(elements) {
+export async function initTickTick(elements, options = {}) {
+  const storageKey = options.storageKey || TICKTICK_KEY;
   renderTickTickStatus(elements, 'Cargando', 'status-Info');
   renderTickTickMessage(elements, '');
   elements.ticktickProjectSelect.innerHTML = '';
@@ -37,7 +38,7 @@ export async function initTickTick(elements) {
     }
 
     renderTickTickProjects(elements, projects);
-    const savedProjectId = loadValue(TICKTICK_KEY);
+    const savedProjectId = loadValue(storageKey);
     const defaultProjectId =
       projects.find((project) => project.id === savedProjectId)?.id || projects[0].id;
 
@@ -47,7 +48,7 @@ export async function initTickTick(elements) {
 
     elements.ticktickProjectSelect.addEventListener('change', () => {
       const projectId = elements.ticktickProjectSelect.value;
-      saveValue(TICKTICK_KEY, projectId);
+      saveValue(storageKey, projectId);
       handleTickTickSelection(elements, projectId);
     });
   } catch {

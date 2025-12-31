@@ -65,6 +65,11 @@ h2 {
   font-size: 18px;
   letter-spacing: -0.2px;
 }
+.section-note {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
 .badge {
   display: inline-block;
   padding: 4px 8px;
@@ -313,6 +318,97 @@ h2 {
 .btn-clear-date:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.project-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 240px;
+}
+.project-selector label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.project-selector select {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  min-height: 44px;
+}
+.back-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+.project-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: inherit;
+  text-decoration: none;
+}
+.project-summary:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.project-summary-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.project-summary-meta {
+  color: var(--muted);
+  font-size: 12px;
+}
+.project-summary-hours {
+  font-weight: 700;
+}
+.recent-tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recent-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+.recent-task-title {
+  font-weight: 600;
+}
+.recent-task-meta {
+  color: var(--muted);
+  font-size: 12px;
+}
 .project-phases {
   display: flex;
   gap: 12px;
@@ -393,4 +489,6 @@ h2 {
 @media (max-width: 720px) {
   body { padding: 16px; }
   header { flex-direction: column; align-items: flex-start; }
+  .project-header { flex-direction: column; align-items: flex-start; }
+  .project-selector { width: 100%; }
 }

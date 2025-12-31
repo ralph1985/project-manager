@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Manager · Detalle de proyecto</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1 id="projectTitle">Detalle de proyecto</h1>
+      <p>Vista con tareas internas, TickTick y to-dos</p>
+    </div>
+    <div class="pill">Project Manager · Project</div>
+  </header>
+
+  <main class="layout">
+    <div class="project-header">
+      <a class="back-link" href="./index.html">← Volver al resumen</a>
+      <div class="project-selector">
+        <label for="projectSelect">Proyecto</label>
+        <select id="projectSelect" aria-label="Seleccionar proyecto"></select>
+      </div>
+    </div>
+
+    <section class="grid" id="project-stats"></section>
+
+    <div class="grid">
+      <div class="card ticktick-card">
+        <div class="ticktick-header">
+          <div>
+            <h2>TickTick</h2>
+            <p class="ticktick-subtitle">Tareas abiertas por proyecto</p>
+          </div>
+          <span id="ticktickStatus" class="badge status-Info">Cargando</span>
+        </div>
+        <div class="ticktick-controls">
+          <label for="ticktickProjectSelect">Proyecto TickTick</label>
+          <select id="ticktickProjectSelect" aria-label="Seleccionar proyecto TickTick"></select>
+        </div>
+        <p id="ticktickMessage" class="ticktick-message"></p>
+        <ul id="ticktickTasks" class="ticktick-list"></ul>
+      </div>
+      <div class="card">
+        <h2>To-dos</h2>
+        <p class="ticktick-subtitle">Lista preparada para próximos pasos.</p>
+        <ul id="projectTodos" class="ticktick-list"></ul>
+      </div>
+    </div>
+
+    <div class="card table-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+        <h2 style="margin:0;">Tareas internas</h2>
+      </div>
+      <div class="filters">
+        <div class="filter-group">
+          <label for="search">Buscar</label>
+          <input type="search" id="search" placeholder="Buscar título o notas">
+        </div>
+        <div class="filter-group">
+          <label for="dateStartFilter">Fecha</label>
+          <div class="date-range">
+            <input type="date" id="dateStartFilter" aria-label="Filtrar desde fecha">
+            <input type="date" id="dateEndFilter" aria-label="Filtrar hasta fecha">
+            <button type="button" id="dateClearBtn" class="btn-clear-date">Limpiar fecha</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label for="phaseFilter">Fase</label>
+          <select id="phaseFilter" multiple size="4" aria-label="Filtrar por fase"></select>
+        </div>
+        <div class="filter-group">
+          <label for="ownerFilter">Responsable</label>
+          <select id="ownerFilter" multiple size="4" aria-label="Filtrar por responsable"></select>
+        </div>
+        <div class="filter-group">
+          <label for="statusFilter">Estado</label>
+          <select id="statusFilter" multiple size="4" aria-label="Filtrar por estado"></select>
+        </div>
+      </div>
+      <div class="table-container">
+        <table class="table" id="tasksTable">
+          <colgroup>
+            <col style="width:3%">
+            <col style="width:26%">
+            <col style="width:12%">
+            <col style="width:10%">
+            <col style="width:10%">
+            <col style="width:10%">
+            <col style="width:7%">
+            <col style="width:7%">
+            <col style="width:9%">
+            <col style="width:6%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="id"><span>#</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="title"><span>Tarea</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="phase"><span>Fase</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="owner"><span>Responsable</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="status"><span>Estado</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="startDate"><span>Inicio</span><span class="sort-indicator"></span></th>
+              <th class="sortable" data-sort="endDate"><span>Fin</span><span class="sort-indicator"></span></th>
+              <th><span>Notas</span></th>
+              <th class="num sortable" data-sort="hours"><span>Horas</span><span class="sort-indicator"></span></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="noteModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="noteModalTitle">Nota</h3>
+          <button id="noteClose" class="close-btn" aria-label="Cerrar">×</button>
+        </div>
+        <div id="noteBody" class="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../src/home/project.js"></script>
+</body>
+</html>

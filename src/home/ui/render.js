@@ -76,6 +76,15 @@ export function renderFilters(elements, options) {
   setOptions(elements.projectFilter, options.projects);
 }
 
+export function renderProjectFilters(elements, options) {
+  const setOptions = (el, values) => {
+    el.innerHTML = [`<option value="">Todos</option>`, ...values.map((v) => `<option value="${v}">${v}</option>`)].join('');
+  };
+  setOptions(elements.statusFilter, options.statuses);
+  setOptions(elements.ownerFilter, options.owners);
+  setOptions(elements.phaseFilter, options.phases);
+}
+
 export function renderTable(elements, tasks) {
   elements.tasksTableBody.innerHTML = tasks
     .map(
@@ -84,6 +93,26 @@ export function renderTable(elements, tasks) {
           <td>${task.id}</td>
           <td>${task.title}</td>
           <td><span class="badge ${projectClass(task.project)} pill-status">${task.project || '—'}</span></td>
+          <td><span class="badge ${phaseClass(task.phase)} pill-status">${task.phase || '—'}</span></td>
+          <td>${task.owner || '—'}</td>
+          <td><span class="badge ${statusClass(task.status)} pill-status">${task.status}</span></td>
+          <td>${task.startDate || '—'}</td>
+          <td>${task.endDate || '—'}</td>
+          <td>${renderNoteCell(task.notes)}</td>
+          <td class="num">${fmtNumber(task.hours)}</td>
+        </tr>
+      `
+    )
+    .join('');
+}
+
+export function renderProjectTable(elements, tasks) {
+  elements.tasksTableBody.innerHTML = tasks
+    .map(
+      (task) => `
+        <tr>
+          <td>${task.id}</td>
+          <td>${task.title}</td>
           <td><span class="badge ${phaseClass(task.phase)} pill-status">${task.phase || '—'}</span></td>
           <td>${task.owner || '—'}</td>
           <td><span class="badge ${statusClass(task.status)} pill-status">${task.status}</span></td>
@@ -152,6 +181,93 @@ export function renderTickTickProjects(elements, projects) {
     option.value = project.id;
     option.textContent = `${project.name}${project.closed ? ' (cerrado)' : ''}`;
     elements.ticktickProjectSelect.appendChild(option);
+  });
+}
+
+export function renderProjectSummaries(elements, summaries) {
+  if (!summaries.length) {
+    elements.projectSummary.innerHTML = '<p class="ticktick-message">Sin proyectos todavía.</p>';
+    return;
+  }
+  elements.projectSummary.innerHTML = summaries
+    .map((summary) => {
+      const href = `/home/project.html?project=${encodeURIComponent(summary.project)}`;
+      return `
+        <a class="project-summary" href="${href}">
+          <div>
+            <div class="project-summary-title">${summary.project}</div>
+            <div class="project-summary-meta">${summary.count} tareas · ${summary.inProgress} en curso</div>
+          </div>
+          <div class="project-summary-hours">${fmtNumber(summary.hours)} h</div>
+        </a>
+      `;
+    })
+    .join('');
+}
+
+export function renderRecentTasks(elements, tasks) {
+  if (!tasks.length) {
+    elements.recentTasks.innerHTML = '<li class="ticktick-empty">Sin actividad reciente.</li>';
+    return;
+  }
+  elements.recentTasks.innerHTML = tasks
+    .map(
+      (task) => `
+        <li class="recent-task">
+          <div>
+            <div class="recent-task-title">${task.title}</div>
+            <div class="recent-task-meta">${task.project || '—'} · ${task.phase || '—'}</div>
+          </div>
+          <span class="badge ${statusClass(task.status)} pill-status">${task.status}</span>
+        </li>
+      `
+    )
+    .join('');
+}
+
+export function renderProjectStats(elements, stats, hourlyRate) {
+  const cards = [
+    { label: 'Tareas', value: stats.totalTasks },
+    { label: 'En curso', value: stats.inProgressTasks },
+    { label: 'Completadas', value: stats.completedTasks },
+    { label: 'Bloqueadas', value: stats.blockedTasks },
+    { label: 'Horas', value: fmtNumber(stats.totalHours) },
+    { label: 'Coste', value: fmtCurrency(stats.totalHours * hourlyRate) },
+  ];
+  elements.projectStats.innerHTML = cards
+    .map(
+      (card) => `
+        <div class="card">
+          <div class="stat-label">${card.label}</div>
+          <div class="stat-value">${card.value}</div>
+        </div>
+      `
+    )
+    .join('');
+}
+
+export function renderProjectTodos(elements, todos) {
+  elements.projectTodos.innerHTML = '';
+  if (!todos.length) {
+    const empty = document.createElement('li');
+    empty.className = 'ticktick-empty';
+    empty.textContent = 'No hay to-dos definidos para este proyecto.';
+    elements.projectTodos.appendChild(empty);
+    return;
+  }
+
+  todos.forEach((todo) => {
+    const item = document.createElement('li');
+    item.className = 'ticktick-item';
+    const title = document.createElement('span');
+    title.className = 'ticktick-title';
+    title.textContent = todo.title || 'Sin título';
+    const meta = document.createElement('span');
+    meta.className = 'ticktick-meta';
+    meta.textContent = todo.dueDate ? formatTickTickDate(todo.dueDate) : 'Sin fecha';
+    item.appendChild(title);
+    item.appendChild(meta);
+    elements.projectTodos.appendChild(item);
   });
 }
 
