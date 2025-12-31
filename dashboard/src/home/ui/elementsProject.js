@@ -18,6 +18,7 @@ export function getProjectElements() {
     ticktickRefresh: document.getElementById('ticktickRefresh'),
     ticktickMessage: document.getElementById('ticktickMessage'),
     ticktickTasks: document.getElementById('ticktickTasks'),
+    ticktickColumnId: document.getElementById('ticktickColumnId'),
     projectTodos: document.getElementById('projectTodos'),
   };
 }
