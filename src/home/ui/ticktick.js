@@ -49,6 +49,13 @@ export async function initTickTick(elements, options = {}) {
     elements.ticktickProjectSelect.disabled = false;
     await handleTickTickSelection(elements, defaultProjectId);
 
+    if (elements.ticktickRefresh) {
+      elements.ticktickRefresh.addEventListener('click', () => {
+        const projectId = elements.ticktickProjectSelect.value;
+        handleTickTickSelection(elements, projectId, { refresh: true });
+      });
+    }
+
     elements.ticktickProjectSelect.addEventListener('change', () => {
       const projectId = elements.ticktickProjectSelect.value;
       saveValue(storageKey, projectId);
@@ -62,14 +69,14 @@ export async function initTickTick(elements, options = {}) {
   }
 }
 
-async function handleTickTickSelection(elements, projectId) {
+async function handleTickTickSelection(elements, projectId, options = {}) {
   if (!projectId) return;
   renderTickTickStatus(elements, 'Cargando', 'status-Info');
   renderTickTickMessage(elements, '');
   elements.ticktickTasks.innerHTML = '';
 
   try {
-    const data = await loadTickTickTasks(projectId);
+    const data = await loadTickTickTasks(projectId, options);
     if (data.status === 'missing-token') {
       renderTickTickStatus(elements, 'Sin token', 'status-Warn');
       renderTickTickMessage(

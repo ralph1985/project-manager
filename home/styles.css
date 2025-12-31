@@ -234,6 +234,25 @@ h2 {
   justify-content: space-between;
   gap: 12px;
 }
+.ticktick-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-refresh {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.btn-refresh:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
 .ticktick-subtitle {
   margin: 4px 0 0;
   color: var(--muted);

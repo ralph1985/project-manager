@@ -10,6 +10,24 @@ const tickTickApiHost = 'api.ticktick.com';
 const tickTickOpenStatus = 0;
 const tickTickCacheTtlMs = 15 * 60 * 1000;
 const tickTickCache = new Map();
+const envPath = path.join(root, '.env');
+
+function loadEnvFile() {
+  if (!fs.existsSync(envPath)) return;
+  const raw = fs.readFileSync(envPath, 'utf8');
+  raw.split(/\r?\n/).forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) return;
+    const idx = trimmed.indexOf('=');
+    if (idx === -1) return;
+    const key = trimmed.slice(0, idx).trim();
+    const value = trimmed.slice(idx + 1).trim();
+    if (!key || process.env[key] !== undefined) return;
+    process.env[key] = value.replace(/^"|"$/g, '');
+  });
+}
+
+loadEnvFile();
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -88,17 +106,21 @@ function fetchTickTickJson(pathname, accessToken) {
 async function handleTickTickApi(req, res, url) {
   const accessToken = process.env.TICKTICK_ACCESS_TOKEN;
   const parts = url.pathname.split('/').filter(Boolean);
+  const refresh = url.searchParams.get('refresh') === '1';
 
   if (parts.length === 3 && parts[2] === 'projects') {
     if (!accessToken) {
       sendJson(res, 200, { status: 'missing-token', projects: [] });
       return;
     }
-    const cached = getCached('ticktick-projects');
-    if (cached) {
-      sendJson(res, 200, cached);
-      return;
+    if (!refresh) {
+      const cached = getCached('ticktick-projects');
+      if (cached) {
+        sendJson(res, 200, cached);
+        return;
+      }
     }
+    if (refresh) tickTickCache.delete('ticktick-projects');
     try {
       const projects = await fetchTickTickJson('/open/v1/project', accessToken);
       const payload = {
@@ -130,11 +152,14 @@ async function handleTickTickApi(req, res, url) {
       return;
     }
     const cacheKey = `ticktick-project-${projectId}`;
-    const cached = getCached(cacheKey);
-    if (cached) {
-      sendJson(res, 200, cached);
-      return;
+    if (!refresh) {
+      const cached = getCached(cacheKey);
+      if (cached) {
+        sendJson(res, 200, cached);
+        return;
+      }
     }
+    if (refresh) tickTickCache.delete(cacheKey);
     try {
       const projectData = await fetchTickTickJson(
         `/open/v1/project/${projectId}/data`,
