@@ -18,7 +18,7 @@ Monorepo gestionado con Lerna y npm workspaces para empaquetar componentes (LitE
 
 - `projects/` está git-ignorado en este repo para no versionar proyectos con repos propios; cada proyecto allí mantiene su propio `.git` y lockfile.
 - Hay un dashboard estático en `dashboard/home/` que lee `dashboard/data/projects-tasks.json`; ejecútalo con `npm run home` para ver el seguimiento de tareas/horas.
-- El panel `TickTick` del dashboard usa `TICKTICK_ACCESS_TOKEN` (scope `tasks:read`) y carga datos en tiempo real desde la API.
+- El panel `TickTick` del dashboard usa `TICKTICK_ACCESS_TOKEN` (scope `tasks:read`) y carga datos en tiempo real desde la API. Documentación en `docs/ticktick.md` y `docs/ticktick-api/`.
 - El resumen vive en `dashboard/home/index.html` y el detalle por proyecto en `dashboard/home/project.html`.
 - Los to-dos por proyecto se leen desde `dashboard/data/project-todos.json` (array con `projectId`, `title`, `dueDate` opcional).
 - Datos normalizados (en `dashboard/data/`):
