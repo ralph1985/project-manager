@@ -3,6 +3,7 @@
     "id": "ayuntamiento-de-belmontejo",
     "name": "Ayuntamiento de Belmontejo",
     "status": "active",
+    "order": 2,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954f948340c918464353018"
   },
@@ -10,6 +11,7 @@
     "id": "ayuntamiento-de-palomares-del-campo",
     "name": "Ayuntamiento de Palomares del Campo",
     "status": "active",
+    "order": 3,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954fa124cf6118464353098"
   },
@@ -17,6 +19,7 @@
     "id": "gas-price-finder",
     "name": "gas-price-finder",
     "status": "active",
+    "order": 6,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954fa243ef791846435309a"
   },
@@ -24,6 +27,7 @@
     "id": "gestor-de-proyectos",
     "name": "Gestor de proyectos",
     "status": "active",
+    "order": 1,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "69556431df8951c85ac377fe"
   },
@@ -31,6 +35,7 @@
     "id": "home-manager",
     "name": "home-manager",
     "status": "active",
+    "order": 5,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954fbf098491184643581c7"
   },
@@ -38,6 +43,7 @@
     "id": "kamikazes-events",
     "name": "kamikazes-events",
     "status": "active",
+    "order": 4,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6941caf76dc751643c5c4d38"
   }
