@@ -1,4 +1,6 @@
 import { renderTickTickMessage, renderTickTickStatus, renderTickTickTasks } from './render.js';
+import { parseTickTickDate } from './format.js';
+import { TICKTICK_NOT_SECTIONED_COLUMN_ID } from '../config.js';
 import { DEFAULT_TICKTICK_PROJECT_ID, TICKTICK_KEY } from '../config.js';
 import { loadValue, saveValue } from '../infrastructure/storage.js';
 import { loadTickTickProjects } from '../usecases/loadTicktickProjects.js';
@@ -109,9 +111,21 @@ function normalizeTickTickTasks(tasks, columnId) {
   const today = [];
   const noDate = [];
 
+  const shouldIncludeByColumn = (taskColumnId, selectedColumnId) => {
+    if (!selectedColumnId) return true;
+    if (taskColumnId === selectedColumnId) return true;
+    if (
+      selectedColumnId === TICKTICK_NOT_SECTIONED_COLUMN_ID &&
+      (taskColumnId === null || taskColumnId === undefined)
+    ) {
+      return true;
+    }
+    return false;
+  };
+
   tasks.forEach((task) => {
-    if (columnId && task.columnId !== columnId) return;
-    const due = task.dueDate ? new Date(task.dueDate) : null;
+    if (!shouldIncludeByColumn(task.columnId, columnId)) return;
+    const due = parseTickTickDate(task.dueDate);
     if (!due || Number.isNaN(due.valueOf())) {
       noDate.push({ ...task, ticktickStatus: 'nodate' });
       return;
