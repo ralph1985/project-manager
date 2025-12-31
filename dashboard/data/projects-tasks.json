@@ -1,7 +1,7 @@
 [
   {
     "id": 7,
-    "title": "Organizaci\u00f3n del CSS que ven\u00eda en el proyecto demo y estaba hecho un cristo..., y la IA lo estaba liando a\u00fan m\u00e1s",
+    "title": "Organización del CSS que venía en el proyecto demo y estaba hecho un cristo..., y la IA lo estaba liando aún más",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Cancelada",
@@ -11,7 +11,7 @@
   },
   {
     "id": 8,
-    "title": "B\u00fasqueda de proyecto CMS con administraci\u00f3n sencilla (Decap)",
+    "title": "Búsqueda de proyecto CMS con administración sencilla (Decap)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -21,7 +21,7 @@
   },
   {
     "id": 9,
-    "title": "Configuraci\u00f3n y despliegue en Vercel",
+    "title": "Configuración y despliegue en Vercel",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -31,7 +31,7 @@
   },
   {
     "id": 10,
-    "title": "Herramientas de an\u00e1lisis est\u00e1tido de c\u00f3digo (ESLint y Prettier)",
+    "title": "Herramientas de análisis estátido de código (ESLint y Prettier)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -41,7 +41,7 @@
   },
   {
     "id": 11,
-    "title": "Repaso y optimizaci\u00f3n general de la web, la IA se pone en modo \"creativo\" y va un poco desordenada",
+    "title": "Repaso y optimización general de la web, la IA se pone en modo \"creativo\" y va un poco desordenada",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -51,7 +51,7 @@
   },
   {
     "id": 12,
-    "title": "A\u00f1adir Bandos del pueblo",
+    "title": "Añadir Bandos del pueblo",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -61,7 +61,7 @@
   },
   {
     "id": 13,
-    "title": "A\u00f1adir un buscador",
+    "title": "Añadir un buscador",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -71,7 +71,7 @@
   },
   {
     "id": 14,
-    "title": "A\u00f1adir Google Analytics para conocer el n\u00famero de visitas",
+    "title": "Añadir Google Analytics para conocer el número de visitas",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -81,7 +81,7 @@
   },
   {
     "id": 15,
-    "title": "A\u00f1adir gesti\u00f3n y aprobaci\u00f3n de cookies (importante si tenemos Google Analytics)",
+    "title": "Añadir gestión y aprobación de cookies (importante si tenemos Google Analytics)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -91,7 +91,7 @@
   },
   {
     "id": 16,
-    "title": "Configuraci\u00f3n de los favicons",
+    "title": "Configuración de los favicons",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -101,7 +101,7 @@
   },
   {
     "id": 17,
-    "title": "A\u00f1adir secci\u00f3n de redes sociales (Instagram y Facebook)",
+    "title": "Añadir sección de redes sociales (Instagram y Facebook)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -111,7 +111,7 @@
   },
   {
     "id": 18,
-    "title": "Administraci\u00f3n desde Decap de los links de Servicios del Footer",
+    "title": "Administración desde Decap de los links de Servicios del Footer",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -121,7 +121,7 @@
   },
   {
     "id": 19,
-    "title": "Secci\u00f3n de testimonios",
+    "title": "Sección de testimonios",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -131,7 +131,7 @@
   },
   {
     "id": 20,
-    "title": "A\u00f1adir mapa Google Maps",
+    "title": "Añadir mapa Google Maps",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -141,7 +141,7 @@
   },
   {
     "id": 21,
-    "title": "Configurar p\u00e1ginas de error 404",
+    "title": "Configurar páginas de error 404",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -151,7 +151,7 @@
   },
   {
     "id": 22,
-    "title": "Automatizaci\u00f3n de obtenci\u00f3n de Bandos del pueblo",
+    "title": "Automatización de obtención de Bandos del pueblo",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Bloqueada",
@@ -161,7 +161,7 @@
   },
   {
     "id": 23,
-    "title": "Que los \"testimonios\" salgan de las rese\u00f1as de Google Maps",
+    "title": "Que los \"testimonios\" salgan de las reseñas de Google Maps",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Bloqueada",
@@ -171,7 +171,7 @@
   },
   {
     "id": 24,
-    "title": "A\u00f1adir feed de instagram (no ser\u00e1 autom\u00e1tico)",
+    "title": "Añadir feed de instagram (no será automático)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Bloqueada",
@@ -181,7 +181,7 @@
   },
   {
     "id": 25,
-    "title": "Tests unitarios/integraci\u00f3n",
+    "title": "Tests unitarios/integración",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "En curso",
@@ -191,7 +191,7 @@
   },
   {
     "id": 26,
-    "title": "Tests aceptaci\u00f3n",
+    "title": "Tests aceptación",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "En curso",
@@ -211,7 +211,7 @@
   },
   {
     "id": 28,
-    "title": "Tests de regresi\u00f3n visual",
+    "title": "Tests de regresión visual",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -221,7 +221,7 @@
   },
   {
     "id": 29,
-    "title": "Monitorizaci\u00f3n de errores JavaScript con Bugsnag/Sentry",
+    "title": "Monitorización de errores JavaScript con Bugsnag/Sentry",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -231,7 +231,7 @@
   },
   {
     "id": 30,
-    "title": "Revisi\u00f3n de los modos claro y oscuro, ambos tienen problemas",
+    "title": "Revisión de los modos claro y oscuro, ambos tienen problemas",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -241,7 +241,7 @@
   },
   {
     "id": 31,
-    "title": "\u00bfAlguna plataforma de comentarios? (Disqus)",
+    "title": "¿Alguna plataforma de comentarios? (Disqus)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "No iniciada",
@@ -251,7 +251,7 @@
   },
   {
     "id": 32,
-    "title": "A\u00f1adiendo an\u00e1lisis de c\u00f3digo con Sonar",
+    "title": "Añadiendo análisis de código con Sonar",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -261,7 +261,7 @@
   },
   {
     "id": 33,
-    "title": "Mapa de gesti\u00f3n municipal como el de la Almarchahttps://iotax.es/?token=JlWpKKSIXSOFBa7NiCoV3WbcY0arW4",
+    "title": "Mapa de gestión municipal como el de la Almarchahttps://iotax.es/?token=JlWpKKSIXSOFBa7NiCoV3WbcY0arW4",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "No iniciada",
@@ -271,7 +271,7 @@
   },
   {
     "id": 34,
-    "title": "Inserci\u00f3n v\u00eddeo del drone",
+    "title": "Inserción vídeo del drone",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -281,7 +281,7 @@
   },
   {
     "id": 35,
-    "title": "Configuraci\u00f3n de tests e2e visuales de regresi\u00f3n (por si rompo algo sin querer)",
+    "title": "Configuración de tests e2e visuales de regresión (por si rompo algo sin querer)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -291,7 +291,7 @@
   },
   {
     "id": 36,
-    "title": "Componetizaci\u00f3n de los botones para unificaci\u00f3n",
+    "title": "Componetización de los botones para unificación",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -301,7 +301,7 @@
   },
   {
     "id": 37,
-    "title": "Creaci\u00f3n de tests e2e de navegaci\u00f3n para comprobar que no se rompe ning\u00fan link interno con cambios que se vayan haciendo",
+    "title": "Creación de tests e2e de navegación para comprobar que no se rompe ningún link interno con cambios que se vayan haciendo",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -311,7 +311,7 @@
   },
   {
     "id": 38,
-    "title": "Mejora de tests e2e visuales para incluir la vista de m\u00f3vil",
+    "title": "Mejora de tests e2e visuales para incluir la vista de móvil",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -331,7 +331,7 @@
   },
   {
     "id": 40,
-    "title": "Analizar el estado de la web y ver qu\u00e9 fotos y textos quieren cambiar",
+    "title": "Analizar el estado de la web y ver qué fotos y textos quieren cambiar",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "No iniciada",
@@ -341,7 +341,7 @@
   },
   {
     "id": 41,
-    "title": "Cambiar el correo electr\u00f3nico que est\u00e1 puesto actualmente (belmontejo@dipucuenca.es)",
+    "title": "Cambiar el correo electrónico que está puesto actualmente (belmontejo@dipucuenca.es)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "No iniciada",
@@ -351,7 +351,7 @@
   },
   {
     "id": 42,
-    "title": "Cambiar el tel\u00e9fono que est\u00e1 puesto actualmente (969296279)",
+    "title": "Cambiar el teléfono que está puesto actualmente (969296279)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "No iniciada",
@@ -361,7 +361,7 @@
   },
   {
     "id": 43,
-    "title": "Incluir detalles en el aviso legal (est\u00e1 en una rama a parte)",
+    "title": "Incluir detalles en el aviso legal (está en una rama a parte)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Bloqueada",
@@ -381,7 +381,7 @@
   },
   {
     "id": 45,
-    "title": "Componetizaci\u00f3n de m\u00e1s elementos que se pueden aislar",
+    "title": "Componetización de más elementos que se pueden aislar",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -391,7 +391,7 @@
   },
   {
     "id": 46,
-    "title": "Abrir en una modal las im\u00e1genes de Proyectos",
+    "title": "Abrir en una modal las imágenes de Proyectos",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -401,7 +401,7 @@
   },
   {
     "id": 47,
-    "title": "Migraci\u00f3n a Git LFS las im\u00e1genes de los tests visuales para aligerar el tama\u00f1o del repositorio que estaba creciendo mucho (luego valoraremos usar Percy)",
+    "title": "Migración a Git LFS las imágenes de los tests visuales para aligerar el tamaño del repositorio que estaba creciendo mucho (luego valoraremos usar Percy)",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -411,7 +411,7 @@
   },
   {
     "id": 48,
-    "title": "Implementaci\u00f3n de las View Transitions",
+    "title": "Implementación de las View Transitions",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Cancelada",
@@ -421,7 +421,7 @@
   },
   {
     "id": 49,
-    "title": "Configuraci\u00f3n de los datos de contacto y redes sociales desde Decap",
+    "title": "Configuración de los datos de contacto y redes sociales desde Decap",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -431,7 +431,7 @@
   },
   {
     "id": 50,
-    "title": "Unificaci\u00f3n de ventanas modales en un \u00fanico componente",
+    "title": "Unificación de ventanas modales en un único componente",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -441,7 +441,7 @@
   },
   {
     "id": 51,
-    "title": "Configuraci\u00f3n de la p\u00e1gina de contacto para enviar emails con Resend",
+    "title": "Configuración de la página de contacto para enviar emails con Resend",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -461,7 +461,7 @@
   },
   {
     "id": 53,
-    "title": "Automatizaci\u00f3n de un workflow en Github para que se pueda abrir una PR autom\u00e1ticamente, s\u00f3lo pulsando un bot\u00f3n, con los nuevos bandos que se hayan hecho",
+    "title": "Automatización de un workflow en Github para que se pueda abrir una PR automáticamente, sólo pulsando un botón, con los nuevos bandos que se hayan hecho",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -471,7 +471,7 @@
   },
   {
     "id": 54,
-    "title": "Revisi\u00f3n y actualizaci\u00f3n de paquetes sugeridos por Dependabot",
+    "title": "Revisión y actualización de paquetes sugeridos por Dependabot",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -481,7 +481,7 @@
   },
   {
     "id": 55,
-    "title": "Mejora en el buscador para mover la l\u00f3gica de b\u00fasqueda del servidor (Vercel) al cliente (navegador) y as\u00ed no usar la CPU del servidor que s\u00f3lo tenemos 4 horas al mes",
+    "title": "Mejora en el buscador para mover la lógica de búsqueda del servidor (Vercel) al cliente (navegador) y así no usar la CPU del servidor que sólo tenemos 4 horas al mes",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -501,7 +501,7 @@
   },
   {
     "id": 57,
-    "title": "A\u00f1adido Github Workflow para pasar los tests e2e \"cr\u00edticos\" (de flujo) cada vez que se haga push en main",
+    "title": "Añadido Github Workflow para pasar los tests e2e \"críticos\" (de flujo) cada vez que se haga push en main",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -511,7 +511,7 @@
   },
   {
     "id": 58,
-    "title": "Creaci\u00f3n del repositorio monorepo gestor de proyectos",
+    "title": "Creación del repositorio monorepo gestor de proyectos",
     "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
     "status": "Completada",
@@ -521,7 +521,7 @@
   },
   {
     "id": 59,
-    "title": "Panel de gesti\u00f3n de horas",
+    "title": "Panel de gestión de horas",
     "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
     "status": "Completada",
@@ -541,7 +541,7 @@
   },
   {
     "id": 61,
-    "title": "Creaci\u00f3n del primer componente LitElement: modal",
+    "title": "Creación del primer componente LitElement: modal",
     "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
     "status": "Completada",
@@ -551,7 +551,7 @@
   },
   {
     "id": 62,
-    "title": "Automatizaci\u00f3n de publicaci\u00f3n de versiones",
+    "title": "Automatización de publicación de versiones",
     "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
     "status": "Completada",
@@ -561,7 +561,7 @@
   },
   {
     "id": 63,
-    "title": "Gesti\u00f3n de tareas del proyecto v\u00eda CLI",
+    "title": "Gestión de tareas del proyecto vía CLI",
     "projectId": "gestor-de-proyectos",
     "phase": "Pre-release",
     "status": "Completada",
@@ -571,7 +571,7 @@
   },
   {
     "id": 64,
-    "title": "Estructura inicial de Astro con rutas e idiomas b\u00e1sicos",
+    "title": "Estructura inicial de Astro con rutas e idiomas básicos",
     "projectId": "ayuntamiento-de-palomares-del-campo",
     "phase": "Pre-release",
     "status": "En curso",
@@ -581,7 +581,7 @@
   },
   {
     "id": 65,
-    "title": "Revisi\u00f3n de AGENTS y actualizaci\u00f3n de directrices del repositorio",
+    "title": "Revisión de AGENTS y actualización de directrices del repositorio",
     "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -591,7 +591,7 @@
   },
   {
     "id": 66,
-    "title": "Retirada de script bootstrap y actualizaci\u00f3n de gu\u00edas",
+    "title": "Retirada de script bootstrap y actualización de guías",
     "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -611,7 +611,7 @@
   },
   {
     "id": 68,
-    "title": "Mini webapp de votaci\u00f3n kamikazes-events",
+    "title": "Mini webapp de votación kamikazes-events",
     "projectId": "kamikazes-events",
     "phase": "Pre-release",
     "status": "Completada",
@@ -621,7 +621,7 @@
   },
   {
     "id": 69,
-    "title": "Proyecto de gesti\u00f3n del hogar",
+    "title": "Proyecto de gestión del hogar",
     "projectId": "home-manager",
     "phase": "Pre-release",
     "status": "Completada",
@@ -631,7 +631,7 @@
   },
   {
     "id": 70,
-    "title": "A\u00f1adir secci\u00f3n del tiempo",
+    "title": "Añadir sección del tiempo",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Pre-release",
     "status": "Completada",
@@ -641,7 +641,7 @@
   },
   {
     "id": 71,
-    "title": "Auditor\u00eda y actualizaci\u00f3n de dependencias npm",
+    "title": "Auditoría y actualización de dependencias npm",
     "projectId": "ayuntamiento-de-belmontejo",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -651,7 +651,7 @@
   },
   {
     "id": 72,
-    "title": "Integraci\u00f3n TickTick",
+    "title": "Integración TickTick",
     "projectId": "home-manager",
     "phase": "Pre-release",
     "status": "En curso",
@@ -661,7 +661,7 @@
   },
   {
     "id": 73,
-    "title": "Registro de compra de veh\u00edculo (Rifter)",
+    "title": "Registro de compra de vehículo (Rifter)",
     "projectId": "home-manager",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -671,7 +671,7 @@
   },
   {
     "id": 74,
-    "title": "Mostrar compra de veh\u00edculo en ficha y detalle",
+    "title": "Mostrar compra de vehículo en ficha y detalle",
     "projectId": "home-manager",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -681,7 +681,7 @@
   },
   {
     "id": 75,
-    "title": "Auditor\u00eda del CSS global y tokens",
+    "title": "Auditoría del CSS global y tokens",
     "projectId": "home-manager",
     "phase": "Mantenimiento",
     "status": "Completada",
@@ -701,7 +701,7 @@
   },
   {
     "id": 77,
-    "title": "Integraci\u00f3n de precios de gasolineras",
+    "title": "Integración de precios de gasolineras",
     "projectId": "home-manager",
     "phase": "Pre-release",
     "status": "En curso",
@@ -724,34 +724,54 @@
     "title": "Visualizacion de TickTick en dashboard home",
     "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
-    "status": "En curso",
+    "status": "Completada",
     "ownerId": "rafael-garcia",
     "startDate": "31/12/2025",
-    "endDate": null
+    "endDate": "31/12/2025"
   },
   {
     "id": 80,
     "title": "Refactor dashboard home a Clean Architecture (static)",
     "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
-    "status": "En curso",
+    "status": "Completada",
     "ownerId": "rafael-garcia",
     "startDate": "31/12/2025",
-    "endDate": null
+    "endDate": "31/12/2025"
   },
   {
     "id": 81,
     "title": "Resumen home + dashboard por proyecto",
     "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
-    "status": "En curso",
+    "status": "Completada",
     "ownerId": "rafael-garcia",
     "startDate": "31/12/2025",
-    "endDate": null
+    "endDate": "31/12/2025"
   },
   {
     "id": 82,
     "title": "SASS pipeline y fixes de enlaces en home",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": "31/12/2025"
+  },
+  {
+    "id": 83,
+    "title": "Ajustes TickTick por columnas y fechas",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": "31/12/2025"
+  },
+  {
+    "id": 84,
+    "title": "Correcciones dashboard (scroll y rutas)",
     "projectId": "gestor-de-proyectos",
     "phase": "Mantenimiento",
     "status": "Completada",

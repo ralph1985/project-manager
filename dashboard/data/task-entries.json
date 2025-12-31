@@ -444,7 +444,7 @@
     "id": 64,
     "taskId": 80,
     "date": "31/12/2025",
-    "hours": 1.0,
+    "hours": 1,
     "note": ""
   },
   {
@@ -460,5 +460,19 @@
     "date": "31/12/2025",
     "hours": 0.5,
     "note": "SASS para home y correccion de enlaces del dashboard."
+  },
+  {
+    "id": 68,
+    "taskId": 83,
+    "date": "31/12/2025",
+    "hours": 1,
+    "note": "Cambios TickTick: columnas, fechas, filtros y token."
+  },
+  {
+    "id": 69,
+    "taskId": 84,
+    "date": "31/12/2025",
+    "hours": 1,
+    "note": "Arreglos de UI/servidor en el dashboard."
   }
 ]
