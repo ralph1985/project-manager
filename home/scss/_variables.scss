@@ -1,0 +1,21 @@
+:root {
+  --bg-base: #070a0f;
+  --bg-deep: #0b1018;
+  --bg-glow: #0f1b2a;
+  --panel: rgba(10, 17, 27, 0.72);
+  --panel-strong: rgba(11, 20, 31, 0.92);
+  --panel-border: rgba(77, 164, 255, 0.24);
+  --panel-highlight: rgba(128, 224, 255, 0.24);
+  --text: #e6f1ff;
+  --text-muted: #8fa4bf;
+  --text-faint: #5b6a7f;
+  --accent: #45e6ff;
+  --accent-strong: #4ef2b2;
+  --warning: #ffb347;
+  --danger: #ff6b6b;
+  --shadow: 0 20px 60px rgba(3, 8, 15, 0.6);
+  --radius: 18px;
+  --font-display: "Orbitron", "Rajdhani", "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Sans", "Space Grotesk", "Rajdhani", sans-serif;
+  color: var(--text);
+}
