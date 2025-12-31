@@ -5,7 +5,7 @@ const https = require('https');
 
 const PORT = process.env.PORT || 4173;
 const root = process.cwd();
-const defaultFile = path.join(root, 'home', 'index.html');
+const defaultFile = path.join(root, 'dashboard', 'home', 'index.html');
 const tickTickApiHost = 'api.ticktick.com';
 const tickTickOpenStatus = 0;
 const tickTickCacheTtlMs = 15 * 60 * 1000;
@@ -214,9 +214,9 @@ http.createServer((req, res) => {
   }
   const requestPath =
     url.pathname === '/'
-      ? '/home/index.html'
+      ? '/dashboard/home/index.html'
       : url.pathname === '/project.html'
-        ? '/home/project.html'
+        ? '/dashboard/home/project.html'
         : url.pathname;
   const resolved = safePath(requestPath);
   if (!resolved) {
