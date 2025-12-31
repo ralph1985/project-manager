@@ -444,21 +444,14 @@
     "id": 64,
     "taskId": 80,
     "date": "31/12/2025",
-    "hours": 0.5,
-    "note": ""
-  },
-  {
-    "id": 65,
-    "taskId": 81,
-    "date": "31/12/2025",
-    "hours": 0.5,
+    "hours": 1.0,
     "note": ""
   },
   {
     "id": 66,
     "taskId": 81,
     "date": "31/12/2025",
-    "hours": 2.5,
+    "hours": 0.5,
     "note": "Migracion a estructura normalizada y ajustes del dashboard."
   }
 ]
