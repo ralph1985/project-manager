@@ -39,6 +39,7 @@
 
 - Commits: seguir convención convencional-changelog (ej. `feat:`, `fix:`, `chore:`); `npm run commit` usa Commitizen si está configurado en el paquete.
 - PRs: incluye resumen claro, pasos de prueba, issues vinculadas y capturas si cambias UI; mantén cambios acotados a un paquete salvo refactors explícitos.
+- Solo hacer commits cuando el usuario lo pida explícitamente; no preguntar si quiere commit.
 
 ## Security & Configuration Tips
 

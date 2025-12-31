@@ -4,3 +4,13 @@ projects/
 .DS_Store
 .npm-cache
 packages/*/dist
+.env
+.env.*
+!.env.example
+*.log
+coverage
+.cache
+.turbo
+.vite
+.next
+out
