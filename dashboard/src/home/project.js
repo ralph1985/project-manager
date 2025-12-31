@@ -12,12 +12,14 @@ import {
   renderProjectStats,
   renderProjectTodos,
   renderProjectTable,
+  renderProjectMilestones,
   updateSortIndicators,
 } from './ui/render.js';
 import { applySavedProjectFilters, readProjectFilters } from './ui/projectFilters.js';
 import { setupNotes } from './ui/notes.js';
 import { initTickTick } from './ui/ticktick.js';
 import { loadProjectTodos } from './usecases/loadProjectTodos.js';
+import { loadProjectMilestones } from './usecases/loadProjectMilestones.js';
 
 const elements = getProjectElements();
 let currentSort = { key: 'id', dir: 'desc' };
@@ -155,6 +157,9 @@ async function init() {
 
   const todos = await loadProjectTodos(currentProjectId);
   renderProjectTodos(elements, todos);
+
+  const milestones = await loadProjectMilestones(currentProjectId);
+  renderProjectMilestones(elements, milestones);
 }
 
 init().catch((err) => {

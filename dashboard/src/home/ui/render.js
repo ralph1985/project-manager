@@ -261,6 +261,34 @@ export function renderProjectTodos(elements, todos) {
   });
 }
 
+export function renderProjectMilestones(elements, milestones) {
+  elements.projectMilestones.innerHTML = '';
+  if (!milestones.length) {
+    const empty = document.createElement('li');
+    empty.className = 'ticktick-empty';
+    empty.textContent = 'Sin hitos todavía.';
+    elements.projectMilestones.appendChild(empty);
+    return;
+  }
+
+  milestones.forEach((milestone) => {
+    const item = document.createElement('li');
+    item.className = 'ticktick-item';
+
+    const title = document.createElement('span');
+    title.className = 'ticktick-title';
+    title.textContent = milestone.title;
+
+    const meta = document.createElement('span');
+    meta.className = 'ticktick-meta';
+    meta.textContent = milestone.status || 'Planned';
+
+    item.appendChild(title);
+    item.appendChild(meta);
+    elements.projectMilestones.appendChild(item);
+  });
+}
+
 function renderNoteCell(note) {
   if (!note) return '—';
   const shortText = note.length > 40 ? `${note.slice(0, 40)}…` : note;

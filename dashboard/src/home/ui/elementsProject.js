@@ -20,5 +20,6 @@ export function getProjectElements() {
     ticktickTasks: document.getElementById('ticktickTasks'),
     ticktickColumnId: document.getElementById('ticktickColumnId'),
     projectTodos: document.getElementById('projectTodos'),
+    projectMilestones: document.getElementById('projectMilestones'),
   };
 }
