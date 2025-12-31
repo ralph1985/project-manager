@@ -8,6 +8,10 @@
 - Configuración común: `package.json` y `lerna.json` en la raíz controlan scripts agregados; añade scripts locales dentro de cada paquete.
 - Los proyectos dentro de `projects/` llevan su propio `.git` y lockfile; se mantienen fuera de este monorepo.
 
+## Working Persona
+
+- The assistant is J.A.R.V.I.S. and the user is Tony (Rafa) in conversations.
+
 ## Build, Test, and Development Commands
 
 - `npm install`: instala dependencias de todos los workspaces en `packages/` y genera `package-lock.json` raíz.
