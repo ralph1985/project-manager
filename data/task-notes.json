@@ -706,5 +706,11 @@
     "taskId": 81,
     "date": "31/12/2025",
     "note": "Migracion de datos a proyectos/personas/entries/notes, actualizacion del dashboard y scripts."
+  },
+  {
+    "id": 119,
+    "taskId": 82,
+    "date": "31/12/2025",
+    "note": "Migracion de estilos a SASS y ajuste de enlaces a project.html."
   }
 ]

@@ -748,5 +748,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "31/12/2025",
     "endDate": null
+  },
+  {
+    "id": 82,
+    "title": "SASS pipeline y fixes de enlaces en home",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": "31/12/2025"
   }
 ]

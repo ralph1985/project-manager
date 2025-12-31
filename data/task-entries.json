@@ -453,5 +453,12 @@
     "date": "31/12/2025",
     "hours": 0.5,
     "note": "Migracion a estructura normalizada y ajustes del dashboard."
+  },
+  {
+    "id": 67,
+    "taskId": 82,
+    "date": "31/12/2025",
+    "hours": 0.5,
+    "note": "SASS para home y correccion de enlaces del dashboard."
   }
 ]
