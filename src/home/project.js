@@ -2,6 +2,7 @@ import { HOURLY_RATE } from './config.js';
 import { applyFilters, filterTasksByProject, sortTasks } from './domain/task.js';
 import { loadTasks } from './usecases/loadTasks.js';
 import { loadProjects } from './usecases/loadProjects.js';
+import './ui/components/index.js';
 import { getDashboardStats } from './usecases/getDashboardStats.js';
 import { getFilterOptions } from './usecases/getFilterOptions.js';
 import { loadJson, saveJson } from './infrastructure/storage.js';

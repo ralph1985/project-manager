@@ -12,7 +12,7 @@
       <h1 id="projectTitle">Detalle de proyecto</h1>
       <p>Vista con tareas internas, TickTick y to-dos</p>
     </div>
-    <div class="pill">Project Manager · Project</div>
+    <pm-pill>Project Manager · Project</pm-pill>
   </header>
 
   <main class="layout">
@@ -24,10 +24,10 @@
       </div>
     </div>
 
-    <section class="grid" id="project-stats"></section>
+    <pm-grid id="project-stats"></pm-grid>
 
-    <div class="grid">
-      <div class="card ticktick-card">
+    <pm-grid>
+      <pm-card class="ticktick-card">
         <div class="ticktick-header">
           <div>
             <h2>TickTick</h2>
@@ -35,7 +35,7 @@
           </div>
           <div class="ticktick-actions">
             <button type="button" id="ticktickRefresh" class="btn-refresh">Refrescar</button>
-            <span id="ticktickStatus" class="badge status-Info">Cargando</span>
+            <pm-badge id="ticktickStatus" class="status-Info">Cargando</pm-badge>
           </div>
         </div>
         <div class="ticktick-controls">
@@ -44,15 +44,15 @@
         </div>
         <p id="ticktickMessage" class="ticktick-message"></p>
         <ul id="ticktickTasks" class="ticktick-list"></ul>
-      </div>
-      <div class="card">
+      </pm-card>
+      <pm-card>
         <h2>To-dos</h2>
         <p class="ticktick-subtitle">Lista preparada para próximos pasos.</p>
         <ul id="projectTodos" class="ticktick-list"></ul>
-      </div>
-    </div>
+      </pm-card>
+    </pm-grid>
 
-    <div class="card table-card">
+    <pm-card class="table-card">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
         <h2 style="margin:0;">Tareas internas</h2>
       </div>
@@ -112,7 +112,7 @@
           <tbody></tbody>
         </table>
       </div>
-    </div>
+    </pm-card>
 
     <div id="noteModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
       <div class="modal-backdrop"></div>

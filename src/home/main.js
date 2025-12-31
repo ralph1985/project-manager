@@ -3,6 +3,7 @@ import { loadTasks } from './usecases/loadTasks.js';
 import { getDashboardStats } from './usecases/getDashboardStats.js';
 import { getProjectSummaries } from './usecases/getProjectSummaries.js';
 import { listRecentTasks } from './usecases/getRecentTasks.js';
+import './ui/components/index.js';
 import { getElements } from './ui/elements.js';
 import { renderProjectSummaries, renderRecentTasks, renderStats } from './ui/render.js';
 

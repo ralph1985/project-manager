@@ -12,24 +12,24 @@
       <h1>Resumen de proyectos</h1>
       <p>Vista rápida de horas, actividad y accesos directos</p>
     </div>
-    <div class="pill">Project Manager · Summary</div>
+    <pm-pill>Project Manager · Summary</pm-pill>
   </header>
 
   <main class="layout">
-    <section class="grid" id="stats"></section>
+    <pm-grid id="stats"></pm-grid>
 
-    <div class="grid">
-      <div class="card">
+    <pm-grid>
+      <pm-card>
         <h2>Proyectos</h2>
         <p class="section-note">Accesos rápidos al detalle por proyecto.</p>
         <div id="project-summary" class="project-summary-list"></div>
-      </div>
-      <div class="card">
+      </pm-card>
+      <pm-card>
         <h2>Actividad reciente</h2>
         <p class="section-note">Últimas tareas registradas en el sistema.</p>
         <ul id="recent-tasks" class="recent-tasks"></ul>
-      </div>
-    </div>
+      </pm-card>
+    </pm-grid>
   </main>
 
   <script type="module" src="../src/home/main.js"></script>

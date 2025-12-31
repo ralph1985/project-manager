@@ -16,10 +16,10 @@ export function renderStats(elements, stats) {
   elements.stats.innerHTML = cards
     .map(
       (card) => `
-        <div class="card">
+        <pm-card>
           <div class="stat-label">${card.label}</div>
           <div class="stat-value">${card.value}</div>
-        </div>
+        </pm-card>
       `
     )
     .join('');
@@ -92,10 +92,10 @@ export function renderTable(elements, tasks) {
         <tr>
           <td>${task.id}</td>
           <td>${task.title}</td>
-          <td><span class="badge ${projectClass(task.project)} pill-status">${task.project || '—'}</span></td>
-          <td><span class="badge ${phaseClass(task.phase)} pill-status">${task.phase || '—'}</span></td>
+          <td><pm-badge class="${projectClass(task.project)} pill-status">${task.project || '—'}</pm-badge></td>
+          <td><pm-badge class="${phaseClass(task.phase)} pill-status">${task.phase || '—'}</pm-badge></td>
           <td>${task.owner || '—'}</td>
-          <td><span class="badge ${statusClass(task.status)} pill-status">${task.status}</span></td>
+          <td><pm-badge class="${statusClass(task.status)} pill-status">${task.status}</pm-badge></td>
           <td>${task.startDate || '—'}</td>
           <td>${task.endDate || '—'}</td>
           <td>${renderNoteCell(task.notes)}</td>
@@ -113,9 +113,9 @@ export function renderProjectTable(elements, tasks) {
         <tr>
           <td>${task.id}</td>
           <td>${task.title}</td>
-          <td><span class="badge ${phaseClass(task.phase)} pill-status">${task.phase || '—'}</span></td>
+          <td><pm-badge class="${phaseClass(task.phase)} pill-status">${task.phase || '—'}</pm-badge></td>
           <td>${task.owner || '—'}</td>
-          <td><span class="badge ${statusClass(task.status)} pill-status">${task.status}</span></td>
+          <td><pm-badge class="${statusClass(task.status)} pill-status">${task.status}</pm-badge></td>
           <td>${task.startDate || '—'}</td>
           <td>${task.endDate || '—'}</td>
           <td>${renderNoteCell(task.notes)}</td>
@@ -193,13 +193,13 @@ export function renderProjectSummaries(elements, summaries) {
     .map((summary) => {
       const href = `/project.html?project=${encodeURIComponent(summary.projectId)}`;
       return `
-        <a class="project-summary" href="${href}">
+        <pm-project-summary href="${href}">
           <div>
             <div class="project-summary-title">${summary.project}</div>
             <div class="project-summary-meta">${summary.count} tareas · ${summary.inProgress} en curso</div>
           </div>
           <div class="project-summary-hours">${fmtNumber(summary.hours)} h</div>
-        </a>
+        </pm-project-summary>
       `;
     })
     .join('');
@@ -213,13 +213,13 @@ export function renderRecentTasks(elements, tasks) {
   elements.recentTasks.innerHTML = tasks
     .map(
       (task) => `
-        <li class="recent-task">
+        <pm-recent-task>
           <div>
             <div class="recent-task-title">${task.title}</div>
             <div class="recent-task-meta">${task.project || '—'} · ${task.phase || '—'}</div>
           </div>
-          <span class="badge ${statusClass(task.status)} pill-status">${task.status}</span>
-        </li>
+          <pm-badge class="${statusClass(task.status)} pill-status">${task.status}</pm-badge>
+        </pm-recent-task>
       `
     )
     .join('');
@@ -237,10 +237,10 @@ export function renderProjectStats(elements, stats, hourlyRate) {
   elements.projectStats.innerHTML = cards
     .map(
       (card) => `
-        <div class="card">
+        <pm-card>
           <div class="stat-label">${card.label}</div>
           <div class="stat-value">${card.value}</div>
-        </div>
+        </pm-card>
       `
     )
     .join('');
