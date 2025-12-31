@@ -46,6 +46,8 @@ header {
   max-width: 520px;
 }
 .pill {
+  display: inline-flex;
+  align-items: center;
   background: linear-gradient(120deg, rgba(69, 230, 255, 0.9), rgba(78, 242, 178, 0.9));
   color: #061018;
   padding: 10px 16px;
