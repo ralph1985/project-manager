@@ -212,7 +212,13 @@ http.createServer((req, res) => {
     });
     return;
   }
-  const resolved = safePath(req.url === '/' ? '/home/index.html' : req.url);
+  const requestPath =
+    url.pathname === '/'
+      ? '/home/index.html'
+      : url.pathname === '/project.html'
+        ? '/home/project.html'
+        : url.pathname;
+  const resolved = safePath(requestPath);
   if (!resolved) {
     res.writeHead(400, { 'Content-Type': 'text/plain' });
     res.end('Bad request');
