@@ -161,7 +161,7 @@ export function renderTickTickTasks(elements, tasks) {
 
   tasks.forEach((task) => {
     const item = document.createElement('li');
-    item.className = 'ticktick-item';
+    item.className = `ticktick-item${task.ticktickStatus === 'overdue' ? ' ticktick-item--overdue' : ''}`;
     const title = document.createElement('span');
     title.className = 'ticktick-title';
     title.textContent = task.title || 'Sin título';

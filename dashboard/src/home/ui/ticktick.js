@@ -87,10 +87,36 @@ async function handleTickTickSelection(elements, projectId, options = {}) {
       renderTickTickTasks(elements, []);
       return;
     }
+    const tasks = normalizeTickTickTasks(data.tasks || []);
     renderTickTickStatus(elements, 'Activo', 'status-En');
-    renderTickTickTasks(elements, data.tasks || []);
+    renderTickTickTasks(elements, tasks);
   } catch {
     renderTickTickStatus(elements, 'Error', 'status-Bloqueada');
     renderTickTickMessage(elements, 'No se pudieron cargar las tareas de TickTick.');
   }
+}
+
+function normalizeTickTickTasks(tasks) {
+  const now = new Date();
+  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const endOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+
+  const overdue = [];
+  const today = [];
+
+  tasks.forEach((task) => {
+    const due = task.dueDate ? new Date(task.dueDate) : null;
+    if (!due || Number.isNaN(due.valueOf())) return;
+    if (due < startOfToday) {
+      overdue.push({ ...task, ticktickStatus: 'overdue' });
+      return;
+    }
+    if (due >= startOfToday && due <= endOfToday) {
+      today.push({ ...task, ticktickStatus: 'today' });
+    }
+  });
+
+  overdue.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
+  today.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
+  return [...overdue, ...today];
 }

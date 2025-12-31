@@ -546,6 +546,11 @@ header {
   background: rgba(10, 17, 27, 0.55);
 }
 
+.ticktick-item--overdue {
+  border-color: rgba(255, 107, 107, 0.6);
+  background: rgba(64, 16, 24, 0.55);
+}
+
 .ticktick-title {
   font-weight: 600;
 }
