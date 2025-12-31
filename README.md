@@ -17,14 +17,14 @@ Monorepo gestionado con Lerna y npm workspaces para empaquetar componentes (LitE
 ## Notas
 
 - `projects/` está git-ignorado en este repo para no versionar proyectos con repos propios; cada proyecto allí mantiene su propio `.git` y lockfile.
-- Hay un dashboard estático en `home/` que lee `data/projects-tasks.json`; ejecútalo con `npm run home` para ver el seguimiento de tareas/horas. Los filtros admiten selección múltiple.
+- Hay un dashboard estático en `dashboard/home/` que lee `dashboard/data/projects-tasks.json`; ejecútalo con `npm run home` para ver el seguimiento de tareas/horas.
 - El panel `TickTick` del dashboard usa `TICKTICK_ACCESS_TOKEN` (scope `tasks:read`) y carga datos en tiempo real desde la API.
-- El resumen vive en `home/index.html` y el detalle por proyecto en `home/project.html`.
-- Los to-dos por proyecto se leen desde `data/project-todos.json` (array con `projectId`, `title`, `dueDate` opcional).
-- Datos normalizados:
-  - `data/projects.json` (proyectos)
-  - `data/people.json` (responsables)
-  - `data/projects-tasks.json` (tareas con `projectId`/`ownerId`)
-  - `data/task-entries.json` (horas por tarea)
-  - `data/task-notes.json` (notas por tarea)
-- Migración: `node scripts/migrate-tasks.js` genera los nuevos JSONs y deja backup en `data/projects-tasks.legacy.json`.
+- El resumen vive en `dashboard/home/index.html` y el detalle por proyecto en `dashboard/home/project.html`.
+- Los to-dos por proyecto se leen desde `dashboard/data/project-todos.json` (array con `projectId`, `title`, `dueDate` opcional).
+- Datos normalizados (en `dashboard/data/`):
+  - `dashboard/data/projects.json` (proyectos)
+  - `dashboard/data/people.json` (responsables)
+  - `dashboard/data/projects-tasks.json` (tareas con `projectId`/`ownerId`)
+  - `dashboard/data/task-entries.json` (horas por tarea)
+  - `dashboard/data/task-notes.json` (notas por tarea)
+- Migración: `node dashboard/scripts/migrate-tasks.js` genera los nuevos JSONs y deja backup en `dashboard/data/projects-tasks.legacy.json`.

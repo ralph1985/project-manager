@@ -5,6 +5,7 @@
 - Root uses Lerna + npm workspaces for shared packages under `packages/`.
 - `packages/`: componentes compartidos (LitElement u otros) versionados en este monorepo; añade aquí nuevo código fuente y tests.
 - `projects/`: proyectos con repositorios propios (p. ej. `projects/ayuntamiento-de-belmontejo`); están git-ignorados aquí y no forman parte de los workspaces.
+- `dashboard/`: panel de gestión (UI, datos y scripts propios).
 - Configuración común: `package.json` y `lerna.json` en la raíz controlan scripts agregados; añade scripts locales dentro de cada paquete.
 - Los proyectos dentro de `projects/` llevan su propio `.git` y lockfile; se mantienen fuera de este monorepo.
 
@@ -18,9 +19,9 @@
 - `npm run dev`: ejecuta `lerna run dev --parallel --stream` en los paquetes.
 - `npm run build | lint | format | test | test:e2e`: reenvía a `lerna run <tarea>` en cada paquete.
 - Ejemplos dentro de un paquete: `npm run build` (bundler propio), `npm run test:unit` (Vitest), `npm run test:e2e` (Playwright) según lo definas en su `package.json`.
-- `npm run home`: levanta el dashboard estático (`home/`) que consume datos normalizados en `data/`.
-- `npm run task:add`: asistente CLI interactivo para dar de alta tareas y entradas de horas.
-- `node scripts/migrate-tasks.js`: migra el JSON legado y genera `data/projects.json`, `data/people.json`, `data/task-entries.json`, `data/task-notes.json` (con backup en `data/projects-tasks.legacy.json`).
+- `npm run home`: levanta el dashboard estático (`dashboard/home/`) que consume datos normalizados en `dashboard/data/`.
+- `npm run task:add`: asistente CLI interactivo para dar de alta tareas y entradas de horas en `dashboard/data/`.
+- `node dashboard/scripts/migrate-tasks.js`: migra el JSON legado y genera JSONs en `dashboard/data/` (con backup en `dashboard/data/projects-tasks.legacy.json`).
 - `npm run release:pm-modal`: script de publicación del paquete `pm-modal`.
 
 ## Dependency Management
@@ -52,13 +53,13 @@
 
 ## Gestión de tareas y horas
 
-- Al empezar, identifica el proyecto (nombre) y su `projectId` en `data/projects.json`.
+- Al empezar, identifica el proyecto (nombre) y su `projectId` en `dashboard/data/projects.json`.
 - Busca si ya existe una tarea "En curso" para ese trabajo; si existe, registra horas y notas ahí.
 - Si no existe, crea una nueva con `npm run task:add` (o edita a mano manteniendo `dd/mm/aaaa` y ids incrementales).
-- Las tareas viven en `data/projects-tasks.json` (campos clave: `projectId`, `ownerId`, `status`, `startDate`, `endDate`).
-- Las horas se registran en `data/task-entries.json` (entries por tarea y fecha).
-- Las notas se registran en `data/task-notes.json` (notas por tarea y fecha).
-- Los responsables viven en `data/people.json`.
-- Los to-dos por proyecto viven en `data/project-todos.json` (`projectId`, `title`, `dueDate` opcional).
-- TickTick puede asociarse a proyectos vía `data/projects.json` (`ticktickProjectId`).
+- Las tareas viven en `dashboard/data/projects-tasks.json` (campos clave: `projectId`, `ownerId`, `status`, `startDate`, `endDate`).
+- Las horas se registran en `dashboard/data/task-entries.json` (entries por tarea y fecha).
+- Las notas se registran en `dashboard/data/task-notes.json` (notas por tarea y fecha).
+- Los responsables viven en `dashboard/data/people.json`.
+- Los to-dos por proyecto viven en `dashboard/data/project-todos.json` (`projectId`, `title`, `dueDate` opcional).
+- TickTick puede asociarse a proyectos vía `dashboard/data/projects.json` (`ticktickProjectId`).
 - Revisa regularmente los TODO/FIXME en el código (búsqueda de patrones `TODO`/`FIXME`) y recuerda planificar su resolución en próximas tareas.
