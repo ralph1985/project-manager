@@ -778,5 +778,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "31/12/2025",
     "endDate": "31/12/2025"
+  },
+  {
+    "id": 85,
+    "title": "Definición de hitos Speedy Basket (offline-first + stack RN)",
+    "projectId": "speedy-basket",
+    "phase": "Planificación",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "31/12/2025",
+    "endDate": "31/12/2025"
   }
 ]

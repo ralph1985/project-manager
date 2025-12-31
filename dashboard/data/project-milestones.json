@@ -2,18 +2,18 @@
   {
     "id": 1,
     "projectId": "speedy-basket",
-    "title": "Definir flujo MVP y alcance de la app",
+    "title": "Definir flujo MVP (offline first) y alcance de la app",
     "status": "Planned",
     "order": 1,
-    "note": "Lista de la compra + ruta optimizada en supermercado."
+    "note": "App nativa con buena experiencia en mala cobertura."
   },
   {
     "id": 2,
     "projectId": "speedy-basket",
-    "title": "Modelar mapa de supermercado (pasillos, secciones, productos)",
+    "title": "Modelar dominio y datos (Postgres + SQLite)",
     "status": "Planned",
     "order": 2,
-    "note": "Estructura de datos base para el cálculo de rutas."
+    "note": "Catálogo, listas, tiendas, pasillos, secciones y productos."
   },
   {
     "id": 3,
@@ -26,22 +26,38 @@
   {
     "id": 4,
     "projectId": "speedy-basket",
-    "title": "Montar app React Native (base + navegación)",
+    "title": "Backend API (Postgres) para sincronización",
     "status": "Planned",
     "order": 4
   },
   {
     "id": 5,
     "projectId": "speedy-basket",
-    "title": "Pantallas: lista de la compra + ruta sugerida",
+    "title": "Setup React Native básico (primer build en móviles)",
     "status": "Planned",
-    "order": 5
+    "order": 5,
+    "note": "Validar entorno y flujo mínimo en dispositivos."
   },
   {
     "id": 6,
     "projectId": "speedy-basket",
-    "title": "Prueba interna del flujo completo (MVP)",
+    "title": "Definir stack y frameworks complementarios",
     "status": "Planned",
-    "order": 6
+    "order": 6,
+    "note": "Navegación, estado, offline, sincronización."
+  },
+  {
+    "id": 7,
+    "projectId": "speedy-basket",
+    "title": "App React Native (SQLite) y modo offline-first",
+    "status": "Planned",
+    "order": 7
+  },
+  {
+    "id": 8,
+    "projectId": "speedy-basket",
+    "title": "Sincronización y pruebas del flujo completo (MVP)",
+    "status": "Planned",
+    "order": 8
   }
 ]

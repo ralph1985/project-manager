@@ -474,5 +474,12 @@
     "date": "31/12/2025",
     "hours": 1,
     "note": "Arreglos de UI/servidor en el dashboard."
+  },
+  {
+    "id": 70,
+    "taskId": 85,
+    "date": "31/12/2025",
+    "hours": 1,
+    "note": "Hitos para backend Postgres, app RN + SQLite y offline-first."
   }
 ]
