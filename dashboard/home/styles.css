@@ -498,6 +498,16 @@ header {
   color: var(--text-faint);
 }
 
+.ticktick-project-id {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px dashed var(--panel-border);
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
 .ticktick-controls select {
   background: rgba(10, 17, 27, 0.6);
   border: 1px solid var(--panel-border);

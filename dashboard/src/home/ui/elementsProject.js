@@ -16,7 +16,6 @@ export function getProjectElements() {
     noteClose: document.getElementById('noteClose'),
     ticktickStatus: document.getElementById('ticktickStatus'),
     ticktickRefresh: document.getElementById('ticktickRefresh'),
-    ticktickProjectSelect: document.getElementById('ticktickProjectSelect'),
     ticktickMessage: document.getElementById('ticktickMessage'),
     ticktickTasks: document.getElementById('ticktickTasks'),
     projectTodos: document.getElementById('projectTodos'),

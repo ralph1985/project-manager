@@ -174,16 +174,6 @@ export function renderTickTickTasks(elements, tasks) {
   });
 }
 
-export function renderTickTickProjects(elements, projects) {
-  elements.ticktickProjectSelect.innerHTML = '';
-  projects.forEach((project) => {
-    const option = document.createElement('option');
-    option.value = project.id;
-    option.textContent = `${project.name}${project.closed ? ' (cerrado)' : ''}`;
-    elements.ticktickProjectSelect.appendChild(option);
-  });
-}
-
 export function renderProjectSummaries(elements, summaries) {
   if (!summaries.length) {
     elements.projectSummary.innerHTML = '<p class="ticktick-message">Sin proyectos todavía.</p>';

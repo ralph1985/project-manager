@@ -1,5 +1,5 @@
-import { renderTickTickMessage, renderTickTickProjects, renderTickTickStatus, renderTickTickTasks } from './render.js';
-import { TICKTICK_KEY } from '../config.js';
+import { renderTickTickMessage, renderTickTickStatus, renderTickTickTasks } from './render.js';
+import { DEFAULT_TICKTICK_PROJECT_ID, TICKTICK_KEY } from '../config.js';
 import { loadValue, saveValue } from '../infrastructure/storage.js';
 import { loadTickTickProjects } from '../usecases/loadTicktickProjects.js';
 import { loadTickTickTasks } from '../usecases/loadTicktickTasks.js';
@@ -9,8 +9,10 @@ export async function initTickTick(elements, options = {}) {
   const preferredProjectId = options.preferredProjectId || null;
   renderTickTickStatus(elements, 'Cargando', 'status-Info');
   renderTickTickMessage(elements, '');
-  elements.ticktickProjectSelect.innerHTML = '';
-  elements.ticktickProjectSelect.disabled = true;
+  if (elements.ticktickProjectSelect) {
+    elements.ticktickProjectSelect.innerHTML = '';
+    elements.ticktickProjectSelect.disabled = true;
+  }
 
   try {
     const data = await loadTickTickProjects();
@@ -38,33 +40,26 @@ export async function initTickTick(elements, options = {}) {
       return;
     }
 
-    renderTickTickProjects(elements, projects);
     const savedProjectId = loadValue(storageKey);
     const defaultProjectId =
       projects.find((project) => project.id === savedProjectId)?.id ||
       projects.find((project) => project.id === preferredProjectId)?.id ||
+      DEFAULT_TICKTICK_PROJECT_ID ||
       projects[0].id;
 
-    elements.ticktickProjectSelect.value = defaultProjectId;
-    elements.ticktickProjectSelect.disabled = false;
     await handleTickTickSelection(elements, defaultProjectId);
 
     if (elements.ticktickRefresh) {
       elements.ticktickRefresh.addEventListener('click', () => {
-        const projectId = elements.ticktickProjectSelect.value;
-        handleTickTickSelection(elements, projectId, { refresh: true });
+        handleTickTickSelection(elements, defaultProjectId, { refresh: true });
       });
     }
-
-    elements.ticktickProjectSelect.addEventListener('change', () => {
-      const projectId = elements.ticktickProjectSelect.value;
-      saveValue(storageKey, projectId);
-      handleTickTickSelection(elements, projectId);
-    });
   } catch {
     renderTickTickStatus(elements, 'Error', 'status-Bloqueada');
     renderTickTickMessage(elements, 'No se pudieron cargar los proyectos de TickTick.');
-    elements.ticktickProjectSelect.disabled = true;
+    if (elements.ticktickProjectSelect) {
+      elements.ticktickProjectSelect.disabled = true;
+    }
     renderTickTickTasks(elements, []);
   }
 }
