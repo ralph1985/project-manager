@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "projectId": "speedy-basket",
+    "title": "Definir flujo MVP y alcance de la app",
+    "status": "Planned",
+    "order": 1,
+    "note": "Lista de la compra + ruta optimizada en supermercado."
+  },
+  {
+    "id": 2,
+    "projectId": "speedy-basket",
+    "title": "Modelar mapa de supermercado (pasillos, secciones, productos)",
+    "status": "Planned",
+    "order": 2,
+    "note": "Estructura de datos base para el cálculo de rutas."
+  },
+  {
+    "id": 3,
+    "projectId": "speedy-basket",
+    "title": "Diseñar algoritmo de ruta más rápida (MVP)",
+    "status": "Planned",
+    "order": 3,
+    "note": "Ordenar paradas por secciones y minimizar pasos."
+  },
+  {
+    "id": 4,
+    "projectId": "speedy-basket",
+    "title": "Montar app React Native (base + navegación)",
+    "status": "Planned",
+    "order": 4
+  },
+  {
+    "id": 5,
+    "projectId": "speedy-basket",
+    "title": "Pantallas: lista de la compra + ruta sugerida",
+    "status": "Planned",
+    "order": 5
+  },
+  {
+    "id": 6,
+    "projectId": "speedy-basket",
+    "title": "Prueba interna del flujo completo (MVP)",
+    "status": "Planned",
+    "order": 6
+  }
+]
