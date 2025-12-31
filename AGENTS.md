@@ -14,8 +14,9 @@
 - `npm run dev`: ejecuta `lerna run dev --parallel --stream` en los paquetes.
 - `npm run build | lint | format | test | test:e2e`: reenvía a `lerna run <tarea>` en cada paquete.
 - Ejemplos dentro de un paquete: `npm run build` (bundler propio), `npm run test:unit` (Vitest), `npm run test:e2e` (Playwright) según lo definas en su `package.json`.
-- `npm run home`: levanta el dashboard estático (`home/`) que consume `data/projects-tasks.json`.
-- `npm run task:add`: asistente CLI interactivo para dar de alta tareas en `data/projects-tasks.json`.
+- `npm run home`: levanta el dashboard estático (`home/`) que consume datos normalizados en `data/`.
+- `npm run task:add`: asistente CLI interactivo para dar de alta tareas y entradas de horas.
+- `node scripts/migrate-tasks.js`: migra el JSON legado y genera `data/projects.json`, `data/people.json`, `data/task-entries.json`, `data/task-notes.json` (con backup en `data/projects-tasks.legacy.json`).
 - `npm run release:pm-modal`: script de publicación del paquete `pm-modal`.
 
 ## Dependency Management
@@ -46,9 +47,13 @@
 
 ## Gestión de tareas y horas
 
-- Al empezar, identifica el proyecto y usa ese nombre en `project`.
+- Al empezar, identifica el proyecto (nombre) y su `projectId` en `data/projects.json`.
 - Busca si ya existe una tarea "En curso" para ese trabajo; si existe, registra horas y notas ahí.
 - Si no existe, crea una nueva con `npm run task:add` (o edita a mano manteniendo `dd/mm/aaaa` y ids incrementales).
-- Las tareas viven en `data/projects-tasks.json` (campos clave: `projectId`, `ownerId`, `status`, `startDate`).
-- Las horas se registran en `data/task-entries.json` y las notas en `data/task-notes.json`.
+- Las tareas viven en `data/projects-tasks.json` (campos clave: `projectId`, `ownerId`, `status`, `startDate`, `endDate`).
+- Las horas se registran en `data/task-entries.json` (entries por tarea y fecha).
+- Las notas se registran en `data/task-notes.json` (notas por tarea y fecha).
+- Los responsables viven en `data/people.json`.
+- Los to-dos por proyecto viven en `data/project-todos.json` (`projectId`, `title`, `dueDate` opcional).
+- TickTick puede asociarse a proyectos vía `data/projects.json` (`ticktickProjectId`).
 - Revisa regularmente los TODO/FIXME en el código (búsqueda de patrones `TODO`/`FIXME`) y recuerda planificar su resolución en próximas tareas.
