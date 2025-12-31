@@ -17,7 +17,7 @@
   },
   {
     "id": "gas-price-finder",
-    "name": "gas-price-finder",
+    "name": "Gas Price Finder",
     "status": "active",
     "order": 6,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
@@ -33,7 +33,7 @@
   },
   {
     "id": "home-manager",
-    "name": "home-manager",
+    "name": "Home manager",
     "status": "active",
     "order": 5,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
@@ -41,7 +41,7 @@
   },
   {
     "id": "kamikazes-events",
-    "name": "kamikazes-events",
+    "name": "Kamikazes events",
     "status": "active",
     "order": 4,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
