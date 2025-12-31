@@ -227,6 +227,7 @@ http.createServer((req, res) => {
   }
   const requestPath = (() => {
     if (url.pathname === '/') return '/dashboard/home/index.html';
+    if (url.pathname === '/index.html') return '/dashboard/home/index.html';
     if (url.pathname === '/project.html') return '/dashboard/home/project.html';
     if (url.pathname.startsWith('/home/')) return `/dashboard${url.pathname}`;
     if (url.pathname.startsWith('/src/')) return `/dashboard${url.pathname}`;
