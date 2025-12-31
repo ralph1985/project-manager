@@ -79,6 +79,8 @@ h2 {
 .status-Bloqueada { background: rgba(248, 113, 113, 0.2); color: #f87171; }
 .status-No { background: rgba(226, 232, 240, 0.12); color: #e2e8f0; }
 .status-Cancelada { background: rgba(239, 68, 68, 0.18); color: #fca5a5; }
+.status-Info { background: rgba(34, 211, 238, 0.18); color: #22d3ee; }
+.status-Warn { background: rgba(250, 204, 21, 0.18); color: #facc15; }
 .phase-Pre { background: rgba(59, 130, 246, 0.18); color: #60a5fa; }
 .phase-Mant { background: rgba(234, 179, 8, 0.18); color: #fbbf24; }
 .phase-Default { background: rgba(226, 232, 240, 0.12); color: #e2e8f0; }
@@ -215,6 +217,81 @@ h2 {
   min-height: 44px;
   max-height: 140px;
   overflow-y: auto;
+}
+.ticktick-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ticktick-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ticktick-subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.ticktick-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 360px;
+}
+.ticktick-controls label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.ticktick-controls select {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 10px;
+  min-height: 44px;
+}
+.ticktick-message {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.ticktick-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ticktick-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+.ticktick-title {
+  font-weight: 600;
+}
+.ticktick-meta {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.ticktick-empty {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  color: var(--muted);
+  text-align: center;
 }
 .date-range {
   display: flex;

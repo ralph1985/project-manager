@@ -1,10 +1,15 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
 
 const PORT = process.env.PORT || 4173;
 const root = process.cwd();
 const defaultFile = path.join(root, 'home', 'index.html');
+const tickTickApiHost = 'api.ticktick.com';
+const tickTickOpenStatus = 0;
+const tickTickCacheTtlMs = 15 * 60 * 1000;
+const tickTickCache = new Map();
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -23,6 +28,144 @@ function safePath(requestPath) {
   return resolved;
 }
 
+function getCached(key) {
+  const entry = tickTickCache.get(key);
+  if (!entry) return null;
+  if (Date.now() > entry.expiresAt) {
+    tickTickCache.delete(key);
+    return null;
+  }
+  return entry.value;
+}
+
+function setCached(key, value) {
+  tickTickCache.set(key, { value, expiresAt: Date.now() + tickTickCacheTtlMs });
+}
+
+function sendJson(res, statusCode, payload) {
+  res.writeHead(statusCode, {
+    'Content-Type': 'application/json; charset=utf-8',
+    'Cache-Control': 'no-store',
+  });
+  res.end(JSON.stringify(payload));
+}
+
+function fetchTickTickJson(pathname, accessToken) {
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      {
+        method: 'GET',
+        hostname: tickTickApiHost,
+        path: pathname,
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      },
+      (res) => {
+        let body = '';
+        res.setEncoding('utf8');
+        res.on('data', (chunk) => {
+          body += chunk;
+        });
+        res.on('end', () => {
+          if (res.statusCode && res.statusCode >= 200 && res.statusCode < 300) {
+            try {
+              resolve(JSON.parse(body));
+            } catch (err) {
+              reject(err);
+            }
+          } else {
+            reject(new Error(`TickTick request failed with status ${res.statusCode}`));
+          }
+        });
+      }
+    );
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+async function handleTickTickApi(req, res, url) {
+  const accessToken = process.env.TICKTICK_ACCESS_TOKEN;
+  const parts = url.pathname.split('/').filter(Boolean);
+
+  if (parts.length === 3 && parts[2] === 'projects') {
+    if (!accessToken) {
+      sendJson(res, 200, { status: 'missing-token', projects: [] });
+      return;
+    }
+    const cached = getCached('ticktick-projects');
+    if (cached) {
+      sendJson(res, 200, cached);
+      return;
+    }
+    try {
+      const projects = await fetchTickTickJson('/open/v1/project', accessToken);
+      const payload = {
+        status: 'ready',
+        projects: projects
+          .map((project) => ({
+            id: project.id,
+            name: project.name,
+            closed: Boolean(project.closed),
+          }))
+          .sort((a, b) => a.name.localeCompare(b.name)),
+      };
+      setCached('ticktick-projects', payload);
+      sendJson(res, 200, payload);
+    } catch (err) {
+      sendJson(res, 502, { status: 'error', projects: [] });
+    }
+    return;
+  }
+
+  if (parts.length === 5 && parts[2] === 'projects' && parts[4] === 'tasks') {
+    const projectId = parts[3];
+    if (!projectId) {
+      sendJson(res, 400, { status: 'error', tasks: [] });
+      return;
+    }
+    if (!accessToken) {
+      sendJson(res, 200, { status: 'missing-token', tasks: [] });
+      return;
+    }
+    const cacheKey = `ticktick-project-${projectId}`;
+    const cached = getCached(cacheKey);
+    if (cached) {
+      sendJson(res, 200, cached);
+      return;
+    }
+    try {
+      const projectData = await fetchTickTickJson(
+        `/open/v1/project/${projectId}/data`,
+        accessToken
+      );
+      const tasks = (projectData.tasks || [])
+        .filter(
+          (task) =>
+            task.status === tickTickOpenStatus ||
+            task.status === null ||
+            task.status === undefined
+        )
+        .map((task) => ({
+          id: task.id,
+          title: task.title,
+          dueDate: task.dueDate || null,
+          projectId: task.projectId || projectId,
+          projectName: projectData.project?.name || null,
+        }));
+      const payload = { status: 'ready', tasks };
+      setCached(cacheKey, payload);
+      sendJson(res, 200, payload);
+    } catch (err) {
+      sendJson(res, 502, { status: 'error', tasks: [] });
+    }
+    return;
+  }
+
+  sendJson(res, 404, { status: 'error', message: 'Not found' });
+}
+
 function serveFile(res, filePath) {
   fs.readFile(filePath, (err, data) => {
     if (err) {
@@ -37,6 +180,13 @@ function serveFile(res, filePath) {
 }
 
 http.createServer((req, res) => {
+  const url = new URL(req.url || '/', `http://${req.headers.host || 'localhost'}`);
+  if (url.pathname.startsWith('/api/ticktick')) {
+    handleTickTickApi(req, res, url).catch(() => {
+      sendJson(res, 500, { status: 'error', message: 'Unexpected error' });
+    });
+    return;
+  }
   const resolved = safePath(req.url === '/' ? '/home/index.html' : req.url);
   if (!resolved) {
     res.writeHead(400, { 'Content-Type': 'text/plain' });

@@ -25,6 +25,22 @@
       </div>
     </div>
 
+    <div class="card ticktick-card">
+      <div class="ticktick-header">
+        <div>
+          <h2>TickTick</h2>
+          <p class="ticktick-subtitle">Tareas abiertas por proyecto</p>
+        </div>
+        <span id="ticktickStatus" class="badge status-Info">Cargando</span>
+      </div>
+      <div class="ticktick-controls">
+        <label for="ticktickProjectSelect">Proyecto</label>
+        <select id="ticktickProjectSelect" aria-label="Seleccionar proyecto TickTick"></select>
+      </div>
+      <p id="ticktickMessage" class="ticktick-message"></p>
+      <ul id="ticktickTasks" class="ticktick-list"></ul>
+    </div>
+
     <div class="card table-card">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
         <h2 style="margin:0;">Tareas</h2>
@@ -111,6 +127,11 @@
     const fmt = (n) => Number.isFinite(n) ? n.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 1 }) : '—';
     const fmtCurrency = (n) => Number.isFinite(n) ? n.toLocaleString('es-ES', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 0 }) : '—';
     const escAttr = (str = '') => str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    const TICKTICK_KEY = 'pm-ticktick-project';
+    const ticktickStatusEl = document.getElementById('ticktickStatus');
+    const ticktickSelectEl = document.getElementById('ticktickProjectSelect');
+    const ticktickMessageEl = document.getElementById('ticktickMessage');
+    const ticktickTasksEl = document.getElementById('ticktickTasks');
     const statusClass = (status) => {
       if (!status) return 'status-No';
       if (status.startsWith('Comp')) return 'status-Completa';
@@ -159,6 +180,124 @@
       startDate: (t) => parseDate(t.startDate),
       endDate: (t) => parseDate(t.endDate),
       hours: (t) => t.hours || 0
+    };
+
+    const formatTickTickDate = (value) => {
+      if (!value) return 'Sin fecha';
+      const parsed = new Date(value);
+      if (Number.isNaN(parsed.valueOf())) return 'Sin fecha';
+      return parsed.toLocaleString('es-ES', { dateStyle: 'medium', timeStyle: 'short' });
+    };
+
+    const setTickTickStatus = (label, className) => {
+      ticktickStatusEl.textContent = label;
+      ticktickStatusEl.className = `badge ${className}`;
+    };
+
+    const setTickTickMessage = (message = '') => {
+      ticktickMessageEl.textContent = message;
+      ticktickMessageEl.style.display = message ? 'block' : 'none';
+    };
+
+    const renderTickTickTasks = (tasks) => {
+      ticktickTasksEl.innerHTML = '';
+      if (!tasks.length) {
+        const empty = document.createElement('li');
+        empty.className = 'ticktick-empty';
+        empty.textContent = 'No hay tareas abiertas para este proyecto.';
+        ticktickTasksEl.appendChild(empty);
+        return;
+      }
+      tasks.forEach((task) => {
+        const item = document.createElement('li');
+        item.className = 'ticktick-item';
+        const title = document.createElement('span');
+        title.className = 'ticktick-title';
+        title.textContent = task.title || 'Sin título';
+        const meta = document.createElement('span');
+        meta.className = 'ticktick-meta';
+        meta.textContent = formatTickTickDate(task.dueDate);
+        item.appendChild(title);
+        item.appendChild(meta);
+        ticktickTasksEl.appendChild(item);
+      });
+    };
+
+    const loadTickTickTasks = async (projectId) => {
+      if (!projectId) return;
+      setTickTickStatus('Cargando', 'status-Info');
+      setTickTickMessage('');
+      ticktickTasksEl.innerHTML = '';
+      try {
+        const res = await fetch(`/api/ticktick/projects/${projectId}/tasks`);
+        const data = await res.json();
+        if (data.status === 'missing-token') {
+          setTickTickStatus('Sin token', 'status-Warn');
+          setTickTickMessage('Configura TICKTICK_ACCESS_TOKEN en el entorno para cargar tareas.');
+          renderTickTickTasks([]);
+          return;
+        }
+        if (data.status === 'error') {
+          setTickTickStatus('Error', 'status-Bloqueada');
+          setTickTickMessage('No se pudieron cargar las tareas de TickTick.');
+          renderTickTickTasks([]);
+          return;
+        }
+        setTickTickStatus('Activo', 'status-En');
+        renderTickTickTasks(data.tasks || []);
+      } catch (err) {
+        setTickTickStatus('Error', 'status-Bloqueada');
+        setTickTickMessage('No se pudieron cargar las tareas de TickTick.');
+      }
+    };
+
+    const loadTickTickProjects = async () => {
+      setTickTickStatus('Cargando', 'status-Info');
+      setTickTickMessage('');
+      ticktickSelectEl.innerHTML = '';
+      ticktickSelectEl.disabled = true;
+      try {
+        const res = await fetch('/api/ticktick/projects');
+        const data = await res.json();
+        if (data.status === 'missing-token') {
+          setTickTickStatus('Sin token', 'status-Warn');
+          setTickTickMessage('Configura TICKTICK_ACCESS_TOKEN en el entorno para cargar proyectos.');
+          ticktickSelectEl.disabled = true;
+          renderTickTickTasks([]);
+          return;
+        }
+        if (data.status === 'error') {
+          setTickTickStatus('Error', 'status-Bloqueada');
+          setTickTickMessage('No se pudieron cargar los proyectos de TickTick.');
+          ticktickSelectEl.disabled = true;
+          renderTickTickTasks([]);
+          return;
+        }
+        const projects = data.projects || [];
+        if (!projects.length) {
+          setTickTickStatus('Sin proyectos', 'status-No');
+          setTickTickMessage('No hay proyectos disponibles en TickTick.');
+          renderTickTickTasks([]);
+          return;
+        }
+        projects.forEach((project) => {
+          const option = document.createElement('option');
+          option.value = project.id;
+          option.textContent = `${project.name}${project.closed ? ' (cerrado)' : ''}`;
+          ticktickSelectEl.appendChild(option);
+        });
+        const savedProjectId = localStorage.getItem(TICKTICK_KEY);
+        const defaultProjectId = projects.find((project) => project.id === savedProjectId)?.id
+          || projects[0].id;
+        ticktickSelectEl.value = defaultProjectId;
+        ticktickSelectEl.disabled = false;
+        await loadTickTickTasks(defaultProjectId);
+      } catch (err) {
+        setTickTickStatus('Error', 'status-Bloqueada');
+        setTickTickMessage('No se pudieron cargar los proyectos de TickTick.');
+        ticktickSelectEl.disabled = true;
+        renderTickTickTasks([]);
+      }
     };
     function sortTasks(tasks) {
       const fn = sorters[currentSort.key] || sorters.id;
@@ -454,6 +593,12 @@
       applySavedFilters(loadFilterState());
       const applyFilters = setupFilters(tasks);
       setupSorting(applyFilters);
+      await loadTickTickProjects();
+      ticktickSelectEl.addEventListener('change', () => {
+        const projectId = ticktickSelectEl.value;
+        localStorage.setItem(TICKTICK_KEY, projectId);
+        loadTickTickTasks(projectId);
+      });
 
       document.addEventListener('click', (e) => {
         const btn = e.target.closest('.note-link');
