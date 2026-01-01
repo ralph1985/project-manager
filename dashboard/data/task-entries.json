@@ -481,5 +481,12 @@
     "date": "31/12/2025",
     "hours": 1,
     "note": "Hitos para backend Postgres, app RN + SQLite y offline-first."
+  },
+  {
+    "id": 71,
+    "taskId": 86,
+    "date": "01/01/2026",
+    "hours": 0.5,
+    "note": "Detalle de hitos y modal de visualización en el panel de proyecto."
   }
 ]

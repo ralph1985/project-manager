@@ -788,5 +788,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "31/12/2025",
     "endDate": "31/12/2025"
+  },
+  {
+    "id": 86,
+    "title": "Hitos detallados y modal de roadmap en Speedy Basket",
+    "projectId": "speedy-basket",
+    "phase": "Planificación",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
   }
 ]
