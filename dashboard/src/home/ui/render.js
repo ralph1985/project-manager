@@ -248,7 +248,8 @@ export function renderProjectTodos(elements, todos) {
 
   todos.forEach((todo) => {
     const item = document.createElement('li');
-    item.className = 'ticktick-item';
+    const isDone = todo.status === 'Completada' || todo.status === 'Done';
+    item.className = `ticktick-item${isDone ? ' ticktick-item--done' : ''}`;
     const title = document.createElement('span');
     title.className = 'ticktick-title';
     title.textContent = todo.title || 'Sin título';

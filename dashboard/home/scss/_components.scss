@@ -269,6 +269,10 @@
   border-color: rgba(255, 107, 107, 0.6);
   background: rgba(64, 16, 24, 0.55);
 }
+.ticktick-item--done .ticktick-title {
+  text-decoration: line-through;
+  color: var(--text-faint);
+}
 .ticktick-title { font-weight: 600; }
 .ticktick-meta {
   color: var(--text-faint);
