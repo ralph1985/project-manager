@@ -848,5 +848,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "01/01/2026",
     "endDate": "01/01/2026"
+  },
+  {
+    "id": 92,
+    "title": "API Speedy Basket: migraciones y seed inicial",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
   }
 ]
