@@ -488,5 +488,19 @@
     "date": "01/01/2026",
     "hours": 0.5,
     "note": "Detalle de hitos y modal de visualización en el panel de proyecto."
+  },
+  {
+    "id": 72,
+    "taskId": 87,
+    "date": "01/01/2026",
+    "hours": 0.5,
+    "note": "Modelo de caldera, ruta dedicada y enlace desde gas."
+  },
+  {
+    "id": 73,
+    "taskId": 87,
+    "date": "01/01/2026",
+    "hours": 1,
+    "note": "Eventos de mantenimiento normalizados y render en ficha."
   }
 ]

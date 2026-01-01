@@ -798,5 +798,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "01/01/2026",
     "endDate": "01/01/2026"
+  },
+  {
+    "id": 87,
+    "title": "Ficha de caldera de gas por vivienda",
+    "projectId": "home-manager",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
   }
 ]

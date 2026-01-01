@@ -712,5 +712,17 @@
     "taskId": 82,
     "date": "31/12/2025",
     "note": "Migracion de estilos a SASS y ajuste de enlaces a project.html."
+  },
+  {
+    "id": 120,
+    "taskId": 87,
+    "date": "01/01/2026",
+    "note": "Se añade ficha de caldera con datos de mantenimiento y contrato, más el acceso desde el listado de gas."
+  },
+  {
+    "id": 121,
+    "taskId": 87,
+    "date": "01/01/2026",
+    "note": "Se normalizan apuntes de mantenimiento en eventos persistidos y se muestran en la ficha."
   }
 ]
