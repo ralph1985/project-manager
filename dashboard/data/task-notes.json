@@ -724,5 +724,11 @@
     "taskId": 87,
     "date": "01/01/2026",
     "note": "Se normalizan apuntes de mantenimiento en eventos persistidos y se muestran en la ficha."
+  },
+  {
+    "id": 122,
+    "taskId": 88,
+    "date": "01/01/2026",
+    "note": "Actualizacion de pdfUrl de facturas de luz 2023 y 2022."
   }
 ]
