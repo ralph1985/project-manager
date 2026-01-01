@@ -271,20 +271,28 @@ export function renderProjectMilestones(elements, milestones) {
     return;
   }
 
-  milestones.forEach((milestone) => {
+  milestones.forEach((milestone, index) => {
     const item = document.createElement('li');
     item.className = 'ticktick-item';
 
     const title = document.createElement('span');
     title.className = 'ticktick-title';
-    title.textContent = milestone.title;
+    title.textContent = `${index + 1}. ${milestone.title}`;
 
     const meta = document.createElement('span');
     meta.className = 'ticktick-meta';
     meta.textContent = milestone.status || 'Planned';
 
+    const detailsBtn = document.createElement('button');
+    detailsBtn.type = 'button';
+    detailsBtn.className = 'milestone-link';
+    detailsBtn.textContent = 'Detalle';
+    detailsBtn.dataset.title = milestone.title || '';
+    detailsBtn.dataset.details = milestone.details || '';
+
     item.appendChild(title);
     item.appendChild(meta);
+    item.appendChild(detailsBtn);
     elements.projectMilestones.appendChild(item);
   });
 }

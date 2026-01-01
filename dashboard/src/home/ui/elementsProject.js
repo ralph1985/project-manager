@@ -21,5 +21,9 @@ export function getProjectElements() {
     ticktickColumnId: document.getElementById('ticktickColumnId'),
     projectTodos: document.getElementById('projectTodos'),
     projectMilestones: document.getElementById('projectMilestones'),
+    milestoneModal: document.getElementById('milestoneModal'),
+    milestoneTitle: document.getElementById('milestoneModalTitle'),
+    milestoneBody: document.getElementById('milestoneBody'),
+    milestoneClose: document.getElementById('milestoneClose'),
   };
 }

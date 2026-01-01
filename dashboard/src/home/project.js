@@ -20,6 +20,7 @@ import { setupNotes } from './ui/notes.js';
 import { initTickTick } from './ui/ticktick.js';
 import { loadProjectTodos } from './usecases/loadProjectTodos.js';
 import { loadProjectMilestones } from './usecases/loadProjectMilestones.js';
+import { setupMilestonesModal } from './ui/milestonesModal.js';
 
 const elements = getProjectElements();
 let currentSort = { key: 'id', dir: 'desc' };
@@ -146,6 +147,7 @@ async function init() {
   const applyFiltersCallback = setupFilters(projectTasks, currentProjectId);
   setupSorting(applyFiltersCallback);
   setupNotes(elements);
+  setupMilestonesModal(elements);
 
   const project = projects.find((item) => item.id === currentProjectId);
   const ticktickStorageKey = `pm-ticktick-project-${encodeURIComponent(currentProjectId)}`;

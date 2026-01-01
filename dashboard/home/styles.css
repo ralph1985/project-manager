@@ -339,6 +339,20 @@ header {
   text-decoration: underline;
 }
 
+.milestone-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+}
+
+.milestone-link:hover {
+  text-decoration: underline;
+}
+
 .modal.hidden {
   display: none;
 }
