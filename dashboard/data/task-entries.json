@@ -509,5 +509,12 @@
     "date": "01/01/2026",
     "hours": 0.5,
     "note": "Carga de URLs de PDFs de luz 2023."
+  },
+  {
+    "id": 75,
+    "taskId": 89,
+    "date": "01/01/2026",
+    "hours": 0.5,
+    "note": "Creacion de estructura docs y ADRs para Speedy Basket."
   }
 ]

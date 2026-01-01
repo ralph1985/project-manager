@@ -818,5 +818,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "01/01/2026",
     "endDate": "01/01/2026"
+  },
+  {
+    "id": 89,
+    "title": "Hito 1: docs base Speedy Basket",
+    "projectId": "speedy-basket",
+    "phase": "Planificación",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
   }
 ]
