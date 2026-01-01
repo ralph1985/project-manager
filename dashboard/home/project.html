@@ -48,8 +48,16 @@
         <ul id="ticktickTasks" class="ticktick-list"></ul>
       </pm-card>
       <pm-card>
-        <h2>To-dos</h2>
-        <p class="ticktick-subtitle">Lista preparada para próximos pasos.</p>
+        <div class="todo-header">
+          <div>
+            <h2>To-dos</h2>
+            <p class="ticktick-subtitle">Lista preparada para próximos pasos.</p>
+          </div>
+          <label class="todo-toggle">
+            <input type="checkbox" id="todosShowCompleted" checked>
+            <span>Mostrar completados</span>
+          </label>
+        </div>
         <ul id="projectTodos" class="ticktick-list"></ul>
       </pm-card>
       <pm-card>

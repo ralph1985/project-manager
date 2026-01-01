@@ -74,5 +74,11 @@
     "note": "Activacion oculta (gesto). Pantallas: DB Viewer (read-only), Outbox viewer, Reset + reimport pack. Done: inspeccion en movil sin backend.",
     "order": 7,
     "completedAt": "01/01/2026"
+  },
+  {
+    "id": 9,
+    "projectId": "speedy-basket",
+    "title": "Configurar cuenta de Render y desplegar la API",
+    "dueDate": null
   }
 ]

@@ -7,6 +7,10 @@ export function sortTodos(todos) {
   return [...todos].sort((a, b) => parseDateValue(a.dueDate) - parseDateValue(b.dueDate));
 }
 
+export function isTodoDone(todo) {
+  return todo.status === 'Completada' || todo.status === 'Done';
+}
+
 function parseDateValue(value) {
   if (!value) return Number.MAX_SAFE_INTEGER;
   if (value.includes('/')) {

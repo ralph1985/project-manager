@@ -1,5 +1,6 @@
 import { HOURLY_RATE } from './config.js';
 import { applyFilters, filterTasksByProject, sortTasks } from './domain/task.js';
+import { isTodoDone } from './domain/todo.js';
 import { loadTasks } from './usecases/loadTasks.js';
 import { loadProjects } from './usecases/loadProjects.js';
 import './ui/components/index.js';
@@ -158,7 +159,16 @@ async function init() {
   });
 
   const todos = await loadProjectTodos(currentProjectId);
-  renderProjectTodos(elements, todos);
+  const renderTodos = () => {
+    const showCompleted = elements.todosShowCompleted?.checked ?? true;
+    const filtered = showCompleted ? todos : todos.filter((todo) => !isTodoDone(todo));
+    renderProjectTodos(elements, filtered);
+  };
+
+  if (elements.todosShowCompleted) {
+    elements.todosShowCompleted.addEventListener('change', renderTodos);
+  }
+  renderTodos();
 
   const milestones = await loadProjectMilestones(currentProjectId);
   renderProjectMilestones(elements, milestones);

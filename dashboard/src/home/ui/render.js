@@ -1,5 +1,6 @@
 import { fmtCurrency, fmtNumber, formatTickTickDate } from './format.js';
 import { phaseClass, projectClass, statusClass } from './classes.js';
+import { isTodoDone } from '../domain/todo.js';
 
 const escAttr = (str = '') =>
   str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -248,7 +249,7 @@ export function renderProjectTodos(elements, todos) {
 
   todos.forEach((todo) => {
     const item = document.createElement('li');
-    const isDone = todo.status === 'Completada' || todo.status === 'Done';
+    const isDone = isTodoDone(todo);
     item.className = `ticktick-item${isDone ? ' ticktick-item--done' : ''}`;
     const title = document.createElement('span');
     title.className = 'ticktick-title';
