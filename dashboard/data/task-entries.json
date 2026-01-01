@@ -537,5 +537,33 @@
     "date": "01/01/2026",
     "hours": 1,
     "note": "Migraciones SQL, repositorios y seed del pack en la API."
+  },
+  {
+    "id": 79,
+    "taskId": 93,
+    "date": "01/01/2026",
+    "hours": 0.5,
+    "note": "Tipos compartidos de sync y contratos request/response."
+  },
+  {
+    "id": 80,
+    "taskId": 94,
+    "date": "01/01/2026",
+    "hours": 1,
+    "note": "API base, endpoints, repositorios y delta desde Postgres."
+  },
+  {
+    "id": 81,
+    "taskId": 95,
+    "date": "01/01/2026",
+    "hours": 0.25,
+    "note": "Configuracion Render y build/start producción."
+  },
+  {
+    "id": 82,
+    "taskId": 96,
+    "date": "01/01/2026",
+    "hours": 0.25,
+    "note": "Carga de .env con dotenv en scripts y server."
   }
 ]

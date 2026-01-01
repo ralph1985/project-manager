@@ -858,5 +858,45 @@
     "ownerId": "rafael-garcia",
     "startDate": "01/01/2026",
     "endDate": "01/01/2026"
+  },
+  {
+    "id": 93,
+    "title": "Contrato compartido de sync Speedy Basket",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
+  },
+  {
+    "id": 94,
+    "title": "API base Speedy Basket: skeleton + endpoints + delta",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
+  },
+  {
+    "id": 95,
+    "title": "Config de despliegue Render para API Speedy Basket",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
+  },
+  {
+    "id": 96,
+    "title": "Infra local API Speedy Basket: dotenv en scripts",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "01/01/2026",
+    "endDate": "01/01/2026"
   }
 ]
