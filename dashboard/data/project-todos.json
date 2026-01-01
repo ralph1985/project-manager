@@ -4,5 +4,68 @@
     "projectId": "gas-price-finder",
     "title": "Buscador de direcciones y que Google te de el código postal",
     "dueDate": null
+  },
+  {
+    "id": 2,
+    "projectId": "speedy-basket",
+    "title": "Init monorepo + Expo app",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "Crear repo (monorepo). App Expo + TypeScript. Estructura /app, /backend, /shared. Script pnpm dev:app. Done: app arranca en Expo Go y navegacion basica.",
+    "order": 1
+  },
+  {
+    "id": 3,
+    "projectId": "speedy-basket",
+    "title": "SQLite schema + init",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "Crear helper SQLite. Tablas: stores, zones, products, product_locations, outbox_events. Done: crea BD en frio y permite insertar/leer registros.",
+    "order": 2
+  },
+  {
+    "id": 4,
+    "projectId": "speedy-basket",
+    "title": "Import pack JSON local",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "JSON mock de tienda + zonas + productos. Import al arranque si la BD esta vacia. Guardar pack_version. Done: reinstalar app vuelve a tener datos, sin backend.",
+    "order": 3
+  },
+  {
+    "id": 5,
+    "projectId": "speedy-basket",
+    "title": "Screens: List / Search / Product",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "Lista de la compra, busqueda, detalle producto con zona sugerida y botones Encontrado/No esta. Done: funciona offline y genera eventos.",
+    "order": 4
+  },
+  {
+    "id": 6,
+    "projectId": "speedy-basket",
+    "title": "Outbox events local",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "Guardar eventos en outbox_events. Tipos: FOUND / NOT_FOUND. Marcar enviados. Done: eventos visibles en SQLite y persistentes.",
+    "order": 5
+  },
+  {
+    "id": 7,
+    "projectId": "speedy-basket",
+    "title": "Zone map (SVG) minimo",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "SVG simple con zonas clicables. Mostrar zona probable del producto. Done: sin pasillos exactos y no bloquea flujo.",
+    "order": 6
+  },
+  {
+    "id": 8,
+    "projectId": "speedy-basket",
+    "title": "Developer mode screens",
+    "status": "Pendiente",
+    "createdAt": "01/01/2026",
+    "note": "Activacion oculta (gesto). Pantallas: DB Viewer (read-only), Outbox viewer, Reset + reimport pack. Done: inspeccion en movil sin backend.",
+    "order": 7
   }
 ]
