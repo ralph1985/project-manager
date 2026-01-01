@@ -2,62 +2,36 @@
   {
     "id": 1,
     "projectId": "speedy-basket",
-    "title": "Definir flujo MVP (offline first) y alcance de la app",
+    "title": "Estructura y plantillas (docs base)",
     "status": "Planned",
     "order": 1,
-    "note": "App nativa con buena experiencia en mala cobertura."
+    "note": "Documentar vision, arquitectura, datos y sync.",
+    "details": "Estructura\n\n/docs\n  STATUS.md\n  01-vision.md\n  02-architecture.md\n  03-data-model.md\n  04-sync.md\n  05-roadmap.md\n  /adr\n    ADR-0001-expo.md\n    ADR-0002-sqlite-outbox.md\n  /runbooks\n    local-dev.md\n    release.md\n\ndocs/STATUS.md\n\n# Estado del proyecto\n\n## Qué funciona hoy\n- [ ] App arranca\n- [ ] SQLite inicializada\n- [ ] Import pack local\n- [ ] Lista / búsqueda\n- [ ] Mapa por zonas (SVG)\n- [ ] Outbox events\n- [ ] Sync: POST /events\n- [ ] Sync: GET /pack delta\n\n## Qué está roto / pendiente crítico\n- -\n\n## Próximas 1–3 tareas (concretas)\n1.\n2.\n3.\n\n## Cómo levantar en local\n- App: `pnpm dev:app`\n- Backend: `pnpm dev:api`\n- Reset DB local: `pnpm db:reset`\n- Seed pack: `pnpm pack:import`\n\n## Notas rápidas\n- Última vez que toqué esto: YYYY-MM-DD\n- Riesgos abiertos:\n  - \n\ndocs/01-vision.md\n\n# Visión\n\n## Problema\nPerder tiempo en el súper por no encontrar productos y por cambios de ubicación.\n\n## Usuario objetivo\n- Compra habitual en la misma tienda (ej. Mercadona concreto).\n\n## Propuesta de valor\n- Lista + búsqueda + “zona probable” offline.\n- Confirmación en 1 tap para mejorar datos.\n\n## MVP (sí o sí)\n- 1 tienda, mapa por zonas.\n- Lista, búsqueda, detalle producto.\n- Feedback: encontrado / no está.\n- Offline-first con SQLite.\n\n## Fuera del MVP\n- Navegación indoor exacta por pasillos.\n- Visión por fotos de lineal.\n- Cobertura multi-cadena.\n\ndocs/02-architecture.md\n\n# Arquitectura\n\n## Componentes\n- App (RN/Expo) + SQLite local\n- API (REST)\n- Postgres (central)\n- Generación de packs (versionado/deltas)\n\n## Flujo offline-first\n1) App usa SQLite siempre.\n2) Acciones -> outbox_events\n3) Con red: POST /events (batch)\n4) App descarga delta: GET /pack?since=V\n\n## Principios\n- El móvil NO escribe “estado final” central.\n- Solo manda eventos; el backend consolida.\n\ndocs/03-data-model.md\n\n# Modelo de datos\n\n## SQLite (app)\n- stores(id, name)\n- zones(id, store_id, name, polygon_or_meta)\n- products(id, name, brand, ean?, category)\n- product_locations(product_id, store_id, zone_id, confidence, updated_at)\n- outbox_events(id, type, payload_json, created_at, sent_at?)\n\n## Postgres (central)\n- stores\n- zones\n- products\n- events (append-only)\n- product_locations (consolidado)\n- store_packs (store_id, version, created_at, hash, size)\n\n## Índices / claves\n- events: (store_id, created_at)\n- product_locations: (store_id, product_id) unique\n\ndocs/04-sync.md\n\n# Sync\n\n## Eventos (móvil -> backend)\nTipos:\n- FOUND(productId, storeId, zoneId?)\n- NOT_FOUND(productId, storeId)\n- SCANNED_EAN(ean, storeId, zoneId?)\n\nReglas:\n- Idempotencia: event.id único\n- Batch: hasta N eventos por request\n\n## Packs (backend -> móvil)\n- GET /stores/:id/pack?since=version\nRespuesta:\n- version\n- delta: upserts/deletes por tabla lógica\n- checksum/hash\n\n## Conflictos\n- Se resuelven en backend:\n  - recencia + cantidad de confirmaciones\n  - confidence decay por tiempo\n\ndocs/05-roadmap.md\n\n# Roadmap\n\n## Fase 1: App offline (MVP)\n- [ ] Navegación básica + SQLite + pack local\n- [ ] Lista/búsqueda/detalle\n- [ ] Mapa por zonas (SVG)\n- [ ] Dev screens mínimas\n\n## Fase 2: Backend + sync v1\n- [ ] POST /events\n- [ ] GET /pack delta\n- [ ] Reglas confidence v1\n\n## Fase 3: Carga inicial tienda\n- [ ] Admin básico (web o dev mode)\n- [ ] Seed por categorías\n\n## Fase 4: Escaneo + UX\n- [ ] Barcode\n- [ ] Ruta por zonas\n\ndocs/adr/ADR-0001-expo.md\n\n# ADR-0001: Expo + React Native\n\n## Decisión\nUsar Expo para acelerar desarrollo y pruebas en móvil sin compilar continuamente.\n\n## Motivo\n- Menos fricción y setup\n- Buen soporte cámara/permissions/builds\n\n## Consecuencias\n- Dependencia de Expo/EAS para builds (aceptable en MVP)\n\ndocs/adr/ADR-0002-sqlite-outbox.md\n\n# ADR-0002: SQLite + Outbox events\n\n## Decisión\nSQLite local como fuente de UX; sync por outbox de eventos + deltas.\n\n## Motivo\n- Offline-first real\n- Evita conflictos complejos\n\n## Consecuencias\n- Hay que implementar pack versioning y procesos de consolidación en backend\n\ndocs/runbooks/local-dev.md\n\n# Runbook: desarrollo local\n\n## Requisitos\n- Node + pnpm\n- Expo Go (móvil)\n\n## Comandos\n- App: `pnpm dev:app`\n- API: `pnpm dev:api`\n- Reset: `pnpm db:reset`\n\n## Debug\n- Flipper: logs + network\n- Dev screens: DB Viewer / Outbox / Packs / Export\n\ndocs/runbooks/release.md\n\n# Runbook: releases\n\n## App\n- Incrementar versión\n- Build con EAS\n- Publicar stores\n\n## Backend\n- Migraciones Postgres\n- Deploy\n- Verificar endpoints /pack y /events"
   },
   {
     "id": 2,
     "projectId": "speedy-basket",
-    "title": "Modelar dominio y datos (Postgres + SQLite)",
+    "title": "Backlog accionable (MVP offline base)",
     "status": "Planned",
     "order": 2,
-    "note": "Catálogo, listas, tiendas, pasillos, secciones y productos."
+    "note": "Convertir el plan en issues ejecutables sin backend.",
+    "details": "Objetivo\n\nDejar un esqueleto funcional offline:\n- App arranca\n- SQLite creada\n- Pack local importado\n- Pantallas base\n- Dev tools mínimas\n\nBacklog inicial (para crear issues)\n\nMilestone: MVP Offline – Base\n\n1) Bootstrap del proyecto\nIssue: Init monorepo + Expo app\n- Crear repo (monorepo).\n- App Expo + TypeScript.\n- Estructura /app, /backend, /shared.\n- Script pnpm dev:app.\n\nDone cuando:\n- App arranca en Expo Go.\n- Navegación básica funciona.\n\n2) SQLite local\nIssue: SQLite schema + init\n- Crear helper SQLite.\n- Crear tablas:\n  - stores\n  - zones\n  - products\n  - product_locations\n  - outbox_events\n\nDone cuando:\n- La app crea la BD en frío.\n- Puedes insertar y leer registros.\n\n3) Import de pack local (seed)\nIssue: Import pack JSON local\n- JSON mock de tienda + zonas + productos.\n- Import al arranque si la BD está vacía.\n- Guardar pack_version.\n\nDone cuando:\n- Borras la app y vuelve a tener datos.\n- No depende de backend.\n\n4) Pantallas core (sin UX fina)\nIssue: Screens: List / Search / Product\n- Lista de la compra.\n- Búsqueda de productos.\n- Detalle producto con:\n  - zona sugerida\n  - botones \"Encontrado / No está\".\n\nDone cuando:\n- Todo funciona offline.\n- Al pulsar botones se generan eventos.\n\n5) Outbox de eventos\nIssue: Outbox events local\n- Guardar eventos en outbox_events.\n- Tipos: FOUND / NOT_FOUND.\n- Marcar enviados (aunque aún no se envíen).\n\nDone cuando:\n- Ves eventos en SQLite.\n- No se pierden al cerrar la app.\n\n6) Mapa por zonas (mínimo)\nIssue: Zone map (SVG)\n- SVG simple con zonas clicables.\n- Mostrar \"zona probable\" del producto.\n\nDone cuando:\n- No hay pasillos exactos.\n- El mapa no bloquea el flujo.\n\n7) Dev screens\nIssue: Developer mode screens\n- Activación oculta (gesto).\n- Pantallas:\n  - DB Viewer (read-only).\n  - Outbox viewer.\n  - Reset + reimport pack.\n\nDone cuando:\n- Puedes inspeccionar datos en móvil real.\n- No dependes del backend para debug.\n\nOrden recomendado de ejecución\n1. Init repo + Expo\n2. SQLite\n3. Import pack\n4. Pantallas core\n5. Outbox\n6. Dev screens\n7. Mapa zonas\n\nNota\nHasta aquí no hay backend. Todo local.\n\nAcción concreta ahora\n1. Crea el repo.\n2. Copia /docs.\n3. Crea el Milestone y estos Issues.\n4. Empieza solo con el Issue 1.\n\nSiguiente paso\nBackend mínimo + contrato de sync (sin implementarlo aún)."
   },
   {
     "id": 3,
     "projectId": "speedy-basket",
-    "title": "Diseñar algoritmo de ruta más rápida (MVP)",
+    "title": "Monorepo (justificación + estructura)",
     "status": "Planned",
     "order": 3,
-    "note": "Ordenar paradas por secciones y minimizar pasos."
+    "note": "App, backend y shared en un solo repo.",
+    "details": "Por qué monorepo aquí (pragmático)\n- Eres una sola persona (tú + Codex).\n- App, backend y tipos evolucionan juntos.\n- Offline-first: el contrato de datos es crítico y compartido.\n- Retomar tras meses es más fácil con todo en un sitio.\n\nEstructura recomendada\n/\n├─ apps/\n│  ├─ mobile/   # Expo / React Native\n│  └─ api/      # Backend (REST)\n├─ packages/\n│  └─ shared/   # tipos TS, esquemas, constantes\n├─ docs/\n├─ package.json\n└─ pnpm-workspace.yaml\n\nQué va en shared\n- Tipos: Product, Zone, Store, Event\n- Enums: EventType\n- Validaciones (Zod si quieres)\n- Versiones de pack\n\nHerramientas mínimas\n- pnpm workspaces (suficiente)\n- Nada de Nx/Turborepo al principio\n\nRegla de oro\nSi una decisión afecta a app y backend, vive en shared.\n\nConclusión\nMonorepo reduce fricción ahora y en futuros parones."
   },
   {
     "id": 4,
     "projectId": "speedy-basket",
-    "title": "Backend API (Postgres) para sincronización",
+    "title": "Crear monorepo (acción inmediata)",
     "status": "Planned",
-    "order": 4
-  },
-  {
-    "id": 5,
-    "projectId": "speedy-basket",
-    "title": "Setup React Native básico (primer build en móviles)",
-    "status": "Planned",
-    "order": 5,
-    "note": "Validar entorno y flujo mínimo en dispositivos."
-  },
-  {
-    "id": 6,
-    "projectId": "speedy-basket",
-    "title": "Definir stack y frameworks complementarios",
-    "status": "Planned",
-    "order": 6,
-    "note": "Navegación, estado, offline, sincronización."
-  },
-  {
-    "id": 7,
-    "projectId": "speedy-basket",
-    "title": "App React Native (SQLite) y modo offline-first",
-    "status": "Planned",
-    "order": 7
-  },
-  {
-    "id": 8,
-    "projectId": "speedy-basket",
-    "title": "Sincronización y pruebas del flujo completo (MVP)",
-    "status": "Planned",
-    "order": 8
+    "order": 4,
+    "details": "Siguiente acción concreta\n1. Crea el repo monorepo.\n2. Añade pnpm-workspace.yaml.\n3. Crea carpetas vacías:\n   - apps/mobile\n   - apps/api\n   - packages/shared\n   - docs\n4. Copia el contenido de /docs que ya tienes.\n5. Crea el Issue 1: Init monorepo + Expo app y empieza solo con eso.\n\nCuando lo tengas (aunque sea a medias), volvemos para el bootstrap exacto de Expo + SQLite paso a paso."
   }
 ]
