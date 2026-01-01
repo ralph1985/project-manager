@@ -69,9 +69,10 @@
     "id": 8,
     "projectId": "speedy-basket",
     "title": "Developer mode screens",
-    "status": "Pendiente",
+    "status": "Completada",
     "createdAt": "01/01/2026",
     "note": "Activacion oculta (gesto). Pantallas: DB Viewer (read-only), Outbox viewer, Reset + reimport pack. Done: inspeccion en movil sin backend.",
-    "order": 7
+    "order": 7,
+    "completedAt": "01/01/2026"
   }
 ]
