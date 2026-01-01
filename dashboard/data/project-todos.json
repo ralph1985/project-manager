@@ -59,10 +59,11 @@
     "id": 7,
     "projectId": "speedy-basket",
     "title": "Zone map (SVG) minimo",
-    "status": "Pendiente",
+    "status": "Completada",
     "createdAt": "01/01/2026",
     "note": "SVG simple con zonas clicables. Mostrar zona probable del producto. Done: sin pasillos exactos y no bloquea flujo.",
-    "order": 6
+    "order": 6,
+    "completedAt": "01/01/2026"
   },
   {
     "id": 8,
