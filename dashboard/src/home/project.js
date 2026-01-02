@@ -159,6 +159,7 @@ async function init() {
   });
 
   const todos = await loadProjectTodos(currentProjectId);
+  const todosStorageKey = `pm-project-todos:show-completed:${encodeURIComponent(currentProjectId)}`;
   const renderTodos = () => {
     const showCompleted = elements.todosShowCompleted?.checked ?? true;
     const filtered = showCompleted ? todos : todos.filter((todo) => !isTodoDone(todo));
@@ -166,7 +167,14 @@ async function init() {
   };
 
   if (elements.todosShowCompleted) {
-    elements.todosShowCompleted.addEventListener('change', renderTodos);
+    const savedShowCompleted = loadJson(todosStorageKey);
+    if (typeof savedShowCompleted === 'boolean') {
+      elements.todosShowCompleted.checked = savedShowCompleted;
+    }
+    elements.todosShowCompleted.addEventListener('change', () => {
+      saveJson(todosStorageKey, elements.todosShowCompleted.checked);
+      renderTodos();
+    });
   }
   renderTodos();
 
