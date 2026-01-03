@@ -908,5 +908,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "02/01/2026",
     "endDate": "02/01/2026"
+  },
+  {
+    "id": 98,
+    "title": "Detalle de horas en tareas del proyecto",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
   }
 ]

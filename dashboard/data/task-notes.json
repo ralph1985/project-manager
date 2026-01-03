@@ -736,5 +736,11 @@
     "taskId": 97,
     "date": "02/01/2026",
     "note": "Refactor del promedio diario en tablas de luz/agua/gas usando helper compartido."
+  },
+  {
+    "id": 124,
+    "taskId": 98,
+    "date": "03/01/2026",
+    "note": "Detalle de horas en tabla de proyecto con modal clickable en el sumatorio."
   }
 ]

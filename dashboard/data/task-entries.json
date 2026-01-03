@@ -579,5 +579,12 @@
     "date": "02/01/2026",
     "hours": 0.5,
     "note": "Refactor promedio diario en luz/agua/gas."
+  },
+  {
+    "id": 85,
+    "taskId": 98,
+    "date": "03/01/2026",
+    "hours": 0.5,
+    "note": "Modal con detalle de registros de horas por tarea."
   }
 ]
