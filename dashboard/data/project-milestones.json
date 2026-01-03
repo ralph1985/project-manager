@@ -33,5 +33,41 @@
     "status": "Done",
     "order": 4,
     "details": "Acción completada\n1. Repo monorepo creado.\n2. pnpm-workspace.yaml añadido.\n3. Carpetas creadas:\n   - apps/mobile\n   - apps/api\n   - packages/shared\n   - docs\n4. Docs base añadida.\n5. Bootstrap Expo + SQLite completado.\n\nSiguiente paso\nSync v1 y delta incremental."
+  },
+  {
+    "id": 5,
+    "projectId": "speedy-basket",
+    "title": "Sync v1 estable (events + delta + consolidación)",
+    "status": "Planned",
+    "order": 5,
+    "note": "Eventos, consolidación y delta incremental en API.",
+    "details": "Objetivo\n\n- POST /events estable (FOUND / NOT_FOUND / SCANNED_EAN)\n- Actualización de product_locations con reglas de confianza\n- GET /pack con delta incremental\n- Versionado en store_packs\n\nEntregables\n- Consolidación básica de ubicaciones\n- Delta incremental por updated_at\n- Tests manuales con curls"
+  },
+  {
+    "id": 6,
+    "projectId": "speedy-basket",
+    "title": "App conectada a API (sync real)",
+    "status": "Planned",
+    "order": 6,
+    "note": "La app deja de usar pack local como única fuente.",
+    "details": "Objetivo\n\n- Fetch de /pack desde móvil\n- Envío de outbox a /events\n- Manejo básico de errores y reintentos\n\nEntregables\n- Sync manual desde dev screen\n- UI mínima de estado de sync"
+  },
+  {
+    "id": 7,
+    "projectId": "speedy-basket",
+    "title": "Carga inicial tienda (packs versionados)",
+    "status": "Planned",
+    "order": 7,
+    "note": "Proceso de seed y packs para una tienda real.",
+    "details": "Objetivo\n\n- Herramienta de seed inicial (JSON / CSV)\n- Generación de packs con versionado\n- Validaciones mínimas\n\nEntregables\n- Script de import y generación de packs"
+  },
+  {
+    "id": 8,
+    "projectId": "speedy-basket",
+    "title": "Ruta/UX (mapa por zonas + flujo de lista)",
+    "status": "Planned",
+    "order": 8,
+    "note": "Pulir la experiencia del usuario final.",
+    "details": "Objetivo\n\n- Mapa de zonas útil en móvil\n- Flujo de lista y búsqueda optimizado\n- Feedback rápido (Encontrado / No está)\n\nEntregables\n- UX de ruta por zonas\n- Iteración de UI"
   }
 ]
