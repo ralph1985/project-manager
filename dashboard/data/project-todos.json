@@ -80,5 +80,11 @@
     "projectId": "speedy-basket",
     "title": "Configurar cuenta de Render y desplegar la API",
     "dueDate": null
+  },
+  {
+    "id": 10,
+    "projectId": "speedy-basket",
+    "title": "Pulir confianza: acumulativo, umbrales y escaneo",
+    "dueDate": null
   }
 ]

@@ -938,5 +938,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "03/01/2026",
     "endDate": "03/01/2026"
+  },
+  {
+    "id": 101,
+    "title": "Conexion Render + Supabase (pooler) y pruebas de /pack",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
   }
 ]
