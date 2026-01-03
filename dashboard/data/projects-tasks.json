@@ -918,5 +918,25 @@
     "ownerId": "rafael-garcia",
     "startDate": "03/01/2026",
     "endDate": "03/01/2026"
+  },
+  {
+    "id": 99,
+    "title": "Carga facturas de agua 2024 (Meco)",
+    "projectId": "home-manager",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": null
+  },
+  {
+    "id": 100,
+    "title": "Despliegue API Speedy Basket en Render (diagnostico pooler)",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
   }
 ]

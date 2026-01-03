@@ -586,5 +586,19 @@
     "date": "03/01/2026",
     "hours": 0.5,
     "note": "Modal con detalle de registros de horas por tarea."
+  },
+  {
+    "id": 86,
+    "taskId": 99,
+    "date": "03/01/2026",
+    "hours": 0.5,
+    "note": "Carga facturas de agua JSON (Meco, 2024)."
+  },
+  {
+    "id": 87,
+    "taskId": 100,
+    "date": "03/01/2026",
+    "hours": 2,
+    "note": "Debug de despliegue en Render, pooler Supabase y errores de conexion."
   }
 ]
