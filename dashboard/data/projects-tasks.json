@@ -898,5 +898,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "01/01/2026",
     "endDate": "01/01/2026"
+  },
+  {
+    "id": 97,
+    "title": "Ajustes grafica gas: promedio diario y contraste",
+    "projectId": "home-manager",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "02/01/2026",
+    "endDate": "02/01/2026"
   }
 ]

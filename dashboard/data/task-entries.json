@@ -565,5 +565,12 @@
     "date": "01/01/2026",
     "hours": 0.25,
     "note": "Carga de .env con dotenv en scripts y server."
+  },
+  {
+    "id": 83,
+    "taskId": 97,
+    "date": "02/01/2026",
+    "hours": 0.5,
+    "note": "Ajustes grafica gas: promedio diario y contraste."
   }
 ]
