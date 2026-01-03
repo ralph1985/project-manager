@@ -9,13 +9,13 @@
     "id": 2,
     "taskId": 7,
     "date": "25/10/2025",
-    "note": "(31 de octubre de 2025) Estoy iterando con ayuda de ChatGPT y Claude y... no s\u00e9 yo si lo voy a conseguir migrar, se monta unos cirios gordos."
+    "note": "(31 de octubre de 2025) Estoy iterando con ayuda de ChatGPT y Claude y... no sé yo si lo voy a conseguir migrar, se monta unos cirios gordos."
   },
   {
     "id": 3,
     "taskId": 7,
     "date": "25/10/2025",
-    "note": "(2 de noviembre de 2025) Definitivamente es un cristo la migraci\u00f3n y habr\u00eda que empezar de cero la maquetaci\u00f3n... se queda como est\u00e1."
+    "note": "(2 de noviembre de 2025) Definitivamente es un cristo la migración y habría que empezar de cero la maquetación... se queda como está."
   },
   {
     "id": 4,
@@ -27,13 +27,13 @@
     "id": 5,
     "taskId": 23,
     "date": null,
-    "note": "No hay rese\u00f1as en Google Maps, habr\u00e1 que buscar otra cosa o eliminar la secci\u00f3n"
+    "note": "No hay reseñas en Google Maps, habrá que buscar otra cosa o eliminar la sección"
   },
   {
     "id": 6,
     "taskId": 24,
     "date": null,
-    "note": "Es de pago y todav\u00eda no s\u00e9 si Dani lo quiere"
+    "note": "Es de pago y todavía no sé si Dani lo quiere"
   },
   {
     "id": 7,
@@ -45,7 +45,7 @@
     "id": 8,
     "taskId": 34,
     "date": "3/11/2025",
-    "note": "Despu\u00e9s de investigar y ver varias alternativas, me quedo con Vimeo y una cuenta del Ayuntamiento de Belmontejo (con mi GMail)"
+    "note": "Después de investigar y ver varias alternativas, me quedo con Vimeo y una cuenta del Ayuntamiento de Belmontejo (con mi GMail)"
   },
   {
     "id": 9,
@@ -75,19 +75,19 @@
     "id": 13,
     "taskId": 62,
     "date": "07/12/2025",
-    "note": "Sesi\u00f3n de 2 horas trabajando en la automatizaci\u00f3n de publicaci\u00f3n de versiones del gestor de proyectos"
+    "note": "Sesión de 2 horas trabajando en la automatización de publicación de versiones del gestor de proyectos"
   },
   {
     "id": 14,
     "taskId": 64,
     "date": "07/12/2025",
-    "note": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librer\u00eda i18n propia"
+    "note": "Arrancando el proyecto de Palomares con Astro, rutas multidioma y librería i18n propia"
   },
   {
     "id": 15,
     "taskId": 65,
     "date": "07/12/2025",
-    "note": "Lectura completa de instrucciones y ajuste de AGENTS para reflejar scripts, dashboard y pol\u00edtica de registro de tareas"
+    "note": "Lectura completa de instrucciones y ajuste de AGENTS para reflejar scripts, dashboard y política de registro de tareas"
   },
   {
     "id": 16,
@@ -99,49 +99,49 @@
     "id": 17,
     "taskId": 67,
     "date": "08/12/2025",
-    "note": "Selector de fecha inicial, rango desde/hasta con filtros por intersecci\u00f3n, inputs apilados, fechas opcionales y bot\u00f3n para limpiar el rango."
+    "note": "Selector de fecha inicial, rango desde/hasta con filtros por intersección, inputs apilados, fechas opcionales y botón para limpiar el rango."
   },
   {
     "id": 18,
     "taskId": 68,
     "date": "16/12/2025",
-    "note": "Next.js App Router con Tailwind, React Day Picker y drivers KV/Mock para votar d\u00edas de eventos. Vistas separadas para votar, resultados y preferencias; identificador de cliente para voto \u00fanico reemplazable. Ventanas de voto por evento con almacenamiento y validaci\u00f3n din\u00e1mica."
+    "note": "Next.js App Router con Tailwind, React Day Picker y drivers KV/Mock para votar días de eventos. Vistas separadas para votar, resultados y preferencias; identificador de cliente para voto único reemplazable. Ventanas de voto por evento con almacenamiento y validación dinámica."
   },
   {
     "id": 19,
     "taskId": 70,
     "date": "26/12/2025",
-    "note": "Ajuste del registro del componente pm-weather para que se bundlee en producci\u00f3n (Vercel)."
+    "note": "Ajuste del registro del componente pm-weather para que se bundlee en producción (Vercel)."
   },
   {
     "id": 20,
     "taskId": 71,
     "date": "26/12/2025",
-    "note": "Actualizaci\u00f3n de commitizen/sonarqube-scanner y overrides para node-forge, inquirer y tmp tras npm audit."
+    "note": "Actualización de commitizen/sonarqube-scanner y overrides para node-forge, inquirer y tmp tras npm audit."
   },
   {
     "id": 21,
     "taskId": 72,
     "date": "27/12/2025",
-    "note": "Definici\u00f3n del alcance, lectura de documentaci\u00f3n y estructura base (dominio, casos de uso, infraestructura, UI)."
+    "note": "Definición del alcance, lectura de documentación y estructura base (dominio, casos de uso, infraestructura, UI)."
   },
   {
     "id": 22,
     "taskId": 72,
     "date": "27/12/2025",
-    "note": "P\u00e1gina interna para listar proyectos TickTick y enlazar desde panel de recordatorios."
+    "note": "Página interna para listar proyectos TickTick y enlazar desde panel de recordatorios."
   },
   {
     "id": 23,
     "taskId": 72,
     "date": "27/12/2025",
-    "note": "A\u00f1adido ticktickProjectId en Vehicle con migraci\u00f3n y snapshots antes/despu\u00e9s."
+    "note": "Añadido ticktickProjectId en Vehicle con migración y snapshots antes/después."
   },
   {
     "id": 24,
     "taskId": 72,
     "date": "27/12/2025",
-    "note": "Asociados IDs de proyectos TickTick a veh\u00edculos en la DB."
+    "note": "Asociados IDs de proyectos TickTick a vehículos en la DB."
   },
   {
     "id": 25,
@@ -165,7 +165,7 @@
     "id": 28,
     "taskId": 72,
     "date": "27/12/2025",
-    "note": "A\u00f1adidas pesta\u00f1as para filtrar recordatorios por antig\u00fcedad en veh\u00edculos."
+    "note": "Añadidas pestañas para filtrar recordatorios por antigüedad en vehículos."
   },
   {
     "id": 29,
@@ -177,7 +177,7 @@
     "id": 30,
     "taskId": 72,
     "date": "28/12/2025",
-    "note": "Unificadas pesta\u00f1as de recordatorios recientes y hoy en veh\u00edculos, con resaltado de vencidas."
+    "note": "Unificadas pestañas de recordatorios recientes y hoy en vehículos, con resaltado de vencidas."
   },
   {
     "id": 31,
@@ -189,19 +189,19 @@
     "id": 32,
     "taskId": 73,
     "date": "28/12/2025",
-    "note": "A\u00f1adida tabla de compra de veh\u00edculo y registrada la compra final de la Rifter con opciones y totales."
+    "note": "Añadida tabla de compra de vehículo y registrada la compra final de la Rifter con opciones y totales."
   },
   {
     "id": 33,
     "taskId": 74,
     "date": "28/12/2025",
-    "note": "Resumen de compra en ficha de veh\u00edculo y nueva ruta con detalle completo y opciones."
+    "note": "Resumen de compra en ficha de vehículo y nueva ruta con detalle completo y opciones."
   },
   {
     "id": 34,
     "taskId": 75,
     "date": "28/12/2025",
-    "note": "Revisi\u00f3n de estilos globales, tokens, y uso de clases hm- en la app."
+    "note": "Revisión de estilos globales, tokens, y uso de clases hm- en la app."
   },
   {
     "id": 35,
@@ -249,7 +249,7 @@
     "id": 42,
     "taskId": 76,
     "date": "28/12/2025",
-    "note": "A\u00f1adidos tokens semanticos extra para textos de acento y estado."
+    "note": "Añadidos tokens semanticos extra para textos de acento y estado."
   },
   {
     "id": 43,
@@ -273,19 +273,19 @@
     "id": 46,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "A\u00f1adidas cabeceras Accept/Origin/Referer para forzar respuesta JSON."
+    "note": "Añadidas cabeceras Accept/Origin/Referer para forzar respuesta JSON."
   },
   {
     "id": 47,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Secci\u00f3n en veh\u00edculos con selector de c\u00f3digo postal y cach\u00e9 de 1 d\u00eda."
+    "note": "Sección en vehículos con selector de código postal y caché de 1 día."
   },
   {
     "id": 48,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Ajustes de hidrataci\u00f3n: theme toggle sincroniza en effect y precios con formato determinista."
+    "note": "Ajustes de hidratación: theme toggle sincroniza en effect y precios con formato determinista."
   },
   {
     "id": 49,
@@ -309,13 +309,13 @@
     "id": 52,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Clave \u00fanica por estaci\u00f3n+combustible para evitar duplicados en React."
+    "note": "Clave única por estación+combustible para evitar duplicados en React."
   },
   {
     "id": 53,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Normalizaci\u00f3n de c\u00f3digo postal para aceptar s\u00f3lo d\u00edgitos."
+    "note": "Normalización de código postal para aceptar sólo dígitos."
   },
   {
     "id": 54,
@@ -327,67 +327,67 @@
     "id": 55,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Persistencia de selecci\u00f3n de combustibles en localStorage."
+    "note": "Persistencia de selección de combustibles en localStorage."
   },
   {
     "id": 56,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Correcci\u00f3n de bucle en useEffect por dependencias inestables."
+    "note": "Corrección de bucle en useEffect por dependencias inestables."
   },
   {
     "id": 57,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Auto-b\u00fasqueda tras refresco usando estado de hidrataci\u00f3n."
+    "note": "Auto-búsqueda tras refresco usando estado de hidratación."
   },
   {
     "id": 58,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Evitada la carga inicial en SSR para usar s\u00f3lo selecci\u00f3n del cliente."
+    "note": "Evitada la carga inicial en SSR para usar sólo selección del cliente."
   },
   {
     "id": 59,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Selecci\u00f3n inicial sin combustibles por defecto."
+    "note": "Selección inicial sin combustibles por defecto."
   },
   {
     "id": 60,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "B\u00fasqueda autom\u00e1tica al marcar/desmarcar combustibles."
+    "note": "Búsqueda automática al marcar/desmarcar combustibles."
   },
   {
     "id": 61,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Favoritos de c\u00f3digos postales con nombre en modal y localStorage."
+    "note": "Favoritos de códigos postales con nombre en modal y localStorage."
   },
   {
     "id": 62,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Enlace de direcci\u00f3n a Google Maps en nueva pesta\u00f1a."
+    "note": "Enlace de dirección a Google Maps en nueva pestaña."
   },
   {
     "id": 63,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "No buscar hasta tener 5 d\u00edgitos en el c\u00f3digo postal."
+    "note": "No buscar hasta tener 5 dígitos en el código postal."
   },
   {
     "id": 64,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Cat\u00e1logo de combustibles movido a infraestructura (API externa)."
+    "note": "Catálogo de combustibles movido a infraestructura (API externa)."
   },
   {
     "id": 65,
     "taskId": 77,
     "date": "28/12/2025",
-    "note": "Eliminaci\u00f3n de favoritos desde la lista."
+    "note": "Eliminación de favoritos desde la lista."
   },
   {
     "id": 66,
@@ -579,7 +579,7 @@
     "id": 97,
     "taskId": 78,
     "date": "29/12/2025",
-    "note": "CA raiz FNMT a\u00f1adida al bundle."
+    "note": "CA raiz FNMT añadida al bundle."
   },
   {
     "id": 98,
@@ -730,5 +730,11 @@
     "taskId": 88,
     "date": "01/01/2026",
     "note": "Actualizacion de pdfUrl de facturas de luz 2023 y 2022."
+  },
+  {
+    "id": 123,
+    "taskId": 97,
+    "date": "02/01/2026",
+    "note": "Refactor del promedio diario en tablas de luz/agua/gas usando helper compartido."
   }
 ]

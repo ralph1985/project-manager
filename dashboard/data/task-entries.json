@@ -572,5 +572,12 @@
     "date": "02/01/2026",
     "hours": 0.5,
     "note": "Ajustes grafica gas: promedio diario y contraste."
+  },
+  {
+    "id": 84,
+    "taskId": 97,
+    "date": "02/01/2026",
+    "hours": 0.5,
+    "note": "Refactor promedio diario en luz/agua/gas."
   }
 ]
