@@ -60,6 +60,7 @@ export async function loadTasks() {
       project: project?.name || task.projectId,
       ownerId: task.ownerId,
       owner: owner?.name || task.ownerId,
+      entries: taskEntries,
       hours: sumEntries(taskEntries),
       notes: formatNotes(taskNotes),
     };

@@ -17,6 +17,7 @@ import {
   updateSortIndicators,
 } from './ui/render.js';
 import { applySavedProjectFilters, readProjectFilters } from './ui/projectFilters.js';
+import { setupHoursModal } from './ui/hours.js';
 import { setupNotes } from './ui/notes.js';
 import { initTickTick } from './ui/ticktick.js';
 import { loadProjectTodos } from './usecases/loadProjectTodos.js';
@@ -129,6 +130,7 @@ async function init() {
   setProjectSelector(projects, currentProjectId);
 
   const projectTasks = filterTasksByProject(tasks, currentProjectId);
+  const taskById = new Map(projectTasks.map((task) => [task.id, task]));
   const projectStats = getDashboardStats(projectTasks, HOURLY_RATE);
   const filterOptions = getFilterOptions(projectTasks);
 
@@ -148,6 +150,7 @@ async function init() {
   const applyFiltersCallback = setupFilters(projectTasks, currentProjectId);
   setupSorting(applyFiltersCallback);
   setupNotes(elements);
+  setupHoursModal(elements, taskById);
   setupMilestonesModal(elements);
 
   const project = projects.find((item) => item.id === currentProjectId);

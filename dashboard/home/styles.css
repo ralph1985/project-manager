@@ -400,6 +400,61 @@ header {
   white-space: pre-wrap;
 }
 
+.hours-body {
+  white-space: normal;
+}
+
+.hours-link {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+.hours-link:hover {
+  text-decoration: underline;
+}
+
+.hours-summary {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.hours-item {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  display: grid;
+  gap: 6px;
+}
+
+.hours-date {
+  font-weight: 600;
+}
+
+.hours-meta {
+  color: var(--muted);
+}
+
+.hours-note {
+  color: var(--text);
+}
+
+.hours-empty {
+  color: var(--muted);
+}
+
 .close-btn {
   background: rgba(69, 230, 255, 0.12);
   border: 1px solid var(--panel-border);

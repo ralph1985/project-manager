@@ -120,7 +120,7 @@ export function renderProjectTable(elements, tasks) {
           <td>${task.startDate || '—'}</td>
           <td>${task.endDate || '—'}</td>
           <td>${renderNoteCell(task.notes)}</td>
-          <td class="num">${fmtNumber(task.hours)}</td>
+          <td class="num">${renderHoursCell(task)}</td>
         </tr>
       `
     )
@@ -303,4 +303,9 @@ function renderNoteCell(note) {
   if (!note) return '—';
   const shortText = note.length > 40 ? `${note.slice(0, 40)}…` : note;
   return `<button class="note-link" data-note="${escAttr(note)}" title="Ver nota completa">${shortText}</button>`;
+}
+
+function renderHoursCell(task) {
+  const hoursLabel = fmtNumber(task.hours);
+  return `<button class="hours-link" data-task-id="${task.id}" type="button" title="Ver registros de horas">${hoursLabel}</button>`;
 }
