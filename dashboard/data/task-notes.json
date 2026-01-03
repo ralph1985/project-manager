@@ -742,5 +742,11 @@
     "taskId": 98,
     "date": "03/01/2026",
     "note": "Detalle de horas en tabla de proyecto con modal clickable en el sumatorio."
+  },
+  {
+    "id": 125,
+    "taskId": 99,
+    "date": "03/01/2026",
+    "note": "Preparacion de carga de facturas de agua (JSON) para Meco, periodo 2024."
   }
 ]
