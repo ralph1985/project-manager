@@ -591,8 +591,8 @@
     "id": 86,
     "taskId": 99,
     "date": "03/01/2026",
-    "hours": 0.5,
-    "note": "Carga facturas de agua JSON (Meco, 2024)."
+    "hours": 1,
+    "note": "Carga facturas de agua JSON (Meco, 2024, 2023, 2022)."
   },
   {
     "id": 87,
