@@ -614,5 +614,33 @@
     "date": "03/01/2026",
     "hours": 1,
     "note": "Conexion pooler en Render y validacion de endpoint /pack."
+  },
+  {
+    "id": 90,
+    "taskId": 102,
+    "date": "03/01/2026",
+    "hours": 0.17,
+    "note": "Redaccion de licencia propietaria y nota en README."
+  },
+  {
+    "id": 91,
+    "taskId": 103,
+    "date": "03/01/2026",
+    "hours": 2,
+    "note": "Ajustes de build y despliegue en Render."
+  },
+  {
+    "id": 92,
+    "taskId": 104,
+    "date": "03/01/2026",
+    "hours": 1,
+    "note": "Eventos FOUND/NOT_FOUND, confianza dinamica y delta incremental."
+  },
+  {
+    "id": 93,
+    "taskId": 105,
+    "date": "03/01/2026",
+    "hours": 1,
+    "note": "Sync de app movil con pack y outbox."
   }
 ]

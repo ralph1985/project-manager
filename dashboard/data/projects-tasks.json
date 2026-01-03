@@ -948,5 +948,45 @@
     "ownerId": "rafael-garcia",
     "startDate": "03/01/2026",
     "endDate": "03/01/2026"
+  },
+  {
+    "id": 102,
+    "title": "Licencia propietaria Speedy Basket",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
+  },
+  {
+    "id": 103,
+    "title": "Fixes de deploy Speedy Basket (Render)",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
+  },
+  {
+    "id": 104,
+    "title": "Backend Speedy Basket: eventos + delta incremental",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
+  },
+  {
+    "id": 105,
+    "title": "App Speedy Basket: sync con API",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "03/01/2026",
+    "endDate": "03/01/2026"
   }
 ]
