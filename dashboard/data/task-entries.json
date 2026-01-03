@@ -600,5 +600,12 @@
     "date": "03/01/2026",
     "hours": 2,
     "note": "Debug de despliegue en Render, pooler Supabase y errores de conexion."
+  },
+  {
+    "id": 88,
+    "taskId": 99,
+    "date": "03/01/2026",
+    "hours": 0.5,
+    "note": "Vista agua: consumo total en litros y consumo medio diario junto al gasto medio diario."
   }
 ]

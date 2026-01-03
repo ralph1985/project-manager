@@ -924,10 +924,10 @@
     "title": "Carga facturas de agua 2024, 2023, 2022 (Meco)",
     "projectId": "home-manager",
     "phase": "Mantenimiento",
-    "status": "En curso",
+    "status": "Completada",
     "ownerId": "rafael-garcia",
     "startDate": "03/01/2026",
-    "endDate": null
+    "endDate": "03/01/2026"
   },
   {
     "id": 100,

@@ -748,5 +748,11 @@
     "taskId": 99,
     "date": "03/01/2026",
     "note": "Preparacion de carga de facturas de agua (JSON) para Meco, periodo 2024."
+  },
+  {
+    "id": 126,
+    "taskId": 99,
+    "date": "03/01/2026",
+    "note": "Se muestra consumo total en litros y consumo medio diario en la vista de agua."
   }
 ]
