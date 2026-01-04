@@ -760,5 +760,41 @@
     "taskId": 106,
     "date": "04/01/2026",
     "note": "Nuevo proyecto de compra casa rural y columna TickTick visible con nombre."
+  },
+  {
+    "id": 128,
+    "taskId": 107,
+    "date": "20/07/2025",
+    "note": "Maquetacion base responsive con cabecera, filtros y contenedor de items."
+  },
+  {
+    "id": 129,
+    "taskId": 108,
+    "date": "21/07/2025",
+    "note": "Integracion con Google Sheets CSV y parsing con datos mock."
+  },
+  {
+    "id": 130,
+    "taskId": 109,
+    "date": "22/07/2025",
+    "note": "Filtros combinables por grupo/categoria/estado, busqueda y ordenacion."
+  },
+  {
+    "id": 131,
+    "taskId": 110,
+    "date": "23/07/2025",
+    "note": "Persistencia de compras, filtros y busqueda en localStorage."
+  },
+  {
+    "id": 132,
+    "taskId": 111,
+    "date": "24/07/2025",
+    "note": "Ayuda contextual, impresion de lista y boton de reset."
+  },
+  {
+    "id": 133,
+    "taskId": 112,
+    "date": "25/07/2025",
+    "note": "Auto-refresh, pull-to-refresh y limpieza de caches via SW."
   }
 ]

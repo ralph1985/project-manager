@@ -649,5 +649,47 @@
     "date": "04/01/2026",
     "hours": 0.5,
     "note": "Alta de proyecto TickTick, ajuste de orden y render del nombre de columna."
+  },
+  {
+    "id": 95,
+    "taskId": 107,
+    "date": "20/07/2025",
+    "hours": 4,
+    "note": "Estructura base, layout responsive y componentes principales."
+  },
+  {
+    "id": 96,
+    "taskId": 108,
+    "date": "21/07/2025",
+    "hours": 3.5,
+    "note": "Lectura del CSV, parsing y carga inicial con datos mock."
+  },
+  {
+    "id": 97,
+    "taskId": 109,
+    "date": "22/07/2025",
+    "hours": 3.5,
+    "note": "Filtros por grupo/categoria, búsqueda y ordenación con contadores."
+  },
+  {
+    "id": 98,
+    "taskId": 110,
+    "date": "23/07/2025",
+    "hours": 3,
+    "note": "Persistencia en localStorage de compras y filtros."
+  },
+  {
+    "id": 99,
+    "taskId": 111,
+    "date": "24/07/2025",
+    "hours": 3,
+    "note": "Ayuda, impresión de lista visible y reset de aplicación."
+  },
+  {
+    "id": 100,
+    "taskId": 112,
+    "date": "25/07/2025",
+    "hours": 3,
+    "note": "Auto-refresh, pull-to-refresh y service worker de limpieza."
   }
 ]

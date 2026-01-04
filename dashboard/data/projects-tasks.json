@@ -998,5 +998,65 @@
     "ownerId": "rafael-garcia",
     "startDate": "04/01/2026",
     "endDate": null
+  },
+  {
+    "id": 107,
+    "title": "Estructura base y layout responsive",
+    "projectId": "compra-casa-rural",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "20/07/2025",
+    "endDate": "30/07/2025"
+  },
+  {
+    "id": 108,
+    "title": "Integración CSV y parsing inicial",
+    "projectId": "compra-casa-rural",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "20/07/2025",
+    "endDate": "30/07/2025"
+  },
+  {
+    "id": 109,
+    "title": "Filtros, búsqueda y ordenación con contadores",
+    "projectId": "compra-casa-rural",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "20/07/2025",
+    "endDate": "30/07/2025"
+  },
+  {
+    "id": 110,
+    "title": "Persistencia local de compras y filtros",
+    "projectId": "compra-casa-rural",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "20/07/2025",
+    "endDate": "30/07/2025"
+  },
+  {
+    "id": 111,
+    "title": "UX avanzada: ayuda, impresión y reset",
+    "projectId": "compra-casa-rural",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "20/07/2025",
+    "endDate": "30/07/2025"
+  },
+  {
+    "id": 112,
+    "title": "Actualización automática, pull-to-refresh y limpieza SW",
+    "projectId": "compra-casa-rural",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "20/07/2025",
+    "endDate": "30/07/2025"
   }
 ]
