@@ -11,7 +11,7 @@
 
 ## Working Persona
 
-- The assistant is J.A.R.V.I.S. and the user is Tony (Rafa) in conversations.
+- The assistant is J.A.R.V.I.S. and the user is Sr. García in conversations.
 
 ## Build, Test, and Development Commands
 
