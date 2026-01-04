@@ -66,8 +66,16 @@
         <ul id="projectTodos" class="ticktick-list"></ul>
       </pm-card>
       <pm-card>
-        <h2>Hitos</h2>
-        <p class="ticktick-subtitle">Roadmap visual por proyecto.</p>
+        <div class="todo-header">
+          <div>
+            <h2>Hitos</h2>
+            <p class="ticktick-subtitle">Roadmap visual por proyecto.</p>
+          </div>
+          <label class="todo-toggle">
+            <input type="checkbox" id="milestonesShowCompleted" checked>
+            <span>Mostrar completados</span>
+          </label>
+        </div>
         <ul id="projectMilestones" class="ticktick-list"></ul>
       </pm-card>
     </pm-grid>

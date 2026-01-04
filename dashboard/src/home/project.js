@@ -1,5 +1,6 @@
 import { HOURLY_RATE } from './config.js';
 import { applyFilters, filterTasksByProject, sortTasks } from './domain/task.js';
+import { isMilestoneDone } from './domain/milestone.js';
 import { isTodoDone } from './domain/todo.js';
 import { loadTasks } from './usecases/loadTasks.js';
 import { loadProjects } from './usecases/loadProjects.js';
@@ -182,7 +183,25 @@ async function init() {
   renderTodos();
 
   const milestones = await loadProjectMilestones(currentProjectId);
-  renderProjectMilestones(elements, milestones);
+  const milestonesStorageKey = `pm-project-milestones:show-completed:${encodeURIComponent(currentProjectId)}`;
+  const renderMilestones = () => {
+    const showCompleted = elements.milestonesShowCompleted?.checked ?? true;
+    const filtered = showCompleted ? milestones : milestones.filter((milestone) => !isMilestoneDone(milestone));
+    renderProjectMilestones(elements, filtered);
+  };
+
+  if (elements.milestonesShowCompleted) {
+    const savedShowCompleted = loadJson(milestonesStorageKey);
+    if (typeof savedShowCompleted === 'boolean') {
+      elements.milestonesShowCompleted.checked = savedShowCompleted;
+    }
+    elements.milestonesShowCompleted.addEventListener('change', () => {
+      saveJson(milestonesStorageKey, elements.milestonesShowCompleted.checked);
+      renderMilestones();
+    });
+  }
+
+  renderMilestones();
 }
 
 init().catch((err) => {

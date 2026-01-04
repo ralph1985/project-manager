@@ -27,6 +27,7 @@ export function getProjectElements() {
     projectTodos: document.getElementById('projectTodos'),
     todosShowCompleted: document.getElementById('todosShowCompleted'),
     projectMilestones: document.getElementById('projectMilestones'),
+    milestonesShowCompleted: document.getElementById('milestonesShowCompleted'),
     milestoneModal: document.getElementById('milestoneModal'),
     milestoneTitle: document.getElementById('milestoneModalTitle'),
     milestoneBody: document.getElementById('milestoneBody'),

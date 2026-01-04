@@ -11,3 +11,8 @@ export function sortMilestones(milestones) {
     return (a.title || '').localeCompare(b.title || '');
   });
 }
+
+export function isMilestoneDone(milestone) {
+  const status = (milestone.status || '').toLowerCase();
+  return status === 'done' || status === 'completed' || status === 'completada';
+}
