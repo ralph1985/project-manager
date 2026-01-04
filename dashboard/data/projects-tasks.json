@@ -1058,5 +1058,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "20/07/2025",
     "endDate": "30/07/2025"
+  },
+  {
+    "id": 113,
+    "title": "App Speedy Basket: navegación, tabs y traducciones",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "04/01/2026",
+    "endDate": "04/01/2026"
   }
 ]

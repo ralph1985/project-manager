@@ -691,5 +691,12 @@
     "date": "25/07/2025",
     "hours": 3,
     "note": "Auto-refresh, pull-to-refresh y service worker de limpieza."
+  },
+  {
+    "id": 101,
+    "taskId": 113,
+    "date": "04/01/2026",
+    "hours": 2,
+    "note": "Navegación con tabs, refactor de pantallas, i18n y ajustes UI."
   }
 ]
