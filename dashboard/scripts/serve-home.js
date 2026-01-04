@@ -177,6 +177,10 @@ async function handleTickTickApi(req, res, url) {
         `/open/v1/project/${projectId}/data`,
         accessToken
       );
+      const columns = (projectData.columns || []).map((column) => ({
+        id: column.id,
+        name: column.name,
+      }));
       const tasks = (projectData.tasks || [])
         .filter(
           (task) =>
@@ -192,7 +196,7 @@ async function handleTickTickApi(req, res, url) {
           projectId: task.projectId || projectId,
           projectName: projectData.project?.name || null,
         }));
-      const payload = { status: 'ready', tasks };
+      const payload = { status: 'ready', tasks, columns };
       setCached(cacheKey, payload);
       sendJson(res, 200, payload);
     } catch (err) {

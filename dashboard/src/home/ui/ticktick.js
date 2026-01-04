@@ -12,8 +12,11 @@ export async function initTickTick(elements, options = {}) {
   const columnId = options.columnId || null;
   renderTickTickStatus(elements, 'Cargando', 'status-Info');
   renderTickTickMessage(elements, '');
+  if (elements.ticktickColumnName) {
+    elements.ticktickColumnName.textContent = formatColumnName(columnId, []);
+  }
   if (elements.ticktickColumnId) {
-    elements.ticktickColumnId.textContent = columnId || '-';
+    elements.ticktickColumnId.textContent = formatColumnId(columnId);
   }
   if (elements.ticktickProjectSelect) {
     elements.ticktickProjectSelect.innerHTML = '';
@@ -93,6 +96,15 @@ async function handleTickTickSelection(elements, projectId, options = {}) {
       renderTickTickTasks(elements, []);
       return;
     }
+    if (elements.ticktickColumnName) {
+      elements.ticktickColumnName.textContent = formatColumnName(
+        options.columnId,
+        data.columns || []
+      );
+    }
+    if (elements.ticktickColumnId) {
+      elements.ticktickColumnId.textContent = formatColumnId(options.columnId);
+    }
     const tasks = normalizeTickTickTasks(data.tasks || [], options.columnId);
     renderTickTickStatus(elements, 'Activo', 'status-En');
     renderTickTickTasks(elements, tasks);
@@ -100,6 +112,16 @@ async function handleTickTickSelection(elements, projectId, options = {}) {
     renderTickTickStatus(elements, 'Error', 'status-Bloqueada');
     renderTickTickMessage(elements, 'No se pudieron cargar las tareas de TickTick.');
   }
+}
+
+function formatColumnId(columnId) {
+  return columnId || '-';
+}
+
+function formatColumnName(columnId, columns) {
+  if (!columnId) return '-';
+  const match = columns.find((column) => column.id === columnId);
+  return match ? match.name : '-';
 }
 
 function normalizeTickTickTasks(tasks, columnId) {

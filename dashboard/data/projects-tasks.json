@@ -988,5 +988,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "03/01/2026",
     "endDate": "03/01/2026"
+  },
+  {
+    "id": 106,
+    "title": "TickTick: alta de proyecto y columna en detalle",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "04/01/2026",
+    "endDate": null
   }
 ]

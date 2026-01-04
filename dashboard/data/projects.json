@@ -19,7 +19,7 @@
     "id": "gas-price-finder",
     "name": "Gas Price Finder",
     "status": "active",
-    "order": 6,
+    "order": 7,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954fa243ef791846435309a"
   },
@@ -35,7 +35,7 @@
     "id": "home-manager",
     "name": "Home manager",
     "status": "active",
-    "order": 5,
+    "order": 6,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954fbf098491184643581c7"
   },
@@ -43,7 +43,7 @@
     "id": "kamikazes-events",
     "name": "Kamikazes events",
     "status": "active",
-    "order": 4,
+    "order": 5,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6941caf76dc751643c5c4d38"
   },
@@ -51,8 +51,16 @@
     "id": "speedy-basket",
     "name": "Speedy Basket",
     "status": "active",
-    "order": 7,
+    "order": 8,
     "ticktickProjectId": "68f4a63ddfc6de000000024d",
     "ticktickColumnId": "6954fe16984111846435c725"
+  },
+  {
+    "id": "compra-casa-rural",
+    "name": "Compra casa rural",
+    "status": "active",
+    "order": 4,
+    "ticktickProjectId": "64caaed31393d1ed2a70df64",
+    "ticktickColumnId": "695a55e82534d1c85ac464ae"
   }
 ]

@@ -754,5 +754,11 @@
     "taskId": 99,
     "date": "03/01/2026",
     "note": "Se muestra consumo total en litros y consumo medio diario en la vista de agua."
+  },
+  {
+    "id": 127,
+    "taskId": 106,
+    "date": "04/01/2026",
+    "note": "Nuevo proyecto de compra casa rural y columna TickTick visible con nombre."
   }
 ]
