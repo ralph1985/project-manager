@@ -144,5 +144,17 @@
     "projectId": "speedy-basket",
     "title": "Aplicar SUPABASE_JWKS_URL en Render",
     "dueDate": null
+  },
+  {
+    "id": 18,
+    "projectId": "speedy-basket",
+    "title": "Endpoints mínimos para listas privadas compartidas",
+    "dueDate": null
+  },
+  {
+    "id": 19,
+    "projectId": "speedy-basket",
+    "title": "Revisar duración del token JWT (expiry)",
+    "dueDate": null
   }
 ]

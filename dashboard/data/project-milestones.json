@@ -87,5 +87,14 @@
     "order": 10,
     "note": "Auth obligatorio + listas privadas compartibles.",
     "details": "Esquema\n\n- profiles (id = auth.users.id)\n- roles (admin, map_editor, store_editor, user)\n- user_roles (por tienda)\n- stores.created_by\n- events.user_id\n- shopping_lists + members + items\n\nReglas\n\n- Login obligatorio (Supabase Auth)\n- Roles por tienda\n- Listas privadas con miembros (owner/editor/viewer)\n- Tiendas visibles para cualquier usuario autenticado\n\nEntregables\n\n- Migraciones SQL + RLS\n- Ajustes API para auth\n- UI de login + listas"
+  },
+  {
+    "id": 11,
+    "projectId": "speedy-basket",
+    "title": "Listas compartidas (endpoints mínimos)",
+    "status": "Planned",
+    "order": 11,
+    "note": "API para listas privadas y miembros.",
+    "details": "Objetivo\n\n- GET /lists\n- POST /lists\n- POST /lists/:id/members\n- GET /lists/:id/items\n- POST /lists/:id/items\n- PATCH /lists/:id/items/:itemId\n\nEntregables\n\n- Endpoints con auth\n- RLS validada con roles owner/editor/viewer"
   }
 ]
