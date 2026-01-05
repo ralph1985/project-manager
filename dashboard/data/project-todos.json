@@ -86,5 +86,45 @@
     "projectId": "speedy-basket",
     "title": "Pulir confianza: acumulativo, umbrales y escaneo",
     "dueDate": null
+  },
+  {
+    "id": 11,
+    "projectId": "speedy-basket",
+    "title": "Conectar proyecto a Expo EAS",
+    "status": "Completada",
+    "createdAt": "04/01/2026",
+    "note": "Proyecto enlazado con EAS y runbook documentado.",
+    "order": 8,
+    "completedAt": "04/01/2026"
+  },
+  {
+    "id": 12,
+    "projectId": "speedy-basket",
+    "title": "Navegacion con tabs",
+    "status": "Completada",
+    "createdAt": "04/01/2026",
+    "note": "Tabs para Lista, Mapa, Dev y Settings.",
+    "order": 9,
+    "completedAt": "04/01/2026"
+  },
+  {
+    "id": 13,
+    "projectId": "speedy-basket",
+    "title": "Internacionalizacion (ES/EN)",
+    "status": "Completada",
+    "createdAt": "04/01/2026",
+    "note": "Strings en ES/EN con selector en Settings.",
+    "order": 10,
+    "completedAt": "04/01/2026"
+  },
+  {
+    "id": 14,
+    "projectId": "speedy-basket",
+    "title": "Unificar Lista y Busqueda",
+    "status": "Completada",
+    "createdAt": "04/01/2026",
+    "note": "Pantalla unica de lista/busqueda.",
+    "order": 11,
+    "completedAt": "04/01/2026"
   }
 ]
