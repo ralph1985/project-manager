@@ -1218,5 +1218,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "05/01/2026",
     "endDate": "05/01/2026"
+  },
+  {
+    "id": 129,
+    "title": "Productos: traducciones ES/EN",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
   }
 ]
