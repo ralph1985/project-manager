@@ -69,5 +69,14 @@
     "order": 8,
     "note": "Pulir la experiencia del usuario final.",
     "details": "Objetivo\n\n- Mapa de zonas útil en móvil\n- Flujo de lista y búsqueda optimizado\n- Feedback rápido (Encontrado / No está)\n\nEntregables\n- UX de ruta por zonas\n- Iteración de UI"
+  },
+  {
+    "id": 9,
+    "projectId": "speedy-basket",
+    "title": "Pulir confianza (acumulativo, umbrales y escaneo)",
+    "status": "Planned",
+    "order": 9,
+    "note": "Afinar reglas de confianza y señal de escaneo.",
+    "details": "Objetivo\n\n- Definir pesos por evento (FOUND / NOT_FOUND / SCANNED_EAN)\n- Ajustar acumulacion, limites 0-1 y decaimiento\n- Establecer umbrales de sugerida vs confirmada\n- Manejar cambios de zona y conflictos\n\nEntregables\n- Reglas de confianza documentadas\n- Actualizacion consistente de product_locations\n- Pruebas manuales con curls"
   }
 ]
