@@ -1068,5 +1068,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "04/01/2026",
     "endDate": "04/01/2026"
+  },
+  {
+    "id": 114,
+    "title": "Cuenta Expo para Speedy Basket",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "04/01/2026",
+    "endDate": "04/01/2026"
   }
 ]

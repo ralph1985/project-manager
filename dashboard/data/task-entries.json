@@ -698,5 +698,12 @@
     "date": "04/01/2026",
     "hours": 2,
     "note": "Navegación con tabs, refactor de pantallas, i18n y ajustes UI."
+  },
+  {
+    "id": 102,
+    "taskId": 114,
+    "date": "04/01/2026",
+    "hours": 0.5,
+    "note": "Creación de cuenta Expo y enlace EAS."
   }
 ]
