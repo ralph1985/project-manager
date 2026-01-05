@@ -78,5 +78,14 @@
     "order": 9,
     "note": "Afinar reglas de confianza y señal de escaneo.",
     "details": "Objetivo\n\n- Definir pesos por evento (FOUND / NOT_FOUND / SCANNED_EAN)\n- Ajustar acumulacion, limites 0-1 y decaimiento\n- Establecer umbrales de sugerida vs confirmada\n- Manejar cambios de zona y conflictos\n\nEntregables\n- Reglas de confianza documentadas\n- Actualizacion consistente de product_locations\n- Pruebas manuales con curls"
+  },
+  {
+    "id": 10,
+    "projectId": "speedy-basket",
+    "title": "Usuarios, roles y listas privadas",
+    "status": "Planned",
+    "order": 10,
+    "note": "Auth obligatorio + listas privadas compartibles.",
+    "details": "Esquema\n\n- profiles (id = auth.users.id)\n- roles (admin, map_editor, store_editor, user)\n- user_roles (por tienda)\n- stores.created_by\n- events.user_id\n- shopping_lists + members + items\n\nReglas\n\n- Login obligatorio (Supabase Auth)\n- Roles por tienda\n- Listas privadas con miembros (owner/editor/viewer)\n- Tiendas visibles para cualquier usuario autenticado\n\nEntregables\n\n- Migraciones SQL + RLS\n- Ajustes API para auth\n- UI de login + listas"
   }
 ]
