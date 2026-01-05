@@ -705,5 +705,12 @@
     "date": "04/01/2026",
     "hours": 0.5,
     "note": "Creación de cuenta Expo y enlace EAS."
+  },
+  {
+    "id": 103,
+    "taskId": 115,
+    "date": "04/01/2026",
+    "hours": 0.25,
+    "note": "Tabs con swipe lateral y ajuste de safe area en menu inferior."
   }
 ]
