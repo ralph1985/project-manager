@@ -1168,5 +1168,55 @@
     "ownerId": "rafael-garcia",
     "startDate": "05/01/2026",
     "endDate": "05/01/2026"
+  },
+  {
+    "id": 124,
+    "title": "Admin UI con Chakra y layout por tienda",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 125,
+    "title": "Branding app: nombre e iconos",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 126,
+    "title": "Productos: variantes y delta en pack",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 127,
+    "title": "Alta de producto genérico en móvil + API",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 128,
+    "title": "Categorías base + locale (ES/EN)",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
   }
 ]
