@@ -1158,5 +1158,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "05/01/2026",
     "endDate": "05/01/2026"
+  },
+  {
+    "id": 123,
+    "title": "Web admin: listado de usuarios y roles",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
   }
 ]

@@ -761,5 +761,12 @@
     "date": "05/01/2026",
     "hours": 1,
     "note": "Login admin con Supabase y restricción por rol admin_god."
+  },
+  {
+    "id": 111,
+    "taskId": 123,
+    "date": "05/01/2026",
+    "hours": 0.5,
+    "note": "Listado admin de usuarios y roles."
   }
 ]
