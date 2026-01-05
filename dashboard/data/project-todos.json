@@ -126,5 +126,17 @@
     "note": "Pantalla unica de lista/busqueda.",
     "order": 11,
     "completedAt": "04/01/2026"
+  },
+  {
+    "id": 15,
+    "projectId": "speedy-basket",
+    "title": "Crear tiendas (CRUD basico)",
+    "dueDate": null
+  },
+  {
+    "id": 16,
+    "projectId": "speedy-basket",
+    "title": "Ampliar detalles de tiendas (direccion, etc.)",
+    "dueDate": null
   }
 ]
