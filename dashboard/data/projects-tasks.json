@@ -1088,5 +1088,45 @@
     "ownerId": "rafael-garcia",
     "startDate": "04/01/2026",
     "endDate": "04/01/2026"
+  },
+  {
+    "id": 116,
+    "title": "Multi-tienda: selector y store activo",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 117,
+    "title": "Indices y constraint de confianza en BD",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 118,
+    "title": "EAS: runbook y enlace de proyecto",
+    "projectId": "speedy-basket",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 119,
+    "title": "Pack: nuevas tiendas, zonas y productos",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
   }
 ]

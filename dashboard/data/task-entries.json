@@ -712,5 +712,33 @@
     "date": "05/01/2026",
     "hours": 0.25,
     "note": "Tabs con swipe lateral y ajuste de safe area en menu inferior."
+  },
+  {
+    "id": 104,
+    "taskId": 116,
+    "date": "05/01/2026",
+    "hours": 0.25,
+    "note": "Selector de tienda, store activo y queries filtradas por store."
+  },
+  {
+    "id": 105,
+    "taskId": 117,
+    "date": "05/01/2026",
+    "hours": 0.25,
+    "note": "Indices en SQLite/Postgres y constraint de confianza."
+  },
+  {
+    "id": 106,
+    "taskId": 118,
+    "date": "05/01/2026",
+    "hours": 0.25,
+    "note": "Runbook EAS y enlace del proyecto en Expo."
+  },
+  {
+    "id": 107,
+    "taskId": 119,
+    "date": "05/01/2026",
+    "hours": 0.25,
+    "note": "Pack con nuevas tiendas, zonas y productos para pruebas."
   }
 ]
