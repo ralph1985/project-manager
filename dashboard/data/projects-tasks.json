@@ -1128,5 +1128,35 @@
     "ownerId": "rafael-garcia",
     "startDate": "05/01/2026",
     "endDate": "05/01/2026"
+  },
+  {
+    "id": 120,
+    "title": "Auth + RLS + JWKS en API",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 121,
+    "title": "Login móvil con Supabase",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
+  },
+  {
+    "id": 122,
+    "title": "Login admin con Supabase y rol admin_god",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "05/01/2026",
+    "endDate": "05/01/2026"
   }
 ]
