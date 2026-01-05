@@ -156,5 +156,23 @@
     "projectId": "speedy-basket",
     "title": "Revisar duración del token JWT (expiry)",
     "dueDate": null
+  },
+  {
+    "id": 20,
+    "projectId": "speedy-basket",
+    "title": "Crear nuevo usuario \"Bego\" para pruebas",
+    "dueDate": null
+  },
+  {
+    "id": 21,
+    "projectId": "speedy-basket",
+    "title": "Crear roles: usuario y administrador tienda",
+    "dueDate": null
+  },
+  {
+    "id": 22,
+    "projectId": "speedy-basket",
+    "title": "Crear rol \"adminitrador dios\" (solo para web/admin)",
+    "dueDate": null
   }
 ]
