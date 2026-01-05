@@ -768,5 +768,40 @@
     "date": "05/01/2026",
     "hours": 0.5,
     "note": "Listado admin de usuarios y roles."
+  },
+  {
+    "id": 112,
+    "taskId": 124,
+    "date": "05/01/2026",
+    "hours": 0.4,
+    "note": "Rediseño admin con Chakra y layout por tienda."
+  },
+  {
+    "id": 113,
+    "taskId": 125,
+    "date": "05/01/2026",
+    "hours": 0.25,
+    "note": "Actualización de nombre e iconos de la app."
+  },
+  {
+    "id": 114,
+    "taskId": 126,
+    "date": "05/01/2026",
+    "hours": 0.5,
+    "note": "Variantes de producto en pack + migraciones."
+  },
+  {
+    "id": 115,
+    "taskId": 127,
+    "date": "05/01/2026",
+    "hours": 0.6,
+    "note": "Alta de producto genérico en app móvil + API."
+  },
+  {
+    "id": 116,
+    "taskId": 128,
+    "date": "05/01/2026",
+    "hours": 0.25,
+    "note": "Categorías base con locale ES/EN y sugerencias."
   }
 ]
