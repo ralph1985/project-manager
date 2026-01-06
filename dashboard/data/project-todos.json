@@ -174,5 +174,11 @@
     "projectId": "speedy-basket",
     "title": "Crear rol \"adminitrador dios\" (solo para web/admin)",
     "dueDate": null
+  },
+  {
+    "id": 23,
+    "projectId": "speedy-basket",
+    "title": "Añadir UI de compartir cestas (por ahora oculto)",
+    "dueDate": null
   }
 ]
