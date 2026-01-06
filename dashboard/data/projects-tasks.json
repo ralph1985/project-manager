@@ -1238,5 +1238,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "06/01/2026",
     "endDate": "06/01/2026"
+  },
+  {
+    "id": 131,
+    "title": "Cestas: sync bidireccional y borrado (06/01)",
+    "projectId": "speedy-basket",
+    "phase": "Construcción",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "06/01/2026",
+    "endDate": "06/01/2026"
   }
 ]

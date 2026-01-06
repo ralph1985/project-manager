@@ -817,5 +817,12 @@
     "date": "06/01/2026",
     "hours": 0.5,
     "note": "Ajustes UI cestas, Dev oculto y selector de tienda en mapa."
+  },
+  {
+    "id": 119,
+    "taskId": 131,
+    "date": "06/01/2026",
+    "hours": 2,
+    "note": "Sync bidireccional de cestas, borrado en UI y revisión de admin."
   }
 ]
