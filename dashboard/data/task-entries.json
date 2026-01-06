@@ -810,5 +810,12 @@
     "date": "05/01/2026",
     "hours": 0.5,
     "note": "Traducciones de productos ES/EN."
+  },
+  {
+    "id": 118,
+    "taskId": 130,
+    "date": "06/01/2026",
+    "hours": 0.5,
+    "note": "Ajustes UI cestas, Dev oculto y selector de tienda en mapa."
   }
 ]
