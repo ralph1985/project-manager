@@ -1248,5 +1248,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "06/01/2026",
     "endDate": "06/01/2026"
+  },
+  {
+    "id": 132,
+    "title": "Docs y automatizacion: schema Supabase",
+    "projectId": "speedy-basket",
+    "phase": "Construccion",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "06/01/2026",
+    "endDate": "06/01/2026"
   }
 ]

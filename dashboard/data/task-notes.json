@@ -796,5 +796,11 @@
     "taskId": 112,
     "date": "25/07/2025",
     "note": "Auto-refresh, pull-to-refresh y limpieza de caches via SW."
+  },
+  {
+    "id": 134,
+    "taskId": 132,
+    "date": "06/01/2026",
+    "note": "Creé runbook y script para regenerar el schema de Supabase y lo dejé versionado en docs/db."
   }
 ]

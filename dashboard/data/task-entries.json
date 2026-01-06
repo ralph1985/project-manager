@@ -824,5 +824,12 @@
     "date": "06/01/2026",
     "hours": 2,
     "note": "Sync bidireccional de cestas, borrado en UI y revisión de admin."
+  },
+  {
+    "id": 120,
+    "taskId": 132,
+    "date": "06/01/2026",
+    "hours": 1,
+    "note": "Runbook y script para dump de schema Supabase; snapshot versionado y AGENTS actualizado."
   }
 ]
