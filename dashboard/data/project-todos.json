@@ -180,5 +180,11 @@
     "projectId": "speedy-basket",
     "title": "Añadir UI de compartir cestas (por ahora oculto)",
     "dueDate": null
+  },
+  {
+    "id": 24,
+    "projectId": "speedy-basket",
+    "title": "Sincronizar borrado de cestas con Supabase",
+    "dueDate": null
   }
 ]
