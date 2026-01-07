@@ -802,5 +802,17 @@
     "taskId": 132,
     "date": "06/01/2026",
     "note": "Creé runbook y script para regenerar el schema de Supabase y lo dejé versionado en docs/db."
+  },
+  {
+    "id": 135,
+    "taskId": 72,
+    "date": "07/01/2026",
+    "note": "Revisión del flujo y datos necesarios para dar de alta el seguro del Peugeot Rifter."
+  },
+  {
+    "id": 136,
+    "taskId": 72,
+    "date": "07/01/2026",
+    "note": "Añadida vista de detalle del seguro con enlace a documentación en OneDrive."
   }
 ]

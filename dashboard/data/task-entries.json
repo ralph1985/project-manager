@@ -831,5 +831,19 @@
     "date": "06/01/2026",
     "hours": 1,
     "note": "Runbook y script para dump de schema Supabase; snapshot versionado y AGENTS actualizado."
+  },
+  {
+    "id": 121,
+    "taskId": 72,
+    "date": "07/01/2026",
+    "hours": 0.5,
+    "note": "Revisión de alta de seguro del vehículo Rifter."
+  },
+  {
+    "id": 122,
+    "taskId": 72,
+    "date": "07/01/2026",
+    "hours": 0.5,
+    "note": "Detalle de seguro del vehículo y enlace a documentación."
   }
 ]
