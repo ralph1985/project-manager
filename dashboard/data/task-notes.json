@@ -814,5 +814,11 @@
     "taskId": 72,
     "date": "07/01/2026",
     "note": "Añadida vista de detalle del seguro con enlace a documentación en OneDrive."
+  },
+  {
+    "id": 137,
+    "taskId": 133,
+    "date": "10/01/2026",
+    "note": "Registrada factura de gas FE26137000491793 y actualizada la base de datos."
   }
 ]

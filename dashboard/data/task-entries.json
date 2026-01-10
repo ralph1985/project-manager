@@ -845,5 +845,12 @@
     "date": "07/01/2026",
     "hours": 0.5,
     "note": "Detalle de seguro del vehículo y enlace a documentación."
+  },
+  {
+    "id": 123,
+    "taskId": 133,
+    "date": "10/01/2026",
+    "hours": 0.25,
+    "note": "Registro de factura de gas y alta en base de datos."
   }
 ]

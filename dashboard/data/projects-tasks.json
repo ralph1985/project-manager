@@ -1258,5 +1258,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "06/01/2026",
     "endDate": "06/01/2026"
+  },
+  {
+    "id": 133,
+    "title": "Registro factura gas 2026-01-08",
+    "projectId": "home-manager",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "10/01/2026",
+    "endDate": "10/01/2026"
   }
 ]
