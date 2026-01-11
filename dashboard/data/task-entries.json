@@ -887,5 +887,54 @@
     "date": "11/01/2026",
     "hours": 0.1,
     "note": "Panel de mantenimientos movido junto al de seguro en la ficha."
+  },
+  {
+    "id": 129,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.25,
+    "note": "Actualizados datos de motor/cambio/acabado de la Rifter en la BD."
+  },
+  {
+    "id": 130,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.5,
+    "note": "Plan de mantenimiento futuro con plan e hitos calculados."
+  },
+  {
+    "id": 131,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.1,
+    "note": "Actualizado plan de mantenimiento para incluir tareas base en 75k y 100k."
+  },
+  {
+    "id": 132,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.05,
+    "note": "Panel de proximos mantenimientos colapsable."
+  },
+  {
+    "id": 133,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.05,
+    "note": "InfoPanel de mantenimientos enlazado a la ficha de mantenimientos."
+  },
+  {
+    "id": 134,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.03,
+    "note": "Listado de proximos mantenimientos en dos columnas."
+  },
+  {
+    "id": 135,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.02,
+    "note": "Marcado de mantenimiento planificado como hecho y vinculo al historial."
   }
 ]

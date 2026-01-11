@@ -850,5 +850,47 @@
     "taskId": 72,
     "date": "11/01/2026",
     "note": "Panel de mantenimientos colocado junto al de seguro en la ficha del vehiculo."
+  },
+  {
+    "id": 143,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Guardados motor y acabado (BlueHDi 100 S&S, 6v, PLUS) en la ficha de compra y specs."
+  },
+  {
+    "id": 144,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Añadido plan de mantenimiento futuro con intervalos km/tiempo y lista de tareas."
+  },
+  {
+    "id": 145,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Plan de mantenimiento ajustado con tareas base añadidas en los hitos de 75k y 100k."
+  },
+  {
+    "id": 146,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Panel de proximos mantenimientos mostrado con CollapsiblePanel."
+  },
+  {
+    "id": 147,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "InfoPanel de mantenimiento ahora navega al listado de mantenimientos."
+  },
+  {
+    "id": 148,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Proximos mantenimientos mostrados en dos columnas dentro del panel."
+  },
+  {
+    "id": 149,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Añadido flujo para marcar mantenimientos planificados como hechos y guardarlos en el historial."
   }
 ]
