@@ -1268,5 +1268,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "10/01/2026",
     "endDate": "10/01/2026"
+  },
+  {
+    "id": 134,
+    "title": "Ampliar esquema de vehiculos (ficha tecnica y documento)",
+    "projectId": "home-manager",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "11/01/2026",
+    "endDate": "11/01/2026"
   }
 ]

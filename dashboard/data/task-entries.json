@@ -852,5 +852,12 @@
     "date": "10/01/2026",
     "hours": 0.25,
     "note": "Registro de factura de gas y alta en base de datos."
+  },
+  {
+    "id": 124,
+    "taskId": 134,
+    "date": "11/01/2026",
+    "hours": 0.25,
+    "note": "Ampliacion de schema para ficha tecnica y documento de vehiculo."
   }
 ]

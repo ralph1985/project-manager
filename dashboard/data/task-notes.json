@@ -820,5 +820,11 @@
     "taskId": 133,
     "date": "10/01/2026",
     "note": "Registrada factura de gas FE26137000491793 y actualizada la base de datos."
+  },
+  {
+    "id": 138,
+    "taskId": 134,
+    "date": "11/01/2026",
+    "note": "Ampliado el schema de vehiculos con ficha tecnica y documento de circulacion para guardar datos DGT."
   }
 ]
