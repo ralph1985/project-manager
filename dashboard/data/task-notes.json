@@ -826,5 +826,29 @@
     "taskId": 134,
     "date": "11/01/2026",
     "note": "Ampliado el schema de vehiculos con ficha tecnica y documento de circulacion para guardar datos DGT."
+  },
+  {
+    "id": 139,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Paneles colapsables en la ficha de vehiculo para reducir informacion visible al cargar."
+  },
+  {
+    "id": 140,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Extendidos los paneles colapsables a las vistas de compra, seguro y mantenimiento."
+  },
+  {
+    "id": 141,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Historial de mantenimientos separado en una ficha y enlace desde la ficha del vehiculo."
+  },
+  {
+    "id": 142,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "note": "Panel de mantenimientos colocado junto al de seguro en la ficha del vehiculo."
   }
 ]

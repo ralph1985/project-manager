@@ -859,5 +859,33 @@
     "date": "11/01/2026",
     "hours": 0.25,
     "note": "Ampliacion de schema para ficha tecnica y documento de vehiculo."
+  },
+  {
+    "id": 125,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.1,
+    "note": "Paneles colapsables por defecto en ficha de vehiculo."
+  },
+  {
+    "id": 126,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.2,
+    "note": "Paneles colapsables en paginas de compra, seguro y mantenimiento."
+  },
+  {
+    "id": 127,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.1,
+    "note": "Historial de mantenimientos movido a ficha dedicada con acceso desde la ficha del vehiculo."
+  },
+  {
+    "id": 128,
+    "taskId": 72,
+    "date": "11/01/2026",
+    "hours": 0.1,
+    "note": "Panel de mantenimientos movido junto al de seguro en la ficha."
   }
 ]
