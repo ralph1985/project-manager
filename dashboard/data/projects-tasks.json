@@ -1278,5 +1278,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "11/01/2026",
     "endDate": "11/01/2026"
+  },
+  {
+    "id": 135,
+    "title": "Seguro vivienda Meco: datos de poliza y renovaciones",
+    "projectId": "home-manager",
+    "phase": "Construccion",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "15/01/2026",
+    "endDate": "15/01/2026"
   }
 ]

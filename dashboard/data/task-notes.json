@@ -892,5 +892,11 @@
     "taskId": 72,
     "date": "11/01/2026",
     "note": "Añadido flujo para marcar mantenimientos planificados como hechos y guardarlos en el historial."
+  },
+  {
+    "id": 150,
+    "taskId": 135,
+    "date": "15/01/2026",
+    "note": "Nueva tarea para modelar seguro de vivienda Meco con historico de renovaciones."
   }
 ]
