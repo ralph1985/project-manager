@@ -943,5 +943,12 @@
     "date": "15/01/2026",
     "hours": 0.25,
     "note": "Registro de requisitos para seguro de vivienda (Meco) y datos iniciales de poliza."
+  },
+  {
+    "id": 137,
+    "taskId": 136,
+    "date": "17/01/2026",
+    "hours": 2,
+    "note": "Scaffold TypeScript, auth MSAL con cache local, sync bidireccional y documentacion/configuracion Azure + tooling (ESLint/Prettier/Husky/Commitizen/Commitlint)."
   }
 ]

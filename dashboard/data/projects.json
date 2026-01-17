@@ -62,5 +62,13 @@
     "order": 4,
     "ticktickProjectId": "64caaed31393d1ed2a70df64",
     "ticktickColumnId": "695a55e82534d1c85ac464ae"
+  },
+  {
+    "id": "onedrive-file-sync",
+    "name": "OneDrive File Sync",
+    "status": "active",
+    "order": 9,
+    "ticktickProjectId": "",
+    "ticktickColumnId": ""
   }
 ]

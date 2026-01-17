@@ -898,5 +898,11 @@
     "taskId": 135,
     "date": "15/01/2026",
     "note": "Nueva tarea para modelar seguro de vivienda Meco con historico de renovaciones."
+  },
+  {
+    "id": 151,
+    "taskId": 136,
+    "date": "17/01/2026",
+    "note": "Proyecto local para sync bidireccional de un archivo en OneDrive Personal usando app folder, auth code flow y automatizacion por cron. Incluye documentacion de alta en Azure."
   }
 ]

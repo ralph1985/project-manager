@@ -1288,5 +1288,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "15/01/2026",
     "endDate": "15/01/2026"
+  },
+  {
+    "id": 136,
+    "title": "Sync bidireccional OneDrive (app folder) y automatizacion local",
+    "projectId": "onedrive-file-sync",
+    "phase": "Construccion",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "17/01/2026",
+    "endDate": null
   }
 ]
