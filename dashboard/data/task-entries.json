@@ -950,5 +950,12 @@
     "date": "17/01/2026",
     "hours": 2,
     "note": "Scaffold TypeScript, auth MSAL con cache local, sync bidireccional y documentacion/configuracion Azure + tooling (ESLint/Prettier/Husky/Commitizen/Commitlint)."
+  },
+  {
+    "id": 138,
+    "taskId": 136,
+    "date": "17/01/2026",
+    "hours": 0.5,
+    "note": "Ajuste de sync para requerir parametros y verificacion de backup subido a OneDrive."
   }
 ]

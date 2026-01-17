@@ -904,5 +904,11 @@
     "taskId": 136,
     "date": "17/01/2026",
     "note": "Proyecto local para sync bidireccional de un archivo en OneDrive Personal usando app folder, auth code flow y automatizacion por cron. Incluye documentacion de alta en Azure."
+  },
+  {
+    "id": 152,
+    "taskId": 136,
+    "date": "17/01/2026",
+    "note": "Ajustes del sincronizador y comprobacion de backups en OneDrive."
   }
 ]
