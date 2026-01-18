@@ -916,5 +916,10 @@
     "taskId": 72,
     "date": "17/01/2026",
     "note": "Mejoras en copias de seguridad locales y sync automatico a OneDrive. Ole!!!"
+  },
+  {
+    "taskId": 137,
+    "date": "18/01/2026",
+    "note": "Se añadieron campos de neumaticos (medida, indices y formato completo) y se muestran en la UI. Se documenta el fallo de sync OneDrive (fetch failed) por falta de red en sandbox."
   }
 ]

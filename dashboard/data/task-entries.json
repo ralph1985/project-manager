@@ -964,5 +964,11 @@
     "date": "17/01/2026",
     "hours": 0.5,
     "note": "Mejoras en backups y snapshots: ahora se guardan en local y se sincronizan automaticamente a OneDrive. Ole!!!"
+  },
+  {
+    "taskId": 137,
+    "date": "18/01/2026",
+    "hours": 0.5,
+    "note": "Neumaticos Rifter: campos BD, UI y nota sobre sync OneDrive."
   }
 ]

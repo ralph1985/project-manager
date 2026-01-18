@@ -1298,5 +1298,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "17/01/2026",
     "endDate": null
+  },
+  {
+    "id": 137,
+    "title": "Ficha tecnica Rifter: neumaticos",
+    "projectId": "home-manager",
+    "phase": "Construccion",
+    "status": "Cerrada",
+    "ownerId": "rafael-garcia",
+    "startDate": "18/01/2026",
+    "endDate": "18/01/2026"
   }
 ]
