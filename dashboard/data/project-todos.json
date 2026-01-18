@@ -186,5 +186,47 @@
     "projectId": "speedy-basket",
     "title": "Sincronizar borrado de cestas con Supabase",
     "dueDate": null
+  },
+  {
+    "id": 25,
+    "projectId": "loto-sync",
+    "title": "Definir entidades y validaciones (boletos, numeros, grupos)",
+    "dueDate": null
+  },
+  {
+    "id": 26,
+    "projectId": "loto-sync",
+    "title": "Crear proyecto Next.js en projects/loto-sync",
+    "dueDate": null
+  },
+  {
+    "id": 27,
+    "projectId": "loto-sync",
+    "title": "Configurar Vercel Blob + variables de entorno",
+    "dueDate": null
+  },
+  {
+    "id": 28,
+    "projectId": "loto-sync",
+    "title": "Configurar Prisma Postgres + schema inicial",
+    "dueDate": null
+  },
+  {
+    "id": 29,
+    "projectId": "loto-sync",
+    "title": "UI movil: selector de sorteo/grupo",
+    "dueDate": null
+  },
+  {
+    "id": 30,
+    "projectId": "loto-sync",
+    "title": "UI movil: alta de boleto con subida de resguardo",
+    "dueDate": null
+  },
+  {
+    "id": 31,
+    "projectId": "loto-sync",
+    "title": "Revisar vulnerabilidades npm (3 high) en loto-sync",
+    "dueDate": null
   }
 ]

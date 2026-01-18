@@ -70,5 +70,13 @@
     "order": 9,
     "ticktickProjectId": "",
     "ticktickColumnId": ""
+  },
+  {
+    "id": "loto-sync",
+    "name": "Loto Sync",
+    "status": "active",
+    "order": 10,
+    "ticktickProjectId": "",
+    "ticktickColumnId": ""
   }
 ]

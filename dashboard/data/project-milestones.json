@@ -96,5 +96,50 @@
     "order": 11,
     "note": "API para listas privadas y miembros.",
     "details": "Objetivo\n\n- GET /lists\n- POST /lists\n- POST /lists/:id/members\n- GET /lists/:id/items\n- POST /lists/:id/items\n- PATCH /lists/:id/items/:itemId\n\nEntregables\n\n- Endpoints con auth\n- RLS validada con roles owner/editor/viewer"
+  },
+  {
+    "id": 12,
+    "projectId": "loto-sync",
+    "title": "Hito 1: Definicion MVP y modelo de datos",
+    "status": "Planned",
+    "order": 1,
+    "note": "Cerrar pantallas, flujo y entidades principales.",
+    "details": "Entregables\n\n- Pantallas MVP: seleccion sorteo/grupo + alta boleto\n- Entidades: groups, draws, tickets, ticket_numbers, receipts\n- Estados: pendiente / comprobado / premio\n- Campos minimos y validaciones"
+  },
+  {
+    "id": 13,
+    "projectId": "loto-sync",
+    "title": "Hito 2: Bootstrap Next.js + entorno Vercel",
+    "status": "Planned",
+    "order": 2,
+    "note": "Repo base y configuracion minima para deploy.",
+    "details": "Entregables\n\n- Next.js app creada en projects/loto-sync\n- Variables de entorno base\n- Configuracion Vercel Blob + Prisma Postgres"
+  },
+  {
+    "id": 14,
+    "projectId": "loto-sync",
+    "title": "Hito 3: Alta de boleto (UI + validaciones)",
+    "status": "Planned",
+    "order": 3,
+    "note": "Formulario movil y flujo de guardado.",
+    "details": "Entregables\n\n- Formulario de numeros y tipo de sorteo\n- Selector de grupo\n- Validaciones y feedback"
+  },
+  {
+    "id": 15,
+    "projectId": "loto-sync",
+    "title": "Hito 4: Resguardos con Blob + metadatos en DB",
+    "status": "Planned",
+    "order": 4,
+    "note": "Subida de imagen y relacion con boleto.",
+    "details": "Entregables\n\n- Upload a Vercel Blob\n- Guardado URL + metadata en Postgres\n- Vista detalle con resguardo"
+  },
+  {
+    "id": 16,
+    "projectId": "loto-sync",
+    "title": "Hito 5: Pantalla de revision y estado por grupo",
+    "status": "Planned",
+    "order": 5,
+    "note": "Listado filtrado por grupo y estado.",
+    "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio"
   }
 ]

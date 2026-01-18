@@ -1308,5 +1308,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "18/01/2026",
     "endDate": "18/01/2026"
+  },
+  {
+    "id": 138,
+    "title": "Arranque MVP loto-sync (setup + hitos + backlog)",
+    "projectId": "loto-sync",
+    "phase": "Planificacion",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "18/01/2026",
+    "endDate": null
   }
 ]
