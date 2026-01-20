@@ -921,5 +921,11 @@
     "taskId": 137,
     "date": "18/01/2026",
     "note": "Se añadieron campos de neumaticos (medida, indices y formato completo) y se muestran en la UI. Se documenta el fallo de sync OneDrive (fetch failed) por falta de red en sandbox."
+  },
+  {
+    "id": 154,
+    "taskId": 135,
+    "date": "20/01/2026",
+    "note": "Registro de factura de luz con importes, consumo y periodo (FE26390002615153)."
   }
 ]
