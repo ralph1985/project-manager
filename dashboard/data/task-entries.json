@@ -989,12 +989,12 @@
     "taskId": 139,
     "date": "24/01/2026",
     "hours": 2.5,
-    "note": "Data model + migrations + repository/use cases for gas readings; linked to bills."
+    "note": "Modelo de datos, migraciones y repositorios/casos de uso para lecturas de gas, con enlace a facturas."
   },
   {
     "taskId": 139,
     "date": "24/01/2026",
     "hours": 1.5,
-    "note": "Gas readings UI (table, modal CRUD, grouping, accumulations, styling adjustments)."
+    "note": "UI de lecturas de gas (tabla, modal CRUD, agrupación, acumulados y ajustes de estilo)."
   }
 ]
