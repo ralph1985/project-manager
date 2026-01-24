@@ -1318,5 +1318,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "18/01/2026",
     "endDate": null
+  },
+  {
+    "id": 139,
+    "title": "Gas readings: monthly tracking UI",
+    "projectId": "home-manager",
+    "phase": "Construccion",
+    "status": "Cerrado",
+    "ownerId": "rafael-garcia",
+    "startDate": "24/01/2026",
+    "endDate": "24/01/2026"
   }
 ]

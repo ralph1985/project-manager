@@ -927,5 +927,10 @@
     "taskId": 135,
     "date": "20/01/2026",
     "note": "Registro de factura de luz con importes, consumo y periodo (FE26390002615153)."
+  },
+  {
+    "taskId": 139,
+    "date": "24/01/2026",
+    "note": "Closed task after delivering gas readings CRUD UI, bill linking, and accumulated metrics."
   }
 ]
