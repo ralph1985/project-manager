@@ -101,7 +101,7 @@
     "id": 12,
     "projectId": "loto-sync",
     "title": "Hito 1: Definicion MVP y modelo de datos",
-    "status": "Planned",
+    "status": "Done",
     "order": 1,
     "note": "Cerrar pantallas, flujo y entidades principales.",
     "details": "Entregables\n\n- Pantallas MVP: seleccion sorteo/grupo + alta boleto\n- Entidades: groups, draws, tickets, ticket_numbers, receipts\n- Estados: pendiente / comprobado / premio\n- Campos minimos y validaciones"
