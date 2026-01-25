@@ -996,5 +996,12 @@
     "date": "24/01/2026",
     "hours": 1.5,
     "note": "UI de lecturas de gas (tabla, modal CRUD, agrupación, acumulados y ajustes de estilo)."
+  },
+  {
+    "id": 142,
+    "taskId": 138,
+    "date": "25/01/2026",
+    "hours": 1.5,
+    "note": "Loto Sync: backend local con API routes + SQLite, integración UI con API local, seed de sorteos y replanificación de hitos."
   }
 ]

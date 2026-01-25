@@ -932,5 +932,11 @@
     "taskId": 139,
     "date": "24/01/2026",
     "note": "Tarea cerrada tras entregar CRUD de lecturas de gas, enlace a facturas y acumulados."
+  },
+  {
+    "id": 155,
+    "taskId": 138,
+    "date": "25/01/2026",
+    "note": "Hito 4 completado (API routes + SQLite) y Hito 5 completado (integración UI con API local + listado básico de boletos). Replanificación de hitos para local-first."
   }
 ]
