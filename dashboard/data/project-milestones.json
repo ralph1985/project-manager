@@ -173,7 +173,7 @@
     "id": 20,
     "projectId": "loto-sync",
     "title": "Hito 9: Mejorar seccion de boletos recientes",
-    "status": "Planned",
+    "status": "Done",
     "order": 9,
     "note": "Iteracion de UI para listar boletos guardados.",
     "details": "Entregables\n\n- Lista con mas informacion (numeros, fecha, estado)\n- Acciones rapidas (ver detalle / copiar)\n- Empty state y loading mejorados"
@@ -186,5 +186,14 @@
     "order": 10,
     "note": "Consulta de resultados/premios desde API externa.",
     "details": "Entregables\n\n- Cliente API para resultados (Primitiva/Euromillones)\n- Normalizacion de respuesta\n- Verificacion de boletos contra resultados\n- Cache local basico"
+  },
+  {
+    "id": 22,
+    "projectId": "loto-sync",
+    "title": "Hito 11: Modo oscuro",
+    "status": "Planned",
+    "order": 11,
+    "note": "Mejorar accesibilidad y reducir fatiga visual.",
+    "details": "Entregables\n\n- Theme oscuro completo\n- Toggle en UI\n- Ajustes de contraste y fondos"
   }
 ]
