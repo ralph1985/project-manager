@@ -110,7 +110,7 @@
     "id": 13,
     "projectId": "loto-sync",
     "title": "Hito 2: Bootstrap Next.js + entorno Vercel",
-    "status": "Planned",
+    "status": "Done",
     "order": 2,
     "note": "Repo base y configuracion minima para deploy.",
     "details": "Entregables\n\n- Next.js app creada en projects/loto-sync\n- Variables de entorno base\n- Configuracion Vercel Blob + Prisma Postgres"

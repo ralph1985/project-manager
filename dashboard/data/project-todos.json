@@ -194,24 +194,6 @@
     "dueDate": null
   },
   {
-    "id": 26,
-    "projectId": "loto-sync",
-    "title": "Crear proyecto Next.js en projects/loto-sync",
-    "dueDate": null
-  },
-  {
-    "id": 27,
-    "projectId": "loto-sync",
-    "title": "Configurar Vercel Blob + variables de entorno",
-    "dueDate": null
-  },
-  {
-    "id": 28,
-    "projectId": "loto-sync",
-    "title": "Configurar Prisma Postgres + schema inicial",
-    "dueDate": null
-  },
-  {
     "id": 29,
     "projectId": "loto-sync",
     "title": "UI movil: selector de sorteo/grupo",
