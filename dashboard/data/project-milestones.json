@@ -119,7 +119,7 @@
     "id": 14,
     "projectId": "loto-sync",
     "title": "Hito 3: Alta de boleto (UI + validaciones)",
-    "status": "Planned",
+    "status": "Done",
     "order": 3,
     "note": "Formulario movil y flujo de guardado.",
     "details": "Entregables\n\n- Formulario de numeros y tipo de sorteo\n- Selector de grupo\n- Validaciones y feedback"

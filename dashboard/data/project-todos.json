@@ -194,18 +194,6 @@
     "dueDate": null
   },
   {
-    "id": 29,
-    "projectId": "loto-sync",
-    "title": "UI movil: selector de sorteo/grupo",
-    "dueDate": null
-  },
-  {
-    "id": 30,
-    "projectId": "loto-sync",
-    "title": "UI movil: alta de boleto con subida de resguardo",
-    "dueDate": null
-  },
-  {
     "id": 31,
     "projectId": "loto-sync",
     "title": "Revisar vulnerabilidades npm (3 high) en loto-sync",
