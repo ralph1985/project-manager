@@ -146,7 +146,7 @@
     "id": 17,
     "projectId": "loto-sync",
     "title": "Hito 6: Storage local + capa de abstraccion",
-    "status": "Planned",
+    "status": "Done",
     "order": 6,
     "note": "Guardar resguardos en disco con interfaz intercambiable.",
     "details": "Entregables\n\n- Guardado de ficheros en /uploads local\n- Servicio de storage con interfaz (local/remote)\n- Metadata de resguardo vinculada a ticket\n- Utils para servir archivos desde Next.js"
@@ -158,7 +158,7 @@
     "status": "Planned",
     "order": 7,
     "note": "Listado filtrado por grupo y estado.",
-    "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio"
+    "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio\n- Vista detalle de boleto con resguardo"
   },
   {
     "id": 19,
