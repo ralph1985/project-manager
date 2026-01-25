@@ -127,19 +127,37 @@
   {
     "id": 15,
     "projectId": "loto-sync",
-    "title": "Hito 4: Resguardos con Blob + metadatos en DB",
+    "title": "Hito 4: Backend local (API routes + SQLite)",
     "status": "Planned",
     "order": 4,
-    "note": "Subida de imagen y relacion con boleto.",
-    "details": "Entregables\n\n- Upload a Vercel Blob\n- Guardado URL + metadata en Postgres\n- Vista detalle con resguardo"
+    "note": "Persistencia local con endpoints minimos.",
+    "details": "Entregables\n\n- Prisma SQLite + DB local\n- API routes para grupos, sorteos y boletos\n- POST /api/tickets con validaciones\n- GET /api/groups, /api/draws, /api/tickets\n- Seeds basicos para grupos y sorteos"
   },
   {
     "id": 16,
     "projectId": "loto-sync",
-    "title": "Hito 5: Pantalla de revision y estado por grupo",
+    "title": "Hito 5: Storage local + capa de abstraccion",
     "status": "Planned",
     "order": 5,
+    "note": "Guardar resguardos en disco con interfaz intercambiable.",
+    "details": "Entregables\n\n- Guardado de ficheros en /uploads local\n- Servicio de storage con interfaz (local/remote)\n- Metadata de resguardo vinculada a ticket\n- Utils para servir archivos desde Next.js"
+  },
+  {
+    "id": 17,
+    "projectId": "loto-sync",
+    "title": "Hito 6: Pantalla de revision y estado por grupo",
+    "status": "Planned",
+    "order": 6,
     "note": "Listado filtrado por grupo y estado.",
     "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio"
+  },
+  {
+    "id": 18,
+    "projectId": "loto-sync",
+    "title": "Hito 7: Migracion a Vercel Blob + Postgres",
+    "status": "Planned",
+    "order": 7,
+    "note": "Paso a infraestructura cloud cuando toque.",
+    "details": "Entregables\n\n- Storage remoto con Vercel Blob\n- Prisma Postgres + migraciones\n- Variables de entorno cloud\n- Ajustes de subida/lectura de resguardos"
   }
 ]
