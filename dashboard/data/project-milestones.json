@@ -168,5 +168,14 @@
     "order": 8,
     "note": "Paso a infraestructura cloud cuando toque.",
     "details": "Entregables\n\n- Storage remoto con Vercel Blob\n- Prisma Postgres + migraciones\n- Variables de entorno cloud\n- Ajustes de subida/lectura de resguardos"
+  },
+  {
+    "id": 20,
+    "projectId": "loto-sync",
+    "title": "Hito 9: Mejorar seccion de boletos recientes",
+    "status": "Planned",
+    "order": 9,
+    "note": "Iteracion de UI para listar boletos guardados.",
+    "details": "Entregables\n\n- Lista con mas informacion (numeros, fecha, estado)\n- Acciones rapidas (ver detalle / copiar)\n- Empty state y loading mejorados"
   }
 ]
