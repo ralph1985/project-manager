@@ -155,7 +155,7 @@
     "id": 18,
     "projectId": "loto-sync",
     "title": "Hito 7: Pantalla de revision y estado por grupo",
-    "status": "Planned",
+    "status": "Done",
     "order": 7,
     "note": "Listado filtrado por grupo y estado.",
     "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio\n- Vista detalle de boleto con resguardo"
