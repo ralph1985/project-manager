@@ -197,6 +197,24 @@
     "details": "Entregables\n\n- Cache persistente (SQLite o archivo) por sorteo/fecha\n- TTL configurable y revalidacion\n- Rate limit local por endpoint\n- Logs de consumo"
   },
   {
+    "id": 26,
+    "projectId": "loto-sync",
+    "title": "Hito 10.2: Seleccion de fecha de sorteo",
+    "status": "Planned",
+    "order": 10,
+    "note": "Permitir escoger la fecha real del sorteo al crear boleto.",
+    "details": "Entregables\n\n- Selector de fecha de sorteo en alta\n- Vinculo ticket <-> draw por fecha elegida\n- Ajustes en verificacion de resultados"
+  },
+  {
+    "id": 27,
+    "projectId": "loto-sync",
+    "title": "Hito 10.3: Pruebas de cache API resultados",
+    "status": "Planned",
+    "order": 10,
+    "note": "Validar que la cache reduce llamadas.",
+    "details": "Entregables\n\n- Tests manuales con contadores\n- Verificacion de TTL y revalidacion\n- Logs de peticiones reales vs cache"
+  },
+  {
     "id": 22,
     "projectId": "loto-sync",
     "title": "Hito 11: Modo oscuro",
