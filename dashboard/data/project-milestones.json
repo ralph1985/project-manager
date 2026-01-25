@@ -136,27 +136,36 @@
   {
     "id": 16,
     "projectId": "loto-sync",
-    "title": "Hito 5: Storage local + capa de abstraccion",
+    "title": "Hito 5: Integracion UI con API local",
     "status": "Planned",
     "order": 5,
-    "note": "Guardar resguardos en disco con interfaz intercambiable.",
-    "details": "Entregables\n\n- Guardado de ficheros en /uploads local\n- Servicio de storage con interfaz (local/remote)\n- Metadata de resguardo vinculada a ticket\n- Utils para servir archivos desde Next.js"
+    "note": "Persistencia real desde la UI.",
+    "details": "Entregables\n\n- Consumo GET /api/groups y /api/draws\n- POST /api/tickets desde el formulario\n- Estados de carga y feedback de guardado\n- Manejo de errores basico"
   },
   {
     "id": 17,
     "projectId": "loto-sync",
-    "title": "Hito 6: Pantalla de revision y estado por grupo",
+    "title": "Hito 6: Storage local + capa de abstraccion",
     "status": "Planned",
     "order": 6,
-    "note": "Listado filtrado por grupo y estado.",
-    "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio"
+    "note": "Guardar resguardos en disco con interfaz intercambiable.",
+    "details": "Entregables\n\n- Guardado de ficheros en /uploads local\n- Servicio de storage con interfaz (local/remote)\n- Metadata de resguardo vinculada a ticket\n- Utils para servir archivos desde Next.js"
   },
   {
     "id": 18,
     "projectId": "loto-sync",
-    "title": "Hito 7: Migracion a Vercel Blob + Postgres",
+    "title": "Hito 7: Pantalla de revision y estado por grupo",
     "status": "Planned",
     "order": 7,
+    "note": "Listado filtrado por grupo y estado.",
+    "details": "Entregables\n\n- Dashboard movil con filtros\n- Estados de boleto: pendiente / comprobado / premio"
+  },
+  {
+    "id": 19,
+    "projectId": "loto-sync",
+    "title": "Hito 8: Migracion a Vercel Blob + Postgres",
+    "status": "Planned",
+    "order": 8,
     "note": "Paso a infraestructura cloud cuando toque.",
     "details": "Entregables\n\n- Storage remoto con Vercel Blob\n- Prisma Postgres + migraciones\n- Variables de entorno cloud\n- Ajustes de subida/lectura de resguardos"
   }
