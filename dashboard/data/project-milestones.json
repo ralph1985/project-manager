@@ -195,5 +195,23 @@
     "order": 11,
     "note": "Mejorar accesibilidad y reducir fatiga visual.",
     "details": "Entregables\n\n- Theme oscuro completo\n- Toggle en UI\n- Ajustes de contraste y fondos"
+  },
+  {
+    "id": 23,
+    "projectId": "loto-sync",
+    "title": "Hito 12: Resguardos desde portapapeles",
+    "status": "Planned",
+    "order": 12,
+    "note": "Permitir adjuntar imagen copiada directamente.",
+    "details": "Entregables\n\n- Pegado de imagen en UI (clipboard)\n- Validaciones y feedback\n- Subida via /api/receipts"
+  },
+  {
+    "id": 24,
+    "projectId": "loto-sync",
+    "title": "Hito 13: Vista movil prioritaria",
+    "status": "Planned",
+    "order": 13,
+    "note": "Optimizar interfaz para uso principal en movil.",
+    "details": "Entregables\n\n- Ajustes layout y tipografia para movil\n- Navegacion y acciones pensadas para una mano\n- Pruebas en tamaños pequenos"
   }
 ]
