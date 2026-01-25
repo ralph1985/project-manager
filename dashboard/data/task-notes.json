@@ -938,5 +938,11 @@
     "taskId": 138,
     "date": "25/01/2026",
     "note": "Hito 4 completado (API routes + SQLite) y Hito 5 completado (integración UI con API local + listado básico de boletos). Replanificación de hitos para local-first."
+  },
+  {
+    "id": 156,
+    "taskId": 138,
+    "date": "25/01/2026",
+    "note": "Hitos 6-7-9 completados (resguardos locales, revisión con detalle y mejoras en boletos recientes). Integración API resultados con verificación desde modal y nuevos hitos 10.1/10.2/10.3 y 11-13."
   }
 ]
