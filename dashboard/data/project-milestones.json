@@ -177,5 +177,14 @@
     "order": 9,
     "note": "Iteracion de UI para listar boletos guardados.",
     "details": "Entregables\n\n- Lista con mas informacion (numeros, fecha, estado)\n- Acciones rapidas (ver detalle / copiar)\n- Empty state y loading mejorados"
+  },
+  {
+    "id": 21,
+    "projectId": "loto-sync",
+    "title": "Hito 10: Integracion API terceros para premios",
+    "status": "Planned",
+    "order": 10,
+    "note": "Consulta de resultados/premios desde API externa.",
+    "details": "Entregables\n\n- Cliente API para resultados (Primitiva/Euromillones)\n- Normalizacion de respuesta\n- Verificacion de boletos contra resultados\n- Cache local basico"
   }
 ]
