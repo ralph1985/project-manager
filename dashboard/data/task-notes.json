@@ -944,5 +944,11 @@
     "taskId": 138,
     "date": "25/01/2026",
     "note": "Hitos 6-7-9 completados (resguardos locales, revisión con detalle y mejoras en boletos recientes). Integración API resultados con verificación desde modal y nuevos hitos 10.1/10.2/10.3 y 11-13."
+  },
+  {
+    "id": 157,
+    "taskId": 136,
+    "date": "01/02/2026",
+    "note": "(1 de febrero de 2026) Revisión del proyecto y ajuste de scripts de backup (zshrc y netrc) para subir a OneDrive."
   }
 ]

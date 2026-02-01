@@ -1010,5 +1010,12 @@
     "date": "25/01/2026",
     "hours": 1.5,
     "note": "Loto Sync: resguardos locales + revisión con modal, mejoras en boletos recientes y conexión de API de resultados (UI + endpoints)."
+  },
+  {
+    "id": 144,
+    "taskId": 136,
+    "date": "01/02/2026",
+    "hours": 0.5,
+    "note": "Revisión del proyecto y ajustes para backups OneDrive (zshrc y netrc)."
   }
 ]
