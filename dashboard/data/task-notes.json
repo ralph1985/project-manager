@@ -950,5 +950,11 @@
     "taskId": 136,
     "date": "01/02/2026",
     "note": "(1 de febrero de 2026) Revisión del proyecto y ajuste de scripts de backup (zshrc y netrc) para subir a OneDrive."
+  },
+  {
+    "id": 158,
+    "taskId": 138,
+    "date": "22/02/2026",
+    "note": "(22/02/2026) Sesión de 2h centrada en loto-sync: fixes de verificación por fecha, persistencia de checks y premio manual, mejoras visuales de review, comparativas semanales con reintegro y ajustes de hitos/bote."
   }
 ]
