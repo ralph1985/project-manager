@@ -191,7 +191,7 @@
     "id": 25,
     "projectId": "loto-sync",
     "title": "Hito 10.1: Cache robusta para API de resultados",
-    "status": "Planned",
+    "status": "Done",
     "order": 10,
     "note": "Evitar limites de 1000 req/mes con cache y rate limiting.",
     "details": "Entregables\n\n- Cache persistente (SQLite o archivo) por sorteo/fecha\n- TTL configurable y revalidacion\n- Rate limit local por endpoint\n- Logs de consumo"
