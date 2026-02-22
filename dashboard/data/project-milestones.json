@@ -240,5 +240,14 @@
     "order": 13,
     "note": "Optimizar interfaz para uso principal en movil.",
     "details": "Entregables\n\n- Ajustes layout y tipografia para movil\n- Navegacion y acciones pensadas para una mano\n- Pruebas en tamaños pequenos"
+  },
+  {
+    "id": 28,
+    "projectId": "loto-sync",
+    "title": "Hito 14: Limpieza de resguardos huerfanos",
+    "status": "Planned",
+    "order": 14,
+    "note": "Eliminar archivos en uploads sin ticket/receipt asociado.",
+    "details": "Entregables\n\n- Script para detectar archivos huerfanos en uploads\n- Listado previo (dry-run) antes de borrar\n- Limpieza segura con confirmacion\n- Registro de archivos eliminados"
   }
 ]
