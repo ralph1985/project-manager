@@ -276,5 +276,14 @@
     "order": 17,
     "note": "Mantener historico de resultados en local y dejar la API externa como opcional.",
     "details": "Entregables\n\n- Modelo/tabla de resultados historicos por juego y fecha\n- Importador JSON con validaciones\n- Verificacion de boletos contra base local como fuente principal\n- API externa solo como fallback opcional\n- Herramientas de mantenimiento (reimportar, deduplicar y auditar)"
+  },
+  {
+    "id": 32,
+    "projectId": "loto-sync",
+    "title": "Hito 18: Historial de bote por grupo",
+    "status": "Planned",
+    "order": 18,
+    "note": "Visualizar aportaciones y movimientos del bote desde la UI.",
+    "details": "Entregables\n\n- Listado de movimientos por grupo (fecha, tipo, importe, nota)\n- Filtro por tipo (aportacion, gasto boleto, premio, ajuste)\n- Balance acumulado visible en el historial\n- Acceso rapido desde pantalla de revision"
   }
 ]
