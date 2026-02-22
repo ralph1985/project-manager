@@ -249,5 +249,14 @@
     "order": 14,
     "note": "Eliminar archivos en uploads sin ticket/receipt asociado.",
     "details": "Entregables\n\n- Script para detectar archivos huerfanos en uploads\n- Listado previo (dry-run) antes de borrar\n- Limpieza segura con confirmacion\n- Registro de archivos eliminados"
+  },
+  {
+    "id": 29,
+    "projectId": "loto-sync",
+    "title": "Hito 15: Bote por grupo",
+    "status": "In Progress",
+    "order": 15,
+    "note": "Controlar saldo por grupo con movimientos y gasto automatico por boleto.",
+    "details": "Entregables\n\n- Modelo de movimientos de bote por grupo\n- Saldo calculado por grupo en API\n- Gasto automatico al registrar boletos con precio\n- Saldo visible en pantalla\n- Saldo inicial de Amigos (20 EUR el 06/01/2026)"
   }
 ]
