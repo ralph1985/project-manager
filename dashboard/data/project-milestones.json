@@ -258,5 +258,14 @@
     "order": 15,
     "note": "Controlar saldo por grupo con movimientos y gasto automatico por boleto.",
     "details": "Entregables\n\n- Modelo de movimientos de bote por grupo\n- Saldo calculado por grupo en API\n- Gasto automatico al registrar boletos con precio\n- Saldo visible en pantalla\n- Saldo inicial de Amigos (20 EUR el 06/01/2026)"
+  },
+  {
+    "id": 30,
+    "projectId": "loto-sync",
+    "title": "Hito 16: Comprobacion persistente y premio manual",
+    "status": "In Progress",
+    "order": 16,
+    "note": "Guardar comprobaciones por boleto/sorteo, resaltar aciertos y sumar premios al bote.",
+    "details": "Entregables\n\n- Persistencia de comprobacion por ticket y fecha de sorteo\n- Soporte de multiples comprobaciones semanales por boleto\n- Resaltado visual de numeros acertados en revision\n- Alta manual de premio cuando la API no informe importe\n- Movimiento PRIZE para actualizar el bote del grupo"
   }
 ]
