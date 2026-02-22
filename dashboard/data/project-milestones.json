@@ -200,7 +200,7 @@
     "id": 26,
     "projectId": "loto-sync",
     "title": "Hito 10.2: Seleccion de fecha de sorteo",
-    "status": "Planned",
+    "status": "Done",
     "order": 10,
     "note": "Permitir escoger la fecha real del sorteo al crear boleto.",
     "details": "Entregables\n\n- Selector de fecha de sorteo en alta\n- Vinculo ticket <-> draw por fecha elegida\n- Ajustes en verificacion de resultados"
