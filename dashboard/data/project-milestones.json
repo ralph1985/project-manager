@@ -285,5 +285,14 @@
     "order": 18,
     "note": "Visualizar aportaciones y movimientos del bote desde la UI.",
     "details": "Entregables\n\n- Listado de movimientos por grupo (fecha, tipo, importe, nota)\n- Filtro por tipo (aportacion, gasto boleto, premio, ajuste)\n- Balance acumulado visible en el historial\n- Acceso rapido desde pantalla de revision"
+  },
+  {
+    "id": 33,
+    "projectId": "loto-sync",
+    "title": "Hito 19: Gestion de usuarios y acceso compartido",
+    "status": "Planned",
+    "order": 19,
+    "note": "Permitir compartir la aplicacion con amigos con permisos por usuario y por grupo.",
+    "details": "Entregables\n\n- Modelo de usuarios y autenticacion basica\n- Sistema de membresia por grupo (owner/miembro)\n- Permisos por accion (alta boleto, comprobar, editar premios, gestionar bote)\n- Invitaciones para unir amigos a un grupo\n- Auditoria minima (quien crea/edita cada registro)"
   }
 ]
