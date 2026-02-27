@@ -239,7 +239,7 @@
     "status": "Planned",
     "order": 13,
     "note": "Optimizar interfaz para uso principal en movil.",
-    "details": "Entregables\n\n- Ajustes layout y tipografia para movil\n- Navegacion y acciones pensadas para una mano\n- Pruebas en tamaños pequenos"
+    "details": "Entregables\n\n- Ajustes layout y tipografia para movil\n- Navegacion y acciones pensadas para una mano\n- Pruebas en tamaños pequenos\n- Navegacion adaptativa (menu lateral en desktop y barra inferior en movil)"
   },
   {
     "id": 28,
