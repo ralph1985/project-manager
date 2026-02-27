@@ -218,7 +218,7 @@
     "id": 22,
     "projectId": "loto-sync",
     "title": "Hito 11: Modo oscuro",
-    "status": "Planned",
+    "status": "Done",
     "order": 11,
     "note": "Mejorar accesibilidad y reducir fatiga visual.",
     "details": "Entregables\n\n- Theme oscuro completo\n- Toggle en UI\n- Ajustes de contraste y fondos"
