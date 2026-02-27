@@ -128,7 +128,7 @@
     "id": 15,
     "projectId": "loto-sync",
     "title": "Hito 4: Backend local (API routes + SQLite)",
-    "status": "Planned",
+    "status": "Done",
     "order": 4,
     "note": "Persistencia local con endpoints minimos.",
     "details": "Entregables\n\n- Prisma SQLite + DB local\n- API routes para grupos, sorteos y boletos\n- POST /api/tickets con validaciones\n- GET /api/groups, /api/draws, /api/tickets\n- Seeds basicos para grupos y sorteos"
@@ -137,7 +137,7 @@
     "id": 16,
     "projectId": "loto-sync",
     "title": "Hito 5: Integracion UI con API local",
-    "status": "Planned",
+    "status": "Done",
     "order": 5,
     "note": "Persistencia real desde la UI.",
     "details": "Entregables\n\n- Consumo GET /api/groups y /api/draws\n- POST /api/tickets desde el formulario\n- Estados de carga y feedback de guardado\n- Manejo de errores basico"
@@ -254,7 +254,7 @@
     "id": 29,
     "projectId": "loto-sync",
     "title": "Hito 15: Bote por grupo",
-    "status": "In Progress",
+    "status": "Done",
     "order": 15,
     "note": "Controlar saldo por grupo con movimientos y gasto automatico por boleto.",
     "details": "Entregables\n\n- Modelo de movimientos de bote por grupo\n- Saldo calculado por grupo en API\n- Gasto automatico al registrar boletos con precio\n- Saldo visible en pantalla\n- Saldo inicial de Amigos (20 EUR el 06/01/2026)"
@@ -263,7 +263,7 @@
     "id": 30,
     "projectId": "loto-sync",
     "title": "Hito 16: Comprobacion persistente y premio manual",
-    "status": "In Progress",
+    "status": "Done",
     "order": 16,
     "note": "Guardar comprobaciones por boleto/sorteo, resaltar aciertos y sumar premios al bote.",
     "details": "Entregables\n\n- Persistencia de comprobacion por ticket y fecha de sorteo\n- Soporte de multiples comprobaciones semanales por boleto\n- Resaltado visual de numeros acertados en revision\n- Alta manual de premio cuando la API no informe importe\n- Movimiento PRIZE para actualizar el bote del grupo"
