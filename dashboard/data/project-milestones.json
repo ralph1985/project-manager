@@ -292,7 +292,7 @@
     "title": "Hito 19: Gestion de usuarios y acceso compartido",
     "status": "Planned",
     "order": 19,
-    "note": "Permitir compartir la aplicacion con amigos con permisos por usuario y por grupo.",
-    "details": "Entregables\n\n- Modelo de usuarios y autenticacion basica\n- Sistema de membresia por grupo (owner/miembro)\n- Permisos por accion (alta boleto, comprobar, editar premios, gestionar bote)\n- Invitaciones para unir amigos a un grupo\n- Auditoria minima (quien crea/edita cada registro)"
+    "note": "Permitir compartir la aplicacion con amigos con permisos por usuario y por grupo. Avance parcial ya entregado.",
+    "details": "Entregables\n\n- [x] Modelo de usuarios y autenticacion basica\n- [x] Sistema de membresia por grupo (owner/miembro)\n- [x] Permisos base por accion (alta boleto y acceso por grupo)\n- [ ] Invitaciones para unir amigos a un grupo\n- [ ] Auditoria minima completa (quien crea/edita cada registro en toda la app)"
   }
 ]
