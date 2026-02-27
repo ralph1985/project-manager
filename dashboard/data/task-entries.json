@@ -1024,5 +1024,12 @@
     "date": "22/02/2026",
     "hours": 2,
     "note": "Loto Sync: revisión/UX de pantalla review, comparativas semanales, premios manuales, movimientos de bote y ajustes de verificación por fecha."
+  },
+  {
+    "id": 146,
+    "taskId": 138,
+    "date": "27/02/2026",
+    "hours": 2,
+    "note": "Loto Sync: modo oscuro + ajustes de contraste, navegación móvil, compactación de vistas, login y permisos por grupo/rol, y modal de historial de bote."
   }
 ]

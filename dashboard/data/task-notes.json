@@ -956,5 +956,11 @@
     "taskId": 138,
     "date": "22/02/2026",
     "note": "(22/02/2026) Sesión de 2h centrada en loto-sync: fixes de verificación por fecha, persistencia de checks y premio manual, mejoras visuales de review, comparativas semanales con reintegro y ajustes de hitos/bote."
+  },
+  {
+    "id": 159,
+    "taskId": 138,
+    "date": "27/02/2026",
+    "note": "(27/02/2026) Sesión de 2h: se completó hito 13 (mobile-first), cierre parcial de hito 19 con login/permisos y avance de hito 18 con historial de bote en modal y endpoint dedicado."
   }
 ]
