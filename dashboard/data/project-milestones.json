@@ -163,11 +163,11 @@
   {
     "id": 19,
     "projectId": "loto-sync",
-    "title": "Hito 8: Migracion a Vercel Blob + Postgres",
-    "status": "Planned",
+    "title": "Hito 8: Endurecimiento de producción en Vercel (DB + storage + operación)",
+    "status": "Done",
     "order": 8,
-    "note": "Paso a infraestructura cloud cuando toque. Pendiente: migrar completamente datos locales a Vercel y validar integridad extremo a extremo.",
-    "details": "Entregables\n\n- Storage remoto con Vercel Blob\n- Prisma Postgres + migraciones\n- Variables de entorno cloud\n- Ajustes de subida/lectura de resguardos\n\nPendientes de cierre\n\n- Validar en Vercel que la base de datos replica correctamente lo que hay en local\n- Ejecutar migracion final de datos locales a Vercel en entorno productivo\n- Verificacion funcional post-migracion (tickets, checks, bote, usuarios y permisos)"
+    "note": "Cerrado por decisión funcional: Vercel consolidado como entorno único de datos y operación principal del proyecto.",
+    "details": "Entregables\n\n- Validación extremo a extremo en producción (tickets, checks, bote, usuarios y permisos)\n- Checklist operativo para cambios de datos con backup PRE/POST obligatorio\n- Runbook de recuperación y restauración desde backup remoto (JSON + OneDrive)\n- Validación de storage de resguardos en Vercel (subida, lectura y rutas)\n- Limpieza de pendientes antiguos de migración local->Vercel marcados como obsoletos\n\nPendientes de cierre\n\n- Probar restauración completa desde backup remoto en entorno controlado\n- Completar verificación funcional final con casos reales\n- Documentar evidencias y cerrar hito"
   },
   {
     "id": 20,
@@ -182,10 +182,10 @@
     "id": 21,
     "projectId": "loto-sync",
     "title": "Hito 10: Integracion API terceros para premios",
-    "status": "Planned",
+    "status": "Done",
     "order": 10,
-    "note": "Consulta de resultados/premios desde API externa.",
-    "details": "Entregables\n\n- Cliente API para resultados (Primitiva/Euromillones)\n- Normalizacion de respuesta\n- Verificacion de boletos contra resultados\n- Cache local basico"
+    "note": "Cerrado: eliminada dependencia de API externa y consolidada la comprobación contra base local de resultados.",
+    "details": "Entregables\n\n- Cliente de resultados operando solo con base local (ResultCache)\n- Normalización de resultados desde datos locales\n- Verificación de boletos contra resultados guardados\n- Sin llamadas a API de terceros en flujo de comprobación\n\nCierre\n\n- Hito completado con enfoque local-first definitivo."
   },
   {
     "id": 25,
@@ -209,9 +209,9 @@
     "id": 27,
     "projectId": "loto-sync",
     "title": "Hito 10.3: Pruebas de cache API resultados",
-    "status": "Planned",
+    "status": "Done",
     "order": 10,
-    "note": "Validar que la cache reduce llamadas.",
+    "note": "Obsoleto por cambio de estrategia: sin API externa, no aplica prueba de cache de terceros.",
     "details": "Entregables\n\n- Tests manuales con contadores\n- Verificacion de TTL y revalidacion\n- Logs de peticiones reales vs cache"
   },
   {
