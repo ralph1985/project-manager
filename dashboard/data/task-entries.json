@@ -1051,6 +1051,6 @@
     "taskId": 143,
     "date": "28/02/2026",
     "hours": 1.5,
-    "note": "Loto Sync: cierre de hito 10 local-only (sin API externa), ajustes de UI en review (resultado/alineación) y caché frontend de 1h para /results, /api/groups y /api/tickets."
+    "note": "Loto Sync: cierre de hito 10 local-only (sin API externa), ajustes de UI en review (resultado/alineación) y caché frontend de 1h para /results, /api/groups y /api/tickets. Añadida caché corta de sesión (2 min) en frontend para /api/auth/session."
   }
 ]
