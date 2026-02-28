@@ -1311,13 +1311,13 @@
   },
   {
     "id": 138,
-    "title": "Arranque MVP loto-sync (setup + hitos + backlog)",
+    "title": "Planificación inicial loto-sync",
     "projectId": "loto-sync",
     "phase": "Planificacion",
-    "status": "En curso",
+    "status": "Completada",
     "ownerId": "rafael-garcia",
     "startDate": "18/01/2026",
-    "endDate": null
+    "endDate": "18/01/2026"
   },
   {
     "id": 139,
@@ -1328,5 +1328,45 @@
     "ownerId": "rafael-garcia",
     "startDate": "24/01/2026",
     "endDate": "24/01/2026"
+  },
+  {
+    "id": 140,
+    "title": "Base técnica local (API + SQLite + seeds)",
+    "projectId": "loto-sync",
+    "phase": "Backend",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "25/01/2026",
+    "endDate": "25/01/2026"
+  },
+  {
+    "id": 141,
+    "title": "Review y comprobación de resultados",
+    "projectId": "loto-sync",
+    "phase": "Frontend",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "25/01/2026",
+    "endDate": "22/02/2026"
+  },
+  {
+    "id": 142,
+    "title": "UX móvil, modo oscuro y permisos",
+    "projectId": "loto-sync",
+    "phase": "Frontend",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "27/02/2026",
+    "endDate": "27/02/2026"
+  },
+  {
+    "id": 143,
+    "title": "Vercel, despliegue y migración de base de datos",
+    "projectId": "loto-sync",
+    "phase": "DevOps",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "28/02/2026",
+    "endDate": null
   }
 ]
