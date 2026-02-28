@@ -166,8 +166,8 @@
     "title": "Hito 8: Migracion a Vercel Blob + Postgres",
     "status": "Planned",
     "order": 8,
-    "note": "Paso a infraestructura cloud cuando toque.",
-    "details": "Entregables\n\n- Storage remoto con Vercel Blob\n- Prisma Postgres + migraciones\n- Variables de entorno cloud\n- Ajustes de subida/lectura de resguardos"
+    "note": "Paso a infraestructura cloud cuando toque. Pendiente: migrar completamente datos locales a Vercel y validar integridad extremo a extremo.",
+    "details": "Entregables\n\n- Storage remoto con Vercel Blob\n- Prisma Postgres + migraciones\n- Variables de entorno cloud\n- Ajustes de subida/lectura de resguardos\n\nPendientes de cierre\n\n- Validar en Vercel que la base de datos replica correctamente lo que hay en local\n- Ejecutar migracion final de datos locales a Vercel en entorno productivo\n- Verificacion funcional post-migracion (tickets, checks, bote, usuarios y permisos)"
   },
   {
     "id": 20,
@@ -328,7 +328,7 @@
     "title": "Hito 20: Backup y sincronizacion automatizada de base de datos",
     "status": "Planned",
     "order": 20,
-    "note": "Automatizar backups locales y subida a OneDrive con capacidad de restauracion.",
+    "note": "Automatizar backups locales y subida a OneDrive con capacidad de restauracion. Estado actual: automatizacion creada pero pendiente de validacion completa bidireccional en Vercel.",
     "details": "Entregables\n\n- Script de backup unificado (local + OneDrive)\n- Script de restauracion de copia seleccionada\n- Tarea programada (cron) para ejecucion periodica\n- Politica de retencion de copias locales\n- Verificacion de restauracion en entorno local"
   }
 ]
