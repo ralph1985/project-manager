@@ -1045,5 +1045,12 @@
     "date": "28/02/2026",
     "hours": 0.5,
     "note": "Loto Sync: cierre de sincronizacion de BD local->Vercel, diagnostico de diferencias por filas huerfanas, copia de seguridad local+OneDrive, limpieza de huerfanos en SQLite y verificacion final de consistencia."
+  },
+  {
+    "id": 149,
+    "taskId": 143,
+    "date": "28/02/2026",
+    "hours": 1.5,
+    "note": "Loto Sync: cierre de hito 10 local-only (sin API externa), ajustes de UI en review (resultado/alineación) y caché frontend de 1h para /results, /api/groups y /api/tickets."
   }
 ]
