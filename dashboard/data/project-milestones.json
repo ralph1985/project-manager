@@ -321,5 +321,14 @@
     "order": 17.3,
     "note": "Checklist y reporte de integridad para resultados locales.",
     "details": "Entregables\n\n- Verificación de huecos por calendario de sorteo\n- Validación de formato y consistencia\n- Reporte exportable de incidencias"
+  },
+  {
+    "id": 37,
+    "projectId": "loto-sync",
+    "title": "Hito 20: Backup y sincronizacion automatizada de base de datos",
+    "status": "Planned",
+    "order": 20,
+    "note": "Automatizar backups locales y subida a OneDrive con capacidad de restauracion.",
+    "details": "Entregables\n\n- Script de backup unificado (local + OneDrive)\n- Script de restauracion de copia seleccionada\n- Tarea programada (cron) para ejecucion periodica\n- Politica de retencion de copias locales\n- Verificacion de restauracion en entorno local"
   }
 ]
