@@ -962,5 +962,11 @@
     "taskId": 142,
     "date": "27/02/2026",
     "note": "(27/02/2026) Sesión de 2h: se completó hito 13 (mobile-first), cierre parcial de hito 19 con login/permisos y avance de hito 18 con historial de bote en modal y endpoint dedicado."
+  },
+  {
+    "id": 160,
+    "taskId": 143,
+    "date": "01/03/2026",
+    "note": "(01/03/2026) Registro 1h: avance en componentización del frontal con DaisyUI, estabilización de build/dependencias y mejora UX en /review (activa por defecto + paginación incremental)."
   }
 ]
