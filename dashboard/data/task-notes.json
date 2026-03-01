@@ -968,5 +968,11 @@
     "taskId": 143,
     "date": "01/03/2026",
     "note": "(01/03/2026) Registro 1h: avance en componentización del frontal con DaisyUI, estabilización de build/dependencias y mejora UX en /review (activa por defecto + paginación incremental)."
+  },
+  {
+    "id": 161,
+    "taskId": 135,
+    "date": "01/03/2026",
+    "note": "(01/03/2026) Registro de inspeccion periodica de gas en Meco: ampliacion de schema, migraciones, guardado de datos tecnicos y enlace al certificado; control quinquenal en ficha de caldera."
   }
 ]

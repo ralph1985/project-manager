@@ -1066,5 +1066,12 @@
     "date": "01/03/2026",
     "hours": 0.4,
     "note": "Loto Sync: hardening de build y dependencias (Next 16 proxy, ajuste plugin DaisyUI, upgrade Next/Prisma, fix de cliente Prisma desalineado) y mejora en review para mostrar por defecto solo la apuesta activa con paginación +2."
+  },
+  {
+    "id": 152,
+    "taskId": 135,
+    "date": "01/03/2026",
+    "hours": 0.5,
+    "note": "Home Manager: gas inspection support (schema extensions, document URL and data import for Meco)."
   }
 ]
