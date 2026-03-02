@@ -1368,5 +1368,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "28/02/2026",
     "endDate": null
+  },
+  {
+    "id": 144,
+    "title": "Ajustes de producción y reglas de votación por evento",
+    "projectId": "kamikazes-events",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "02/03/2026",
+    "endDate": null
   }
 ]

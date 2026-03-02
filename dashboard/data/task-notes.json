@@ -980,5 +980,11 @@
     "taskId": 143,
     "date": "02/03/2026",
     "note": "(02/03/2026) Registro 15 min: commit a55df9a para cobertura semanal de sorteos en boletos de Primitiva y ajuste operativo de despliegue (re-deploy en Vercel)."
+  },
+  {
+    "id": 163,
+    "taskId": 144,
+    "date": "02/03/2026",
+    "note": "(02/03/2026) Cierre de sesión de kamikazes-events: se movieron reglas de votación a KV por evento, se marcó Babyshower como completado y quedó no seleccionable/no votable, se corrigió timeout de build en Vercel y se aplicó reset one-shot de local/session storage desde 2026-03-01T00:00:00Z."
   }
 ]

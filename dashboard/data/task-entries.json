@@ -1080,5 +1080,12 @@
     "date": "02/03/2026",
     "hours": 0.25,
     "note": "Loto Sync: soporte de cobertura semanal en alta/edición de Primitiva (create + review + API PATCH) y verificación de deploy en Vercel tras re-deploy exitoso."
+  },
+  {
+    "id": 154,
+    "taskId": 144,
+    "date": "02/03/2026",
+    "hours": 1,
+    "note": "Kamikazes: KV producción (alta/edición de eventos), bloqueo de eventos completados, reglas de voto por evento en BD (window+blockedDays), fix timeout build Vercel y migración one-shot de storage cliente."
   }
 ]
