@@ -1087,5 +1087,12 @@
     "date": "02/03/2026",
     "hours": 1,
     "note": "Kamikazes: KV producción (alta/edición de eventos), bloqueo de eventos completados, reglas de voto por evento en BD (window+blockedDays), fix timeout build Vercel y migración one-shot de storage cliente."
+  },
+  {
+    "id": 155,
+    "taskId": 135,
+    "date": "02/03/2026",
+    "hours": 0.5,
+    "note": "(02/03/2026) Home Manager: registro de mantenimiento de batería del Fiat Punto, alta de campo específico invoiceUrl y botón para abrir factura desde el frontal."
   }
 ]
