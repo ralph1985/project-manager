@@ -992,5 +992,11 @@
     "taskId": 135,
     "date": "02/03/2026",
     "note": "(02/03/2026) Home Manager: registro de mantenimiento de batería del Fiat Punto, alta de campo específico invoiceUrl y botón para abrir factura desde el frontal."
+  },
+  {
+    "id": 165,
+    "taskId": 144,
+    "date": "03/03/2026",
+    "note": "(03/03/2026) Corrección de UX en calendario: los días del mes siguiente ya no aparecen en el bloque del mes actual y se renderizan huecos vacíos fuera de mes."
   }
 ]
