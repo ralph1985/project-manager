@@ -998,5 +998,11 @@
     "taskId": 144,
     "date": "03/03/2026",
     "note": "(03/03/2026) Corrección de UX en calendario: los días del mes siguiente ya no aparecen en el bloque del mes actual y se renderizan huecos vacíos fuera de mes."
+  },
+  {
+    "id": 166,
+    "taskId": 135,
+    "date": "11/03/2026",
+    "note": "(11/03/2026) Registro de nueva factura de gas FE26137005654545 con desglose de costes, validación de totales y comparativa contra histórico."
   }
 ]

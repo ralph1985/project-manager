@@ -1101,5 +1101,12 @@
     "date": "03/03/2026",
     "hours": 0.17,
     "note": "Ajuste de calendario: bloques por mes real y ocultación de días fuera del mes para evitar confusión visual."
+  },
+  {
+    "id": 157,
+    "taskId": 135,
+    "date": "11/03/2026",
+    "hours": 0.5,
+    "note": "Home Manager: alta de factura de gas FE26137005654545 (09/03/2026), backup+snapshots pre/post y comparación con histórico de consumo/coste."
   }
 ]
