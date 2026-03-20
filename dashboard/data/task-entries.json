@@ -1108,5 +1108,12 @@
     "date": "11/03/2026",
     "hours": 0.5,
     "note": "Home Manager: alta de factura de gas FE26137005654545 (09/03/2026), backup+snapshots pre/post y comparación con histórico de consumo/coste."
+  },
+  {
+    "id": 158,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "hours": 3,
+    "note": "Vareia: VPS ya contratado con Ubuntu instalado; organización y planificación operativa completa (inventario, runbook, checklist, monitorización, seguridad, Slack y estrategia de backups)."
   }
 ]

@@ -1004,5 +1004,11 @@
     "taskId": 135,
     "date": "11/03/2026",
     "note": "(11/03/2026) Registro de nueva factura de gas FE26137005654545 con desglose de costes, validación de totales y comparativa contra histórico."
+  },
+  {
+    "id": 167,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "note": "(20/03/2026) Sesión de 3h: VPS Vareia contratado y con Ubuntu instalado. Se definió y documentó toda la operación antes de ejecutar comandos en servidor (arquitectura por stacks, seguridad, monitorización, alertas y backups por fases)."
   }
 ]
