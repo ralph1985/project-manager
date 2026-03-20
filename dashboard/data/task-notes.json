@@ -1022,5 +1022,11 @@
     "taskId": 145,
     "date": "20/03/2026",
     "note": "(20/03/2026) Sesión 1.5h: hardening base aplicado (usuario sudo monis, root/password por SSH deshabilitados, UFW activo con OpenSSH, fail2ban sshd) e instalación de nvm, Node LTS 24.14.0 y Codex CLI con autenticación temporal."
+  },
+  {
+    "id": 170,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "note": "(20/03/2026) Sesión 1h: añadido bootstrap reproducible de host base (script + guía), completadas redes Docker infra-net/proxy-net y reflejado despliegue inicial de PostgreSQL compartido y n8n en la documentación operativa."
   }
 ]

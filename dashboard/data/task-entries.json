@@ -1129,5 +1129,12 @@
     "date": "20/03/2026",
     "hours": 1.5,
     "note": "Vareia: hardening base ejecutado (usuario sudo monis, SSH con root/password deshabilitados, UFW activo con OpenSSH, fail2ban sshd) + instalación de nvm, Node LTS 24.14.0 y Codex CLI (auth temporal)."
+  },
+  {
+    "id": 161,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "hours": 1,
+    "note": "Vareia: bootstrap reproducible de host base documentado y añadido (script), redes Docker infra-net/proxy-net marcadas como completadas, y despliegue inicial de PostgreSQL compartido y n8n completado y reflejado en documentación operativa."
   }
 ]
