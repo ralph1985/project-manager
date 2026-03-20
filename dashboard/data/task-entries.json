@@ -1115,5 +1115,19 @@
     "date": "20/03/2026",
     "hours": 3,
     "note": "Vareia: VPS ya contratado con Ubuntu instalado; organización y planificación operativa completa (inventario, runbook, checklist, monitorización, seguridad, Slack y estrategia de backups)."
+  },
+  {
+    "id": 159,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "hours": 1.5,
+    "note": "Vareia: reconstrucción de VPS desde cero tras destrucción del anterior; recuperación de acceso SSH externo (de solo consola web a SSH operativo)."
+  },
+  {
+    "id": 160,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "hours": 1.5,
+    "note": "Vareia: hardening base ejecutado (usuario sudo monis, SSH con root/password deshabilitados, UFW activo con OpenSSH, fail2ban sshd) + instalación de nvm, Node LTS 24.14.0 y Codex CLI (auth temporal)."
   }
 ]

@@ -1010,5 +1010,17 @@
     "taskId": 145,
     "date": "20/03/2026",
     "note": "(20/03/2026) Sesión de 3h: VPS Vareia contratado y con Ubuntu instalado. Se definió y documentó toda la operación antes de ejecutar comandos en servidor (arquitectura por stacks, seguridad, monitorización, alertas y backups por fases)."
+  },
+  {
+    "id": 168,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "note": "(20/03/2026) Sesión 1.5h: reconstrucción de VPS desde cero tras destruir el anterior y recuperación de acceso SSH externo (de solo consola web a SSH operativo)."
+  },
+  {
+    "id": 169,
+    "taskId": 145,
+    "date": "20/03/2026",
+    "note": "(20/03/2026) Sesión 1.5h: hardening base aplicado (usuario sudo monis, root/password por SSH deshabilitados, UFW activo con OpenSSH, fail2ban sshd) e instalación de nvm, Node LTS 24.14.0 y Codex CLI con autenticación temporal."
   }
 ]
