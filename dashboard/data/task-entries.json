@@ -1136,5 +1136,12 @@
     "date": "20/03/2026",
     "hours": 1,
     "note": "Vareia: bootstrap reproducible de host base documentado y añadido (script), redes Docker infra-net/proxy-net marcadas como completadas, y despliegue inicial de PostgreSQL compartido y n8n completado y reflejado en documentación operativa."
+  },
+  {
+    "id": 162,
+    "taskId": 145,
+    "date": "21/03/2026",
+    "hours": 1,
+    "note": "Vareia: consolidación operativa del VPS con automatización por servidor (PostgreSQL+n8n), cierre de hardening SSH y parches, despliegue/validación de reverse-proxy Nginx y cierre de acceso privado de n8n con Tailscale Serve."
   }
 ]

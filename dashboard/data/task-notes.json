@@ -1028,5 +1028,11 @@
     "taskId": 145,
     "date": "20/03/2026",
     "note": "(20/03/2026) Sesión 1h: añadido bootstrap reproducible de host base (script + guía), completadas redes Docker infra-net/proxy-net y reflejado despliegue inicial de PostgreSQL compartido y n8n en la documentación operativa."
+  },
+  {
+    "id": 171,
+    "taskId": 145,
+    "date": "21/03/2026",
+    "note": "(21/03/2026) Sesión 1h: ejecución y cierre técnico del bloque de infraestructura VPS de Vareia, incluyendo automatización base por servidor para PostgreSQL+n8n, cierre de hardening SSH con ventana de parches 03-05, despliegue y validación del reverse-proxy Nginx, y consolidación del acceso privado de n8n mediante Tailscale Serve + Nginx."
   }
 ]
