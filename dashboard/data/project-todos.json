@@ -198,5 +198,75 @@
     "projectId": "loto-sync",
     "title": "Revisar vulnerabilidades npm (3 high) en loto-sync",
     "dueDate": null
+  },
+  {
+    "id": 32,
+    "projectId": "gestor-de-proyectos",
+    "title": "Definir baseline UX mobile (flujos, pantallas y prioridades)",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "Análisis UX desktop vs móvil y roadmap de migración por fases.",
+    "order": 1,
+    "completedAt": "22/03/2026"
+  },
+  {
+    "id": 33,
+    "projectId": "gestor-de-proyectos",
+    "title": "Instalar Tailwind y configurar tokens base del dashboard",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "Añadidos tailwind.config.cjs, input/output CSS, scripts npm y enlace en HTML.",
+    "order": 2,
+    "completedAt": "22/03/2026"
+  },
+  {
+    "id": 34,
+    "projectId": "gestor-de-proyectos",
+    "title": "Refactor mobile-first de layout global (header, spacing y grids)",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "Breakpoints ampliados y ajustes de tipografía/estructura para pantallas pequeñas.",
+    "order": 3,
+    "completedAt": "22/03/2026"
+  },
+  {
+    "id": 35,
+    "projectId": "gestor-de-proyectos",
+    "title": "Sustituir tabla por tarjetas de tareas en viewport mobile",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "Render paralelo de tarjetas en móvil y tabla mantenida para desktop.",
+    "order": 4,
+    "completedAt": "22/03/2026"
+  },
+  {
+    "id": 36,
+    "projectId": "gestor-de-proyectos",
+    "title": "Diseñar panel de filtros mobile (sheet/chips, aplicar y limpiar)",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "Panel de filtros plegable en móvil con botón y estado expandido/colapsado.",
+    "order": 5,
+    "completedAt": "22/03/2026"
+  },
+  {
+    "id": 37,
+    "projectId": "gestor-de-proyectos",
+    "title": "Optimizar componentes touch (44px+, modales fullscreen y accesibilidad)",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "Ajustados targets táctiles y modal adaptado en móvil a presentación tipo sheet.",
+    "order": 6,
+    "completedAt": "22/03/2026"
+  },
+  {
+    "id": 38,
+    "projectId": "gestor-de-proyectos",
+    "title": "QA responsive por breakpoints y ajustes finales visuales",
+    "status": "Completada",
+    "createdAt": "22/03/2026",
+    "note": "QA en breakpoints 360/390/768/1024 y ajuste de layout de tarjetas/acciones para evitar cortes en móvil.",
+    "order": 7,
+    "completedAt": "22/03/2026"
   }
 ]
