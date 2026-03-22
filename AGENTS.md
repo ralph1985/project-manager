@@ -4,10 +4,10 @@
 
 - Root uses Lerna + npm workspaces for shared packages under `packages/`.
 - `packages/`: componentes compartidos (LitElement u otros) versionados en este monorepo; añade aquí nuevo código fuente y tests.
-- `projects/`: proyectos con repositorios propios (p. ej. `projects/ayuntamiento-de-belmontejo`); están git-ignorados aquí y no forman parte de los workspaces.
+- `projects/`: carpeta legacy para datos o proyectos locales puntuales; no usar para nuevos repositorios de apps en VPS.
 - `dashboard/`: panel de gestión (UI, datos y scripts propios).
 - Configuración común: `package.json` y `lerna.json` en la raíz controlan scripts agregados; añade scripts locales dentro de cada paquete.
-- Los proyectos dentro de `projects/` llevan su propio `.git` y lockfile; se mantienen fuera de este monorepo.
+- Los nuevos repositorios de apps deben vivir en `~/apps/<repo>` (por ejemplo `~/apps/vareia`, `~/apps/project-manager`, `~/apps/<nueva-app>`).
 
 ## Working Persona
 
