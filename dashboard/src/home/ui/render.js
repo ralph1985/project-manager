@@ -126,6 +126,9 @@ export function renderProjectTable(elements, tasks) {
       `
     )
     .join('');
+  if (elements.tasksCards) {
+    elements.tasksCards.innerHTML = tasks.map((task) => renderProjectTaskCard(task)).join('');
+  }
 }
 
 export function updateSortIndicators(currentSort) {
@@ -309,4 +312,38 @@ function renderNoteCell(note) {
 function renderHoursCell(task) {
   const hoursLabel = fmtNumber(task.hours);
   return `<button class="hours-link" data-task-id="${task.id}" type="button" title="Ver registros de horas">${hoursLabel}</button>`;
+}
+
+function renderProjectTaskCard(task) {
+  return `
+    <article class="task-card">
+      <div class="task-card-header">
+        <div class="task-card-id">#${task.id}</div>
+        <pm-badge class="${statusClass(task.status)} pill-status">${task.status}</pm-badge>
+      </div>
+      <h3 class="task-card-title">${task.title}</h3>
+      <div class="task-card-grid">
+        <div class="task-card-field">
+          <span class="task-card-label">Fase</span>
+          <pm-badge class="${phaseClass(task.phase)} pill-status">${task.phase || '—'}</pm-badge>
+        </div>
+        <div class="task-card-field">
+          <span class="task-card-label">Responsable</span>
+          <span>${task.owner || '—'}</span>
+        </div>
+        <div class="task-card-field">
+          <span class="task-card-label">Inicio</span>
+          <span>${task.startDate || '—'}</span>
+        </div>
+        <div class="task-card-field">
+          <span class="task-card-label">Fin</span>
+          <span>${task.endDate || '—'}</span>
+        </div>
+      </div>
+      <div class="task-card-actions">
+        <span class="task-card-hours">${renderHoursCell(task)}</span>
+        <span class="task-card-note">${renderNoteCell(task.notes)}</span>
+      </div>
+    </article>
+  `;
 }

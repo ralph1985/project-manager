@@ -38,7 +38,7 @@
   backdrop-filter: blur(6px);
   z-index: 1;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   body { padding: 16px; }
   header { flex-direction: column; align-items: flex-start; }
   .project-header { flex-direction: column; align-items: flex-start; }

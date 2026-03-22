@@ -19,11 +19,14 @@
     "release:pm-i18n": "node scripts/release-package.js --pkg @project-manager/pm-i18n",
     "release:pm-weather": "node scripts/release-package.js --pkg @project-manager/pm-weather",
     "task:add": "node dashboard/scripts/add-task.js",
+    "home:tailwind": "tailwindcss -c tailwind.config.cjs -i dashboard/home/tailwind.input.css -o dashboard/home/tailwind.css --minify",
+    "home:tailwind:watch": "tailwindcss -c tailwind.config.cjs -i dashboard/home/tailwind.input.css -o dashboard/home/tailwind.css --watch",
     "home:styles": "sass dashboard/home/styles.scss dashboard/home/styles.css",
     "home:styles:watch": "sass --watch dashboard/home/styles.scss dashboard/home/styles.css"
   },
   "devDependencies": {
     "sass": "1.77.8",
+    "tailwindcss": "3.4.17",
     "lerna": "8.1.2",
     "conventional-changelog-conventionalcommits": "7.0.2"
   }

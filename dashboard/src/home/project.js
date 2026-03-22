@@ -74,6 +74,20 @@ function setupSorting(applyFilterCallback) {
   updateSortIndicators(currentSort);
 }
 
+function setupMobileFilters() {
+  if (!elements.filtersPanel || !elements.filtersToggle) return;
+  const updateExpanded = (expanded) => {
+    elements.filtersToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    elements.filtersPanel.classList.toggle('is-collapsed', !expanded);
+  };
+
+  updateExpanded(true);
+  elements.filtersToggle.addEventListener('click', () => {
+    const isExpanded = elements.filtersToggle.getAttribute('aria-expanded') === 'true';
+    updateExpanded(!isExpanded);
+  });
+}
+
 function setupFilters(projectTasks, projectId) {
   const storageKey = `pm-project-filters:${encodeURIComponent(projectId)}`;
   const apply = () => {
@@ -150,6 +164,7 @@ async function init() {
 
   const applyFiltersCallback = setupFilters(projectTasks, currentProjectId);
   setupSorting(applyFiltersCallback);
+  setupMobileFilters();
   setupNotes(elements);
   setupHoursModal(elements, taskById);
   setupMilestonesModal(elements);

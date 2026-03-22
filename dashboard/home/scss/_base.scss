@@ -58,3 +58,19 @@ header {
   font-size: 12px;
   box-shadow: 0 0 30px rgba(69, 230, 255, 0.4);
 }
+
+@media (max-width: 560px) {
+  .title h1 {
+    font-size: 22px;
+    letter-spacing: 0.08em;
+  }
+
+  .title p {
+    font-size: 14px;
+  }
+
+  .pill {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="pm:base-path" content="/pm">
   <title>Project Manager · Detalle de proyecto</title>
+  <link rel="stylesheet" href="./home/tailwind.css">
   <link rel="stylesheet" href="./home/styles.css">
 </head>
 <body>
@@ -85,7 +86,18 @@
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
         <h2 style="margin:0;">Tareas internas</h2>
       </div>
-      <div class="filters">
+      <div class="filters-toolbar">
+        <button
+          type="button"
+          id="filtersToggle"
+          class="filters-toggle"
+          aria-expanded="true"
+          aria-controls="filtersPanel"
+        >
+          Filtros
+        </button>
+      </div>
+      <div class="filters" id="filtersPanel">
         <div class="filter-group">
           <label for="search">Buscar</label>
           <input type="search" id="search" placeholder="Buscar título o notas">
@@ -141,6 +153,7 @@
           <tbody></tbody>
         </table>
       </div>
+      <div id="tasksCards" class="tasks-cards"></div>
     </pm-card>
 
     <div id="noteModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
