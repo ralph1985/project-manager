@@ -1,6 +1,7 @@
 import { fmtCurrency, fmtNumber, formatTickTickDate } from './format.js';
 import { phaseClass, projectClass, statusClass } from './classes.js';
 import { isTodoDone } from '../domain/todo.js';
+import { withBase } from '../config.js';
 
 const escAttr = (str = '') =>
   str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -182,7 +183,7 @@ export function renderProjectSummaries(elements, summaries) {
   }
   elements.projectSummary.innerHTML = summaries
     .map((summary) => {
-      const href = `/project.html?project=${encodeURIComponent(summary.projectId)}`;
+      const href = withBase(`/project.html?project=${encodeURIComponent(summary.projectId)}`);
       return `
         <pm-project-summary href="${href}">
           <div>
