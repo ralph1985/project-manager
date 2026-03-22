@@ -1150,5 +1150,12 @@
     "date": "21/03/2026",
     "hours": 2,
     "note": "VareIA: consolidación documental y ajustes operativos de n8n (proxy/heartbeat y validación pendiente de cron), actualización de documentación de integración/notificaciones con Slack, y saneado global de README/checklist/monitoring/hardening/bootstrap con renombrado de marca."
+  },
+  {
+    "id": 164,
+    "taskId": 145,
+    "date": "22/03/2026",
+    "hours": 0.25,
+    "note": "Vareia: actualización de documentación técnica para n8n alineando la versión segura 1.122.1 en inventario VPS y plantillas de entorno."
   }
 ]

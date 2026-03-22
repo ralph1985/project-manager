@@ -1040,5 +1040,11 @@
     "taskId": 145,
     "date": "21/03/2026",
     "note": "(21/03/2026) Sesión 2h: consolidación documental y ajustes operativos de n8n (proxy/heartbeat y validación pendiente de cron), actualización de documentación de integración/notificaciones con Slack, y saneado global de README/checklist/monitoring/hardening/bootstrap con renombrado de marca."
+  },
+  {
+    "id": 173,
+    "taskId": 145,
+    "date": "22/03/2026",
+    "note": "(22/03/2026) Registro 15 min: actualización de documentación técnica de n8n para alinear la versión segura 1.122.1 en inventario VPS y plantillas de entorno."
   }
 ]
