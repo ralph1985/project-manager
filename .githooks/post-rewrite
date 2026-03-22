@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Hook called on rewrite operations (rebase, amend). This complements post-merge.
+"$(git rev-parse --show-toplevel)/scripts/deploy-from-pull.sh"
