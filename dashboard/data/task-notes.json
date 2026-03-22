@@ -1058,5 +1058,11 @@
     "taskId": 146,
     "date": "22/03/2026",
     "note": "(22/03/2026) Registro 45 min: despliegue de mejoras en gestor de proyectos para soporte de base-path /pm, imagen Docker de ejecución y automatización post-pull para rebuild/restart del contenedor."
+  },
+  {
+    "id": 176,
+    "taskId": 147,
+    "date": "22/03/2026",
+    "note": "(22/03/2026) Registro 30 min: se completó el bloque de UX móvil del dashboard de project-manager con sustitución de tabla por tarjetas en viewport móvil, filtros plegables, ajustes de targets táctiles y comportamiento de modal en mobile; además se dejó integrada la base de Tailwind (config + scripts + input/output CSS + enlace en HTML), se actualizaron los to-dos de seguimiento del proyecto y se ejecutó rebuild/recreate del contenedor gestionado por Compose, verificando estado healthy."
   }
 ]

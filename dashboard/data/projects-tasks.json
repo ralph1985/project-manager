@@ -1398,5 +1398,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "22/03/2026",
     "endDate": null
+  },
+  {
+    "id": 147,
+    "title": "Refactor UX mobile-first del dashboard + integración de Tailwind y despliegue en contenedor",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "Completada",
+    "ownerId": "rafael-garcia",
+    "startDate": "22/03/2026",
+    "endDate": "22/03/2026"
   }
 ]

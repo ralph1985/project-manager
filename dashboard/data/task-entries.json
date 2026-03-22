@@ -1171,5 +1171,12 @@
     "date": "22/03/2026",
     "hours": 0.75,
     "note": "Project Manager: incorporación de soporte de despliegue bajo /pm, Dockerfile para runtime en contenedor y automatización de rebuild/restart tras git pull con hooks/scripts."
+  },
+  {
+    "id": 167,
+    "taskId": 147,
+    "date": "22/03/2026",
+    "hours": 0.5,
+    "note": "Project Manager: ejecución completa del refactor mobile-first (tarjetas en móvil, panel de filtros colapsable, mejoras táctiles y modal tipo sheet), integración base de Tailwind en pipeline de estilos, actualización de to-dos de trabajo y rebuild/restart del servicio en Docker Compose con validación healthy."
   }
 ]
