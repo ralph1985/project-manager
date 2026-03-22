@@ -1046,5 +1046,17 @@
     "taskId": 145,
     "date": "22/03/2026",
     "note": "(22/03/2026) Registro 15 min: actualización de documentación técnica de n8n para alinear la versión segura 1.122.1 en inventario VPS y plantillas de entorno."
+  },
+  {
+    "id": 174,
+    "taskId": 145,
+    "date": "22/03/2026",
+    "note": "(22/03/2026) Registro 45 min: consolidación de cambios de documentación operativa de Vareia tras sincronización del repositorio (guía AGENTS, gateway por rutas n8n/project-manager e inventario/changelog de despliegue)."
+  },
+  {
+    "id": 175,
+    "taskId": 146,
+    "date": "22/03/2026",
+    "note": "(22/03/2026) Registro 45 min: despliegue de mejoras en gestor de proyectos para soporte de base-path /pm, imagen Docker de ejecución y automatización post-pull para rebuild/restart del contenedor."
   }
 ]

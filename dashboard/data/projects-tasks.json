@@ -1388,5 +1388,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "20/03/2026",
     "endDate": null
+  },
+  {
+    "id": 146,
+    "title": "Despliegue base-path /pm y automatización de rebuild tras pull",
+    "projectId": "gestor-de-proyectos",
+    "phase": "Mantenimiento",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "22/03/2026",
+    "endDate": null
   }
 ]

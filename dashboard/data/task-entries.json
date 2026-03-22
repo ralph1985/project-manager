@@ -1157,5 +1157,19 @@
     "date": "22/03/2026",
     "hours": 0.25,
     "note": "Vareia: actualización de documentación técnica para n8n alineando la versión segura 1.122.1 en inventario VPS y plantillas de entorno."
+  },
+  {
+    "id": 165,
+    "taskId": 145,
+    "date": "22/03/2026",
+    "hours": 0.75,
+    "note": "Vareia: integración de cambios documentales operativos tras pull (AGENTS operativo, gateway por rutas para n8n y project-manager, actualización de inventario/changelog de despliegue)."
+  },
+  {
+    "id": 166,
+    "taskId": 146,
+    "date": "22/03/2026",
+    "hours": 0.75,
+    "note": "Project Manager: incorporación de soporte de despliegue bajo /pm, Dockerfile para runtime en contenedor y automatización de rebuild/restart tras git pull con hooks/scripts."
   }
 ]
