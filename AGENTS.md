@@ -63,4 +63,7 @@
 - Los responsables viven en `dashboard/data/people.json`.
 - Los to-dos por proyecto viven en `dashboard/data/project-todos.json` (`projectId`, `title`, `dueDate` opcional).
 - TickTick puede asociarse a proyectos vía `dashboard/data/projects.json` (`ticktickProjectId`).
+- Si el usuario pide "revisar el último commit" para imputar horas, usa ese commit solo como fuente de contexto para registrar el trabajo realizado.
+- En ese caso, NO redactes la nota como "revisión del commit"; redacta siempre la ejecución real (qué se implementó/ajustó/documentó).
+- En las notas de horas, prioriza resultado y alcance técnico (p. ej., sistema/componente/archivo afectado) y usa el hash del commit solo como referencia secundaria si aporta trazabilidad.
 - Revisa regularmente los TODO/FIXME en el código (búsqueda de patrones `TODO`/`FIXME`) y recuerda planificar su resolución en próximas tareas.
