@@ -1199,5 +1199,12 @@
     "date": "29/03/2026",
     "hours": 3,
     "note": "Vareia: configuración operativa de infraestructura para Home Manager en VPS (runtime en /opt/infra, compose dev, integración con postgres-shared, ajustes de reverse-proxy/nginx y validación de acceso por ruta /hm bajo Tailscale)."
+  },
+  {
+    "id": 171,
+    "taskId": 145,
+    "date": "29/03/2026",
+    "hours": 2,
+    "note": "Vareia: definición e implementación de política real de backups (PostgreSQL home-manager + n8n + volumen n8n-data), automatización con systemd timer diario 03:30 UTC, alertas Slack de OK/FAIL y subida automática a OneDrive en ruta backups/VareIA."
   }
 ]

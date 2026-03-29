@@ -1076,5 +1076,11 @@
     "taskId": 145,
     "date": "29/03/2026",
     "note": "(29/03/2026) Registro 3h: predominó trabajo de infraestructura Vareia para desplegar Home Manager en VPS, incluyendo configuración de runtime/compose, integración con PostgreSQL compartido, ajustes de proxy por ruta y estabilización de acceso en entorno real."
+  },
+  {
+    "id": 179,
+    "taskId": 145,
+    "date": "29/03/2026",
+    "note": "(29/03/2026) Registro 2h: cierre de política operativa de backups en Vareia con ejecución real (script /opt/infra/scripts/vareia-backup.sh + timer systemd diario 03:30 UTC), copias locales de home-manager/n8n/n8n-data con retención 30 días, alertas Slack en éxito/fallo y sincronización automática a OneDrive bajo backups/VareIA."
   }
 ]
