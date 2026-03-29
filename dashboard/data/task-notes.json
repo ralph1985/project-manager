@@ -1064,5 +1064,17 @@
     "taskId": 147,
     "date": "22/03/2026",
     "note": "(22/03/2026) Registro 30 min: se completó el bloque de UX móvil del dashboard de project-manager con sustitución de tabla por tarjetas en viewport móvil, filtros plegables, ajustes de targets táctiles y comportamiento de modal en mobile; además se dejó integrada la base de Tailwind (config + scripts + input/output CSS + enlace en HTML), se actualizaron los to-dos de seguimiento del proyecto y se ejecutó rebuild/recreate del contenedor gestionado por Compose, verificando estado healthy."
+  },
+  {
+    "id": 177,
+    "taskId": 148,
+    "date": "29/03/2026",
+    "note": "(29/03/2026) Registro 1h: trabajo de aplicación en Home Manager (migración Prisma a PostgreSQL en código, ajustes de Docker/basePath y commits)."
+  },
+  {
+    "id": 178,
+    "taskId": 145,
+    "date": "29/03/2026",
+    "note": "(29/03/2026) Registro 3h: predominó trabajo de infraestructura Vareia para desplegar Home Manager en VPS, incluyendo configuración de runtime/compose, integración con PostgreSQL compartido, ajustes de proxy por ruta y estabilización de acceso en entorno real."
   }
 ]

@@ -1408,5 +1408,15 @@
     "ownerId": "rafael-garcia",
     "startDate": "22/03/2026",
     "endDate": "22/03/2026"
+  },
+  {
+    "id": 148,
+    "title": "Migración a PostgreSQL + Docker (dev/prod) y despliegue en /hm",
+    "projectId": "home-manager",
+    "phase": "Infraestructura",
+    "status": "En curso",
+    "ownerId": "rafael-garcia",
+    "startDate": "29/03/2026",
+    "endDate": null
   }
 ]

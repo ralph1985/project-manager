@@ -1185,5 +1185,19 @@
     "date": "29/03/2026",
     "hours": 0.5,
     "note": "Vareia: diagnóstico y corrección del heartbeat a n8n/Slack tras cambio de ruta (webhook bajo /n8n), validación por logs y mejora del formato Docker en mensaje Slack con saltos de línea."
+  },
+  {
+    "id": 169,
+    "taskId": 148,
+    "date": "29/03/2026",
+    "hours": 1,
+    "note": "Home Manager: migración de app a PostgreSQL con Prisma (adapter-pg), ajustes de Docker/basePath y commits de cambios en repositorio."
+  },
+  {
+    "id": 170,
+    "taskId": 145,
+    "date": "29/03/2026",
+    "hours": 3,
+    "note": "Vareia: configuración operativa de infraestructura para Home Manager en VPS (runtime en /opt/infra, compose dev, integración con postgres-shared, ajustes de reverse-proxy/nginx y validación de acceso por ruta /hm bajo Tailscale)."
   }
 ]
