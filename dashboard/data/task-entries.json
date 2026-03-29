@@ -1178,5 +1178,12 @@
     "date": "22/03/2026",
     "hours": 0.5,
     "note": "Project Manager: ejecución completa del refactor mobile-first (tarjetas en móvil, panel de filtros colapsable, mejoras táctiles y modal tipo sheet), integración base de Tailwind en pipeline de estilos, actualización de to-dos de trabajo y rebuild/restart del servicio en Docker Compose con validación healthy."
+  },
+  {
+    "id": 168,
+    "taskId": 145,
+    "date": "29/03/2026",
+    "hours": 0.5,
+    "note": "Vareia: diagnóstico y corrección del heartbeat a n8n/Slack tras cambio de ruta (webhook bajo /n8n), validación por logs y mejora del formato Docker en mensaje Slack con saltos de línea."
   }
 ]
