@@ -1206,5 +1206,19 @@
     "date": "29/03/2026",
     "hours": 2,
     "note": "Vareia: definición e implementación de política real de backups (PostgreSQL home-manager + n8n + volumen n8n-data), automatización con systemd timer diario 03:30 UTC, alertas Slack de OK/FAIL y subida automática a OneDrive en ruta backups/VareIA."
+  },
+  {
+    "id": 172,
+    "taskId": 145,
+    "date": "30/03/2026",
+    "hours": 0.5,
+    "note": "Vareia: diagnóstico de reinicios del VPS por presión de memoria/OOM en home-manager (next-server en modo dev), cambio operativo para dejar home-manager apagado por defecto en Docker (restart=no), documentación en runbook/changelog y commits en home-manager+vareia."
+  },
+  {
+    "id": 173,
+    "taskId": 145,
+    "date": "30/03/2026",
+    "hours": 0.5,
+    "note": "Vareia: diagnóstico y corrección del backup automático de Home Manager/n8n en VPS. Se verificó timer systemd, se detectó ejecución interrumpida con fichero 0B histórico, se aplicaron hardenings en script (tmp + validación + traps) y ajuste de servicio, y se validó ejecución manual correcta con artefactos nuevos no vacíos."
   }
 ]

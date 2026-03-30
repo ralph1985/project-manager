@@ -1082,5 +1082,17 @@
     "taskId": 145,
     "date": "29/03/2026",
     "note": "(29/03/2026) Registro 2h: cierre de política operativa de backups en Vareia con ejecución real (script /opt/infra/scripts/vareia-backup.sh + timer systemd diario 03:30 UTC), copias locales de home-manager/n8n/n8n-data con retención 30 días, alertas Slack en éxito/fallo y sincronización automática a OneDrive bajo backups/VareIA."
+  },
+  {
+    "id": 180,
+    "taskId": 145,
+    "date": "30/03/2026",
+    "note": "(30/03/2026) Registro 0.5h: revisión operativa del backup diario de Vareia. Se auditó la configuración systemd (timer+service), se identificó una ejecución antigua interrumpida que dejó 0B, se aplicó endurecimiento del flujo de backup (archivos temporales, validación de contenido y manejo de señales) y se validó una ejecución manual exitosa con generación correcta de copias en home-manager, n8n-postgres y n8n-data."
+  },
+  {
+    "id": 181,
+    "taskId": 145,
+    "date": "30/03/2026",
+    "note": "(30/03/2026) Registro 0.5h: diagnóstico de reinicios del VPS por presión de memoria/OOM en home-manager (next-server en modo dev), cambio operativo para dejar home-manager apagado por defecto en Docker (restart=no), documentación en runbook/changelog y commits en home-manager+vareia."
   }
 ]
