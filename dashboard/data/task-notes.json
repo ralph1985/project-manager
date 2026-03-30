@@ -1094,5 +1094,11 @@
     "taskId": 145,
     "date": "30/03/2026",
     "note": "(30/03/2026) Registro 0.5h: diagnóstico de reinicios del VPS por presión de memoria/OOM en home-manager (next-server en modo dev), cambio operativo para dejar home-manager apagado por defecto en Docker (restart=no), documentación en runbook/changelog y commits en home-manager+vareia."
+  },
+  {
+    "id": 182,
+    "taskId": 145,
+    "date": "30/03/2026",
+    "note": "(30/03/2026) Registro 30 min: hardening operativo de Vareia y consolidacion de scripts runtime en repositorio. Se aplicaron correcciones en stacks (PostgreSQL: validacion/escape SQL + ON_ERROR_STOP + permisos .env; n8n/reverse-proxy: permisos .env y ajuste de plantilla por rutas), se versionaron scripts de host (heartbeat y backup) con configs example, y se actualizo documentacion de despliegue a /opt/infra. Commit Vareia: 1d65098."
   }
 ]
