@@ -1227,5 +1227,19 @@
     "date": "30/03/2026",
     "hours": 0.5,
     "note": "Sesion enfocada en hardening y versionado de operacion Vareia (scripts + documentacion + registro de horas)."
+  },
+  {
+    "id": 175,
+    "taskId": 145,
+    "date": "02/04/2026",
+    "hours": 5,
+    "note": "Vareia/OpenClaw: definicion de arquitectura y runbook, configuracion de Slack App (DM, scopes, Socket Mode, pairing), guardrails de aprobacion, despliegue y diagnostico de runtime, y estabilizacion de operacion para orquestador."
+  },
+  {
+    "id": 176,
+    "taskId": 145,
+    "date": "03/04/2026",
+    "hours": 1,
+    "note": "Vareia/OpenClaw: ajuste final de modelo gratuito (openrouter/free), validacion de respuesta por Slack DM sin error de billing y cierre de persistencia operativa."
   }
 ]

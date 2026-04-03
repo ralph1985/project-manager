@@ -1100,5 +1100,17 @@
     "taskId": 145,
     "date": "30/03/2026",
     "note": "(30/03/2026) Registro 30 min: hardening operativo de Vareia y consolidacion de scripts runtime en repositorio. Se aplicaron correcciones en stacks (PostgreSQL: validacion/escape SQL + ON_ERROR_STOP + permisos .env; n8n/reverse-proxy: permisos .env y ajuste de plantilla por rutas), se versionaron scripts de host (heartbeat y backup) con configs example, y se actualizo documentacion de despliegue a /opt/infra. Commit Vareia: 1d65098."
+  },
+  {
+    "id": 183,
+    "taskId": 145,
+    "date": "02/04/2026",
+    "note": "(02/04/2026) Registro 5h: sesion extensa de diseno y ejecucion de OpenClaw para Vareia. Se definio el marco documental (doc operativo + ADRs + checklist), se cerro estrategia de Slack (DM, app separada VareIA Bot, Socket Mode, scopes y pairing), se fijaron guardrails de aprobacion para acciones sensibles, y se trabajaron despliegue/diagnostico de runtime hasta validar conexion Slack y flujo operativo base."
+  },
+  {
+    "id": 184,
+    "taskId": 145,
+    "date": "03/04/2026",
+    "note": "(03/04/2026) Registro 1h: cierre operativo de OpenClaw en Vareia con modelo gratuito. Se resolvio el bloqueo de billing forzando modelo `openrouter/free`, se valido respuesta efectiva en Slack DM y se dejo persistencia de servicio para operacion continua."
   }
 ]
