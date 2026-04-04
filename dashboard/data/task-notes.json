@@ -1112,5 +1112,11 @@
     "taskId": 145,
     "date": "03/04/2026",
     "note": "(03/04/2026) Registro 1h: cierre operativo de OpenClaw en Vareia con modelo gratuito. Se resolvio el bloqueo de billing forzando modelo `openrouter/free`, se valido respuesta efectiva en Slack DM y se dejo persistencia de servicio para operacion continua."
+  },
+  {
+    "id": 185,
+    "taskId": 145,
+    "date": "04/04/2026",
+    "note": "(04/04/2026) Registro 30 min: ampliación del backup diario de Vareia para incluir loto-sync sin timer adicional. Se configuraron secretos en /opt/infra/.backup.env, se validó export remoto de Vercel por token, se integró en el flujo systemd existente (copia local + subida OneDrive + retención), y se sincronizó la documentación/repositorio de Vareia."
   }
 ]

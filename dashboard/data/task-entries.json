@@ -1241,5 +1241,12 @@
     "date": "03/04/2026",
     "hours": 1,
     "note": "Vareia/OpenClaw: ajuste final de modelo gratuito (openrouter/free), validacion de respuesta por Slack DM sin error de billing y cierre de persistencia operativa."
+  },
+  {
+    "id": 177,
+    "taskId": 145,
+    "date": "04/04/2026",
+    "hours": 0.5,
+    "note": "Vareia: integración del backup de loto-sync en la política operativa de backups del VPS (systemd), validación real de export remoto con token, actualización del script runtime en /opt/infra/scripts, sincronización del script versionado y documentación en runbook/inventario/changelog."
   }
 ]
