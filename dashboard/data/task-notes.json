@@ -1118,5 +1118,11 @@
     "taskId": 145,
     "date": "04/04/2026",
     "note": "(04/04/2026) Registro 30 min: ampliación del backup diario de Vareia para incluir loto-sync sin timer adicional. Se configuraron secretos en /opt/infra/.backup.env, se validó export remoto de Vercel por token, se integró en el flujo systemd existente (copia local + subida OneDrive + retención), y se sincronizó la documentación/repositorio de Vareia."
+  },
+  {
+    "id": 186,
+    "taskId": 143,
+    "date": "04/04/2026",
+    "note": "(04/04/2026) Registro 30 min: ajustes de UI en loto-sync para modales en móvil. Se limitó altura con scroll interior, se fijó el cierre en esquina superior derecha en todas las modales relevantes y se consolidaron commits de interfaz para mejorar usabilidad."
   }
 ]
