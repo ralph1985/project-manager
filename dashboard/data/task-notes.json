@@ -1124,5 +1124,11 @@
     "taskId": 143,
     "date": "04/04/2026",
     "note": "(04/04/2026) Registro 30 min: ajustes de UI en loto-sync para modales en móvil. Se limitó altura con scroll interior, se fijó el cierre en esquina superior derecha en todas las modales relevantes y se consolidaron commits de interfaz para mejorar usabilidad."
+  },
+  {
+    "id": 187,
+    "taskId": 145,
+    "date": "06/04/2026",
+    "note": "(06/04/2026) Registro 1h: sesión operativa sobre Vareia para finalizar integración de correo en n8n (IMAP lectura), validar notificación de nuevos emails a Slack, consolidar documentación de estado actual y revertir exposición pública temporal de n8n para mantener acceso privado."
   }
 ]

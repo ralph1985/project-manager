@@ -1255,5 +1255,12 @@
     "date": "04/04/2026",
     "hours": 0.5,
     "note": "Loto Sync: mejoras de UX en modales móviles. Se aplicó max-height con scroll interno, ajuste final a 70vh y reposicionamiento de cierre con botón fijo en esquina superior derecha para mantenerlo visible e intuitivo en contenido largo."
+  },
+  {
+    "id": 179,
+    "taskId": 145,
+    "date": "06/04/2026",
+    "hours": 1,
+    "note": "Vareia: sesión de 1h para cerrar integración de correo en n8n (IMAP operativo), validación de notificación de nuevos correos a Slack, actualización documental del estado operativo y cierre de exposición pública temporal de n8n por seguridad."
   }
 ]
